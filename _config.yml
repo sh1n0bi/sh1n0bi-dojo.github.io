@@ -17,8 +17,8 @@ title: sh1n0bi-dojo
 author: "sh1n0bi"
 email: "<stutaliesin@hotmail.com"
 description: A simple Jekyll theme based on potatoes and hackers
-baseurl: "/sh1n0bi-dojo" # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site, e.g. http://example.com
+baseurl: "/sh1n0bi" # the subpath of your site, e.g. /blog
+url: "https://sh1n0bi.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 
 # ------------------------------------------------------------------------------
 # Custom settings
