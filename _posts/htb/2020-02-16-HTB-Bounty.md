@@ -5,7 +5,7 @@ date: 2020-02-16 14:55:00 +0000
 categories: HTB-Walkthrough
 ---
 
-![bounty](http://localhost:4000/sh1n0bi-dojo/assets/img/bounty.png)
+![bounty](/assets/img/bounty.png)
 
 This is a great box from the HTB 'retired' list.
 

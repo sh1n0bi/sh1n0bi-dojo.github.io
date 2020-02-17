@@ -5,7 +5,7 @@ date:   2020-02-16 02:49:57 +0000
 categories: HTB-Walkthrough                                                                   
 ---                           
 
-![legacy](http://localhost:4000/sh1n0bi-dojo/assets/img/legacy.png)
+![legacy](/assets/img/legacy.png)
 
 Another beginner's box in HTB is Legacy, lets run nmap and see what we're dealing with...
 

@@ -5,7 +5,7 @@ date: 2020-02-16 22:02:00 +0000
 categories: HTB-Walkthrough
 ---
 
-![shocker](http://localhost:4000/sh1n0bi-dojo/assets/img/shocker.png)
+![shocker](/assets/img/shocker.png)
 
 This is another box from the HTB 'retired' list, it's also very much like one of the boxes found in the PWK labs on the way to the OSCP qualification.
 

@@ -5,7 +5,7 @@ date:   2020-02-17 00:01:57 +0000
 categories: HTB-Walkthrough
 ---
 
-![optimum](http://localhost:4000/sh1n0bi-dojo/assets/img/optimum.png)
+![optimum](/assets/img/optimum.png)
 
 Optimum is another OSCP-like box from the HTB 'retired' archive.
 
