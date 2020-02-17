@@ -8,8 +8,8 @@ description: Test page
 
 
 
-Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-
+Hi, whilst awaiting a re-sit of my OSCP exam I decided to start a blog of Hack The Box walkthroughs. Im going to update this as often as possible, and try to improve my reporting skills. One thing Ive noticed about this theme is that it's not too great for highlighted code boxes, some of the characters seem to disappear...hopefully it's just going to be a case of changing the colour scheme a bit. There's plenty more information to write on this page,
+I intend to make it (and my walkthroughs) more comprehensive and thorough as I go along, and become more comfortable with the process. Another intention is to add links and pages of relevent interest and utility to those on the same journey as me.  
 {% highlight ruby %}
  __________________
 < Looking for Work >
