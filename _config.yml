@@ -17,7 +17,7 @@ title: sh1n0bi-dojo
 author: "sh1n0bi"
 email: "<stutaliesin@hotmail.com"
 description: A simple Jekyll theme based on potatoes and hackers
-baseurl: "/HTB-Walthrough" # the subpath of your site, e.g. /blog
+baseurl: "/blog" # the subpath of your site, e.g. /blog
 url: "https://sh1n0bi.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 
 # ------------------------------------------------------------------------------
