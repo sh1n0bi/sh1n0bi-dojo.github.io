@@ -4,7 +4,7 @@ title: About sh1n0bi
 description: Test page
 ---
 
-![my HTB badge](http://localhost:4000/sh1n0bi-dojo/assets/img/sh1n.png)
+![my HTB badge](/assets/img/sh1n.png)
 
 
 
