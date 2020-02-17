@@ -5,5 +5,5 @@ title: Sh1n0bi-Blog
 layout: default
 ---
 
-![my HTB badge](http://localhost:4000/sh1n0bi-dojo/assets/img/ninja-pentest.png)
+![my HTB badge](/assets/img/ninja-pentest.png)
 
