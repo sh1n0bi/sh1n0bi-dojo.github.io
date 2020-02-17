@@ -148,3 +148,9 @@ $avatar-size: 10em;
     color: $gray !important;
   }
 }
+
+pre,
+code {
+    ...
+    background-color: #eef;
+}
