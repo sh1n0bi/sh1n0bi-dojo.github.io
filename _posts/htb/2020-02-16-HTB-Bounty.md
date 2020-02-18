@@ -90,7 +90,7 @@ we find that we can only upload web.config files...
 
 we have to create an xml file and call it web.config
 
-```
+```xml
 
 <?xml version="1.0" encoding="UTF-8"?>
 <configuration>
@@ -119,8 +119,8 @@ Responsse.write(o)
 
 ```
 
-If you haven't already, get to know xml files, they can be super useful; and also (perhaps more importantly) get to know useful powershell commands.
-the IEX DownloadString one above is very useful, as is the IWR (Invoke-WebRequest) one. You will find them invaluable when working with Windows targets.
+If you haven't already, its a good idea to get to know a little xml; particularly in the context of exploiting xmlrpc. It's also important to familiarize yourself with useful powershell commands.
+The IEX DownloadString one above is very useful, as is the IWR (Invoke-WebRequest) one. You will find them invaluable when working with Windows targets.
 
 
 Anyway...the exploit above requires us to host the shell.ps1 file so
