@@ -13,9 +13,9 @@ I intend to make it (and my walkthroughs) more comprehensive and thorough as I g
 Another intention is to add links and pages of relevent interest and utility to those on the same journey as me.  
 
 ```
- __________________
-< Looking for Work >
- ------------------
+ __________________________
+< Looking for Infosec Work >
+ --------------------------
         \   ^__^
          \  (oo)\_______
             (__)\       )\/\

