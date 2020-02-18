@@ -7,7 +7,7 @@ priority: 1
 ---
 
 Here's a list of resources that I've found useful. In the land of Pentestopia some of these guides have become Canonical.
-There are so many amazingly helpful sites!!! I'll add to them as I go along. Huge thanks go out to those listed here for providing such valuable learning and reference material.
+There are so many amazingly helpful sites!!! I'll add to them as I go along. Huge thanks and respect go out to those listed here for providing such valuable learning and reference material.
 Add them all to your Bookmarks!
 
 <h3>NetSecFocus TJNull's OSCP HTB list</h3>

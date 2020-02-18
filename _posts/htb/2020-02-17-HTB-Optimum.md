@@ -95,7 +95,7 @@ run `winPEAS.bat > enum.txt` then send enum.txt via nc.
 do `systeminfo`
 copy output and paste to kali machine.
 
-try [winddows-exploit-suggester.py](https://github.com/AonCyberLabs/Windows-Exploit-Suggester)
+try [windows-exploit-suggester.py](https://github.com/AonCyberLabs/Windows-Exploit-Suggester)
 
 The resulting output is voluminous, so I won't paste it all here...
 I selected ms16-098 and downloaded the exploit from github...
