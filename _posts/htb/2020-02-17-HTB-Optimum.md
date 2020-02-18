@@ -119,11 +119,13 @@ Microsoft Windows [Version 6.3.9600]
 C:\boo>whoami
 whoami
 nt authority\system
-{% endhighlight %}
+
+```
 
 From here we can just grab the root.txt flag...
 
-{% highlight ruby %}
+```
+
 C:\Users\Administrator\Desktop>type root.txt
 type root.txt
 51xxxxxxxxxxxxxxxxxxxxxxxxxxxxed
