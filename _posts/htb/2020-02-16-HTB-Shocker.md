@@ -137,7 +137,7 @@ User shelly may run the following commands on Shocker:
 
 ```
 
-sudo -l is always one of the first commands I try when I get an user shell, for this sort of reason.
+`sudo -l` is always one of the first commands I try when I get an user shell, for this sort of reason.
 Getting root now is very simple. Shelly can execute a perl command or script using sudo (which gives 'super user' privileges) without having to enter a password.
 We can use this to invoke a bash shell that will reflect the privileges of the user that called it. Since sudo commands are run 'as root', the resulting shell will be a root shell.
 
