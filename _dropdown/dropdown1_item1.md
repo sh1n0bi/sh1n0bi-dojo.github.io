@@ -1,12 +1,12 @@
 ---
 layout: page
-title: item1
+title: Pentest-Cheatsheet
 description: Test page
 dropdown: dropdown1
 priority: 1
 ---
 #Red Teaming Experiments
-#from : https://ired.team/offensive-security-experiments/offensive-security-cheetsheets
+from [ired.team](https://ired.team/offensive-security-experiments/offensive-security-cheetsheets)
 
 
 ###Pentesting Cheatsheet###
@@ -21,15 +21,15 @@ priority: 1
 
 #Reconnaissance / Enumeration
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-#Extracting Live IPs from Nmap Scan
+<h3>Extracting Live IPs from Nmap Scan</h3>
 
 `nmap 10.1.1.1 --open -oG scan-results; cat scan-results | grep "/open" | cut -d " " -f 2 > exposed-services-ips`
 
-#Simple Port Knocking
+<h3>Simple Port Knocking</h3>
 
 `for x in 7000 8000 9000; do nmap -Pn –host_timeout 201 –max-retries 0 -p $x 1.1.1.1; done`
 
-#DNS lookups, Zone Transfers & Brute-Force
+<h2>DNS lookups, Zone Transfers & Brute-Force</h2>
 
 `whois domain.com`
 `dig {a|txt|ns|mx} domain.com`
@@ -42,24 +42,24 @@ priority: 1
 `nslookup -> set type=any -> ls -d domain.com`
 `for sub in $(cat subdomains.txt);do host $sub.domain.com|grep "has.address";done`
 
-#Banner Grabbing
+<h2>Banner Grabbing</h2>
 
 `nc -v $TARGET 80`
 `telnet $TARGET 80`
 `curl -vX $TARGET`
 
-#NFS Exported Shares
+<h2>NFS Exported Shares</h2>
 
 List NFS exported shares. If 'rw,no_root_squash' is present, upload and execute sid-shell
 
 `showmount -e 192.168.110.102`
 `chown root:root sid-shell; chmod +s sid-shell`
 
-#Kerberos User Enumeration
+<h2>Kerberos User Enumeration</h2>
 
 `nmap $TARGET -p 88 --script krb5-enum-users --script-args krb5-enum-users.realm='test'`
 
-#HTTP Brute-Force & Vulnerability Scanning
+<h2>HTTP Brute-Force & Vulnerability Scanning</h2>
 
 `target=10.0.0.1; gobuster -u http://$target -r -w /usr/share/wordlists/dirbuster/directory-list-2.3-medium.txt -x php,txt -t 150 -l | tee $target-gobuster`
 `target=10.0.0.1; nikto -h http://$target:80 | tee $target-nikto`
