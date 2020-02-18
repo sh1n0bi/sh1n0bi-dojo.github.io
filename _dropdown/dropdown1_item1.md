@@ -9,6 +9,8 @@ priority: 1
 Here's a list of resources that I've found useful. In the land of Pentestopia some of these guides have become Canonical.
 There are so many amazingly helpful sites!!! I'll add to them as I go along.
 
+<h3>Ippsec's Youtube vids(OSCP-prep)</h3>
+There's no better Youtube resource to learn from than [Ippsec's vids](https://www.youtube.com/watch?v=XJmBpOd__N8&list=PLB7OMUC1I72U_eLxaqkehqIvZIyW3rzhp). If you think there is...'FITE ME!!!'
 
 <h3>Red Teaming Experiments</h3>
 A pretty comprehensive and very useful command cheat-sheet from [ired.team](https://ired.team/offensive-security-experiments/offensive-security-cheetsheets)
