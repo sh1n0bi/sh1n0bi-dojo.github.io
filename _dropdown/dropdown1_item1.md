@@ -47,6 +47,10 @@ Bilal Rizwan's [page](https://medium.com/@the.bilal.rizwan/wordpress-xmlrpc-php-
 Jiovi/pentest [repostitory](https://github.com/jivoi/pentest) on github has lots of very useful stuff worth checking out.
 
 
+<h3>Pentest Methodology</h3>
+Follow this [list](http://www.0daysecurity.com/penetration-testing/enumeration.html) and you can't go wrong. ;)
+
+
 # Misc Cheatsheets
 
 [here's](https://github.com/coreb1t/awesome-pentest-cheat-sheets) a bunch of helpful cheatsheets
