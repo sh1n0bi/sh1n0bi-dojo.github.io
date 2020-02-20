@@ -130,12 +130,13 @@ Yay!!!
 
 Should have probably tried some manually first, since that is one everyone tries...no matter!
 
+
+<h3>Exploiting phpadminlite 1.9</h3>
+
 `searchsploit phpliteadmin 1.9`
 
 ```
 
-
-<h3>Exploiting phpadminlite 1.9</h3>
 
 -------------------------------------------------- ----------------------------------------
  Exploit Title                                    |  Path
