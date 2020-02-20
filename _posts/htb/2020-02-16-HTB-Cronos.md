@@ -34,6 +34,9 @@ Service Info: OS: Linux; CPE: cpe:/o:linux:linux_kernel
 
 We see port 53 running, lets enumerate it...
 
+
+<h3>Domain Enumeration</h3>
+
 ```
 
 root@kali:~/HTB/retired/cronos# nslookup
@@ -97,6 +100,9 @@ the perl reverse shell works! we catch the reverse shell on
 `nc -nlvp 6969`
 
 ##########################
+
+
+<h3>Privilege Escalation</h3>
 
 Taking a look around we know there's always goodies in the config.php file if its available...
 
@@ -210,3 +216,4 @@ uid=0(root) gid=0(root) groups=0(root)
 
 Exploiting suid files to escalate privileges is an important technique to practice and remember to look out for,
 it will often be the best (and sometimes only) way to get root. 
+[Check out this article for a good explaination](https://www.hackingarticles.in/linux-privilege-escalation-using-suid-binaries/)

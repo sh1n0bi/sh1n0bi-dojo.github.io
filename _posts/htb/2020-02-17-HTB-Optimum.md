@@ -43,7 +43,7 @@ Rejetto HTTP File Server (HFS) 2.3a/2.3b/2.3c - Remo | exploits/windows/webapps/
 
 ```
 
-We'll check out the python script, `searchsploit -m 39161.py` will copy the exploit to the pwd.
+We'll check out the python script, `searchsploit -m 39161.py` will copy the exploit to the pwd (present working directory).
 ...looks promising...
 
 ```
