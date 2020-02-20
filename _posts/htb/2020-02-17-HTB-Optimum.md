@@ -24,6 +24,9 @@ Service Info: OS: Windows; CPE: cpe:/o:microsoft:windows
 
 ```
 
+
+<h3>Using Searchsploit</h3>
+
 `searchsploit hfs 2.3`
 
 ```
@@ -80,7 +83,7 @@ d0xxxxxxxxxxxxxxxxxxxxxx73
 
 ```
 
-#########################
+<h3>Privilege Escalation</h3>
 
 User flag down, now we need to privesc to get the root.txt flag.
 
