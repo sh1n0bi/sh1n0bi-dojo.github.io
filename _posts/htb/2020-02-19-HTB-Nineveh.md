@@ -107,7 +107,7 @@ Directory Traversal, and LFI is possible with this page, we can easily read /etc
 So now we just need to find a way to put a file onto the server!
 
 
-So we need to find a secret folder? which may relate to a database interface?
+The note hints that we need to find a secret folder? which may relate to a database interface?
 
 Trying /secret fails, but /db comes up trumps with a phpadminlite 1.9 login page.
 
