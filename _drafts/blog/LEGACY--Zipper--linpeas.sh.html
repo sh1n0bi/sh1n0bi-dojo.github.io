@@ -1,464 +1,0 @@
-<!doctype html><html>
-<head>
-  <meta http-equiv="content-type" content="text/html; charset=utf-8">
-  <title>linpeas.sh</title>
-  <meta name="generator" content="CherryTree">
-  <link rel="stylesheet" href="styles.css" type="text/css" />
-</head>
-<body><div class="main"><div class="tree">
-<p><strong>Index</strong></p>
-<p><a href="LEGACY.html">LEGACY</a></p>
-
-<ol>
-<li><a href="LEGACY--Bastion.html">Bastion</a></li>
-<ol>
-<li><a href="LEGACY--Bastion--enum.html">enum</a></li>
-</ol>
-<li><a href="LEGACY--Sunday.html">Sunday</a></li>
-<ol>
-<li><a href="LEGACY--Sunday--enum.html">enum</a></li>
-<ol>
-<li><a href="LEGACY--Sunday--enum--finger-scan.html">finger-scan</a></li>
-</ol>
-<li><a href="LEGACY--Sunday--exploit.html">exploit</a></li>
-<li><a href="LEGACY--Sunday--loot.html">loot</a></li>
-</ol>
-<li><a href="LEGACY--Jerry.html">Jerry</a></li>
-<ol>
-<li><a href="LEGACY--Jerry--enum.html">enum</a></li>
-<li><a href="LEGACY--Jerry--exploit.html">exploit</a></li>
-<li><a href="LEGACY--Jerry--loot.html">loot</a></li>
-</ol>
-<li><a href="LEGACY--Nineveh.html">Nineveh</a></li>
-<ol>
-<li><a href="LEGACY--Nineveh--enum.html">enum</a></li>
-<ol>
-<li><a href="LEGACY--Nineveh--enum--info.php.html">info.php</a></li>
-</ol>
-<li><a href="LEGACY--Nineveh--exploit.html">exploit</a></li>
-<ol>
-<li><a href="LEGACY--Nineveh--exploit--evil.txt.html">evil.txt</a></li>
-</ol>
-<li><a href="LEGACY--Nineveh--loot.html">loot</a></li>
-</ol>
-<li><a href="LEGACY--Poison.html">Poison</a></li>
-<ol>
-<li><a href="LEGACY--Poison--enum.html">enum</a></li>
-<ol>
-<li><a href="LEGACY--Poison--enum---etc-passwd.html">/etc/passwd</a></li>
-<li><a href="LEGACY--Poison--enum--decode.py.html">decode.py</a></li>
-<li><a href="LEGACY--Poison--enum--phpinfo.php.html">phpinfo.php</a></li>
-<li><a href="LEGACY--Poison--enum--ps_aux.html">ps aux</a></li>
-</ol>
-<li><a href="LEGACY--Poison--exploit.html">exploit</a></li>
-<li><a href="LEGACY--Poison--loot.html">loot</a></li>
-</ol>
-<li><a href="LEGACY--Node.html">Node</a></li>
-<ol>
-<li><a href="LEGACY--Node--enum.html">enum</a></li>
-<ol>
-<li><a href="LEGACY--Node--enum--burp_requests.html">burp requests</a></li>
-</ol>
-<li><a href="LEGACY--Node--exploit.html">exploit</a></li>
-<li><a href="LEGACY--Node--loot.html">loot</a></li>
-</ol>
-<li><a href="LEGACY--Bounty.html">Bounty</a></li>
-<ol>
-<li><a href="LEGACY--Bounty--enum.html">enum</a></li>
-<li><a href="LEGACY--Bounty--exploit.html">exploit</a></li>
-<li><a href="LEGACY--Bounty--loot.html">loot</a></li>
-</ol>
-<li><a href="LEGACY--Arctic.html">Arctic</a></li>
-<ol>
-<li><a href="LEGACY--Arctic--enum.html">enum</a></li>
-<li><a href="LEGACY--Arctic--exploit.html">exploit</a></li>
-<li><a href="LEGACY--Arctic--loot.html">loot</a></li>
-</ol>
-<li><a href="LEGACY--Bastard.html">Bastard</a></li>
-<ol>
-<li><a href="LEGACY--Bastard--enum.html">enum</a></li>
-<ol>
-<li><a href="LEGACY--Bastard--enum--robots.txt.html">robots.txt</a></li>
-</ol>
-<li><a href="LEGACY--Bastard--exploit.html">exploit</a></li>
-<li><a href="LEGACY--Bastard--loot.html">loot</a></li>
-</ol>
-<li><a href="LEGACY--Valentine.html">Valentine</a></li>
-<ol>
-<li><a href="LEGACY--Valentine--enum.html">enum</a></li>
-<li><a href="LEGACY--Valentine--exploit.html">exploit</a></li>
-<li><a href="LEGACY--Valentine--loot.html">loot</a></li>
-</ol>
-<li><a href="LEGACY--Bashed.html">Bashed</a></li>
-<ol>
-<li><a href="LEGACY--Bashed--enum.html">enum</a></li>
-<li><a href="LEGACY--Bashed--exploit.html">exploit</a></li>
-<li><a href="LEGACY--Bashed--loot.html">loot</a></li>
-</ol>
-<li><a href="LEGACY--Sense.html">Sense</a></li>
-<ol>
-<li><a href="LEGACY--Sense--enum.html">enum</a></li>
-<li><a href="LEGACY--Sense--exploit.html">exploit</a></li>
-<li><a href="LEGACY--Sense--loot.html">loot</a></li>
-</ol>
-<li><a href="LEGACY--Silo.html">Silo</a></li>
-<ol>
-<li><a href="LEGACY--Silo--enum.html">enum</a></li>
-<li><a href="LEGACY--Silo--exploit.html">exploit</a></li>
-<li><a href="LEGACY--Silo--loot.html">loot</a></li>
-</ol>
-<li><a href="LEGACY--Optimum.html">Optimum</a></li>
-<ol>
-<li><a href="LEGACY--Optimum--enum.html">enum</a></li>
-<li><a href="LEGACY--Optimum--exploit.html">exploit</a></li>
-<li><a href="LEGACY--Optimum--loot.html">loot</a></li>
-</ol>
-<li><a href="LEGACY--Nibbles.html">Nibbles</a></li>
-<ol>
-<li><a href="LEGACY--Nibbles--enum.html">enum</a></li>
-<li><a href="LEGACY--Nibbles--exploit.html">exploit</a></li>
-<li><a href="LEGACY--Nibbles--loot.html">loot</a></li>
-</ol>
-<li><a href="LEGACY--Beep.html">Beep</a></li>
-<ol>
-<li><a href="LEGACY--Beep--enum.html">enum</a></li>
-<li><a href="LEGACY--Beep--exploit.html">exploit</a></li>
-<li><a href="LEGACY--Beep--loot.html">loot</a></li>
-</ol>
-<li><a href="LEGACY--conceal.html">conceal</a></li>
-<ol>
-<li><a href="LEGACY--conceal--enum.html">enum</a></li>
-<ol>
-<li><a href="LEGACY--conceal--enum--enum-after_vpn_connection.html">enum-after vpn connection</a></li>
-</ol>
-<li><a href="LEGACY--conceal--exploit.html">exploit</a></li>
-<ol>
-<li><a href="LEGACY--conceal--exploit--ipsec.conf_and_.secrets.html">ipsec.conf and .secrets</a></li>
-<ol>
-<li><a href="LEGACY--conceal--exploit--ipsec.conf_and_.secrets--nmap_scan_results.html">nmap scan results</a></li>
-</ol>
-<li><a href="LEGACY--conceal--exploit--add_asp_file_via_ftp_browse_to_-uploads.html">add asp file via ftp browse to /uploads</a></li>
-<li><a href="LEGACY--conceal--exploit--user_to_root.html">user to root</a></li>
-</ol>
-<li><a href="LEGACY--conceal--loot.html">loot</a></li>
-</ol>
-<li><a href="LEGACY--Shocker.html">Shocker</a></li>
-<ol>
-<li><a href="LEGACY--Shocker--enum.html">enum</a></li>
-<li><a href="LEGACY--Shocker--exploit.html">exploit</a></li>
-<li><a href="LEGACY--Shocker--loot.html">loot</a></li>
-</ol>
-<li><a href="LEGACY--Brainfuck.html">Brainfuck</a></li>
-<ol>
-<li><a href="LEGACY--Brainfuck--enum.html">enum</a></li>
-<li><a href="LEGACY--Brainfuck--exploit.html">exploit</a></li>
-<li><a href="LEGACY--Brainfuck--loot.html">loot</a></li>
-</ol>
-<li><a href="LEGACY--Cronos.html">Cronos</a></li>
-<ol>
-<li><a href="LEGACY--Cronos--cron.html">cron</a></li>
-<li><a href="LEGACY--Cronos--evil.php.html">evil.php</a></li>
-</ol>
-<li><a href="LEGACY--Devel.html">Devel</a></li>
-<ol>
-<li><a href="LEGACY--Devel--enum.html">enum</a></li>
-<ol>
-<li><a href="LEGACY--Devel--enum--ftp.html">ftp</a></li>
-</ol>
-<li><a href="LEGACY--Devel--exploit.html">exploit</a></li>
-<li><a href="LEGACY--Devel--loot.html">loot</a></li>
-</ol>
-<li><a href="LEGACY--Legacy.html">Legacy</a></li>
-<ol>
-<li><a href="LEGACY--Legacy--enum.html">enum</a></li>
-<li><a href="LEGACY--Legacy--exploit.html">exploit</a></li>
-<li><a href="LEGACY--Legacy--loot.html">loot</a></li>
-</ol>
-<li><a href="LEGACY--Lame.html">Lame</a></li>
-<ol>
-<li><a href="LEGACY--Lame--enum.html">enum</a></li>
-<li><a href="LEGACY--Lame--exploit.html">exploit</a></li>
-<li><a href="LEGACY--Lame--loot.html">loot</a></li>
-</ol>
-<li><a href="LEGACY--Waldo.html">Waldo</a></li>
-<ol>
-<li><a href="LEGACY--Waldo--foothold.html">foothold</a></li>
-<li><a href="LEGACY--Waldo--user.html">user</a></li>
-<li><a href="LEGACY--Waldo--root.html">root</a></li>
-</ol>
-<li><a href="LEGACY--Lightweight.html">Lightweight</a></li>
-<ol>
-<li><a href="LEGACY--Lightweight--backup.hash.html">backup.hash</a></li>
-<li><a href="LEGACY--Lightweight--enum.html">enum</a></li>
-<li><a href="LEGACY--Lightweight--hash.html">hash</a></li>
-<li><a href="LEGACY--Lightweight--index.php.html">index.php</a></li>
-<li><a href="LEGACY--Lightweight--info.php.html">info.php</a></li>
-<li><a href="LEGACY--Lightweight--light.html">light</a></li>
-<li><a href="LEGACY--Lightweight--reset.php.html">reset.php</a></li>
-<li><a href="LEGACY--Lightweight--status.php.html">status.php</a></li>
-<li><a href="LEGACY--Lightweight--user.php.html">user.php</a></li>
-</ol>
-<li><a href="LEGACY--Zipper.html">Zipper</a></li>
-<ol>
-<li><a href="LEGACY--Zipper--zabbix_3.0.html">zabbix 3.0</a></li>
-<li><a href="LEGACY--Zipper--40237.html">40237</a></li>
-<li><a href="LEGACY--Zipper--40353.py.html">40353.py</a></li>
-<li><a href="LEGACY--Zipper--enum.html">enum</a></li>
-<li><a href="LEGACY--Zipper--linpeas.sh.html">linpeas.sh</a></li>
-<li><a href="LEGACY--Zipper--perl.shell.html">perl.shell</a></li>
-<li><a href="LEGACY--Zipper--stable-shell-get.html">stable-shell-get</a></li>
-<li><a href="LEGACY--Zipper--zip.html">zip</a></li>
-</ol>
-<li><a href="LEGACY--Teacher.html">Teacher</a></li>
-<ol>
-<li><a href="LEGACY--Teacher--foothold.html">foothold</a></li>
-<li><a href="LEGACY--Teacher--teach.html">teach</a></li>
-</ol>
-</ol>
-<p><a href="ACTIVE.html">ACTIVE</a></p>
-
-<ol>
-<li><a href="ACTIVE--Json.html">Json</a></li>
-<ol>
-<li><a href="ACTIVE--Json--enum.html">enum</a></li>
-<ol>
-<li><a href="ACTIVE--Json--enum--gob.html">gob</a></li>
-<li><a href="ACTIVE--Json--enum--decrypt-js_code.html">decrypt-js code</a></li>
-<li><a href="ACTIVE--Json--enum--oauth2_token.html">oauth2 token</a></li>
-<li><a href="ACTIVE--Json--enum--2nd_enum...Burp_json_oauth2_cookie.html">2nd enum...Burp json oauth2 cookie</a></li>
-<li><a href="ACTIVE--Json--enum--app.min.js_-_beautified.html">app.min.js - beautified</a></li>
-<li><a href="ACTIVE--Json--enum--Post-Exploit_Enum.html">Post-Exploit Enum</a></li>
-</ol>
-<li><a href="ACTIVE--Json--exploit.html">exploit</a></li>
-<ol>
-<li><a href="ACTIVE--Json--exploit--ysoserial_-_exploit.html">ysoserial - exploit</a></li>
-<li><a href="ACTIVE--Json--exploit--Working-ping-ysoserial-command.html">Working-ping-ysoserial-command</a></li>
-<li><a href="ACTIVE--Json--exploit--Get_Root.html">Get Root</a></li>
-<ol>
-<li><a href="ACTIVE--Json--exploit--Get_Root--filezilla_-_superadmin_hash.html">filezilla - superadmin hash</a></li>
-</ol>
-<li><a href="ACTIVE--Json--exploit--Got_Root_via_juicy_potato.html">Got Root via juicy potato</a></li>
-</ol>
-<li><a href="ACTIVE--Json--loot.html">loot</a></li>
-</ol>
-<li><a href="ACTIVE--Postman.html">Postman</a></li>
-<ol>
-<li><a href="ACTIVE--Postman--enum.html">enum</a></li>
-<ol>
-<li><a href="ACTIVE--Postman--enum--http.html">http</a></li>
-<li><a href="ACTIVE--Postman--enum--https.html">https</a></li>
-<li><a href="ACTIVE--Postman--enum--redis_keystore.html">redis keystore</a></li>
-<li><a href="ACTIVE--Postman--enum--user_redis.html">user redis</a></li>
-</ol>
-<li><a href="ACTIVE--Postman--exploit.html">exploit</a></li>
-<li><a href="ACTIVE--Postman--loot.html">loot</a></li>
-<li><a href="ACTIVE--Postman--matt.html">matt</a></li>
-<li><a href="ACTIVE--Postman--root.html">root</a></li>
-</ol>
-<li><a href="ACTIVE--Traverxec.html">Traverxec</a></li>
-<ol>
-<li><a href="ACTIVE--Traverxec--enum.html">enum</a></li>
-<li><a href="ACTIVE--Traverxec--exploit.html">exploit</a></li>
-<li><a href="ACTIVE--Traverxec--loot.html">loot</a></li>
-<li><a href="ACTIVE--Traverxec--advice_from_xVoid.html">advice from xVoid</a></li>
-</ol>
-<li><a href="ACTIVE--Smasher2.html">Smasher2</a></li>
-<ol>
-<li><a href="ACTIVE--Smasher2--foothold.html">foothold</a></li>
-<li><a href="ACTIVE--Smasher2--user.html">user</a></li>
-<li><a href="ACTIVE--Smasher2--root.html">root</a></li>
-<li><a href="ACTIVE--Smasher2--loot.html">loot</a></li>
-</ol>
-<li><a href="ACTIVE--Craft.html">Craft</a></li>
-<ol>
-<li><a href="ACTIVE--Craft--foothold.html">foothold</a></li>
-<ol>
-<li><a href="ACTIVE--Craft--foothold--gogs_users.html">gogs users</a></li>
-<li><a href="ACTIVE--Craft--foothold--dbtest.py.html">dbtest.py</a></li>
-<li><a href="ACTIVE--Craft--foothold--craft_api.html">craft_api</a></li>
-</ol>
-<li><a href="ACTIVE--Craft--user.html">user</a></li>
-<li><a href="ACTIVE--Craft--root.html">root</a></li>
-</ol>
-<li><a href="ACTIVE--Obscurity.html">Obscurity</a></li>
-<ol>
-<li><a href="ACTIVE--Obscurity--foothold.html">foothold</a></li>
-<ol>
-<li><a href="ACTIVE--Obscurity--foothold--nmap.html">nmap</a></li>
-<li><a href="ACTIVE--Obscurity--foothold--enum.html">enum</a></li>
-<li><a href="ACTIVE--Obscurity--foothold--SuperSecureServer.py.html">SuperSecureServer.py</a></li>
-</ol>
-<li><a href="ACTIVE--Obscurity--user.html">user</a></li>
-<ol>
-<li><a href="ACTIVE--Obscurity--user--solution.html">solution</a></li>
-</ol>
-<li><a href="ACTIVE--Obscurity--root.html">root</a></li>
-</ol>
-<li><a href="ACTIVE--Mango.html">Mango</a></li>
-<ol>
-<li><a href="ACTIVE--Mango--foothold.html">foothold</a></li>
-<li><a href="ACTIVE--Mango--user.html">user</a></li>
-<li><a href="ACTIVE--Mango--root.html">root</a></li>
-</ol>
-<li><a href="ACTIVE--Resolute.html">Resolute</a></li>
-<ol>
-<li><a href="ACTIVE--Resolute--foothold.html">foothold</a></li>
-<ol>
-<li><a href="ACTIVE--Resolute--foothold--enum4linux.html">enum4linux</a></li>
-<li><a href="ACTIVE--Resolute--foothold--bash-userenum_script.html">bash-userenum script</a></li>
-<li><a href="ACTIVE--Resolute--foothold--winrm_rb.html">winrm rb</a></li>
-</ol>
-<li><a href="ACTIVE--Resolute--nmap.html">nmap</a></li>
-<li><a href="ACTIVE--Resolute--user.html">user</a></li>
-<ol>
-<li><a href="ACTIVE--Resolute--user--enum.html">enum</a></li>
-<li><a href="ACTIVE--Resolute--user--user_ryan.html">user ryan</a></li>
-<ol>
-<li><a href="ACTIVE--Resolute--user--user_ryan--winrm-whoami.html">winrm-whoami</a></li>
-</ol>
-</ol>
-<li><a href="ACTIVE--Resolute--root.html">root</a></li>
-<ol>
-<li><a href="ACTIVE--Resolute--root--meterpreter-shell.html">meterpreter-shell</a></li>
-</ol>
-</ol>
-<li><a href="ACTIVE--Forest.html">Forest</a></li>
-<ol>
-<li><a href="ACTIVE--Forest--foothold.html">foothold</a></li>
-<ol>
-<li><a href="ACTIVE--Forest--foothold--impacket.html">impacket</a></li>
-</ol>
-<li><a href="ACTIVE--Forest--user.html">user</a></li>
-<ol>
-<li><a href="ACTIVE--Forest--user--get-process.html">get-process</a></li>
-</ol>
-<li><a href="ACTIVE--Forest--root.html">root</a></li>
-<ol>
-<li><a href="ACTIVE--Forest--root--shin0bi_privs.html">shin0bi privs</a></li>
-<li><a href="ACTIVE--Forest--root--getADUsers.py.html">getADUsers.py</a></li>
-<li><a href="ACTIVE--Forest--root--Bloodhound-Graphs.html">Bloodhound-Graphs</a></li>
-<li><a href="ACTIVE--Forest--root--Invoke-ACLPwn.ps1.html">Invoke-ACLPwn.ps1</a></li>
-<li><a href="ACTIVE--Forest--root--DACLS-solution.html">DACLS-solution</a></li>
-<li><a href="ACTIVE--Forest--root--get_computer.html">get computer</a></li>
-<li><a href="ACTIVE--Forest--root--dacls_-_htb_local.html">dacls - htb local</a></li>
-<li><a href="ACTIVE--Forest--root--from_scratch.html">from scratch</a></li>
-</ol>
-</ol>
-<li><a href="ACTIVE--Bitlab.html">Bitlab</a></li>
-<ol>
-<li><a href="ACTIVE--Bitlab--foothold.html">foothold</a></li>
-<li><a href="ACTIVE--Bitlab--user.html">user</a></li>
-<ol>
-<li><a href="ACTIVE--Bitlab--user--gitlab_enum.html">gitlab enum</a></li>
-<li><a href="ACTIVE--Bitlab--user--todo-connect_to_postgresql.html">todo-connect to postgresql</a></li>
-</ol>
-<li><a href="ACTIVE--Bitlab--root.html">root</a></li>
-</ol>
-<li><a href="ACTIVE--OpenAdmin.html">OpenAdmin</a></li>
-<ol>
-<li><a href="ACTIVE--OpenAdmin--Foothold.html">Foothold</a></li>
-<li><a href="ACTIVE--OpenAdmin--User.html">User</a></li>
-<ol>
-<li><a href="ACTIVE--OpenAdmin--User--internal_folder_(lead_to_joanna).html">internal folder (lead to joanna)</a></li>
-<li><a href="ACTIVE--OpenAdmin--User--User_-_Joanna.html">User - Joanna</a></li>
-</ol>
-<li><a href="ACTIVE--OpenAdmin--Root.html">Root</a></li>
-</ol>
-<li><a href="ACTIVE--Registry.html">Registry</a></li>
-<ol>
-<li><a href="ACTIVE--Registry--Foothold.html">Foothold</a></li>
-<ol>
-<li><a href="ACTIVE--Registry--Foothold--Webpages_Enum.html">Webpages Enum</a></li>
-<ol>
-<li><a href="ACTIVE--Registry--Foothold--Webpages_Enum--install_page_-_wierd_one.html">install page - wierd one</a></li>
-<li><a href="ACTIVE--Registry--Foothold--Webpages_Enum--bolt.cm.html">bolt.cm</a></li>
-</ol>
-<li><a href="ACTIVE--Registry--Foothold--Nmap_scans.html">Nmap scans</a></li>
-<li><a href="ACTIVE--Registry--Foothold--docker.registry.htb.html">docker.registry.htb</a></li>
-<ol>
-<li><a href="ACTIVE--Registry--Foothold--docker.registry.htb--blob-enum-got_rootssh_passphrase.html">blob-enum-got rootssh passphrase</a></li>
-</ol>
-</ol>
-<li><a href="ACTIVE--Registry--User.html">User</a></li>
-<ol>
-<li><a href="ACTIVE--Registry--User--enum.html">enum</a></li>
-<ol>
-<li><a href="ACTIVE--Registry--User--enum--ifconfig.html">ifconfig</a></li>
-<li><a href="ACTIVE--Registry--User--enum--bolt.db.html">bolt.db</a></li>
-<li><a href="ACTIVE--Registry--User--enum--bolt_cms.html">bolt cms</a></li>
-</ol>
-<li><a href="ACTIVE--Registry--User--make_Rest_server.html">make Rest server</a></li>
-</ol>
-<li><a href="ACTIVE--Registry--Root.html">Root</a></li>
-<ol>
-<li><a href="ACTIVE--Registry--Root--restic_solved.....html">restic solved....</a></li>
-</ol>
-</ol>
-<li><a href="ACTIVE--Monteverde.html">Monteverde</a></li>
-<ol>
-<li><a href="ACTIVE--Monteverde--foothold.html">foothold</a></li>
-<ol>
-<li><a href="ACTIVE--Monteverde--foothold--enum4linux.html">enum4linux</a></li>
-<li><a href="ACTIVE--Monteverde--foothold--nmap.html">nmap</a></li>
-<li><a href="ACTIVE--Monteverde--foothold--get-username.sh.html">get-username.sh</a></li>
-<li><a href="ACTIVE--Monteverde--foothold--rpcclient.html">rpcclient</a></li>
-</ol>
-<li><a href="ACTIVE--Monteverde--user.html">user</a></li>
-<ol>
-<li><a href="ACTIVE--Monteverde--user--azure_xml.html">azure xml</a></li>
-<li><a href="ACTIVE--Monteverde--user--smbmap_out.html">smbmap out</a></li>
-</ol>
-<li><a href="ACTIVE--Monteverde--root.html">root</a></li>
-<ol>
-<li><a href="ACTIVE--Monteverde--root--Azure.html">Azure</a></li>
-<ol>
-<li><a href="ACTIVE--Monteverde--root--Azure--AzureContextSettings.json.html">AzureContextSettings.json</a></li>
-<li><a href="ACTIVE--Monteverde--root--Azure--TokenCache.dat.html">TokenCache.dat</a></li>
-<li><a href="ACTIVE--Monteverde--root--Azure--dsquery.html">dsquery</a></li>
-</ol>
-</ol>
-</ol>
-<li><a href="ACTIVE--Nest.html">Nest</a></li>
-<ol>
-<li><a href="ACTIVE--Nest--foothold.html">foothold</a></li>
-<ol>
-<li><a href="ACTIVE--Nest--foothold--enum_-_smb.html">enum - smb</a></li>
-<ol>
-<li><a href="ACTIVE--Nest--foothold--enum_-_smb--TempUser_welcome2019.html">TempUser welcome2019</a></li>
-</ol>
-<li><a href="ACTIVE--Nest--foothold--port_4386.html">port 4386</a></li>
-</ol>
-<li><a href="ACTIVE--Nest--user.html">user</a></li>
-<li><a href="ACTIVE--Nest--root.html">root</a></li>
-</ol>
-</ol>
-<p><a href="CHALLENGES.html">CHALLENGES</a></p>
-
-<ol>
-<li><a href="CHALLENGES--Misc.html">Misc</a></li>
-<ol>
-<li><a href="CHALLENGES--Misc--Old-is-Gold.html">Old-is-Gold</a></li>
-<ol>
-<li><a href="CHALLENGES--Misc--Old-is-Gold--pdfid-output.html">pdfid-output</a></li>
-<li><a href="CHALLENGES--Misc--Old-is-Gold--pdf-parser-output.html">pdf-parser-output</a></li>
-<li><a href="CHALLENGES--Misc--Old-is-Gold--pdf2john.pl_and_crack.html">pdf2john.pl and crack</a></li>
-</ol>
-<li><a href="CHALLENGES--Misc--Art.html">Art</a></li>
-<ol>
-<li><a href="CHALLENGES--Misc--Art--base64-conversion.html">base64-conversion</a></li>
-</ol>
-<li><a href="CHALLENGES--Misc--Inferno.html">Inferno</a></li>
-<li><a href="CHALLENGES--Misc--misDIRection.html">misDIRection</a></li>
-<li><a href="CHALLENGES--Misc--Eternal_Loop.html">Eternal_Loop</a></li>
-</ol>
-<li><a href="CHALLENGES--Web.html">Web</a></li>
-<ol>
-<li><a href="CHALLENGES--Web--Cartogropher.html">Cartogropher</a></li>
-<ol>
-<li><a href="CHALLENGES--Web--Cartogropher--lfi_attempt.html">lfi attempt</a></li>
-</ol>
-<li><a href="CHALLENGES--Web--mdee_five_for_life.html">mdee five for life</a></li>
-<li><a href="CHALLENGES--Web--fuzzy.html">fuzzy</a></li>
-</ol></ol></div>
-<div class="page"><h1><b><u>linpeas.sh</u></b></h1>℣戯湩猯੨嘊剅䥓乏∽㉶㈮㤮ਢ䑁䥖体奒∽楬灮慥⁳桳畯摬戠⁥獵摥映牯愠瑵潨楲敺⁤数敮牴瑡潩⁮整瑳湩⁧湡⽤牯攠畤慣楴湯污瀠牵潰敳⁳湯祬‮湁⁹業畳敳漠⁦桴獩猠景睴牡⁥楷汬渠瑯戠⁥桴⁥敲灳湯楳楢楬祴漠⁦桴⁥畡桴牯漠⁲景愠祮漠桴牥挠汯慬潢慲潴⹲唠敳椠⁴瑡礠畯⁲睯⁮敮睴牯獫愠摮漯⁲楷桴琠敨渠瑥潷歲漠湷牥猧瀠牥業獳潩⹮ਢ⌊⌣⌣⌣⌣⌣⌣⌣⌣⌣⌣⌣⌣⌣⌣⌣⌣⌣⌣⌣⌣⌣⌊ⴭⴭⴭⴭⴭⴭⴭ⤭䌠汯牯⁳⴨ⴭⴭⴭⴭⴭⴭⴭ⌭⌊⌣⌣⌣⌣⌣⌣⌣⌣⌣⌣⌣⌣⌣⌣⌣⌣⌣⌣⌣⌣⌣ਊ㵃⠤牰湩晴✠ぜ㌳⤧刊䑅∽笤絃ㅛ㌻洱ਢ則䕅㵎␢䍻孽㬱㈳≭夊∽笤絃ㅛ㌻洳ਢ㵂␢䍻孽㬱㐳≭䰊㵇␢䍻孽㬱㜳≭⌠楌桧䝴慲੹䝄∽笤絃ㅛ㤻洰•䐣牡䝫慲੹䍎∽笤絃せ≭ਊ⌊⌣⌣⌣⌣⌣⌣⌣⌣⌣⌣⌣⌣⌣⌣⌣⌣⌣⌣⌣⌣⌣⌊ⴭⴭⴭⴭⴭⴭⴭ⤭䰠獩獴⠠ⴭⴭⴭⴭⴭⴭⴭⴭ⌭⌊⌣⌣⌣⌣⌣⌣⌣⌣⌣⌣⌣⌣⌣⌣⌣⌣⌣⌣⌣⌣⌣ਊ楦敬慮敭∽楬灮慥⹳硴⑴䅒䑎䵏ਢ敫湲汥㵂•⸳⸹尶⁼⸳⸹尰⁼⸳尹⁼⸳⸸尹⁼⸳⸸尸⁼⸳⸸尷⁼⸳⸸尶⁼⸳⸸尵⁼⸳⸸尴⁼⸳⸸尳⁼⸳⸸尲⁼⸳⸸就⁼⸳⸸尰⁼⸳尸⁼⸳⸷尶⁼⸳⸷尰⁼⸳尷⁼⸳⸶尰⁼⸳尶⁼⸳⸵尰⁼⸳尵⁼⸳⸴尹⁼⸳⸴尸⁼⸳⸴尶⁼⸳⸴尵⁼⸳⸴尴⁼⸳⸴尳⁼⸳⸴尲⁼⸳⸴就⁼⸳⸴尰⁼⸳尴⁼⸳尳⁼⸳尲⁼⸳㤱〮籜㌠ㄮ⸶尰⁼⸳㔱籜㌠ㄮ尴⁼⸳㌱ㄮ籜㌠ㄮ⸳尰⁼⸳㌱籜㌠ㄮ⸲尰⁼⸳㈱籜㌠ㄮ⸱尰⁼⸳ㄱ籜㌠ㄮ⸰尶⁼⸳〱〮籜㌠ㄮ尰⁼⸳⸱尰⁼⸳⸰尶⁼⸳⸰尵⁼⸳⸰尴⁼⸳⸰尳⁼⸳⸰尲⁼⸳⸰就⁼⸳⸰尰⁼⸲⸶尹⁼⸲⸶尸⁼⸲⸶尷⁼⸲⸶尶⁼⸲⸶尵⁼⸲⸶尴⁼⸲⸶㤳籜㈠㘮㌮尸⁼⸲⸶㜳籜㈠㘮㌮尶⁼⸲⸶㔳籜㈠㘮㌮尴⁼⸲⸶㌳籜㈠㘮㌮尲⁼⸲⸶ㄳ籜㈠㘮㌮尰⁼⸲⸶尳⁼⸲⸶㤲籜㈠㘮㈮尸⁼⸲⸶㜲籜㈠㘮㈮尶⁼⸲⸶㔲籜㈠㘮㈮⸴就⁼⸲⸶㐲籜㈠㘮㈮尳⁼⸲⸶㈲籜㈠㘮㈮就⁼⸲⸶〲籜㈠㘮㈮籜㈠㘮ㄮ尹⁼⸲⸶㠱籜㈠㘮ㄮ尷⁼⸲⸶㘱籜㈠㘮ㄮ尵⁼⸲⸶㐱籜㈠㘮ㄮ尳⁼⸲⸶㈱籜㈠㘮ㄮ就⁼⸲⸶〱籜㈠㘮ㄮ籜㈠㘮〮籜㈠㐮㤮籜㈠㐮㠮籜㈠㐮㜮籜㈠㐮㘮籜㈠㐮㔮籜㈠㐮㐮籜㈠㐮㌮尷⁼⸲⸴㘳籜㈠㐮㌮尵⁼⸲⸴㐳籜㈠㐮㌮尳⁼⸲⸴㈳籜㈠㐮㌮就⁼⸲⸴〳籜㈠㐮㈮尹⁼⸲⸴㠲籜㈠㐮㈮尷⁼⸲⸴㘲籜㈠㐮㈮尵⁼⸲⸴㐲籜㈠㐮㈮尳⁼⸲⸴㈲籜㈠㐮㈮就⁼⸲⸴〲籜㈠㐮ㄮ尹⁼⸲⸴㠱籜㈠㐮ㄮ尷⁼⸲⸴㘱籜㈠㐮ㄮ尵⁼⸲⸴㐱籜㈠㐮ㄮ尳⁼⸲⸴㈱籜㈠㐮ㄮ就⁼⸲⸴〱籜㈠㈮㈮∴權牥敮䑬坃啟畢瑮彵牐捥獩彥㴱㌢ㄮㄮㄭ〴ⴰ楬慮潲氭⵴硭尵㍼ㄮ⸱ⴰ㌱札湥牥捩籜⸳ㄱ〮ㄭⴴ敧敮楲屣㍼ㄮ⸱ⴰ㔱札湥牥捩籜⸳ㄱ〮ㄭⴷ敧敮楲屣㍼ㄮ⸱ⴰ㠱札湥牥捩籜⸳ㄱ〮㈭ⴰ敧敮楲屣㍼ㄮ⸱ⴰ㈲札湥牥捩籜⸳ㄱ〮㈭ⴳ敧敮楲屣㍼ㄮ⸱ⴰ㐲札湥牥捩籜⸳ㄱ〮㈭ⴶ敧敮楲屣㍼ㄮ⸳ⴰ〱ⴰ敧敮楲屣㍼ㄮ⸳ⴰ㐲札湥牥捩籜⸳㌱〮㈭ⴷ敧敮楲屣㍼ㄮ⸳ⴰ㤲札湥牥捩籜⸳㌱〮㌭ⴰ敧敮楲屣㍼ㄮ⸳ⴰ㈳札湥牥捩籜⸳㌱〮㌭ⴳ敧敮楲屣㍼ㄮ⸳ⴰ㐳札湥牥捩籜⸳㌱〮㌭ⴵ敧敮楲屣㍼ㄮ⸳ⴰ㘳札湥牥捩籜⸳㌱〮㌭ⴷ敧敮楲屣㍼ㄮ⸳ⴰ㤳札湥牥捩籜⸳㌱〮㐭ⴰ敧敮楲屣㍼ㄮ⸳ⴰㄴ札湥牥捩籜⸳㌱〮㐭ⴳ敧敮楲屣㍼ㄮ⸳ⴰ㐴札湥牥捩籜⸳㌱〮㐭ⴶ敧敮楲屣㍼ㄮ⸳ⴰ㠴札湥牥捩籜⸳㌱〮㐭ⴹ敧敮楲屣㍼ㄮ⸳ⴰㄵ札湥牥捩籜⸳㌱〮㔭ⴲ敧敮楲屣㍼ㄮ⸳ⴰ㌵札湥牥捩籜⸳㌱〮㔭ⴴ敧敮楲屣㍼ㄮ⸳ⴰ㔵札湥牥捩籜⸳㌱〮㔭ⴷ敧敮楲屣㍼ㄮ⸳ⴰ㠵札湥牥捩籜⸳㌱〮㔭ⴹ敧敮楲屣㍼ㄮ⸳ⴰㄶ札湥牥捩籜⸳㌱〮㘭ⴲ敧敮楲屣㍼ㄮ⸳ⴰ㌶札湥牥捩籜⸳㌱〮㘭ⴵ敧敮楲屣㍼ㄮ⸳ⴰ㘶札湥牥捩籜⸳㌱〮㘭ⴷ敧敮楲屣㍼ㄮ⸳ⴰ㠶札湥牥捩籜⸳㌱〮㜭ⴱ敧敮楲屣㍼ㄮ⸳ⴰ㌷札湥牥捩籜⸳㌱〮㜭ⴴ敧敮楲屣㍼ㄮ⸳ⴰ㘷札湥牥捩籜⸳㌱〮㜭ⴷ敧敮楲屣㍼ㄮ⸳ⴰ㤷札湥牥捩籜⸳㌱〮㠭ⴳ敧敮楲屣㍼ㄮ⸳ⴰ㔸札湥牥捩籜⸳㌱〮㠭ⴶ敧敮楲屣㍼ㄮ⸳ⴰ㠸札湥牥捩籜⸳㌱〮㤭ⴱ敧敮楲屣㍼ㄮ⸳ⴰ㈹札湥牥捩籜⸳㌱〮㤭ⴳ敧敮楲屣㍼ㄮ⸳ⴰ㔹札湥牥捩籜⸳㌱〮㤭ⴶ敧敮楲屣㍼ㄮ⸳ⴰ㠹札湥牥捩籜⸳⸲ⴰ〱ⴱ敧敮楲屣㍼㈮〮ㄭ㄰札湥牥捩瀭敡籜⸳⸲ⴰ〱ⴱ楶瑲慵屬㍼㈮〮ㄭ㈰札湥牥捩籜⸳⸲ⴰ〱ⴲ敧敮楲ⵣ慰履㍼㈮〮ㄭ㈰瘭物畴污籜⸳⸲ⴰ〱ⴴ敧敮楲屣㍼㈮〮ㄭ㐰札湥牥捩瀭敡籜⸳⸲ⴰ〱ⴴ楶瑲慵屬㍼㈮〮ㄭ㔰札湥牥捩籜⸳⸲ⴰ〱ⴵ敧敮楲ⵣ慰履㍼㈮〮ㄭ㔰瘭物畴污籜⸳⸲ⴰ〱ⴶ敧敮楲屣㍼㈮〮ㄭ㘰札湥牥捩瀭敡籜⸳⸲ⴰ〱ⴶ楶瑲慵屬㍼㈮〮ㄭ㜰札湥牥捩籜⸳⸲ⴰ〱ⴷ敧敮楲ⵣ慰履㍼㈮〮ㄭ㜰瘭物畴污籜⸳⸲ⴰ〱ⴹ敧敮楲屣㍼㈮〮ㄭ㤰札湥牥捩瀭敡籜⸳⸲ⴰ〱ⴹ楶瑲慵屬㍼㈮〮ㄭ〱札湥牥捩籜⸳⸲ⴰㄱⴰ敧敮楲ⵣ慰履㍼㈮〮ㄭ〱瘭物畴污籜⸳⸲ⴰㄱⴱ敧敮楲屣㍼㈮〮ㄭㄱ札湥牥捩瀭敡籜⸳⸲ⴰㄱⴱ楶瑲慵屬㍼㈮〮ㄭㄴⴲ浯灡尴㍼㈮〮ㄭ〶ⴲ牡慭慤灸籜⸳⸲ⴰ㌲札湥牥捩籜⸳⸲ⴰ㌲札湥牥捩瀭敡籜⸳⸲ⴰ㌲氭睯慬整据屹㍼㈮〮㈭ⴳ潬汷瑡湥祣瀭敡籜⸳⸲ⴰ㌲漭慭屰㍼㈮〮㈭ⴳ潰敷灲ⵣ浳屰㍼㈮〮㈭ⴳ潰敷灲㙣ⴴ浳屰㍼㈮〮㈭ⴳ楶瑲慵屬㍼㈮〮㈭ⴴ敧敮楲屣㍼㈮〮㈭ⴴ敧敮楲ⵣ慰履㍼㈮〮㈭ⴴ楶瑲慵屬㍼㈮〮㈭ⴵ敧敮楲屣㍼㈮〮㈭ⴵ敧敮楲ⵣ慰履㍼㈮〮㈭ⴵ楶瑲慵屬㍼㈮〮㈭ⴶ敧敮楲屣㍼㈮〮㈭ⴶ敧敮楲ⵣ慰履㍼㈮〮㈭ⴶ楶瑲慵屬㍼㈮〮㈭ⴷ敧敮楲屣㍼㈮〮㈭ⴷ敧敮楲ⵣ慰履㍼㈮〮㈭ⴷ楶瑲慵屬㍼㈮〮㈭ⴹ敧敮楲屣㍼㈮〮㈭ⴹ敧敮楲ⵣ慰履㍼㈮〮㈭ⴹ楶瑲慵屬㍼㈮〮㌭ⴱ敧敮楲屣㍼㈮〮㌭ⴱ敧敮楲ⵣ慰履㍼㈮〮㌭ⴱ楶瑲慵屬㍼㈮〮㌭ⴲ敧敮楲屣㍼㈮〮㌭ⴲ敧敮楲ⵣ慰履㍼㈮〮㌭ⴲ楶瑲慵屬㍼㈮〮㌭ⴳ敧敮楲屣㍼㈮〮㌭ⴳ敧敮楲ⵣ慰履㍼㈮〮㌭ⴳ潬汷瑡湥祣籜⸳⸲ⴰ㌳氭睯慬整据⵹慰履㍼㈮〮㌭ⴳ楶瑲慵屬㍼㈮〮㌭ⴴ敧敮楲屣㍼㈮〮㌭ⴴ敧敮楲ⵣ慰履㍼㈮〮㌭ⴴ楶瑲慵屬㍼㈮〮㌭ⴵ敧敮楲屣㍼㈮〮㌭ⴵ敧敮楲ⵣ慰履㍼㈮〮㌭ⴵ潬汷瑡湥祣籜⸳⸲ⴰ㔳氭睯慬整据⵹慰履㍼㈮〮㌭ⴵ楶瑲慵屬㍼㈮〮㌭ⴶ敧敮楲屣㍼㈮〮㌭ⴶ敧敮楲ⵣ慰履㍼㈮〮㌭ⴶ潬汷瑡湥祣籜⸳⸲ⴰ㘳氭睯慬整据⵹慰履㍼㈮〮㌭ⴶ楶瑲慵屬㍼㈮〮㌭ⴷ敧敮楲屣㍼㈮〮㌭ⴷ敧敮楲ⵣ慰履㍼㈮〮㌭ⴷ潬汷瑡湥祣籜⸳⸲ⴰ㜳氭睯慬整据⵹慰履㍼㈮〮㌭ⴷ楶瑲慵屬㍼㈮〮㌭ⴸ敧敮楲屣㍼㈮〮㌭ⴸ敧敮楲ⵣ慰履㍼㈮〮㌭ⴸ潬汷瑡湥祣籜⸳⸲ⴰ㠳氭睯慬整据⵹慰履㍼㈮〮㌭ⴸ楶瑲慵屬㍼㈮〮㌭ⴹ敧敮楲屣㍼㈮〮㌭ⴹ敧敮楲ⵣ慰履㍼㈮〮㌭ⴹ潬汷瑡湥祣籜⸳⸲ⴰ㤳氭睯慬整据⵹慰履㍼㈮〮㌭ⴹ楶瑲慵屬㍼㈮〮㐭ⴰ敧敮楲屣㍼㈮〮㐭ⴰ敧敮楲ⵣ慰履㍼㈮〮㐭ⴰ潬汷瑡湥祣籜⸳⸲ⴰ〴氭睯慬整据⵹慰履㍼㈮〮㐭ⴰ楶瑲慵屬㍼㈮〮㐭ⴱ敧敮楲屣㍼㈮〮㐭ⴱ敧敮楲ⵣ慰履㍼㈮〮㐭ⴱ潬汷瑡湥祣籜⸳⸲ⴰㄴ氭睯慬整据⵹慰履㍼㈮〮㐭ⴱ楶瑲慵屬㍼㈮〮㐭ⴳ敧敮楲屣㍼㈮〮㐭ⴳ敧敮楲ⵣ慰履㍼㈮〮㐭ⴳ楶瑲慵屬㍼㈮〮㐭ⴴ敧敮楲屣㍼㈮〮㐭ⴴ敧敮楲ⵣ慰履㍼㈮〮㐭ⴴ潬汷瑡湥祣籜⸳⸲ⴰ㐴氭睯慬整据⵹慰履㍼㈮〮㐭ⴴ楶瑲慵屬㍼㈮〮㐭ⴵ敧敮楲屣㍼㈮〮㐭ⴵ敧敮楲ⵣ慰履㍼㈮〮㐭ⴵ楶瑲慵屬㍼㈮〮㐭ⴸ敧敮楲屣㍼㈮〮㐭ⴸ敧敮楲ⵣ慰履㍼㈮〮㐭ⴸ潬汷瑡湥祣籜⸳⸲ⴰ㠴氭睯慬整据⵹慰履㍼㈮〮㐭ⴸ楶瑲慵屬㍼㈮〮㔭ⴱ敧敮楲屣㍼㈮〮㔭ⴱ敧敮楲ⵣ慰履㍼㈮〮㔭ⴱ潬汷瑡湥祣籜⸳⸲ⴰㄵ氭睯慬整据⵹慰履㍼㈮〮㔭ⴱ楶瑲慵屬㍼㈮〮㔭ⴲ敧敮楲屣㍼㈮〮㔭ⴲ敧敮楲ⵣ慰履㍼㈮〮㔭ⴲ潬汷瑡湥祣籜⸳⸲ⴰ㈵氭睯慬整据⵹慰履㍼㈮〮㔭ⴲ楶瑲慵屬㍼㈮〮㔭ⴳ敧敮楲≣權牥敮䑬坃啟畢瑮彵牐捥獩彥㴲㌢㈮〮㔭ⴳ敧敮楲ⵣ慰履㍼㈮〮㔭ⴳ潬汷瑡湥祣籜⸳⸲ⴰ㌵氭睯慬整据⵹慰履㍼㈮〮㔭ⴳ楶瑲慵屬㍼㈮〮㔭ⴴ敧敮楲屣㍼㈮〮㔭ⴴ敧敮楲ⵣ慰履㍼㈮〮㔭ⴴ潬汷瑡湥祣籜⸳⸲ⴰ㐵氭睯慬整据⵹慰履㍼㈮〮㔭ⴴ楶瑲慵屬㍼㈮〮㔭ⴵ敧敮楲屣㍼㈮〮㔭ⴵ敧敮楲ⵣ慰履㍼㈮〮㔭ⴵ潬汷瑡湥祣籜⸳⸲ⴰ㔵氭睯慬整据⵹慰履㍼㈮〮㔭ⴵ楶瑲慵屬㍼㈮〮㔭ⴶ敧敮楲屣㍼㈮〮㔭ⴶ敧敮楲ⵣ慰履㍼㈮〮㔭ⴶ潬汷瑡湥祣籜⸳⸲ⴰ㘵氭睯慬整据⵹慰履㍼㈮〮㔭ⴶ楶瑲慵屬㍼㈮〮㔭ⴷ敧敮楲屣㍼㈮〮㔭ⴷ敧敮楲ⵣ慰履㍼㈮〮㔭ⴷ潬汷瑡湥祣籜⸳⸲ⴰ㜵氭睯慬整据⵹慰履㍼㈮〮㔭ⴷ楶瑲慵屬㍼㈮〮㔭ⴸ敧敮楲屣㍼㈮〮㔭ⴸ敧敮楲ⵣ慰履㍼㈮〮㔭ⴸ潬汷瑡湥祣籜⸳⸲ⴰ㠵氭睯慬整据⵹慰履㍼㈮〮㔭ⴸ楶瑲慵屬㍼㈮〮㔭ⴹ敧敮楲屣㍼㈮〮㔭ⴹ敧敮楲ⵣ慰履㍼㈮〮㔭ⴹ潬汷瑡湥祣籜⸳⸲ⴰ㤵氭睯慬整据⵹慰履㍼㈮〮㔭ⴹ楶瑲慵屬㍼㈮〮㘭ⴰ敧敮楲屣㍼㈮〮㘭ⴰ敧敮楲ⵣ慰履㍼㈮〮㘭ⴰ潬汷瑡湥祣籜⸳⸲ⴰ〶氭睯慬整据⵹慰履㍼㈮〮㘭ⴰ楶瑲慵屬㍼㈮〮㘭ⴱ敧敮楲屣㍼㈮〮㘭ⴱ敧敮楲ⵣ慰履㍼㈮〮㘭ⴱ楶瑲慵屬㍼㈮〮㘭ⴳ敧敮楲屣㍼㈮〮㘭ⴳ敧敮楲ⵣ慰履㍼㈮〮㘭ⴳ潬汷瑡湥祣籜⸳⸲ⴰ㌶氭睯慬整据⵹慰履㍼㈮〮㘭ⴳ楶瑲慵屬㍼㈮〮㘭ⴴ敧敮楲屣㍼㈮〮㘭ⴴ敧敮楲ⵣ慰履㍼㈮〮㘭ⴴ潬汷瑡湥祣籜⸳⸲ⴰ㐶氭睯慬整据⵹慰履㍼㈮〮㘭ⴴ楶瑲慵屬㍼㈮〮㘭ⴵ敧敮楲屣㍼㈮〮㘭ⴵ敧敮楲ⵣ慰履㍼㈮〮㘭ⴵ潬汷瑡湥祣籜⸳⸲ⴰ㔶氭睯慬整据⵹慰履㍼㈮〮㘭ⴵ楶瑲慵屬㍼㈮〮㘭ⴷ敧敮楲屣㍼㈮〮㘭ⴷ敧敮楲ⵣ慰履㍼㈮〮㘭ⴷ潬汷瑡湥祣籜⸳⸲ⴰ㜶氭睯慬整据⵹慰履㍼㈮〮㘭ⴷ楶瑲慵屬㍼㈮〮㘭ⴸ敧敮楲屣㍼㈮〮㘭ⴸ敧敮楲ⵣ慰履㍼㈮〮㘭ⴸ潬汷瑡湥祣籜⸳⸲ⴰ㠶氭睯慬整据⵹慰履㍼㈮〮㘭ⴸ楶瑲慵屬㍼㈮〮㘭ⴹ敧敮楲屣㍼㈮〮㘭ⴹ敧敮楲ⵣ慰履㍼㈮〮㘭ⴹ潬汷瑡湥祣籜⸳⸲ⴰ㤶氭睯慬整据⵹慰履㍼㈮〮㘭ⴹ楶瑲慵屬㍼㈮〮㜭ⴰ敧敮楲屣㍼㈮〮㜭ⴰ敧敮楲ⵣ慰履㍼㈮〮㜭ⴰ潬汷瑡湥祣籜⸳⸲ⴰ〷氭睯慬整据⵹慰履㍼㈮〮㜭ⴰ楶瑲慵屬㍼㈮〮㜭ⴲ敧敮楲屣㍼㈮〮㜭ⴲ敧敮楲ⵣ慰履㍼㈮〮㜭ⴲ潬汷瑡湥祣籜⸳⸲ⴰ㈷氭睯慬整据⵹慰履㍼㈮〮㜭ⴲ楶瑲慵屬㍼㈮〮㜭ⴳ敧敮楲屣㍼㈮〮㜭ⴳ敧敮楲ⵣ慰履㍼㈮〮㜭ⴳ潬汷瑡湥祣籜⸳⸲ⴰ㌷氭睯慬整据⵹慰履㍼㈮〮㜭ⴳ楶瑲慵屬㍼㈮〮㜭ⴴ敧敮楲屣㍼㈮〮㜭ⴴ敧敮楲ⵣ慰履㍼㈮〮㜭ⴴ潬汷瑡湥祣籜⸳⸲ⴰ㐷氭睯慬整据⵹慰履㍼㈮〮㜭ⴴ楶瑲慵屬㍼㈮〮㜭ⴵ敧敮楲屣㍼㈮〮㜭ⴵ敧敮楲ⵣ慰履㍼㈮〮㜭ⴵ潬汷瑡湥祣籜⸳⸲ⴰ㔷氭睯慬整据⵹慰履㍼㈮〮㜭ⴵ楶瑲慵屬㍼㈮〮㜭ⴶ敧敮楲屣㍼㈮〮㜭ⴶ敧敮楲ⵣ慰履㍼㈮〮㜭ⴶ潬汷瑡湥祣籜⸳⸲ⴰ㘷氭睯慬整据⵹慰履㍼㈮〮㜭ⴶ楶瑲慵屬㍼㈮〮㜭ⴷ敧敮楲屣㍼㈮〮㜭ⴷ敧敮楲ⵣ慰履㍼㈮〮㜭ⴷ潬汷瑡湥祣籜⸳⸲ⴰ㜷氭睯慬整据⵹慰履㍼㈮〮㜭ⴷ楶瑲慵屬㍼㈮〮㜭ⴹ敧敮楲屣㍼㈮〮㜭ⴹ敧敮楲ⵣ慰履㍼㈮〮㜭ⴹ潬汷瑡湥祣籜⸳⸲ⴰ㤷氭睯慬整据⵹慰履㍼㈮〮㜭ⴹ楶瑲慵屬㍼㈮〮㠭ⴰ敧敮楲屣㍼㈮〮㠭ⴰ敧敮楲ⵣ慰履㍼㈮〮㠭ⴰ潬汷瑡湥祣籜⸳⸲ⴰ〸氭睯慬整据⵹慰履㍼㈮〮㠭ⴰ楶瑲慵屬㍼㈮〮㠭ⴲ敧敮楲屣㍼㈮〮㠭ⴲ敧敮楲ⵣ慰履㍼㈮〮㠭ⴲ潬汷瑡湥祣籜⸳⸲ⴰ㈸氭睯慬整据⵹慰履㍼㈮〮㠭ⴲ楶瑲慵屬㍼㈮〮㠭ⴳ敧敮楲屣㍼㈮〮㠭ⴳ敧敮楲ⵣ慰履㍼㈮〮㠭ⴳ楶瑲慵屬㍼㈮〮㠭ⴴ敧敮楲屣㍼㈮〮㠭ⴴ敧敮楲ⵣ慰履㍼㈮〮㠭ⴴ楶瑲慵屬㍼㈮〮㠭ⴵ敧敮楲屣㍼㈮〮㠭ⴵ敧敮楲ⵣ慰履㍼㈮〮㠭ⴵ楶瑲慵屬㍼㈮〮㠭ⴶ敧敮楲屣㍼㈮〮㠭ⴶ敧敮楲ⵣ慰履㍼㈮〮㠭ⴶ楶瑲慵屬㍼㈮〮㠭ⴷ敧敮楲屣㍼㈮〮㠭ⴷ敧敮楲ⵣ慰履㍼㈮〮㠭ⴷ楶瑲慵屬㍼㈮〮㠭ⴸ敧敮楲屣㍼㈮〮㠭ⴸ敧敮楲ⵣ慰履㍼㈮〮㠭ⴸ楶瑲慵屬㍼㈮〮㠭ⴹ敧敮楲屣㍼㈮〮㠭ⴹ敧敮楲ⵣ慰履㍼㈮〮㠭ⴹ楶瑲慵屬㍼㈮〮㤭ⴰ敧敮楲屣㍼㈮〮㤭ⴰ敧敮楲ⵣ慰履㍼㈮〮㤭ⴰ楶瑲慵屬㍼㈮〮㤭ⴱ敧敮楲屣㍼㈮〮㤭ⴱ敧敮楲ⵣ慰履㍼㈮〮㤭ⴱ楶瑲慵屬㍼㈮〮㤭ⴲ敧敮楲屣㍼㈮〮㤭ⴲ敧敮楲ⵣ慰履㍼㈮〮㤭ⴲ楶瑲慵屬㍼㈮〮㤭ⴳ敧敮楲屣㍼㈮〮㤭ⴳ敧敮楲ⵣ慰履㍼㈮〮㤭ⴳ楶瑲慵屬㍼㈮〮㤭ⴴ敧敮楲屣㍼㈮〮㤭ⴴ敧敮楲ⵣ慰履㍼㈮〮㤭ⴴ楶瑲慵屬㍼㈮〮㤭ⴵ敧敮楲屣㍼㈮〮㤭ⴵ敧敮楲ⵣ慰履㍼㈮〮㤭ⴵ楶瑲慵屬㍼㈮〮㤭ⴶ敧敮楲屣㍼㈮〮㤭ⴶ敧敮楲ⵣ慰履㍼㈮〮㤭ⴶ楶瑲慵屬㍼㈮〮㤭ⴷ敧敮楲屣㍼㈮〮㤭ⴷ敧敮楲ⵣ慰履㍼㈮〮㤭ⴷ楶瑲慵屬㍼㈮〮㤭ⴸ敧敮楲屣㍼㈮〮㤭ⴸ敧敮楲ⵣ慰履㍼㈮〮㤭ⴸ楶瑲慵屬㍼㈮〮㤭ⴹ敧敮楲屣㍼㈮〮㤭ⴹ敧敮楲ⵣ慰履㍼㈮〮㤭ⴹ楶瑲慵屬㍼㔮〮㐭ⴰ敧敮楲屣㍼㔮〮㐭ⴱ敧敮楲屣㍼㔮〮㐭ⴲ敧敮楲屣㍼㔮〮㐭ⴳ敧敮楲屣㍼㔮〮㐭ⴴ敧敮楲屣㍼㔮〮㐭ⴵ敧敮楲屣㍼㔮〮㐭ⴶ敧敮楲屣㍼㔮〮㐭ⴹ敧敮楲屣㍼㔮〮㔭ⴱ敧敮楲屣㍼㔮〮㔭ⴲ敧敮楲屣㍼㔮〮㔭ⴴ敧敮楲屣㍼㠮〮ㄭⴹ敧敮楲屣㍼㠮〮㈭ⴱ敧敮楲屣㍼㠮〮㈭ⴲ敧敮楲屣㍼㠮〮㈭ⴳ敧敮楲屣㍼㠮〮㈭ⴷ敧敮楲屣㍼㠮〮㈭ⴹ敧敮楲屣㍼㠮〮㌭ⴰ敧敮楲屣㍼㠮〮㌭ⴱ敧敮楲屣㍼㠮〮㌭ⴲ敧敮楲屣㍼㠮〮㌭ⴳ敧敮楲屣㍼㠮〮㌭ⴴ敧敮楲屣㍼㠮〮㌭ⴵ敧敮楲屣㍼㠮〮㌭ⴶ敧敮楲屣㍼㠮〮㌭ⴷ敧敮楲屣㍼㠮〮㌭ⴸ敧敮楲屣㍼㠮〮㌭ⴹ敧敮楲屣㍼㠮〮㐭ⴱ敧敮楲屣㍼㠮〮㐭ⴲ敧敮楲≣權牥敮䑬坃啟畢瑮彵牔獵祴ㅟ∽⸳㌱〮㈭ⴴ敧敮楲屣㍼ㄮ⸳ⴰ㐲札湥牥捩氭慰履㍼ㄮ⸳ⴰ㐲氭睯慬整据屹㍼ㄮ⸳ⴰ㐲瀭睯牥捰攭〵尰㍼ㄮ⸳ⴰ㐲瀭睯牥捰攭〵洰屣㍼ㄮ⸳ⴰ㐲瀭睯牥捰猭灭籜⸳㌱〮㈭ⴴ潰敷灲㙣ⴴ浥屢㍼ㄮ⸳ⴰ㐲瀭睯牥捰㐶猭灭籜⸳㌱〮㈭ⴷ敧敮楲屣㍼ㄮ⸳ⴰ㜲氭睯慬整据屹㍼ㄮ⸳ⴰ㤲札湥牥捩籜⸳㌱〮㈭ⴹ潬汷瑡湥祣籜⸳㌱〮㌭攭祸潮㕳籜⸳㌱〮㌭ⴰ敧敮楲屣㍼ㄮ⸳ⴰ〳氭睯慬整据屹㍼ㄮ⸳ⴰ㈳札湥牥捩籜⸳㌱〮㌭ⴲ潬汷瑡湥祣籜⸳㌱〮㌭ⴳ敧敮楲屣㍼ㄮ⸳ⴰ㌳氭睯慬整据屹㍼ㄮ⸳ⴰ㐳札湥牥捩籜⸳㌱〮㌭ⴴ潬汷瑡湥祣籜⸳㌱〮㌭ⴵ敧敮楲屣㍼ㄮ⸳ⴰ㔳氭睯慬整据屹㍼ㄮ⸳ⴰ㘳札湥牥捩籜⸳㌱〮㌭ⴶ潬汷瑡湥祣籜⸳㌱〮㌭ⴷ敧敮楲屣㍼ㄮ⸳ⴰ㜳氭睯慬整据屹㍼ㄮ⸳ⴰ㤳札湥牥捩籜⸳㌱〮㌭ⴹ潬汷瑡湥祣籜⸳㌱〮㐭ⴰ敧敮楲屣㍼ㄮ⸳ⴰ〴氭睯慬整据屹㍼ㄮ⸳ⴰㄴ札湥牥捩籜⸳㌱〮㐭ⴱ潬汷瑡湥祣籜⸳㌱〮㐭ⴳ敧敮楲屣㍼ㄮ⸳ⴰ㌴氭睯慬整据屹㍼ㄮ⸳ⴰ㐴札湥牥捩籜⸳㌱〮㐭ⴴ潬汷瑡湥祣籜⸳㌱〮㐭ⴶ敧敮楲屣㍼ㄮ⸳ⴰ㘴氭睯慬整据屹㍼ㄮ⸳ⴰ㠴札湥牥捩籜⸳㌱〮㐭ⴸ潬汷瑡湥祣籜⸳㌱〮㐭ⴹ敧敮楲屣㍼ㄮ⸳ⴰ㤴氭睯慬整据屹㍼ㄮ⸳ⴰㄵ札湥牥捩籜⸳㌱〮㔭ⴱ潬汷瑡湥祣籜⸳㌱〮㔭ⴲ敧敮楲屣㍼ㄮ⸳ⴰ㈵氭睯慬整据屹㍼ㄮ⸳ⴰ㌵札湥牥捩籜⸳㌱〮㔭ⴳ潬汷瑡湥祣籜⸳㌱〮㔭ⴴ敧敮楲屣㍼ㄮ⸳ⴰ㐵氭睯慬整据屹㍼ㄮ⸳ⴰ㔵札湥牥捩籜⸳㌱〮㔭ⴵ潬汷瑡湥祣籜⸳㌱〮㔭ⴷ敧敮楲屣㍼ㄮ⸳ⴰ㜵氭睯慬整据屹㍼ㄮ⸳ⴰ㠵札湥牥捩籜⸳㌱〮㔭ⴸ潬汷瑡湥祣籜⸳㌱〮㔭ⴹ敧敮楲屣㍼ㄮ⸳ⴰ㤵氭睯慬整据屹㍼ㄮ⸳ⴰㄶ札湥牥捩籜⸳㌱〮㘭ⴱ潬汷瑡湥祣籜⸳㌱〮㘭ⴲ敧敮楲屣㍼ㄮ⸳ⴰ㈶氭睯慬整据屹㍼ㄮ⸳ⴰ㌶札湥牥捩籜⸳㌱〮㘭ⴳ潬汷瑡湥祣籜⸳㌱〮㘭ⴵ敧敮楲屣㍼ㄮ⸳ⴰ㔶氭睯慬整据屹㍼ㄮ⸳ⴰ㘶札湥牥捩籜⸳㌱〮㘭ⴶ潬汷瑡湥祣籜⸳㌱〮㘭ⴷ敧敮楲屣㍼ㄮ⸳ⴰ㜶氭睯慬整据屹㍼ㄮ⸳ⴰ㠶札湥牥捩籜⸳㌱〮㘭ⴸ潬汷瑡湥祣籜⸳㌱〮㜭ⴰ敧敮楲屣㍼ㄮ⸳ⴰ〷氭睯慬整据屹㍼ㄮ⸳ⴰㄷ札湥牥捩籜⸳㌱〮㜭ⴱ潬汷瑡湥祣籜⸳㌱〮㜭ⴳ敧敮楲屣㍼ㄮ⸳ⴰ㌷氭睯慬整据屹㍼ㄮ⸳ⴰ㐷札湥牥捩籜⸳㌱〮㜭ⴴ潬汷瑡湥祣籜⸳㌱〮㜭ⴶ敧敮楲屣㍼ㄮ⸳ⴰ㘷氭睯慬整据屹㍼ㄮ⸳ⴰ㜷札湥牥捩籜⸳㌱〮㜭ⴷ潬汷瑡湥祣籜⸳㌱〮㜭ⴹ敧敮楲屣㍼ㄮ⸳ⴰ㤷氭睯慬整据屹㍼ㄮ⸳ⴰ㌸札湥牥捩籜⸳㌱〮㠭ⴳ潬汷瑡湥祣籜⸳㌱〮㠭ⴵ敧敮楲屣㍼ㄮ⸳ⴰ㔸氭睯慬整据屹㍼ㄮ⸳ⴰ㘸札湥牥捩籜⸳㌱〮㠭ⴶ潬汷瑡湥祣籜⸳㌱〮㠭ⴷ敧敮楲屣㍼ㄮ⸳ⴰ㜸氭睯慬整据屹㍼ㄮ⸳ⴰ㠸札湥牥捩籜⸳㌱〮㠭ⴸ潬汷瑡湥祣籜⸳㌱〮㤭ⴱ敧敮楲屣㍼ㄮ⸳ⴰㄹ氭睯慬整据屹㍼ㄮ⸳ⴰ㈹札湥牥捩籜⸳㌱〮㤭ⴲ潬汷瑡湥祣籜⸳㌱〮㤭ⴳ敧敮楲屣㍼ㄮ⸳ⴰ㌹氭睯慬整据屹㍼ㄮ⸳ⴰ㔹札湥牥捩籜⸳㌱〮㤭ⴵ潬汷瑡湥祣籜⸳㌱〮㤭ⴶ敧敮楲屣㍼ㄮ⸳ⴰ㘹氭睯慬整据屹㍼ㄮ⸳ⴰ㠹札湥牥捩籜⸳㌱〮㤭ⴸ潬汷瑡湥祣籜⸳㘱〮㈭ⴵ敧敮楲屣㍼ㄮ⸶ⴰ㔲氭睯慬整据屹㍼ㄮ⸶ⴰ㘲札湥牥捩籜⸳㘱〮㈭ⴶ潬汷瑡湥祣籜⸳㘱〮㈭ⴸ敧敮楲屣㍼ㄮ⸶ⴰ㠲氭睯慬整据屹㍼ㄮ⸶ⴰ㤲札湥牥捩籜⸳㘱〮㈭ⴹ潬汷瑡湥祣籜⸳㘱〮㌭ⴱ敧敮楲屣㍼ㄮ⸶ⴰㄳ氭睯慬整据屹㍼ㄮ⸶ⴰ㌳札湥牥捩籜⸳㘱〮㌭ⴳ潬汷瑡湥祣籜⸳㘱〮㌭ⴴ敧敮楲屣㍼ㄮ⸶ⴰ㐳氭睯慬整据屹㍼ㄮ⸶ⴰ㘳札湥牥捩籜⸳㘱〮㌭ⴶ潬汷瑡湥祣籜⸳㘱〮㌭ⴷ敧敮楲屣㍼ㄮ⸶ⴰ㜳氭睯慬整据屹㍼ㄮ⸶ⴰ㠳札湥牥捩籜⸳㘱〮㌭ⴸ潬汷瑡湥祣籜⸳㘱〮㌭ⴹ敧敮楲屣㍼ㄮ⸶ⴰ㤳氭睯慬整据屹㍼ㄮ⸶ⴰㄴ札湥牥捩籜⸳㘱〮㐭ⴱ潬汷瑡湥祣籜⸳㘱〮㐭ⴳ敧敮楲屣㍼ㄮ⸶ⴰ㌴氭睯慬整据屹㍼ㄮ⸶ⴰ㐴札湥牥捩籜⸳㘱〮㐭ⴴ潬汷瑡湥祣籜⸳㘱〮㐭ⴵ敧敮楲≣權牥敮䑬坃啟畢瑮彵牔獵祴㉟∽⸳㘱〮㐭ⴵ潬汷瑡湥祣籜⸳㘱〮㐭ⴶ敧敮楲屣㍼ㄮ⸶ⴰ㘴氭睯慬整据屹㍼ㄮ⸶ⴰ㠴札湥牥捩籜⸳㘱〮㐭ⴸ潬汷瑡湥祣籜⸳㘱〮㐭ⴹ敧敮楲屣㍼ㄮ⸶ⴰ㤴氭睯慬整据屹㍼ㄮ⸶ⴰ〵札湥牥捩籜⸳㘱〮㔭ⴰ潬汷瑡湥祣籜⸳㘱〮㔭ⴱ敧敮楲屣㍼ㄮ⸶ⴰㄵ氭睯慬整据屹㍼ㄮ⸶ⴰ㈵札湥牥捩籜⸳㘱〮㔭ⴲ潬汷瑡湥祣籜⸳㘱〮㔭ⴳ敧敮楲屣㍼ㄮ⸶ⴰ㌵氭睯慬整据屹㍼ㄮ⸶ⴰ㔵札湥牥捩籜⸳㘱〮㔭ⴵ潬汷瑡湥祣籜⸳㘱〮㔭ⴶ敧敮楲屣㍼ㄮ⸶ⴰ㘵氭睯慬整据屹㍼ㄮ⸶ⴰ㜵札湥牥捩籜⸳㘱〮㔭ⴷ潬汷瑡湥祣籜⸳㘱〮㔭ⴹ敧敮楲屣㍼ㄮ⸶ⴰ㤵氭睯慬整据屹㍼ㄮ⸶ⴰ〶札湥牥捩籜⸳㘱〮㘭ⴰ潬汷瑡湥祣籜⸳㘱〮㘭ⴲ敧敮楲屣㍼ㄮ⸶ⴰ㈶氭睯慬整据屹㍼ㄮ⸶ⴰ㜶札湥牥捩籜⸳㘱〮㘭ⴷ潬汷瑡湥祣籜⸳㘱〮㘭ⴹ敧敮楲屣㍼ㄮ⸶ⴰ㤶氭睯慬整据屹㍼ㄮ⸶ⴰ〷札湥牥捩籜⸳㘱〮㜭ⴰ潬汷瑡湥祣籜⸳㘱〮㜭ⴱ敧敮楲屣㍼ㄮ⸶ⴰㄷ氭睯慬整据屹㍼ㄮ⸶ⴰ㌷札湥牥捩籜⸳㘱〮㜭ⴳ潬汷瑡湥祣籜⸳㘱〮㜭ⴶ敧敮楲屣㍼ㄮ⸶ⴰ㘷氭睯慬整据屹㍼ㄮ⸶ⴰ㜷札湥牥捩籜⸳㘱〮㜭ⴷ潬汷瑡湥祣籜⸳㤱〮㈭ⴰ敧敮楲屣㍼ㄮ⸹ⴰ〲氭睯慬整据屹㍼ㄮ⸹ⴰㄲ札湥牥捩籜⸳㤱〮㈭ⴱ潬汷瑡湥祣籜⸳㤱〮㈭ⴲ敧敮楲屣㍼ㄮ⸹ⴰ㈲氭睯慬整据屹㍼ㄮ⸹ⴰ㌲札湥牥捩籜⸳㤱〮㈭ⴳ潬汷瑡湥祣籜⸳㤱〮㈭ⴵ敧敮楲屣㍼ㄮ⸹ⴰ㔲氭睯慬整据屹㍼ㄮ⸹ⴰ㘲札湥牥捩籜⸳㤱〮㈭ⴶ潬汷瑡湥祣籜⸳㤱〮㈭ⴸ敧敮楲屣㍼ㄮ⸹ⴰ㠲氭睯慬整据屹㍼ㄮ⸹ⴰ〳札湥牥捩籜⸳㤱〮㌭ⴰ潬汷瑡湥祣籜⸳㤱〮㌭ⴱ敧敮楲屣㍼ㄮ⸹ⴰㄳ氭睯慬整据屹㍼ㄮ⸹ⴰ㈳札湥牥捩籜⸳㤱〮㌭ⴲ潬汷瑡湥祣籜⸳㤱〮㌭ⴳ敧敮楲屣㍼ㄮ⸹ⴰ㌳氭睯慬整据屹㍼ㄮ⸹ⴰ㜳札湥牥捩籜⸳㤱〮㌭ⴷ潬汷瑡湥祣籜⸳㤱〮㌭ⴹ敧敮楲屣㍼ㄮ⸹ⴰ㤳氭睯慬整据屹㍼ㄮ⸹ⴰㄴ札湥牥捩籜⸳㤱〮㐭ⴱ潬汷瑡湥祣籜⸳㤱〮㐭ⴲ敧敮楲屣㍼ㄮ⸹ⴰ㈴氭睯慬整据屹㍼ㄮ⸹ⴰ㌴札湥牥捩籜⸳㤱〮㐭ⴳ潬汷瑡湥祣籜⸳㤱〮㐭ⴷ敧敮楲屣㍼ㄮ⸹ⴰ㜴氭睯慬整据屹㍼ㄮ⸹ⴰ㤴札湥牥捩籜⸳㤱〮㐭ⴹ潬汷瑡湥祣籜⸳㤱〮㔭ⴱ敧敮楲屣㍼ㄮ⸹ⴰㄵ氭睯慬整据屹㍼ㄮ⸹ⴰ㘵札湥牥捩籜⸳㤱〮㔭ⴶ潬汷瑡湥祣籜⸳㤱〮㔭ⴸ敧敮楲屣㍼ㄮ⸹ⴰ㠵氭睯慬整据屹㍼ㄮ⸹ⴰ㤵札湥牥捩籜⸳㤱〮㔭ⴹ潬汷瑡湥祣籜⸳㤱〮㘭ⴱ敧敮楲屣㍼ㄮ⸹ⴰㄶ氭睯慬整据屹㍼ㄮ⸹ⴰ㐶札湥牥捩籜⸳㤱〮㘭ⴴ潬汷瑡湥祣籜⸳㤱〮㘭ⴵ敧敮楲屣㍼ㄮ⸹ⴰ㔶氭睯慬整据屹㍼ㄮ⸹ⴰ㘶札湥牥捩籜⸳㤱〮㘭ⴶ潬汷瑡湥祣籜⸳㤱〮㘭ⴸ敧敮楲屣㍼ㄮ⸹ⴰ㠶氭睯慬整据屹㍼ㄮ⸹ⴰ㤶札湥牥捩籜⸳㤱〮㘭ⴹ潬汷瑡湥祣籜⸳㤱〮㜭ⴱ敧敮楲屣㍼ㄮ⸹ⴰㄷ氭睯慬整据屹㍼㐮〮㔭挭牨浯扥潯屫㑼㈮〮ㄭⴸ敧敮楲屣㑼㈮〮ㄭⴸ潬汷瑡湥祣籜⸴⸲ⴰ㤱札湥牥捩籜⸴⸲ⴰ㤱氭睯慬整据屹㑼㈮〮㈭ⴱ敧敮楲屣㑼㈮〮㈭ⴱ潬汷瑡湥祣籜⸴⸲ⴰ㈲札湥牥捩籜⸴⸲ⴰ㈲氭睯慬整据屹㑼㈮〮㈭ⴳ敧敮楲屣㑼㈮〮㈭ⴳ潬汷瑡湥祣籜⸴⸲ⴰ㔲札湥牥捩籜⸴⸲ⴰ㔲氭睯慬整据屹㑼㈮〮㈭ⴷ敧敮楲屣㑼㈮〮㈭ⴷ潬汷瑡湥祣籜⸴⸲ⴰ〳札湥牥捩籜⸴⸲ⴰ〳氭睯慬整据屹㑼㈮〮㌭ⴴ敧敮楲屣㑼㈮〮㌭ⴴ潬汷瑡湥祣籜⸴⸲ⴰ㔳札湥牥捩籜⸴⸲ⴰ㔳氭睯慬整据屹㑼㈮〮㌭ⴶ敧敮楲屣㑼㈮〮㌭ⴶ潬汷瑡湥祣籜⸴⸲ⴰ㠳札湥牥捩籜⸴⸲ⴰ㠳氭睯慬整据屹㑼㈮〮㐭ⴱ敧敮楲屣㑼㈮〮㐭ⴱ潬汷瑡湥祣籜⸴⸴ⴰㄲ札湥牥捩籜⸴⸴ⴰㄲ氭睯慬整据屹㑼㐮〮㈭ⴲ敧敮楲屣㑼㐮〮㈭ⴲ潬汷瑡湥祣籜⸴⸴ⴰ㐲札湥牥捩籜⸴⸴ⴰ㐲氭睯慬整据屹㑼㐮〮㈭ⴸ敧敮楲屣㑼㐮〮㈭ⴸ潬汷瑡湥祣籜⸴⸴ⴰㄳ札湥牥捩籜⸴⸴ⴰㄳ氭睯慬整据屹㑼㐮〮㌭ⴴ敧敮楲屣㑼㐮〮㌭ⴴ潬汷瑡湥祣籜⸴⸴ⴰ㘳札湥牥捩籜⸴⸴ⴰ㘳氭睯慬整据屹㑼㐮〮㌭ⴸ敧敮楲屣㑼㐮〮㌭ⴸ潬汷瑡湥祣籜⸴⸴ⴰ㈴札湥牥捩籜⸴⸴ⴰ㈴氭睯慬整据≹權牥敮䑬坃啟畢瑮彵敘楮污∽⸴⸴ⴰ〱㤰爭獡楰尲㑼㐮〮ㄭ㄰ⴲ湳灡牤条湯籜⸴⸴ⴰㄲ札湥牥捩籜⸴⸴ⴰㄲ札湥牥捩氭慰履㑼㐮〮㈭ⴱ潬汷瑡湥祣籜⸴⸴ⴰㄲ瀭睯牥捰攭〵洰屣㑼㐮〮㈭ⴱ潰敷灲ⵣ浳屰㑼㐮〮㈭ⴱ潰敷灲㙣ⴴ浥屢㑼㐮〮㈭ⴱ潰敷灲㙣ⴴ浳屰㑼㐮〮㈭ⴲ敧敮楲屣㑼㐮〮㈭ⴲ潬汷瑡湥祣籜⸴⸴ⴰ㐲札湥牥捩籜⸴⸴ⴰ㐲氭睯慬整据屹㑼㐮〮㈭ⴸ敧敮楲屣㑼㐮〮㈭ⴸ潬汷瑡湥祣籜⸴⸴ⴰㄳ札湥牥捩籜⸴⸴ⴰㄳ氭睯慬整据屹㑼㐮〮㌭ⴴ敧敮楲屣㑼㐮〮㌭ⴴ潬汷瑡湥祣籜⸴⸴ⴰ㘳札湥牥捩籜⸴⸴ⴰ㘳氭睯慬整据屹㑼㐮〮㌭ⴸ敧敮楲屣㑼㐮〮㌭ⴸ潬汷瑡湥祣籜⸴⸴ⴰ㈴札湥牥捩籜⸴⸴ⴰ㈴氭睯慬整据≹權牥敮䑬坃剟敨㕬∽⸲⸶㐲㜮㜭⸴汥爵屴㉼㘮㈮⸴ⴷㄸ攮㕬瑲籜⸲⸶㐲㜮㤭⸳汥爵屴㉼㘮㈮⸴ⴷ〱⸱汥爵屴㉼㘮㈮⸴ⴷ〱⸸汥爵屴㉼㘮㈮⸴ⴷㄱ⸱汥爵屴㉼㘮㈮⸴ⴷㄱ⸷汥爵屴㉼㘮㈮⸴ⴷ㈱⸶汥爵屴㉼㘮㈮⸴ⴷ㌱⸲汥爵屴㉼㘮㈮⸴ⴷ㌱⸷汥爵屴㉼㘮㈮⸴ⴷ㌱⸹汥爵屴㉼㘮㈮⸴ⴷ㐱⸶汥爵屴㉼㘮㈮⸴ⴷ㐱⸹汥爵屴㉼㘮㈮⸴ⴷ㘱⸱汥爵屴㉼㘮㈮⸴ⴷ㘱⸹汥爵屴㉼㘮㌮⸳ⴷ瑲㤲㐮⸵汥爵屴㉼㘮㌮⸳ⴷ瑲㤲㐮⸷汥爵屴㉼㘮㌮⸳ⴷ瑲㤲㔮⸵汥爵屴㉼㘮㌮⸳ⴹ瑲ㄳ㘮⸴汥爵屴㉼㘮㌮⸳ⴹ瑲ㄳ㘮⸷汥爵屴㉼㘮㌮⸳ⴹ瑲ㄳ㠮⸶汥爵屴㉼㘮ㄮⴸ⸸⸱⸱汥尵㉼㘮ㄮⴸ⸸⸱⸳汥尵㉼㘮ㄮⴸ⸸⸱⸴汥尵㉼㘮ㄮⴸ⸸⸱⸶汥尵㉼㘮ㄮⴸ⸸⸱⸸汥尵㉼㘮ㄮⴸ⸸⸱〱攮㕬籜⸲⸶㠱㠭ㄮㄮ⸴汥尵㉼㘮ㄮⴸ⸸⸱㔱攮㕬籜⸲⸶㠱㔭⸳汥尵㉼㘮ㄮⴸ㌵ㄮ㐮攮㕬籜⸲⸶㠱㔭⸳⸱⸶汥尵㉼㘮ㄮⴸ㌵ㄮㄮ⸳汥尵㉼㘮ㄮⴸ㌵ㄮㄮ⸴汥尵㉼㘮ㄮⴸ㌵ㄮㄮ⸹汥尵㉼㘮ㄮⴸ㌵ㄮ㈮⸱汥尵㉼㘮ㄮⴸ㈹攮㕬籜⸲⸶㠱㤭⸲⸱⸱汥尵㉼㘮ㄮⴸ㈹ㄮ㘮攮㕬籜⸲⸶㠱㤭⸲⸱〱攮㕬籜⸲⸶㠱㤭⸲⸱㌱攮㕬籜⸲⸶㠱㤭⸲⸱㠱攮㕬籜⸲⸶㠱㤭⸲⸱㈲攮㕬籜⸲⸶㠱㤭⸲⸱㐲攮㕬籜⸲⸶㠱㤭⸲⸱㘲攮㕬籜⸲⸶㠱㤭⸲⸱㜲攮㕬籜⸲⸶㠱㤭⸲⸱㠲攮㕬籜⸲⸶㠱㤭⸲⸱㤲攮㕬籜⸲⸶㠱㤭⸲⸱㈳攮㕬籜⸲⸶㠱㤭⸲⸱㔳攮㕬籜⸲⸶㠱㤭⸲⸱㠳攮㕬籜⸲⸶㠱ㄭ㠲攮㕬籜⸲⸶㠱ㄭ㠲ㄮㄮ攮㕬籜⸲⸶㠱ㄭ㠲ㄮ㘮攮㕬籜⸲⸶㠱ㄭ㠲ㄮㄮ⸰汥尵㉼㘮ㄮⴸ㈱⸸⸱㐱攮㕬籜⸲⸶㠱ㄭ㠲ㄮㄮ⸶汥尵㉼㘮ㄮⴸ㈱⸸⸲⸱汥尵㉼㘮ㄮⴸ㈱⸸⸴⸱汥尵㉼㘮ㄮⴸ㈱⸸⸴⸱汥尵㉼㘮ㄮⴸ㈱⸸⸷⸱汥尵㉼㘮ㄮⴸ㈱⸸⸸⸱汥尵㉼㘮ㄮⴸ㈱⸸ㄱㄮ攮㕬籜⸲⸶㠱ㄭ㠲ㄮ⸲⸱汥尵㉼㘮ㄮⴸ㈱⸸㐱ㄮ攮㕬籜⸲⸶㠱ㄭ㠲ㄮ⸶⸱汥尵㉼㘮ㄮⴸ㈱⸸㜱ㄮ攮㕬籜⸲⸶㠱ㄭ㠲ㄮ⸸⸱汥尵㉼㘮ㄮⴸ㈱⸸㌲ㄮ攮㕬籜⸲⸶㠱ㄭ㠲㈮⸳⸲汥尵㉼㘮ㄮⴸ㈱⸸㔲ㄮ攮㕬籜⸲⸶㠱ㄭ㠲㈮⸶⸱汥尵㉼㘮ㄮⴸ㈱⸸㜲ㄮ攮㕬籜⸲⸶㠱ㄭ㠲㈮⸹⸱汥尵㉼㘮ㄮⴸ㈱⸸〳ㄮ攮㕬籜⸲⸶㠱ㄭ㠲㌮⸱⸱汥尵㉼㘮ㄮⴸ㈱⸸㈳ㄮ攮㕬籜⸲⸶㠱ㄭ㠲㌮⸵⸱汥尵㉼㘮ㄮⴸ㈱⸸㘳ㄮ攮㕬籜⸲⸶㠱ㄭ㠲㌮⸷⸱汥尵㉼㘮ㄮⴸ㈱⸸㠳ㄮ攮㕬籜⸲⸶㠱ㄭ㠲㌮⸹⸱汥尵㉼㘮ㄮⴸ㈱⸸〴ㄮ攮㕬籜⸲⸶㠱ㄭ㠲㐮⸱⸱汥尵㉼㘮ㄮⴸ㘱⸴汥尵㉼㘮ㄮⴸ㘱⸴⸲⸱汥尵㉼㘮ㄮⴸ㘱⸴⸶⸱汥尵㉼㘮ㄮⴸ㘱⸴⸹⸱汥尵㉼㘮ㄮⴸ㘱⸴〱ㄮ攮㕬籜⸲⸶㠱ㄭ㐶ㄮ⸱⸱汥尵㉼㘮ㄮⴸ㘱⸴㔱ㄮ攮㕬籜⸲⸶㠱ㄭ㐶ㄮ⸷⸱汥尵㉼㘮ㄮⴸ㘱⸴㤱ㄮ攮㕬籜⸲⸶㠱ㄭ㐶㈮⸱⸱汥尵㉼㘮ㄮⴸ㘱⸴㔲ㄮ攮㕬籜⸲⸶㠱ㄭ㐶㈮⸵⸲汥尵㉼㘮ㄮⴸ㘱⸴㠲ㄮ攮㕬籜⸲⸶㠱ㄭ㐶㌮⸰⸱汥尵㉼㘮ㄮⴸ㘱⸴㈳ㄮ攮㕬籜⸲⸶㠱ㄭ㐶㌮⸴⸱汥尵㉼㘮ㄮⴸ㘱⸴㘳ㄮ攮㕬籜⸲⸶㠱ㄭ㐶㌮⸷⸱汥尵㉼㘮ㄮⴸ㘱⸴㠳ㄮ攮㕬籜⸲⸶㠱ㄭ㐹攮㕬籜⸲⸶㠱ㄭ㐹㌮ㄮ攮㕬籜⸲⸶㠱ㄭ㐹㠮ㄮ攮㕬籜⸲⸶㠱ㄭ㐹ㄮ⸱⸱汥尵㉼㘮ㄮⴸ㤱⸴ㄱ㌮攮㕬籜⸲⸶㠱ㄭ㐹ㄮ⸱⸴汥尵㉼㘮ㄮⴸ㤱⸴㜱ㄮ攮㕬籜⸲⸶㠱ㄭ㐹ㄮ⸷⸴汥尵㉼㘮ㄮⴸ㤱⸴㘲ㄮ攮㕬籜⸲⸶㠱ㄭ㐹㌮⸲⸱汥尵㉼㘮ㄮⴸ㌲⸸汥尵㉼㘮ㄮⴸ㌲⸸⸱⸱汥尵㉼㘮ㄮⴸ㌲⸸⸵⸱汥尵㉼㘮ㄮⴸ㌲⸸⸹⸱汥尵㉼㘮ㄮⴸ㌲⸸㈱ㄮ攮㕬籜⸲⸶㠱㈭㠳ㄮ⸹⸱汥尵㉼㘮ㄮⴸ㌲⸸ㄲㄮ攮㕬籜⸲⸶㠱㈭㠳㈮⸷⸱汥尵㉼㘮ㄮⴸ㌲⸸㠲ㄮ攮㕬籜⸲⸶㠱㈭㠳㌮⸱⸱汥尵㉼㘮ㄮⴸ㌲⸸㌳ㄮ攮㕬籜⸲⸶㠱㈭㠳㌮⸵⸱汥尵㉼㘮ㄮⴸ㌲⸸㜳ㄮ攮㕬籜⸲⸶㠱㈭㠳㌮⸹⸱汥尵㉼㘮ㄮⴸ㌲⸸〴ㄮ攮㕬籜⸲⸶㠱㈭㠳㐮⸴⸱汥尵㉼㘮ㄮⴸ㌲⸸㔴ㄮ攮㕬籜⸲⸶㠱㈭㠳㐮⸷⸱汥尵㉼㘮ㄮⴸ㌲⸸㠴ㄮ攮㕬籜⸲⸶㠱㈭㠳㐮⸹⸱汥尵㉼㘮ㄮⴸ㌲⸸〵ㄮ攮㕬籜⸲⸶㠱㈭㠳㔮⸱⸱汥尵㉼㘮ㄮⴸ㌲⸸㈵ㄮ攮㕬籜⸲⸶㠱㈭㠳㔮⸳⸱汥尵㉼㘮ㄮⴸ㌲⸸㐵ㄮ攮㕬籜⸲⸶㠱㈭㠳㔮⸵⸱汥尵㉼㘮ㄮⴸ㌲⸸㘵ㄮ攮㕬籜⸲⸶㠱㈭㐷攮㕬籜⸲⸶㠱㈭㐷㌮ㄮ攮㕬籜⸲⸶㠱㈭㐷㜮ㄮ攮㕬籜⸲⸶㠱㈭㐷ㄮ⸲⸱汥尵㉼㘮ㄮⴸ㜲⸴㜱ㄮ攮㕬籜⸲⸶㠱㈭㐷ㄮ⸸⸱汥尵㉼㘮ㄮⴸ〳⸸汥尵㉼㘮ㄮⴸ〳⸸⸱⸱汥尵㉼㘮ㄮⴸ〳⸸⸴⸱汥尵㉼㘮ㄮⴸ〳⸸⸸⸱汥尵㉼㘮ㄮⴸ〳⸸⸸⸲汥尵㉼㘮ㄮⴸ〳⸸ㄱㄮ攮㕬籜⸲⸶㠱㌭㠰ㄮ⸳⸱汥尵㉼㘮ㄮⴸ〳⸸㘱ㄮ攮㕬籜⸲⸶㠱㌭㠰㈮⸰⸱汥尵㉼㘮ㄮⴸ〳⸸㐲ㄮ攮㕬籜⸲⸶㠱㌭㠴攮㕬籜⸲⸶㠱㌭㠴ㄮㄮ攮㕬籜⸲⸶㠱㌭㠴㈮ㄮ攮㕬籜⸲⸶㠱㌭㠴㌮ㄮ攮㕬籜⸲⸶㠱㌭㠴㐮ㄮ攮㕬籜⸲⸶㠱㌭㠴㘮ㄮ攮㕬籜⸲⸶㠱㌭㠴ㄮ⸲⸱汥尵㉼㘮ㄮⴸ㐳⸸㘱ㄮ攮㕬籜⸲⸶㠱㌭㠴ㄮ⸸⸱汥尵㉼㘮ㄮⴸ㐳⸸㤱ㄮ攮㕬籜⸲⸶㠱㌭㠴㈮⸱⸱汥尵㉼㘮ㄮⴸ㐳⸸㈲ㄮ攮㕬籜⸲⸶㠱㌭㠴㈮⸳⸱汥尵㉼㘮ㄮⴸ㐳⸸㔲ㄮ攮㕬籜⸲⸶㠱㌭㠴㈮⸷⸱汥尵㉼㘮ㄮⴸ㐳⸸㠲ㄮ攮㕬籜⸲⸶㠱㌭㠴㈮⸹⸱汥尵㉼㘮ㄮⴸ㐳⸸〳ㄮ攮㕬籜⸲⸶㠱㌭㠴㌮⸱⸲汥尵㉼㘮ㄮⴸ㜳⸱汥尵㉼㘮ㄮⴸ㜳⸱⸱⸲汥尵㉼㘮ㄮⴸ㜳⸱⸳⸱汥尵㉼㘮ㄮⴸ㜳⸱⸴⸱汥尵㉼㘮ㄮⴸ㜳⸱⸶⸱汥尵㉼㘮ㄮⴸ㜳⸱⸸⸱汥尵㉼㘮ㄮⴸ㜳⸱⸹⸱汥尵㉼㘮ㄮⴸ㜳⸱ㄱㄮ攮㕬籜⸲⸶㠱㌭ㄷㄮ⸲⸱汥尵㉼㘮ㄮⴸ㤳⸸汥尵㉼㘮ㄮⴸ〴⸰汥尵㉼㘮ㄮⴸ〴⸰⸱⸱汥尵㉼㘮ㄮⴸ〴⸲汥尵㉼㘮ㄮⴸ〴⸴汥尵㉼㘮ㄮⴸ〴⸶汥尵㉼㘮ㄮⴸ〴⸷汥尵㉼㘮ㄮⴸ〴⸸汥尵㉼㘮ㄮⴸ〴⸹汥尵㉼㘮ㄮⴸㄴ⸰汥尵㉼㘮ㄮⴸㄴ⸱汥尵㉼㘮ㄮⴸㄴ⸲汥∵權牥敮䑬坃剟敨㙬ㅟ∽⸲⸶㌳㤮爭㍴⸱㘶攮㙬瑲籜⸲⸶㌳㤮爭㍴⸱㐷攮㙬瑲籜⸲⸶㌳㤮爭㍴⸱㔷攮㙬瑲籜⸲⸶㌳㤮爭㍴⸱㤷攮㙬瑲籜⸳⸰ⴹ瑲㘲㐮⸵汥父屴㍼〮㤮爭㉴⸶㘴攮㙬瑲籜⸳⸰㠱爭㍴⸴㌵攮㙬瑲籜⸳⸰㔲爭㑴⸴㜵攮㙬瑲籜⸳⸰〳爭㕴⸰㈶攮㙬瑲籜⸳⸰㘳爭㕴⸷㘶攮㙬瑲籜⸳⸲㌲爭㍴⸷㘵攮㙬瑲籜⸳⸲㌳爭㕴⸰㘶攮㙬瑲籜⸳⸶ㄱ爭㉴⸸〲攮㙬瑲籜⸳⸶ㄱ爭㍴⸰㔲攮㙬瑲籜⸳⸶ㄱ㈮爭㍴⸳㤳攮㙬瑲籜⸳⸶ㄱ㔮爭㍴⸷㔵攮㙬瑲籜⸳⸸㌱爭ㅴ⸴〲攮㙬瑲籜⸳⸸㌱爭ㅴ⸴㔲攮㙬瑲籜⸳⸸㌱爭㉴⸷㌳攮㙬瑲籜⸳⸸㌱爭㉴⸷㐳攮㙬瑲籜⸳⸸㌱爭㉴⸷〴攮㙬瑲籜⸳〱〮㈭㤲爮㕴⸶㐱⸴汥父屴㍼ㄮ⸰ⴰ㈲⸹瑲㘵ㄮ㜴攮㙬瑲籜⸳〱〮㈭㤲爮㕴⸶㐱⸹汥父屴㍼ㄮ⸰ⴰ㈲⸹瑲㘵ㄮㄵ攮㙬瑲籜⸳〱〮㈭㤲爮㕴⸶㔱⸳汥父屴㍼ㄮ⸰ⴰ㈲⸹瑲㘵ㄮ㠵攮㙬瑲籜⸳〱〮㈭㤲爮㕴⸶㘱⸱汥父屴㍼ㄮ⸰ⴰ㈲⸹瑲㘵ㄮ㈶攮㙬瑲籜⸳〱〮㌭㜲爮㕴⸶㜱⸰汥父屴㍼ㄮ⸰ⴰ㈳⸷瑲㘵ㄮㄷ攮㙬瑲籜⸳〱〮㌭㜲爮㕴⸶㜱⸶汥父屴㍼ㄮ⸰ⴰ㈳⸷瑲㘵ㄮ㌸攮㙬瑲籜⸳〱〮㌭㜲爮㕴⸶㤱⸰汥父屴㍼ㄮ⸰ⴰ㈳⸷瑲㘵ㄮ㐹攮㙬瑲籜⸳〱〮㌭㜲爮㕴⸶㤱⸵汥父屴㍼ㄮ⸰ⴰ㈳⸷瑲㘵ㄮ㜹攮㙬瑲籜⸳〱㌮ⴳ瑲㈳㌮⸳汥父屴㍼ㄮ⸰㌳爭㍴⸲㐳攮㙬瑲籜⸳〱㌮ⴳ瑲㈳㐮⸳汥父屴㍼ㄮ⸰㌳爭㍴⸲㔴攮㙬瑲籜⸳〱㌮ⴳ瑲㈳㔮⸱汥父屴㍼ㄮ⸰㌳爭㍴⸲㈵攮㙬瑲籜⸳〱㔮ⴸ瑲㈶㔮⸸汥父屴㍼ㄮ⸰㠵爭㙴⸲〶攮㙬瑲籜⸲⸶㈳㜭⸱⸷⸱汥尶㉼㘮㌮ⴲㄷㄮ⸴⸱汥尶㉼㘮㌮ⴲㄷㄮ⸸⸱汥尶㉼㘮㌮ⴲㄷㄮ⸸⸲汥尶㉼㘮㌮ⴲㄷ㈮⸴⸱汥尶㉼㘮㌮ⴲㄷ㈮⸹⸱汥尶㉼㘮㌮ⴲㄷ㌮⸱⸱汥尶㉼㘮㌮ⴲㄷ㌮⸴⸱汥尶㉼㘮㌮ⴲㄷ㌮⸵⸱汥尶㉼㘮㌮ⴲㄷ㌮⸶⸱汥尶㉼㘮㌮ⴲㄷ㌮⸷⸱汥尶㉼㘮㌮ⴲㄷ㌮⸸⸱汥尶㉼㘮㌮ⴲㄷ㌮⸹⸱汥尶㉼㘮㌮ⴲㄷ㐮⸰⸱汥尶㉼㘮㌮ⴲ㌱⸱⸰㔱攮㙬籜⸲⸶㈳ㄭㄳ㈮ㄮ攮㙬籜⸲⸶㈳ㄭㄳ㐮ㄮ攮㙬籜⸲⸶㈳ㄭㄳ㘮ㄮ攮㙬籜⸲⸶㈳ㄭㄳㄮ⸲⸱汥尶㉼㘮㌮ⴲ㌱⸱㜱ㄮ攮㙬籜⸲⸶㈳ㄭㄳ㈮⸱⸱汥尶㉼㘮㌮ⴲ㌱⸱㈲ㄮ攮㙬籜⸲⸶㈳ㄭㄳ㈮⸵⸱汥尶㉼㘮㌮ⴲ㌱⸱㘲ㄮ攮㙬籜⸲⸶㈳ㄭㄳ㈮⸸⸱汥尶㉼㘮㌮ⴲ㌱⸱㤲ㄮ攮㙬籜⸲⸶㈳ㄭㄳ㌮⸰⸱汥尶㉼㘮㌮ⴲ㌱⸱〳㈮攮㙬籜⸲⸶㈳ㄭㄳ㌮⸳⸱汥尶㉼㘮㌮ⴲ㌱⸱㔳ㄮ攮㙬籜⸲⸶㈳ㄭㄳ㌮⸶⸱汥尶㉼㘮㌮ⴲ㌱⸱㜳ㄮ攮㙬籜⸲⸶㈳ㄭㄳ㌮⸸⸱汥尶㉼㘮㌮ⴲ㌱⸱㤳ㄮ攮㙬籜⸲⸶㈳㈭〲攮㙬籜⸲⸶㈳㈭〲㈮ㄮ攮㙬籜⸲⸶㈳㈭〲㐮ㄮ攮㙬籜⸲⸶㈳㈭〲㐮㈮攮㙬籜⸲⸶㈳㈭〲㐮㜮戮照攮㙬籜⸲⸶㈳㈭〲㜮ㄮ攮㙬籜⸲⸶㈳㈭〲㜮㌮瀮椷⹨汥尶㉼㘮㌮ⴲ㈲⸰⸷⸴㝰桩攮㙬籜⸲⸶㈳㈭〲㜮㘮瀮椷⹨汥尶㉼㘮㌮ⴲ㈲⸰⸷⸷㝰桩攮㙬籜⸲⸶㈳㈭〲ㄮ⸳⸱汥尶㉼㘮㌮ⴲ㈲⸰㜱ㄮ攮㙬籜⸲⸶㈳㈭〲㈮⸳⸱汥尶㉼㘮㌮ⴲ㈲⸰㐲ㄮ攮㙬籜⸲⸶㈳㈭〲㈮⸵⸱汥尶㉼㘮㌮ⴲ㈲⸰㘲ㄮ攮㙬籜⸲⸶㈳㈭〲㈮⸸⸱汥尶㉼㘮㌮ⴲ㈲⸰〳ㄮ攮㙬籜⸲⸶㈳㈭〲㌮⸱⸱汥尶㉼㘮㌮ⴲ㈲⸰㈳ㄮ攮㙬籜⸲⸶㈳㈭〲㌮⸴⸱汥尶㉼㘮㌮ⴲ㈲⸰㐳㈮攮㙬籜⸲⸶㈳㈭〲㌮⸸⸱汥尶㉼㘮㌮ⴲ㈲⸰㤳ㄮ攮㙬籜⸲⸶㈳㈭〲㐮⸱⸱汥尶㉼㘮㌮ⴲ㈲⸰㈴ㄮ攮㙬籜⸲⸶㈳㈭〲㐮⸵⸱汥尶㉼㘮㌮ⴲ㈲⸰㘴ㄮ攮㙬籜⸲⸶㈳㈭〲㐮⸸⸱汥尶㉼㘮㌮ⴲ㈲⸰ㄵㄮ攮㙬籜⸲⸶㈳㈭〲㔮⸲⸱汥尶㉼㘮㌮ⴲ㈲⸰㌵ㄮ攮㙬籜⸲⸶㈳㈭〲㔮⸴⸱汥尶㉼㘮㌮ⴲ㈲⸰㔵ㄮ攮㙬籜⸲⸶㈳㈭〲㔮⸶⸱汥尶㉼㘮㌮ⴲ㈲⸰㜵ㄮ攮㙬籜⸲⸶㈳㈭〲㔮⸸⸱汥尶㉼㘮㌮ⴲ㈲⸰〶㈮攮㙬籜⸲⸶㈳㈭〲㘮⸲⸱汥尶㉼㘮㌮ⴲ㈲⸰㌶㈮攮㙬籜⸲⸶㈳㈭〲㘮⸴⸱汥尶㉼㘮㌮ⴲ㈲⸰㔶ㄮ攮㙬籜⸲⸶㈳㈭〲㘮⸶⸱汥尶㉼㘮㌮ⴲ㈲⸰㜶ㄮ攮㙬籜⸲⸶㈳㈭㤷攮㙬籜⸲⸶㈳㈭㤷ㄮㄮ攮㙬籜⸲⸶㈳㈭㤷㈮ㄮ攮㙬籜⸲⸶㈳㈭㤷㔮ㄮ攮㙬籜⸲⸶㈳㈭㤷㔮㈮攮㙬籜⸲⸶㈳㈭㤷㤮ㄮ攮㙬籜⸲⸶㈳㈭㤷ㄮ⸱⸱汥尶㉼㘮㌮ⴲ㜲⸹㐱ㄮ戮照攮㙬籜⸲⸶㈳㈭㤷ㄮ⸴⸱汥尶㉼㘮㌮ⴲ㜲⸹㤱ㄮ攮㙬籜⸲⸶㈳㈭㤷㈮⸲⸱汥尶㉼㘮㌮ⴲ㜲⸹㌲ㄮ攮㙬籜⸲⸶㈳㈭㤷㈮⸵⸱汥尶㉼㘮㌮ⴲ㜲⸹㔲㈮攮㙬籜⸲⸶㈳㈭㤷㌮⸱⸱汥尶㉼㘮㌮ⴲ㜲⸹㌳ㄮ攮㙬籜⸲⸶㈳㈭㤷㌮⸴⸱汥尶㉼㘮㌮ⴲ㜲⸹㜳㈮攮㙬籜⸲⸶㈳㈭㤷㌮⸹⸱汥∶權牥敮䑬坃剟敨㙬㉟∽⸲⸶㈳㈭㤷㐮⸱⸱汥尶㉼㘮㌮ⴲ㜲⸹㈴ㄮ攮㙬籜⸲⸶㈳㈭㤷㐮⸳⸱汥尶㉼㘮㌮ⴲ㜲⸹㌴㈮攮㙬籜⸲⸶㈳㈭㤷㐮⸶⸱汥尶㉼㘮㌮ⴲ㔳⸸汥尶㉼㘮㌮ⴲ㔳⸸⸰⸱汥尶㉼㘮㌮ⴲ㔳⸸⸲⸱汥尶㉼㘮㌮ⴲ㔳⸸⸶⸱汥尶㉼㘮㌮ⴲ㔳⸸⸶⸲汥尶㉼㘮㌮ⴲ㔳⸸⸶⸳㝰桩攮㙬籜⸲⸶㈳㌭㠵ㄮ⸱⸱杢⹱汥尶㉼㘮㌮ⴲ㔳⸸ㄱㄮ攮㙬籜⸲⸶㈳㌭㠵ㄮ⸴⸱汥尶㉼㘮㌮ⴲ㔳⸸㠱ㄮ攮㙬籜⸲⸶㈳㌭㠵㈮⸳⸲汥尶㉼㘮㌮ⴲ㔳⸸㠲ㄮ攮㙬籜⸲⸶㈳㌭㠵㌮⸲⸳汥尶㉼㘮㌮ⴲ㔳⸸㜳ㄮ攮㙬籜⸲⸶㈳㌭㠵㐮⸱⸱汥尶㉼㘮㌮ⴲ㔳⸸㐴ㄮ攮㙬籜⸲⸶㈳㌭㠵㐮⸶⸱汥尶㉼㘮㌮ⴲ㔳⸸㘴㈮攮㙬籜⸲⸶㈳㌭㠵㐮⸸⸱汥尶㉼㘮㌮ⴲ㔳⸸㤴ㄮ攮㙬籜⸲⸶㈳㌭㠵㔮⸱⸱汥尶㉼㘮㌮ⴲ㔳⸸ㄵ㈮攮㙬籜⸲⸶㈳㌭㠵㔮⸵⸱汥尶㉼㘮㌮ⴲ㔳⸸㘵ㄮ攮㙬籜⸲⸶㈳㌭㠵㔮⸹⸱汥尶㉼㘮㌮ⴲ㔳⸸ㄶㄮ攮㙬籜⸲⸶㈳㌭㠵㘮⸲⸱汥尶㉼㘮㌮ⴲ㔳⸸㔶ㄮ攮㙬籜⸲⸶㈳㌭㠵㘮⸷⸱汥尶㉼㘮㌮ⴲ㔳⸸㠶ㄮ攮㙬籜⸲⸶㈳㌭㠵㘮⸹⸱汥尶㉼㘮㌮ⴲ㔳⸸〷ㄮ攮㙬籜⸲⸶㈳㌭㠵㜮⸱⸱汥尶㉼㘮㌮ⴲ㔳⸸㈷ㄮ攮㙬籜⸲⸶㈳㌭㠵㜮⸳⸱汥尶㉼㘮㌮ⴲ㔳⸸ㄱ⸱⸱灯湥瑳捡⹫汥尶㉼㘮㌮ⴲ㔳⸸ㄱ⸴⸱灯湥瑳捡⹫汥尶㉼㘮㌮ⴲ㔳⸸ㄱ⸸⸱灯湥瑳捡⹫汥尶㉼㘮㌮ⴲ㔳⸸㈱⸳⸴灯湥瑳捡⹫汥尶㉼㘮㌮ⴲ㌴⸱汥尶㉼㘮㌮ⴲ㌴⸱⸱⸱杢⹱汥尶㉼㘮㌮ⴲ㌴⸱⸱⸲汥尶㉼㘮㌮ⴲ㌴⸱⸳⸱汥尶㉼㘮㌮ⴲ㌴⸱⸵⸱汥尶㉼㘮㌮ⴲ㌴⸱ㄱ㈮攮㙬籜⸲⸶㈳㐭ㄳㄮ⸷⸱汥尶㉼㘮㌮ⴲ㌴⸱〲㌮攮㙬籜⸲⸶㈳㐭ㄳ㈮⸰⸵汥尶㉼㘮㌮ⴲ㌴⸱㌲㌮攮㙬籜⸲⸶㈳㐭ㄳ㈮⸹⸲汥尶㉼㘮㌮ⴲ㌴⸱㜳ㄮ攮㙬籜⸲⸶㈳㐭ㄳ㐮⸰⸱汥尶㉼㘮㌮ⴲ㌴⸱〴㈮攮㙬籜⸲⸶㈳㐭ㄳ㐮⸶⸲汥尶㉼㘮㌮ⴲ㌴⸱〵ㄮ攮㙬籜⸲⸶㈳㐭ㄳ㔮⸳⸲汥尶㉼㘮㌮ⴲ㌴⸱㘵ㄮ攮㙬籜⸲⸶㈳㐭ㄳ㔮⸹⸱汥尶㉼㘮㌮ⴲ㌴⸱ㄶ㈮攮㙬籜⸲⸶㈳㐭ㄳ㘮⸴⸱汥尶㉼㘮㌮ⴲ㌴⸱㘶ㄮ攮㙬籜⸲⸶㈳㐭ㄳ㘮⸸⸱汥尶㉼㘮㌮ⴲ㌴⸱㤶ㄮ攮㙬籜⸲⸶㈳㐭ㄳ㜮⸰⸱汥尶㉼㘮㌮ⴲ㌴⸱ㄷㄮ攮㙬籜⸲⸶㈳㐭ㄳ㜮⸲⸱汥尶㉼㘮㌮ⴲ㌴⸱㌷㈮攮㙬籜⸲⸶㈳㐭ㄳ㜮⸴⸱汥尶㉼㘮㌮ⴲ〵⸴汥尶㉼㘮㌮ⴲ〵⸴⸱⸳汥尶㉼㘮㌮ⴲ〵⸴⸳⸳汥尶㉼㘮㌮ⴲ〵⸴⸸⸱汥尶㉼㘮㌮ⴲ〵⸴⸸⸲杢⹱汥尶㉼㘮㌮ⴲ〵⸴㈱㈮攮㙬籜⸲⸶㈳㔭㐰ㄮ⸶⸲汥尶㉼㘮㌮ⴲ〵⸴㌲㐮攮㙬籜⸲⸶㈳㔭㐰㌮⸰⸳汥尶㉼㘮㌮ⴲ〵⸴〳㔮瀮椷⹨汥尶㉼㘮㌮ⴲ〵⸴㌳㈮攮㙬籜⸲⸶㈳㔭㐰㌮⸶⸱汥尶㉼㘮㌮ⴲ〵⸴㠳ㄮ攮㙬籜⸲⸶㈳㔭㐰㐮⸰⸱汥尶㉼㘮㌮ⴲ〵⸴㌴ㄮ攮㙬籜⸲⸶㈳㔭㐰㐮⸶⸱汥尶㉼㘮㌮ⴲ〵⸴㤴ㄮ攮㙬籜⸲⸶㈳㔭㐰㔮⸰⸱汥尶㉼㘮㌮ⴲ〵⸴ㄵㄮ攮㙬籜⸲⸶㈳㔭㐰㔮⸲⸱汥尶㉼㘮㌮ⴲ㜵⸳汥尶㉼㘮㌮ⴲ㜵⸳⸱⸱汥尶㉼㘮㌮ⴲ㜵⸳⸳⸱汥尶㉼㘮㌮ⴲ㜵⸳⸴⸲杢⹱汥尶㉼㘮㌮ⴲ㜵⸳⸷⸱汥尶㉼㘮㌮ⴲ㜵⸳⸸⸱汥尶㉼㘮㌮ⴲ㜵⸳㈱ㄮ攮㙬籜⸲⸶㈳㔭㌷ㄮ⸸⸱汥尶㉼㘮㌮ⴲ㜵⸳㈲ㄮ攮㙬籜⸲⸶㈳㔭㌷㈮⸶⸱汥尶㉼㘮㌮ⴲ㜵⸳〳ㄮ攮㙬籜⸲⸶㈳㔭㌷㌮⸲⸱汥尶㉼㘮㌮ⴲ㜵⸳㐳ㄮ攮㙬籜⸲⸶㈳㘭㈴攮㙬籜⸲⸶㈳㘭㈴ㄮㄮ攮㙬籜⸲⸶㈳㘭㈴㌮ㄮ攮㙬籜⸲⸶㈳㘭㈴㐮㈮攮㙬籜⸲⸶㈳㘭㈴㘮ㄮ攮㙬ਢ敫湲汥䍄彗桒汥㴷㌢ㄮ⸰ⴰ㈲⸹瑲㘵ㄮㄴ攮㝬籜⸳〱〮㈭㤲ㄮ㈮爮㕴⸶㐱⸱⸲汥強就㍼ㄮ⸰ⴰ㈲⸹⸴⸲瑲㘵ㄮㄴ㘮攮㝬ㅟ籜⸳〱〮㈭㤲㜮㈮爮㕴⸶㐱⸱⸶汥強就㍼ㄮ⸰ⴰ㈲⸹ㄱㄮ爮㕴⸶㐱⸱ㄱ攮㝬ㅟ籜⸳〱〮㈭㤲ㄮ⸴⸱瑲㘵ㄮㄴㄮ⸳汥強就㍼ㄮ⸰ⴰ㈲⸹〲ㄮ爮㕴⸶㐱⸱㐱攮㝬ㅟ籜⸳〱〮㈭㤲爮㕴⸶㐱⸱汥尷㍼ㄮ⸰ⴰ㈳⸷瑲㘵㈮㐰攮㝬籜⸳〱〮㌭㜲㐮㔮爮㕴⸶〲⸶汥強尲㍼ㄮ⸰ⴰ㈳⸷〱ㄮ爮㕴⸶ㄲ⸱汥強尲㍼ㄮ⸰ⴰ㈳⸷㌱ㄮ爮㕴⸶ㄲ⸶汥強尲㍼ㄮ⸰ⴰ㈳⸷㠱㈮爮㕴⸶㈲⸳汥強尲㍼ㄮ⸰ⴰ㈳⸷㈲㈮爮㕴⸶㌲⸰汥強尲㍼ㄮ⸰ⴰ㈳⸷㠲㈮爮㕴⸶㌲⸴汥強尲㍼ㄮ⸰ⴰ㈳⸷㠲㌮爮㕴⸶㌲⸵汥尷㍼ㄮ⸰ⴰ㈳⸷㘳ㄮ爮㕴⸶㌲⸷汥尷㍼ㄮ⸰ⴰ㈱⸳汥尷㍼ㄮ⸰ⴰ㈱⸳⸱⸲汥尷㍼ㄮ⸰ⴰ㈱⸳⸴⸲汥尷㍼ㄮ⸰ⴰ㈱⸳⸴⸴汥尷㍼ㄮ⸰ⴰ㈱⸳⸶⸳汥尷㍼ㄮ⸰ⴰ㈱⸳⸸⸱汥尷㍼ㄮ⸰ⴰ㈱⸳⸹⸲汥尷㍼ㄮ⸰ⴰ㈱⸳⸹⸳汥尷㍼ㄮ⸰ⴰ㈱⸳㌱ㄮ攮㝬籜⸳〱〮ㄭ㌲ㄮ⸳⸲汥尷㍼ㄮ⸰ⴰ㈱⸳〲ㄮ攮㝬籜⸳〱〮㈭㤲攮㝬籜⸳〱〮㈭㤲ㄮ㈮攮㝬籜⸳〱〮㈭㤲㐮㈮攮㝬籜⸳〱〮㈭㤲㜮㈮攮㝬籜⸳〱〮㈭㤲ㄮ⸱⸱汥尷㍼ㄮ⸰ⴰ㈲⸹㐱ㄮ攮㝬籜⸳〱〮㈭㤲㈮⸰⸱汥尷㍼ㄮ⸰ⴰ㈲⸹㐲㈮攮㝬籜⸳〱〮㈭㤲㈮⸶⸲汥尷㍼ㄮ⸰ⴰ㈲⸹㠲ㄮ攮㝬籜⸳〱〮㈭㤲㌮⸰⸱汥尷㍼ㄮ⸰ⴰ㈲⸹㐳ㄮ攮㝬籜⸳〱〮㈭㤲㌮⸸⸱汥尷㍼ㄮ⸰ⴰ㈲⸹〴ㄮ攮㝬籜⸳〱〮㈭㤲㐮⸲⸱汥尷㍼ㄮ⸰ⴰ㈳⸷汥尷㍼ㄮ⸰ⴰ㈳⸷⸳⸱汥尷㍼ㄮ⸰ⴰ㈳⸷⸴⸴汥尷㍼ㄮ⸰ⴰ㈳⸷⸴⸵汥尷㍼ㄮ⸰ⴰ㈳⸷〱ㄮ攮㝬籜⸳〱〮㌭㜲ㄮ⸳⸱汥尷㍼ㄮ⸰ⴰ㈳⸷㠱㈮攮㝬籜⸳〱〮㌭㜲㈮⸲⸲汥尷㍼ㄮ⸰ⴰ㈳⸷㠲㈮攮㝬籜⸳〱〮㌭㜲㈮⸸⸳汥尷㍼ㄮ⸰ⴰ㈳⸷㘳ㄮ攮㝬籜⸳〱〮㌭㜲㌮⸶⸲汥尷㍼ㄮ⸰ⴰ㈲⸹⸱⸲敡㝬屢㍼ㄮ⸰ⴰ㈲⸹⸴⸲敡㝬屢㍼ㄮ⸰ⴰ㈲⸹⸷⸲敡㝬屢㍼ㄮ⸰ⴰ㈲⸹ㄱㄮ愮汥户籜⸳〱〮㈭㤲ㄮ⸴⸱敡㝬屢㍼ㄮ⸰ⴰ㈲⸹〲ㄮ愮汥户籜⸳〱〮㈭㤲㈮⸴⸲敡㝬屢㍼ㄮ⸰ⴰ㈲⸹㘲㈮愮汥户籜⸳〱〮㈭㤲㈮⸸⸱敡㝬屢㍼ㄮ⸰ⴰ㈲⸹〳ㄮ愮汥户籜⸳〱〮㈭㤲㌮⸴⸱敡㝬屢㍼ㄮ⸰ⴰ㈲⸹㠳ㄮ愮汥户籜⸳〱〮㈭㤲㐮⸰⸱敡㝬屢㍼ㄮ⸰ⴰ㈲⸹㈴ㄮ愮汥户籜⸴⸲ⴰ⸰ㄲ攮㝬ਢ椊⁦⁛敠档⁯唤䑉⁠㭝琠敨⁮祭極㵤唤䑉※汥晩嬠怠摩ⴠ⁵⠤桷慯業 㸲搯癥港汵恬崠※桴湥洠畹摩怽摩ⴠ⁵⠤桷慯業 㸲搯癥港汵恬※汥晩嬠怠摩㈠⼾敤⽶畮汬簠挠瑵ⴠ⁤㴢•昭㈠簠挠瑵ⴠ⁤⠢•昭ㄠ⁠㭝琠敨⁮祭極㵤楠⁤㸲搯癥港汵⁬⁼畣⁴搭∠∽ⴠ⁦′⁼畣⁴搭∠∨ⴠ⁦怱※楦椊⁦⁛洤畹摩ⴠ瑧㈠㐱㐷㌸㐶‶㭝琠敨⁮慢畤摩∽籜洤畹摩㬢映੩摩㵂攢極層敼楧⑤慢畤摩ਢ畳潤䉶∽⸱⸶瀸尹ㅼ㘮㤮ㅰ尸ㅼ㠮ㄮ尴ㅼ㠮㈮尰ㅼ㘮㤮㉰就ㅼ㜮㈮㑰籜就㠮⹜せ㈱崳尤ㅼ⹜尳嬮ㅞ屝ㅼ⹜尴尮⩤籜就㔮⹜摜尪ㅼ⹜尶尮⩤籜⸱␵籜⸱␶ਢ洊畯瑮摥怽洨畯瑮ⴠ⁬籼挠瑡⼠牰捯洯畯瑮⁳籼挠瑡⼠牰捯猯汥⽦潭湵獴 㸲搯癥港汵⁬⁼牧灥∠⽞•⁼畣⁴搭∠∠ⴠㅦ簠琠⁲尧❮✠❼簠猠摥✠⽳⽼屜籜术性捠瑡⼠瑥⽣獦慴⁢⁼牧灥ⴠ⁶⌢•⁼牧灥∠⼠∠簠挠瑵ⴠ⁤••昭ㄠ੠潭湵䝴∽睳灡籜振牤浯籜是潬灰屹⽼敤⽶桳≭渊瑯潭湵整㵤捠瑡⼠瑥⽣獦慴⁢⁼牧灥∠⽞•⁼牧灥ⴠ⁶洤畯瑮⁇⁼畣⁴搭∠∠ⴠㅦ簠朠敲⁰瘭␠潭湵整⁤⁼牴✠湜‧簧‧⁼敳⁤猧簯尯屜⽼❧≠浉潐卓獳楓求故≥洊畯瑮数浲䉳∽幛嵯畳摩籜幛嵯獵牥籜幛嵯硥捥ਢ潭湵灴牥獭㵇渢獯極層湼畯敳屲湼敯數≣ਊ潲瑯潣浭湯∽椯楮⑴籜灵瑳牡⵴摵癥戭楲杤履畼敤屶⽼敧瑴屹捼潲屮慼慰档㉥籜慪慶籜潴捭瑡籜瘯瑭潯獬層⽼䝖畁桴敓癲捩≥ਊ牧畯獰㵂⠢潲瑯尩⡼桳摡睯尩⡼摡業⥮•⠣楶敤⥯䤠癮獥楴慧整朊潲灵噳㵂⠢畳潤尩⡼潤正牥尩⡼硬⥤籜眨敨汥尩⡼楤歳尩⡼硬⥣ਢ湫彷牧獰✽氨慰浤湩尩⡼摡⥭籜挨牤浯尩⡼汰杵敤⥶籜渨杯潲灵✩⌠瑨灴㩳⼯睷⹷潴慧慷敲挮浯氯湩硵猯牵楶潶⽲瑓湡慤摲䝟潲灵⹳瑨汭ਊ楳䝤∽愯畢汩ⵤ畳潤尤⽼捡瑣湯尤⽼污潬慣整尤⽼牡楰杮尤⽼瑡⑱籜愯牴⑭籜愯瑵灨⑦籜愯瑵灨ⵦ潮灩尤⽼慢捴⑨籜戯獢極⑤籜戯摳眭楲整尤⽼瑢潳正瑳瑡尤⽼睢慲⑰籜振捡潡獣④籜振浡汥氭捯⵫敨灬牥ㄭ㈮尤⽼捣敲獤癟污摩瑡⑥籜振牤⑷籜振慨敧尤⽼档捥⵫潦敲牧畯摮挭湯潳敬尤⽼档潲敭猭湡扤硯尤⽼档桳尤⽼潣獮献癡牥尤⽼牣湯慴③籜振⑴籜振⑵籜搯畢⵳慤浥湯氭畡据⵨敨灬牥尤⽼敤污潬慣整尤⽼敤歳潴⵰牣慥整欭敭畮尤⽼浤②籜搯捭祲瑰札瑥搭癥捩⑥籜搯慯⑳籜搯瑯潬正楦敬尤⽼潤汴捯⹫慭汩瑵汩⑳籜搯慴瑣潩⑮籜搯晴汩⑥籜支敪瑣尤⽼硥捥扡瑲愭瑣潩⵮湩瑳污⵬敤畢楧普ⵯ潴愭牢⵴慣档⑥籜支數摣畢⵳慤浥湯氭畡据⵨敨灬牥尤⽼硥捥浤ⵡ扭硯挭敲瑡⑥籜支數汣捯獫潰汯尤⽼硥捥潬楧彮档慰獳尤⽼硥捥潬楧彮捬灨獡⑳籜支數汣杯湩灟獡睳⑤籜支數獣桳欭祥楳湧尤⽼硥捥汵杯栭汥数⑲籜支灸物⑹籜是晤牯慭⑴籜是獵牥潭湵⑴籜术潮敭瀭祴栭汥数⑲籜术楬敮⑳籜术楮扢敬⑳籜术潮潢獴␲籜术潮敭猭獵数摮尤⽼湧浯瑥楲⑳籜术潮業敮尤⽼湧瑯歳⑩籜术潮牴癡硥尤⽼灧獡睳⑤籜术杰尤⽼灧潩尤⽼瑧污屩⽼栮污洭慴ⵢ潬正尤⽼浩灡⑤籜椯湮獤慴瑲尤⽼楫浳瑥损灡畴敲尤⽼楫浳瑥损灡江湩硵扟畬瑥潯桴尤⽼楫浳瑥损灡江湩硵睟晩⑩籜欯獩敭彴慣彰牮彦潭獵橥捡⑫籜欯畳尤⽼楬瑳摟癥捩獥尤⽼潬慣整尤⽼潬正尤⽼潬正敤⑶籜氯捯晫汩⑥籜氯杯湩慟瑣癩尤⽼潬楧彮牣灹潴尤⽼潬楧彮慲楤獵尤⽼潬楧彮歳祥尤⽼潬楧彮湳⑫籜氯杯湩瑟歯湥尤⽼潬楧彮畹楢敫⑹籜氯摰尤⽼灬ⵤ潰瑲尤⽼灬慰獳摷尤⽼灬⑱籜氯牰⑭籜氯獰瑥尤⽼硬ⵣ獵牥渭捩尤⽼慭橨湯杧尤⽼慭汩氭捯⑫籜洯楡煬尤⽼慭汩琭畯档潬正尤⽼慭汩甭汮捯⑫籜洯獫慮彰晦⑳籜洯潬慣整尤⽼汭捯⑫籜洯畯瑮挮晩⑳籜洯畯瑮渮獦尤⽼潭湵⹴普㑳尤⽼瑭⑲籜洯瑵彴潤汴捯⑫籜港獣彡畡桴尤⽼敮灴⑲籜港瑥敲潰瑲尤⽼敮獴慴⑴籜港睥楧浤灡尤⽼敮瑷獡⑫籜港睥極浤灡尤⽼灯敩湩潦尤⽼灯敩慰獳摷尤⽼慰彭畡桴尤⽼慰彭硥牴畡敳獲损歨睰⑤籜瀯浡瑟浩獥慴灭损敨正尤⽼慰癭牥晩敩⑲籜瀯敦數④籜瀯湩⑧籜瀯湩㙧尤⽼浰潣普杩尤⽼潰歬瑩愭敧瑮栭汥数⵲␱籜瀯汯楫⵴硥汰捩瑩札慲瑮栭汥数⑲籜瀯汯楫⵴牧湡⵴敨灬牥尤⽼潰歬瑩札慲瑮栭汥数⵲慰⑭籜瀯汯楫⵴敲摡愭瑵⵨敨灬牥尤⽼潰歬瑩爭獥汯敶攭數栭汥数⑲籜瀯汯楫⵴敲潶敫栭汥数⑲籜瀯汯楫⵴敳⵴敤慦汵⵴敨灬牥尤⽼潰瑳牤灯尤⽼潰瑳畱略⑥籜瀯睯牥景⑦籜瀯灰尤⽼牰捯慭汩尤⽼瑰损浨摯尤⽼睰扤损歨睰⑤籜焯潵慴尤⽼敲潭整甮歮潮湷尤⽼汲杯湩尤⽼浲潦浲瑡尤⽼湲睥⑳籜爯湵洭楡捬灡尤⽼慳慣浤尤⽼慳敭札潮敭尤獼牣敥⹮敲污尤⽼敳摮慭汩献湥浤楡⑬籜猯畨摴睯⑮籜猯敫慹摵瑩尤⽼歳祥湩潦尤⽼歳祥湩瑩尤⽼汳捯瑡⑥籜猯扭湭⑴籜猯扭浵畯瑮尤⽼浳慰捴⑨籜猯瑭捰汴尤⽼湳灡挭湯楦敮尤⽼灳牥㕬㠮㠮尤⽼獳⵨条湥⑴籜猯桳欭祥楳湧尤⽼瑳灡畲⑮籜猯慴瑲湩普敥⑤籜猯捴楬湥⑴籜猯⑵籜猯敵數④籜猯獹猭獵数摮尤⽼整湬瑥潬楧⑮籜琯浩摥④籜琯灩尤⽼牴捡牥畯整␶籜琯慲散潲瑵㙥椮異楴獬尤⽼牴瑰尤⽼獴汯瑤慬敢⑬籜琯潳橬獤慬敢⑬籜琯潳硬条湥⑴籜甯獦畤灭尤⽼晵牳獥潴敲尤⽼浵畯瑮挮晩⑳籜甯潭湵⹴普⑳籜甯潭湵⹴普㑳尤⽼湵硩损歨睰⑤籜甯瑰浩⑥籜甯敳桲汥数⑲籜甯敳楲摳据汴尤⽼獵牥敮捴汴尤⽼瑵浥瑰牥尤⽼瑵灭畟摰瑡⑥籜甯捵捩⑯籜甯杵楬瑳尤⽼畵摩⑤籜甯湵浡⑥籜甯獵档摥尤⽼畵瑳瑡尤⽼畵⑸籜甯硵瑱尤⽼浶慷敲甭敳⵲畳摩眭慲灰牥尤⽼湶獣牥敶⵲ㅸ␱籜瘯汯浲潭湵⑴籜眯尤⽼慷汬尤⽼桷摯⑯籜眯楲整尤⽼⑘籜堯牯⹧牷灡尤⽼獘湵尤⽼癘据∤⌊畒敬㩳匠慴瑲瀠瑡⁨•∯‬湥⁤慰桴∠∤‬楤楶敤瀠瑡⁨湡⁤當湬敶獲潩⁮┢⸢匠䅐䕃䤠⁓乏奌䄠䱌坏䑅䄠⁔䕂䥇乎义ⱇ䐠乏⁔单⁅呉䤠⁎啖乌䐠卅剃偉䥔乏猊摩㵂⼢灡捡敨┲敒摡牟潯彴慰獳摷彟灡捡敨弲昭⽟瑥⽣桳摡睯䌨䕖㈭㄰ⴹ㈰ㄱ尩 愯╴呒畲㐶啟䥎彘⸴朰䌨䕖㈭〰ⴲ㘱㐱尩 振晨⑮匥卵彅⸹⼳〱ੜ⼠档敫⑹匥汯牡獩㉟㔮ㄮੜ⼠档火牥⑭匥汯牡獩㝟〮屟 振灨獡⑳㈥畖湬㩳灏湥卂彄⸶弱潴佟数䉮䑓㘠㘮䌨䕖㈭㄰ⴹ㤱㈷⤶ⴭ灏湥卂彄⸲強㍩㘸伯数䉮䑓㉟㘮楟㠳⼶灏湥卂彄⸲張㤱㤹〯⼸㘰伯数䉮䑓㉟㔮ㅟ㤹⼸㔰㈯⼸牆敥卂彄⸴ⴰ䕒䕌十⽅牆敥卂彄⸳ⴵ䕒䕌十⽅牆敥卂彄⸳ⴴ䕒䕌十⽅敎䉴䑓ㅟ㐮㈮ੜ⼠档慰獳摷┤煓極牲汥慍汩㈨〰ⴴ㐰尩 搯慴灰慧桴牥┤潓慬楲彳強弼ㄱ⡟偓剁⽃㡸⤶䌨䕖㈭㄰ⴷ㘳㈲尩 搯灴楲瑮湩潦┤潓慬楲彳〱⡟㡸⤶慟摮江睯牥癟牥楳湯彳污潳卟湵协㕟㜮瑟彯⸵〱ੜ⼠瑤敳獳潩⑮伥慲汣彥潓慬楲彳〱ㅟㄯ弳湡彤慥汲敩⡲噃ⵅ〲〲㈭㤶⤶ੜ⼠橥捥⑴䘥敲䉥䑓浟督橥捥彴⸰⼹䝓彉剉塉㙟㈮ੜ⼠扩瑳瑡䤥䵂䅟塉噟牥楳湯㙟ㄮ㜯ㄮ〨ⴹ〲㌱尩 欯档捥火獡⑳䬥䕄㍟㈮〮㱟ⴭ弾⸳⸴弲戨瑯彨湩汣摵摥尩 欯敤畳⑤䬥䕄ㅟㄮㄯㄮㄮㄯㄮ㈮ㄯ㈮ੜ⼠敫批獡ⵥ敲楤敲瑣牯䌥湥佴当楌畮彸敲敬獡彥⸷⸴㜱㠰ੜ⼠潬楧⑮䤥䵂䅟塉㍟㈮㔮匯䥇䥟䥒彘⸶尴 氯捰┤⹓⹵⹓彅楌畮彸⸵尲 氯牰┤卂⽄协⸲⼱牆敥卂㉄ㄮ㔮丯塥獔整㑰砮䤯䥒㙘㐮匯湵协⸴⸱⼳⸴⸱⠴㤰ㄭ㤹⤶ੜ⼠潭湵⑴䄥灰敬䵟捡佟塓䰨潩⥮䭟牥敮彬湸⵵㘱㤹㌮⸲強硥散瑰硟畮ㄭ㤶⸹㐲㠮ੜ⼠潭敶慭汩┤浅捡⡳㠰ㄭ㠹⤶ੜ⼠敮灴楲瑮┤剉塉㕟㌮㘯㈮㘯㌮㘯㐮㘯㔮㘯㔮ㄮ就 港睥牧⑰䠥ⵐ塕ㅟ⸰〲ੜ⼠瑮獦㌭⑧䐥扥慩㥮㠯㜯唯畢瑮⽵敇瑮潯漯桴牥⽳払湵畴卟牥敶彲㘱ㄮ弰湡彤瑯敨獲〨ⴲ〲㜱尩 瀯獡睳⑤䄥灰敬䵟捡佟塓〨ⴳ〲㘰⼩潓慬楲彳⼸⠹㈱㈭〰⤴匯䅐䍒㡟㤯匯湵卟汯牡獩㉟㌮瑟彯⸲⸵⠱㈰ㄭ㤹⤷ੜ⼠歰硥捥┤楌畮㑸ㄮ弰潴㕟ㄮㄮ⠷噃ⵅ〲㤱ㄭ㈳㈷⼩桲汥㙟䌨䕖㈭㄰ⴱ㐱㔸尩 瀯灰⑤䄥灰敬䵟捡佟塓ㅟ⸰⸴⠸㔰㈭〰⤷ੜ⼠瑰损潨湷┤乇录汧扩彣⸲⼱⸲⸱弱㘭〨ⴸ㤱㤹尩 瀯汵敳畡楤⑯⠥払湵畴㥟〮⼴汓捡睫牡彥㈱㈮〮尩 爯灣┤敒䡤瑡㙟㈮ੜ⼠摲獩⑴匥汯牡獩ㅟ⼰灏湥潓慬楲屳 爯桳┤灁汰彥慍彣协彘〱㤮㔮ㄯ⸰〱㔮〨ⴹ〲㔱尩 猯牣敥⑮䜥啎卟牣敥彮⸴⸵尰 猯瑤浣损湯敶瑲┤畓彮潓慬楲彳⸷尰 猯湥浤楡⑬匥湥浤楡彬⸸〱ㄮ匯湥浤楡彬⸸ㄱ砮䰯湩硵䭟牥敮彬⸲⸲彸⸲⸴ⴰ整瑳弱匨䥇偟潲慐正ㅟ㈮ㄯ㌮尩 猯摵⑯ੜ⼠畳潤摥瑩┤畓潤匯摵䕯楤彴⸱⸶瀹ㄲㄯ㜮㈮㑰⠯䡒䱅㕟㘯㜯唯畢瑮⥵匯摵㱯ㄽ㠮ㄮ尴 琯畭╸浔硵ㅟ㌮ㅟ㐮灟楲敶捳䌨䕖㈭㄰ⴱ㐱㘹尩 琯慲散潲瑵⑥䰥䱂呟慲散潲瑵彥㉛〰ⴰㄱㄭ崵ੜ⼠浵畯瑮┤卂⽄楌畮⡸㠰ㄭ㤹⤶ੜ⼠浵畯瑮氭潯⑰別捯獫䍟畬瑳牥㱳㐽ㄮ〨ⴷ〲㘰尩 甯捵⑰吥祡潬彲啕偃ㅟ〮㘮ੜ⼠䙘敲㡥␶堥牆敥㘸塟ㄱ㙒㍟㌮砮㐯〮㐯砮㌯㌮〨ⴳ〲㌰尩 砯潬正┤卂⽄协㉟ㄮ䐯⽇塕㝟〮䐯扥慩彮⸱⼳偈唭彘〱㌮⼴䉉彍䥁彘⸴⼲䝓彉剉塉㙟㐮匯汯牡獩㉟㔮ㄮ〨ⴴ㤱㜹尩 砯捳敲湥慳敶╲潓慬楲彳ㄱ砮䌨䕖㈭㄰ⴹ〳〱尩 砯牯⑧堥牯彧⸱㤱瑟彯⸱〲砮䌨䕖㉟㄰ⴸ㐱㘶⤵砯牯ⵧㅸⴱ敳癲牥㴼⸱〲㌮䄯塉㝟ㄮ⡟⸶彸潴㝟砮獟潨汵彤敢癟汵敮慲汢⥥塟ㄱ戮獡⹥瑲㱥⸷⸱⸵㈳慟摮屟 砯整浲┤潓慬楲彳⸵⸵弱ㅘ刱⸶⠳㔰ㄭ㤹⤷䐯扥慩彮瑸牥彭敶獲潩彮㈲ⴲ攱捴㉨〨ⴱ〲㤰∩猊摩䉖✽愯楲㉡④籜愯灲尤⽼獡⑨籜愯歷尤⽼慢敳㐶尤⽼慢桳尤⽼畢祳潢⑸籜振瑡尤⽼档潭⑤籜振潨湷尤⽼灣尤⽼獣⑨籜振牵⑬籜振瑵尤⽼慤桳尤⽼慤整尤⽼摤尤⽼楤晦尤⽼浤敳畴⑰籜搯捯敫⑲籜支⑤籜支慭獣尤⽼湥⑶籜支灸湡⑤籜支灸捥⑴籜是汩⑥籜是湩⑤籜是潬正尤⽼浦⑴籜是汯⑤籜术扤尤⽼楧灭尤⽼楧⑴籜术敲⑰籜栯慥⑤籜椯湯捩⑥籜椯⑰籜樯獪尤⽼煪尤⽼牪湵捳楲瑰尤⽼獫⑨籜氯⹤潳尤⽼敬獳尤⽼潬獧癡⑥籜氯慵尤⽼慭敫尤⽼潭敲尤⽼癭尤⽼祭煳⑬籜港湡⑯籜港④籜港捩⑥籜港⑬籜港慭⑰籜港摯⑥籜漯⑤籜漯数獮汳尤⽼数汲尤⽼杰尤⽼桰⑰籜瀯捩尤⽼楰潣尤⽼祰桴湯尤⽼敲摡汥⑦籜爯睬慲⑰籜爯浰尤⽼灲煭敵祲尤⽼獲湹④籜爯楶⑭籜猯牣敥⵮⸴⸵尰⽼捳⑰籜猯摥尤⽼敳慴捲⑨籜猯畨⑦籜猯捯瑡尤⽼潳瑲尤⽼煳楬整␳籜猯摴畢⑦籜猯牴捡⑥籜猯獹整捭汴尤⽼慴汩尤⽼慴⑲籜琯獡獫瑥尤⽼捴獬⑨籜琯敥尤⽼整湬瑥尤⽼晴灴尤⽼楴敭尤⽼楴敭畯⑴籜甯⑬籜甯敮灸湡⑤籜甯楮⑱籜甯獮慨敲尤⽼楶⑭籜眯瑡档尤⽼杷瑥尤⽼慸杲⑳籜砯摸尤⽼楺⑰籜稯桳✤ਊ畳潤䉖∽尠尪敼癮歟敥⭰䰽彄剐䱅䅏屄慼瑰札瑥尤慼瑰尤慼楲㉡④籜牡⑰籜獡⑨籜睡⑫籜慢敳㐶尤扼獡⑨籜畢祳潢⑸籜慣⑴籜档潭⑤籜档睯⑮籜灣尤捼慰⑮籜灣汵浩瑩尤捼潲瑮扡尤捼桳尤捼牵⑬籜畣⑴籜慤桳尤摼瑡⑥籜摤尤摼晩⑦籜浤獥⑧籜浤敳畴⑰籜湤⑦籜潤正牥尤摼歰⑧籜慥祳楟獮慴汬尤敼⑤籜浥捡⑳籜湥⑶籜硥慰摮尤敼灸捥⑴籜慦瑣牥尤晼汩⑥籜楦摮尤晼潬正尤晼瑭尤晼汯⑤籜瑦⑰籜摧③籜楧灭尤杼瑩尤杼敲⑰籜敨摡尤楼湯捩⑥籜灩尤楼扲尤橼獪尤橼畯湲污瑣⑬籜煪尤橼畲獮牣灩⑴籜獫⑨籜摬献⑯籜敬獳尤汼杯慳敶尤汼牴捡⑥籜畬②籜慭汩尤浼歡⑥籜慭⑮籜潭敲尤浼畯瑮尤浼牴尤浼⑶籜祭煳⑬籜慮潮尤湼④籜楮散尤湼⑬籜浮灡尤湼摯⑥籜摯尤潼数獮汳尤灼牥⑬籜杰尤灼灨尤灼捩尤灼捩⑯籜楰⑰籜異灰瑥尤灼瑹潨⑮籜敲摡汥⑦籜敲⑤籜汲牷灡尤牼浰尤牼浰畱牥⑹籜獲湹④籜畲祢尤牼湵洭楡捬灡尤牼湵瀭牡獴尤牼楶⑭籜捳⑰籜捳敲湥尤獼牣灩⑴籜敳⑤籜敳癲捩⑥籜敳慴捲⑨籜晳灴尤獼扭汣敩瑮尤獼捯瑡尤獼牯⑴籜煳楬整␳籜獳⑨籜瑳牡⵴瑳灯搭敡潭⑮籜瑳扤晵尤獼牴捡⑥籜祳瑳浥瑣⑬籜慴汩尤瑼牡尤瑼獡獫瑥尤瑼汣桳尤瑼灣畤灭尤瑼敥尤瑼汥敮⑴籜晴灴尤瑼浩⑥籜楴敭畯⑴籜浴硵尤畼⑬籜湵硥慰摮尤畼楮⑱籜湵桳牡⑥籜楶尤發浩尤睼瑡档尤睼敧⑴籜楷桳尤硼牡獧尤硼摸尤祼浵尤穼灩尤穼桳尤穼灹数⑲ਢ畳潤㵂␢眨潨浡⥩籜䱁㩌䱁屌䅼䱌㨠䄠䱌籜䱁屌乼偏十坓屄⽼灡捡敨∲ਊ畳潤慣獰㵂⼢灡⵴敧屴⽼灡屴⽼牡慩挲籜愯灲籜愯桳籜愯歷籜戯獡㙥尴⽼慢桳籜戯獵批硯籜振瑡籜振浨摯籜振潨湷籜振屰⽼灣湡籜振異楬業屴⽼牣湯慴屢⽼獣屨⽼畣汲籜振瑵籜搯獡屨⽼慤整籜搯層⽼楤晦籜搯敭杳籜搯獭瑥灵籜搯普籜搯捯敫屲⽼灤杫籜支獡役湩瑳污屬⽼摥籜支慭獣籜支癮籜支灸湡層⽼硥数瑣籜是捡整屲⽼楦敬籜是湩層⽼汦捯屫⽼浦屴⽼潦摬籜是灴籜术扤籜术浩屰⽼楧屴⽼牧灥籜栯慥層⽼潩楮散籜椯屰⽼物屢⽼橪屳⽼潪牵慮捬汴籜樯山⽼牪湵捳楲瑰籜欯桳籜氯⹤潳籜氯獥屳⽼潬獧癡履⽼瑬慲散籜氯慵籜洯楡屬⽼慭敫籜洯湡籜洯牯履⽼潭湵屴⽼瑭屲⽼癭籜洯獹汱籜港湡屯⽼据籜港捩履⽼汮籜港慭屰⽼潮敤籜漯層⽼灯湥獳屬⽼数汲籜瀯屧⽼桰屰⽼楰屣⽼楰潣籜瀯灩籜瀯灵数屴⽼祰桴湯籜爯慥敤晬籜爯摥籜爯睬慲屰⽼灲屭⽼灲煭敵祲籜爯祳据籜爯扵屹⽼畲⵮慭汩慣屰⽼畲⵮慰瑲屳⽼癲浩籜猯灣籜猯牣敥屮⽼捳楲瑰籜猯摥籜猯牥楶散籜猯瑥牡档籜猯瑦屰⽼浳换楬湥屴⽼潳慣屴⽼潳瑲籜猯汱瑩㍥籜猯桳籜猯慴瑲猭潴⵰慤浥湯籜猯摴畢屦⽼瑳慲散籜猯獹整捭汴籜琯楡屬⽼慴屲⽼慴歳敳屴⽼捴獬屨⽼捴摰浵屰⽼整履⽼整湬瑥籜琯瑦屰⽼楴敭籜琯浩潥瑵籜琯畭屸⽼汵籜甯敮灸湡層⽼湵煩籜甯獮慨敲籜瘯屩⽼楶屭⽼慷捴屨⽼杷瑥籜眯獩屨⽼慸杲屳⽼硸層⽼畹屭⽼楺屰⽼獺屨⽼祺灰牥ਢ慣獰㵂㴢灥籜慣彰慤彣敲摡獟慥捲屨捼灡摟捡潟敶牲摩≥ਊ䱏偄呁㵈値呁ੈ䑁偄呁㵈㨢甯牳氯捯污猯楢屮 ⼺獵⽲潬慣⽬楢屮 ⼺獵⽲扳湩ੜ㨠甯牳戯湩ੜ㨠猯楢屮 ⼺楢≮猊慰桴∽␺䅐䡔ਢ潦⁲⁐湩␠䑁偄呁㭈搠੯†晩嬠℠ⴠ⁺␢獻慰桴⌣␪⩐≽崠※桴湥攠灸牯⁴䅐䡔∽値呁⑈≐㈠⼾敤⽶畮汬※楦搊湯੥牷瑩䉥∽⹜桳尤屼⼮籜支捴猯獹潣普杩港瑥潷歲猭牣灩獴尯⽼瑥⽣籜猯獹尯⽼楬⽢祳瑳浥層⽼楬屢⽼潢瑯籜爯潯屴⽼潨敭尯⽼慶⽲潬⽧籜洯瑮尯⽼獵⽲潬慣⽬扳湩籜甯牳猯楢屮⽼扳湩尯⽼獵⽲潬慣⽬楢屮⽼獵⽲楢屮⽼楢屮⽼獵⽲潬慣⽬慧敭屳⽼獵⽲慧敭屳⽼獵⽲楬屢⽼瑥⽣捲搮尯≼眊楲整䉖∽支捴椯楮屴⽼瑥⽣祳屳⽼瑥⽣桳摡睯籜支捴瀯獡睳層⽼瑥⽣牣湯籜怢捥潨␠䅐䡔㈠⼾敤⽶畮汬⁼敳⁤猧㨯尯屜⽼❧੠猊彨獵獲怽慣⁴支捴瀯獡睳⁤㸲搯癥港汵⁬⁼牧灥ⴠ⁶帢潲瑯∺簠朠敲⁰椭∠桳∤簠挠瑵ⴠ⁤㨢•昭ㄠ簠琠⁲尧❮✠❼簠猠摥✠⽳扼湩⽼扼湩屛屜㩳籝扞湩簤✯簠猠摥✠⽳獼獹⽼獼獹屛屜㩳籝獞獹簤✯簠猠摥✠⽳摼敡潭籮簯慤浥湯屛屜㩳籝摞敡潭⑮⽼‧⁼敳⁤猧簯尯屜⽼❧≠浉潐卓獳楓求故≥⌠潍楤楦摥戠湩‬祳⁳湡⁤慤浥湯猠⁯桴祥愠敲渠瑯挠汯牯摥攠敶祲桷牥੥潮桳畟牳㵳捠瑡⼠瑥⽣慰獳摷㈠⼾敤⽶畮汬簠朠敲⁰椭ⴠ⁶猢⑨•⁼潳瑲簠挠瑵ⴠ⁤㨢•昭ㄠ簠琠⁲尧❮✠❼簠猠摥✠⽳扼湩⽼扼湩屛屜㩳籝扞湩簤✯簠猠摥✠⽳⽼屜籜术性䤢偭卯獓即䉩䕬敥ਢ湫彷獵獲✽慤浥湯尺摼敡潭屮屳幼慤浥湯尤浼獥慳敧尫獼獹潬屧睼睷籜睷⵷慤慴籜慭汩籜潮潢祢籜敄楢湡⬭籜瑲楫屴獼獹整摭✫唊䕓㵒睠潨浡恩䠊䵏㵅栯浯⽥唤䕓੒則問卐∽浉潐卓獳楓求故≥杠潲灵⁳唤䕓⁒㸲搯癥港汵⁬⁼畣⁴搭∠∺ⴠ⁦′⁼牴✠✠✠❼簠猠摥✠⽳⽼屜籜术性ਊ睰彤湩楳敤桟獩潴祲∽稷籜湵楺屰畼敳慲摤籜楬敮畮屭浼火獡睳層桼灴獡睳層潼数獮汳籜䅐卓屗灼獡睳籜桳摡睯籜潲瑯籜畳潤籜獞屵灼敫數屣幼瑦屰浼湯潧籜獰汱籜祭煳屬牼敤歳潴屰硼牦敥摲屰幼獳屨獼整桧摩履䁼ਢ琊灯〲〰睰獤∽㈱㐳㘵瀠獡睳牯⁤㈱㐳㘵㠷‹㈱㐳㘵㠷ㄠ㌲㔴焠敷瑲⁹㈱ㄳ㌲ㄠㄱㄱ‱扡ㅣ㌲ㄠ㌲㔴㜶搠慲潧⁮焱眲攳爴猠湵桳湩⁥㔶㌴ㄲ洠獡整⁲㈱㐳映潯扴污⁬㈱㐳㘵㠷〹〠〰〰‰潣灭瑵牥㘠㘶㘶‶畳数浲湡洠捩慨汥椠瑮牥敮⁴汩癯祥畯搠湡敩⁬焱穡眲硳洠湯敫⁹桳摡睯樠獥楳慣氠瑥敭湩戠獡扥污⁬桷瑡癥牥瀠楲据獥⁳扡摣㈱㐳ㄠ㌲㈳‱瑳牡慷獲ㄠㄲㄲ′桴浯獡稠捸扶浮琠畲瑳潮‱楫汬牥眠汥潣敭樠牯慤⁮慡慡慡ㄠ㌲睱⁥牦敥潤⁭慰獳潷摲‱档牡楬⁥慢浴湡樠湥楮敦⁲㜷㜷㜷‷業档汥敬搠慩潭摮漠楬敶⁲敭捲摥獥戠湥慪業⁮ㄱㄱㄱㄱ猠潮灯⁹慳慭瑮慨瘠捩潴楲⁡慭牴硩朠潥杲⁥污硥湡敤⁲敳牣瑥挠潯楫⁥獡晤桧㤠㜸㔶㌴ㄲㄠ㌲扡⁣牯湡敧映捵祫畯愠摳ㅦ㌲‴数灰牥栠湵整⁲楳癬牥樠獯畨⁡慢慮慮ㄠ㉱㍷⁥档汥敳⁡㈱㐳睱牥猠浵敭⁲睱牥祴極灯瀠潨湥硩愠摮敲⁷ㅱ㉷㍥㑲攠敬桰湡⁴慲湩潢⁷畭瑳湡⁧敭汲湩氠湯潤⁮慧晲敩摬爠扯牥⁴档捯汯瑡⁥ㄱ㈲㌳猠浡畳杮焠穡獷⁸慭瑴敨⁷畢瑳牥樠湯瑡慨⁮楧杮牥映潬敷⁲㔵㔵㔵琠獥⁴慣潲楬敮愠慭摮⁡慭敶楲正洠摩楮桧⁴慭瑲湩樠湵潩⁲㠸㠸㠸㠸愠瑮潨祮樠獡業敮挠敲瑡癩⁥慰牴捩⁫業正祥ㄠ㌲焠敷瑲ㅹ㌲挠捯捡汯⁡档捩敫⁮慰獳ぷ摲映牯癥牥眠汩楬浡渠捩汯⁥敨汬⁯敹汬睯渠物慶慮樠獵楴⁮牦敩摮⁳档敥敳琠杩敧⁲潭桴牥氠癩牥潰汯戠楬歮㠱′獡晤桧歪⁬湡牤慥猠楰敤⁲捳潯整⁲楲档牡⁤潳捣牥爠捡敨⁬異灲敬洠牯慧⁮敭楬獳⁡慪正潳⁮牡敳慮⁬㈲㈲㈲焠敷㈱″慧牢敩⁬敦牲牡⁩慪灳牥搠湡敩汬⁥慢摮瑩愠杮汥⁡捳牯楰湯瀠楲据⁥慭杧敩愠獵楴⁮敶潲楮慣渠捩潨慬⁳潭獮整⁲敤瑸牥挠牡潬⁳桴湵敤⁲畳捣獥⁳慨湮桡愠桳敬⁹㌱㌱㌱猠整汬⁡牢湡潤⁮潰敫潭⁮潪敳桰愠摳慦摳⁦㤹㤹㤹洠瑥污楬慣搠捥浥敢⁲档獥整⁲慴汹牯猠灯楨⁥慳畭汥爠扡楢⁴牣獹慴⁬慢湲祥砠硸硸⁸瑳癥湥爠湡敧⁲慰牴捩慩挠牨獩楴湡愠獳潨敬猠楰敤浲湡猠湡牤⁡潨正祥愠杮汥⁳敳畣楲祴瀠牡敫⁲敨瑡敨⁲㠸㠸㠸瘠捩潴⁲慨汲祥㌠㌳㌳″祳瑳浥猠楬歰潮⁴潮敶扭牥樠牯慤㉮″慣慮慤琠湥楮⁳睱牥祴極挠獡数⁲敧業楮愠摳㈱″楷瑮牥栠浡敭⁲潣灯牥愠敭楲慣愠扬牥⁴㜷㜷㜷眠湩敮⁲档牡敬⁳畢瑴牥汦⁹睳牯晤獩⁨潰捰牯⁮数杮極⁮潤灬楨⁮慣潲楬慮愠捣獥⁳㠹㘷㐵栠牡捤牯⁥潣癲瑥整愠灰敬⁳㈱㐳㈱㐳猠扡楲慮爠浥浥敢⁲睱牥㈱㐳攠睤牡⁤敤湮獩挠敨牲⁹灳牡祫渠瑡獡慨愠瑲畨⁲慶敮獳⁡慭楲慮氠潥慮摲⁯潪湨祮搠污慬⁳湡潴楮⁯楷獮潴੮湳捩敫獲漠楬楶⁡潮桴湩⁧捩浥湡搠獥楴祮挠景敦⁥灡汯潬㘠㘹㘹‹楷摮睯⁳楷汬慩獭猠档潯⁬慭楤潳⁮慤潫慴愠杮汥湩⁡湡敤獲湯ㄠ㤵㔷″ㄱㄱ礠浡桡⁡牴湩瑩⁹敲敢捣⁡慮桴湡朠極慴⁲潣灭煡ㄠ㌲㈱ㄳ㌲琠祯瑯⁡桳湡潮⁮汰祡潢⁹数湡瑵瀠歡獩慴⁮楤扡潬愠换敤⁦慭睸汥⁬潧摬湥愠摳獡⁤㈱㘳㐵洠牵桰⁹潭楮慣洠牡扬牯⁯楫扭牥祬朠瑡睥祡戠楡敬⁹〰〰〰〰猠潮扷污⁬捳潯祢渠歩瑩⁡慦捬湯愠杵獵⁴整瑳㈱″敳慢瑳慩⁮慰瑮敨⁲潬敶樠桯獮湯朠摯楺汬⁡敧敮楳⁳牢湡祤愠楤慤⁳硺癣湢眠穩牡⁤潰獲档⁥湯楬敮栠汥潬㈱″畦正景⁦慥汧獥挠慨灭潩⁮畢扢敬⁳潢瑳湯猠潭敫⁹牰捥潩獵洠牥畣祲氠畡敲⁮楥獮整湩挠楲正瑥挠浡牥湯愠杮汥愠浤湩渠灡汯潥⁮潭湵慴湩氠癯汥⁹牦敩摮映潬敷獲搠汯桰湩⁳慤楶⁤档捩条⁯楳牥慲欠楮桧⁴慹歮敥⁳楷獬湯眠牡楲牯猠浩汰⁥敮獬湯洠晵楦⁮档牡潬瑴⁥慣癬湩猠数据牥渠睥潹歲映潬楲慤映牥慮摮⁯汣畡楤⁡慢歳瑥慢汬戠牡散潬慮㠠㘷㐵㈳‱楷汬睯猠畴楰⁤慳獭湯瀠汯捩⁥慰慲楤敳洠瑯牯汯⁡慭慮敧⁲慪畧牡樠捡楫⁥慦業祬搠捯潴⁲畢汬桳瑩戠潲歯祬⁮楴敧獲猠整桰湡敩猠慬敹⁲数捡敨⁳業汬牥栠慥敶⁮汥穩扡瑥⁨畢汬潤⁧湡浩污㜠㤸㔴‶捳牯楰⁯潲敳畢⁤睱牥祴㈱映慲歮楬⁮汣楡敲愠敭楲慣⁮楶据湥⁴整瑳湩⁧異灭楫⁮汰瑡湩浵氠畯獩⁥楫瑴湥朠湥牥污甠楮整⁤畴瑲敬洠牡湩⁥捩捥敲浡栠捡敫⁲慤歲敮獳挠楲瑳湩⁡潣潬慲潤戠潯敭⁲污硥湡牤⁡瑳敥敬獲猠牥湥瑩⁹汰慥敳洠湯慴慮洠瑩档汥⁬慭捲獵氠汯楬潰⁰敪獳敩栠灡祰挠睯潢⁹〱〲〳洠牡桳污⁬番楰整⁲敪敲祭朠扩潳⁮畦正牥戠牡慢慲愠牤慩⁮焱穡獸㉷ㄠ㌲㐴㈳‱ㄱㄱ‱瑳牡牴步映獩楨杮搠杩瑩污挠牨獩楴敮戠獵湩獥⁳扡摣晥⁧楮瑮湥潤朠湥畩⁳㈱睱獡硺眠污敫⁲ㅱ㉷㍥瀠慬敹⁲敬敧摮挠牡敭⁮潢扯潯琠浯慣⁴潲慮摬⁯数灯敬瀠浡汥⁡慭癲湩樠捡慫獳朠潯汧⁥敦摮牥愠摳杦橨⁫慐獳潷摲ㄠ㉱㍷㑥㕲⁴慺ㅱ眲硳猠潣汴湡⁤桰湡潴⁭敨捲汵獥映畬晦⁹硥汰牯牥愠敬楸⁳慷瑬牥琠潲扵敬琠獥整⁲睱牥祴‱敭慬楮⁥慭据敨瑳牥朠牯潤⁮楦敲楢摲攠杮湩敥⁲穡牥祴ㄠ㜴㔲‸楶杲湩慩琠杩牥猠浩獰湯⁳慰獳潩⁮慬敫獲樠浡獥愠杮汥捩⁡㔵㔵‵慶灭物⁥楴晦湡⁹敳瑰浥敢⁲牰癩瑡⁥慭楸畭⁳潬敶敭椠慳敢汬⁥獩扡汥慬攠汣灩敳搠敲浡牥挠慨杮浥⁥慣獳敩戠摡潢⁹㈱㐳㘵⁡瑳湡敬⁹湳灩牥爠捯敫⁴慰獳潰瑲瀠湡潤慲樠獵楴散椠普湩瑩⁹潣歯敩⁳慢扲敩砠癡敩⁲湵捩牯⁮畳数獲慴ੲ瑳灥敨⁮慲杮牥⁳牯慬摮⁯潭敮⁹潤業潮挠畯瑲敮⁹楶楫杮琠捵敫⁲牴癡獩猠慣晲捡⁥慰楶楬湯渠捩汯獡渠瑡污敩朠湡慤晬映敲摤⁹潤慮摬挠灡慴湩愠换敤杦⁨ㅡ㉢㍣㑤猠数摥⁹数整⁲楮獳湡氠癯祥畯栠牡楲潳⁮牦摩祡映慲据獩搠湡散⁲㔱㌹㜵ㄠ㄰㄰‰灳瑩楦敲猠瑡牵⁮敮敭楳⁳楬瑴敬搠敲浡⁳慣桴牥湩⁥牢瑯敨⁲楢瑲摨祡ㄠㄱㄱㄱ眠汯敶楲敮瘠捩潴祲猠畴敤瑮映慲据⁥慦瑮獡⁹湥杩慭挠灯数⁲潢湮敩琠牥獥⁡敭楸潣朠極湮獥⁳敧牯楧⁡慣楬潦湲慩猠敷瑥⁹潬楧整档樠汵慩⁮潨摴杯攠浭湡敵⁬畢瑴牥戠慥汴獥ㄠ㈱㌲㐳‴牴獩慴⁮祳湤祥猠楰楲⁴捯潴敢⁲潭慺瑲氠汯瑩⁡物汥湡⁤潧摬楦桳攠業敮⁭潤杵慬⁳潣扷祯⁳潣瑮潲⁬档祥湥敮愠敬⁸整瑳整瑳猠慴杲瑡⁥慲摩牥⁳業牣獯景⁴楤獥汥搠扥楢⁥慤杮牥挠慨据⁥獡晤愠祮桴湩⁧慡慡慡慡眠汥潣敭‱睱牥⁴慨慨慨映牯獥⁴瑥牥楮祴搠獩敮⁹敤楮敳挠牡整⁲污獡慫稠空空⁺楴慴楮⁣桳牯祴猠敨扬⁹潰歯敩瀠湡整慲攠杮慬摮挠牨獩稠捡慨祲眠獥獴摩⁥慴慭慲瀠獡睳牯ㅤ㌲瀠獡⁳慭祲慪敮氠湩潣湬眠汩楬⁥整捡敨⁲楰牥敲洠捩慨汥‱敬汳敩氠睡敲据⁥牫獩楴慮欠睡獡歡⁩牤睯獳灡挠汯敬敧戠慬扨慬⁨慢祢楧汲愠慶慴⁲污捩慩爠来湩⁡煱煱煱瀠潯扨慥⁲業慲摮⁡慭潤湮⁡汦牯湥散猠灡桰物⁥潮浲湡栠浡汩潴⁮牧敥摮祡朠污硡⁹牦湡楫⁥汢捡⁫睡獥浯⁥畳畺楫猠牰湩⁧慱睺硳摥⁣慭湧浵氠癯牥⁳楬敢瑲⁹牧来牯⁹㌲㌲㌲琠楷楬桧⁴楴潭桴⁹睳浩業杮猠灵牥猠慴摲獵⁴潳桰慩猠慨潲⁮潲扢敩瀠敲慤潴⁲数敮潬数洠捩楨慧⁮慭杲牡瑥樠獥獵栠睡楡⁩牧敥⁮牢瑩慴祮戠敲摮⁡慢杤牥愠戱挲″㐴㐴㐴眠湩楮⁥敷汳祥瘠潯潤⁯歳灩祰猠楨桴慥⁤敲獤楫獮焠敷瑲畹瀠獵祳慣⁴潨獵潴⁮潨獲獥朠湵敮⁲楦敲慢汬搠湯敫⁹档牥歯敥愠獵牴污慩愠楲潺慮ㄠ㌲愴换⁤歳汹湩⁥潰敷⁲数晲捥⁴潬敶潬敶欠牥業⁴敫湮瑥⁨慫牴湩⁡略敧敮挠牨獩⁴桴楡慬摮猠灵潰瑲猠数楣污爠湵敮⁲慬癳来獡樠獡湯映捵浫⁥畢瑴敨摡戠楬空牡⁤瑡敨慮愠楢慧汩㠠㜶㌵㤰瘠潩敬⁴睴敥祴猠慰歮⁹桳浡潲正爠摥㈱″慲捳污洠汥摯⁹潪湡慮栠汥潬‱牤癩牥戠畬扥物⁤楢整敭愠汴湡楴⁳牡潮摬愠灰敬愠楬潳⁮慴牵獵爠湡潤⁭楰慲整洠湯瑩牯洠牡慩氠穩牡⁤敫楶⁮畨浭牥栠汯慬摮戠晵慦潬ㄠ㜴㔲㌸㤶〠㜰〰‷慶敬瑮湩⁥潲敢瑲⁯潰瑴牥洠条潮楬⁡番敶瑮獵椠摮杩⁯湩楤湡栠牡敶⁹畤据湡搠慩潭摮⁳慤楮汥⁡档楲瑳灯敨⁲牢摡敬⁹慢慮慮⁳慷捲慲瑦猠湵敳⁴楳潭敮爠湥来摡੥敲獤硯瀠楨楬⁰潭摮祡洠桯浡敭⁤湩楤湡⁡湥牥祧戠湯つ㜰愠慶潬⁮整浲湩瑡牯猠楫灰牥猠潨灰湩⁧捳瑯祴猠癡湡慮⁨慲浹湯⁤潭牲獩洠扮捶穸洠捩敨敬氠捵祫氠捵晩牥欠湩摧浯欠牡湩⁡楧癯湡楮挠湹桴慩愠㈱㐳㘵ㄠ㜴㔸′㈱㈱㈱㈱眠汩捤瑡⁳潲慮摬瀠牯畴慧⁬業敫栠汥浰⁥牦杯祧搠慲潧獮挠湡散⁲畢汬瑥戠慥瑵晩汵愠慬慢慭㈠㈱㈱‱湵湫睯⁮畳普潬敷⁲灳牯獴猠敩敭獮猠湡楴条⁯慫桴敬湥栠瑯慭汩栠浡瑳牥朠汯敦⁲畦畴敲映瑡敨⁲湥整灲楲敳挠楬晦牯⁤档楲瑳湩⁡慣業汬⁥慣慭潲戠慥瑵⁹㔵㔵㔵㔵瘠獩潩⁮潴湲摡⁯潳敭桴湩⁧潲敳慭祲焠敷獡⁤慰捴敨⁳慭楧⁣敨敬慮搠湥敶⁲牣捡敫⁲敢癡牥戠獡敫⁴瑡慬瑮⁡慶慣楴湯猠業敬⁳楲慣摲⁯慰捳污渠睥潴⁮敪晦敲⁹慪浳湩樠湡慵祲栠湯祥栠汯祬潷摯栠汯摩祡朠潬楲⁡汥浥湥⁴档湡汤牥戠潯敧⁲湡敧潬愠汬獩湯愠瑣潩⁮㤹㤹㤹㤹琠牡敧⁴湳睯慭⁮業畧汥洠牡敬⁹潬牲楡敮栠睯牡⁤慨浲湯⁹档汩牤湥挠汥楴⁣敢瑡楲散愠物潢湲⁥楷正摥瘠祯条牥瘠污湥楴⁮桴ㅸ㌱‸桴浵数⁲慳畭慲⁩潭湯楬桧⁴浭浭浭欠牡瑡⁥慫業慫敺樠浡楡慣攠敭慲摬戠扵汢⁥牢潯敫稠浯楢⁥瑳慲扷牥祲猠潰歯⁹潳瑦慷敲猠浩獰湯猠牥楶散猠牡桡爠捡湩⁧慱硺睳瀠楨楬獰漠捳牡洠湩楮⁥慬慬慬椠潲浮湡朠摯敤獳攠瑸敲敭攠灭物⁥汥楡敮搠畲浭牥挠慬獳捩挠牡楲⁥敢汲湩愠摳杦㈠㈲㈲㈲′慶敬楲⁥楴瑮湩琠敨潲正猠湵慤⁹歳睹污敫⁲慳癬摡牯瀠来獡獵瀠湡桴牥⁳慰正牥⁳敮睴牯⁫業獳潩⁮慭歲氠来汯獡氠捡潲獳⁥楫瑴⁹敫汬⁹敪瑳牥椠慴楬⁡楨桰灯映敲浥湡挠慨汲敩‱慣摲湩污戠畬浥潯⁮扢扢扢戠獡慴摲愠祬獳⁡㄰㌲㔴㜶㤸稠灥数楬⁮楴歮牥猠牵敦⁲浳汩⁥潲正瑳牡漠数慲潴⁲慮畲潴映敲摤敩搠慲潧普祬搠捩桫慥⁤潣湮牯愠慮潣摮⁡浡瑳牥慤⁭污牦摥愠㈱㐳‵㠷㐹㘵㈱″㜷㜷㜷㜷琠潲灯牥猠楫瑴敬⁳桳污浯爠灡潴⁲楰湯敥⁲数獲湯污渠捣㜱㄰渠獡慣⁲畭楳⁣牫獩整⁮楫杮潫杮朠潬慢⁬敧潲楮潭朠牥慭祮挠畯瑮祲挠牨獩浴獡戠牥慮摲戠湥潳⁮牷獥汴湩⁧慷牲湥琠捥湨⁯畳牮獩⁥瑳晥湡猠獩整⁲慳慶敧爠獵敳汬爠扯湩潳⁮牯捡敬洠汩楬⁥慭摤杯氠杩瑨楮杮欠湩獧潴⁮敫湮摥⁹慨湮扩污朠牡楣⁡潤湷潬摡搠汯慬⁲慤歲瑳牡戠畲畴⁳潢扢⁹畡畴湭眠扥瑳牥瘠湡汩慬甠摮牥慴敫⁲楴歮牥敢汬猠敷瑥数⁡獳獳獳猠景扴污⁬慲慦汥瀠湡獡湯捩瀠㕡眵牯⁤敫批慯摲椠慳敢⁬敨瑣牯映獩敨⁲潤業楮⁣慤歲楳敤挠敬灯瑡慲戠畬⁥獡慳獳湩愠敭楬⁡汶摡浩物爠汯湡੤楮杧牥渠瑡潩慮⁬潭楮畱⁥潭汬⁹慭瑴敨ㅷ朠摯慦桴牥映慲歮挠牵楴⁳档湡敧挠湥牴污挠牡浴湡戠潲桴牥⁳潢杯敩愠捲楨⁥慷牲潩獲甠楮敶獲⁥畴歲祥琠灯畧⁮潳潬潭⁮桳牥祲猠歡牵⁡畲桳ㄲ㈱焠慷穳⁸景楦散洠獵牨潯⁭潭楮慫洠牡潩⁮潬敲穮⁯潪湨栠牥慭⁮潣湮捥⁴档灯数⁲畢瑲湯戠潬摮敩戠瑩档戠杩慤摤⁹浡敢⁲㔴㜶㤸ㄠ㉡㍢㑣⁤汵楴慭整琠煥極慬琠湡敮⁲睳敥楴⁥捳瑯⁴潲正⁹潰数敹瀠瑥牥慰⁮慰正牡⁤潬敶扲祯氠潥慮摲樠浩祭栠牡祲朠楲晦湩搠獥杩⁮畢摤慨ㄠ眠污慬散琠畲汥癯⁥牴浯潢敮琠牯湯潴琠牡慺⁮桳物敬⁹慳浭⁹数扢敬⁳慮慴楬⁡慭捲汥洠污潣浬洠摡汥湩⁥敪潲敭朠汩敢瑲朠湡獧整⁲楤杮潤杮挠瑡污湩⁡畢摤⁹汢穡牥戠汩祬戠慩据⁡污橥湡牤⁯㐵㈳‱㔲㔲㔲ㄠㄱ㈲′〰〰眠瑡牥猠捵敫⁲潲獯整⁲潰慴潴渠牯潴⁮畬正ㅹ氠癯湩⁧潬ㅬ㌲氠摡批杵欠瑩祴慣⁴畦正映牯敧⁴汦灩数⁲楦敲慭⁮楤杧牥戠湯潪牵戠硡整⁲畡牤祥愠畱牡畩⁳ㄱㄱㄱㄱㄱ瀠灰灰⁰汰湡瑥瀠湥楣⁬慰牴潩獴漠晸牯⁤業汬潩⁮慭瑲慨氠湩獤祡氠畡慲樠浡獥潢摮椠慨整潹⁵潧扯牥朠慩瑮⁳慧摲湥搠慩慮挠捥汩慩戠慲楺⁬汢獥楳杮戠獩潨⁰楢摧杯愠物汰湡⁥慐獳潷摲‱潴瑭浯猠楴杮慲⁹獰捹潨瀠捩汫⁥畯汴睡渠浵敢ㅲ洠汹癯⁥慭牵捩⁥慭浤湡洠摡楤⁥敬瑳牥栠湥牤硩栠汥晬物⁥慨灰ㅹ朠慵摲慩⁮汦浡湩潧攠瑮牥挠楨档⁩㤰㜸㔶㌴ㄲ眠獥整湲琠楷瑳牥琠畲灭瑥琠楲楸⁥潳牣瑡獥猠湩敧⁲敳杲潩猠湡浤湡爠捩浨湯⁤楰汧瑥瀠獡ㅳ㌲漠楳楲⁳潭歮祥‱慭瑲湩⁡番瑳湩⁥湥汧獩⁨汥捥牴捩挠畨捲⁨慣瑳敬挠敡慳⁲楢摲敩愠牵牯⁡牡楴瑳愠慭敤獵愠扬牥潴㈠㘴ㄸ‰桷瑩敮⁹桴湡祫畯猠整汲湩⁧瑳牡爠湯楮⁥異獳⁹牰湩整⁲楰慣獳⁯畭据歨湩洠牯桰略⁳慭浤硡欠楡敳⁲番楬獵椠灭牥慩⁬慨灰湩獥⁳潧摯畬正挠畯瑮牥挠汯浵楢⁡慣灭敢汬戠敬獳摥戠慬正慪正愠灬慨㤠㤹㤹㤹㤹ㄠ㈴㌵‶潷扭瑡眠汩捤瑡琠敲潶⁲整敬桰湯⁥浳汩祥猠楡瑮⁳牰瑥祴漠汢癩潩⁮敮捷獡汴⁥慭楲湡⁡慪楮散椠牳敡⁬浩条湩⁥牦敥潤ㅭ搠瑥潲瑩搠敥敤⁥慤牲湥挠瑡楦桳愠牤慩慮眠獡楨杮潴⁮慷汲捯⁫慶敬瑮湩⁡慶敬据慩琠敨敢瑳猠数瑣畲⁭歳瑡牥猠敨汩⁡桳条祧瀠楯祵⁴敭扭牥樠獥楳慣‱敪敲業桡樠捡⁫湩慳敮椠潬敶⁵慨摮潳敭朠汯扤牥⁧慧牢敩慬攠楬慪⁨慤業湥搠楡祳戠瑵潴獮戠慬汢⁡楢执祯愠慰档⁥湡桴湯ㅹ愠㈱㐳㘵‷硸硸硸硸琠獯楨慢琠浯祭猠楡潬⁲数步扡潯洠瑯敨晲捵敫⁲潭瑮敲污洠湡敵⁬慭牤摩欠慲敭ੲ慫桴牥湩⁥慫杮牡潯樠湥祮椠浭牯慴⁬慨牲獩栠浡敬⁴牧捡敩映捵楫杮映物晥祬挠潨潣慬⁴敢瑮敬⁹捡潣湵⁴㈳㌱ㄲ㈠㈲′愱戲挳琠潨灭潳⁮桴浥湡猠牴歩⁥瑳捡祥猠楣湥散爠湵楮杮爠獥慥捲⁨潰慬楲⁳歯慬潨慭洠牡灩獯⁡慭楲⁥敬摡牥樠汵慩椠汳湡⁤摩湯歴潮⁷楨浴湡朠牥慭⁮敦楬数映瑡慣⁴慦扴祯搠晥湥敤⁲灡汰灥敩愠湮瑥整〠〱〲″慷獴湯琠慲敶⁬畳汢浩⁥瑳睥牡⁴瑳癥⁥煳極牲汥猠浩湯猠硥⁹楰敮灡汰⁥桰敯敢瀠牡獩瀠湡敺⁲慮楤敮洠獡整ㅲ洠牡潩欠汥敳⁹潪敫⁲潨杮潫杮朠牯汩慬搠湩獯畡⁲潣湮敩戠睯楬杮戠浡慢⁭慢祢潤汬愠慲潧湲愠摮敲獡㐠㘵㈱″㔱㔱㔱眠汯敶⁳潷晬慧杮琠牵敮⁲敳灭牥楦爠慥数⁲慰楴湥散洠牡汩湹映敬捴敨⁲牤数灰牥搠牯瑯票挠敲瑡潩⁮牢慩⁮汢敵歳⁹湡牤⁥慹歮敥眠牯灤獡⁳睳敥⁴灳湵祫猠摩敮⁹敳敲慮瀠敲瑳湯瀠畡楬敮瀠獡睳牯⁴牯杩湩污渠杩瑨慭敲洠物慩⁭慭瑲湩穥氠扡慲潤⁲牫獩楴⁮楫獳敭栠湥祲朠牥污⁤慧牲瑥⁴汦獡⁨硥慣楬畢⁲楤捳癯牥⁹摤摤摤搠湡祮挠汯楬獮挠獡湩⁯牢湯潣⁳牢湥慤⁮牢獡汩愠灰敬㈱″癹湯敮眠湯敤⁲楷摮睯琠浯瑡⁯畳摮湡散猠獡慨爠来楧⁥敲睤湩獧瀠楯潳⁮祭慰獳潷摲洠湯灯汯⁹慭楲桡洠牡慧楲慴氠潩歮湩⁧楫杮映潯扴污ㅬ搠物捥潴⁲慤汲湩⁧畢扢⁡楢捳極⁴㐴㐴㐴㐴眠獩潤⁭楶楶湡瘠物楧⁮祳癬獥整⁲瑳敲瑥猠潴敮⁳灳楲整猠楰敫猠湩汧⁥桳牥潬正猠湡祤爠捯敫⁲潲楢⁮慭瑴洠牡慩湮⁥楬摮⁡慬据汥瑯樠慥敮瑴⁥潨扢獥映敲⁤敦牲瑥搠摯敧⁲潣瑴湯挠牯湯⁡汣祡潴⁮散楬敮挠湡慮楢⁳敢汬⁡湡牤浯摥⁡㘷㐵㈳‱㐴㐴眠牥睥汯⁦瑳牡牣晡⁴慳灭潳⁮敲牤浵瀠特浡摩瀠潲楤祧瀠畡⁬業档汥洠牡楴楮洠牡瑡潨⁮潬杮潨湲氠潥慰摲樠摵瑩⁨潪湡敮樠獥獵‱湩敦湲⁯潨汬⁹慨潲摬栠灡祰㈱″獥桴牥搠摵敬⁹牤条湯‱慤睲湩挠楬瑮湯挠汥獥整挠瑡潤⁧牢捵汥敥愠杲湥楴慮愠灬湩⁥㐱㠷㈵㘳‹牷湡汧牥眠汩楬浡‱楶楫杮⁳牴杩敧⁲瑳慲杮牥猠汩楶⁡桳瑯畧⁮捳牡敬瑴猠慣汲瑥爠摥敨摡爠楡敤⁲睱慥摳硺⁣汰祡瑳瑡潩⁮祭瑳牥⁹潭牲獩湯栠湯慤映扥畲牡⁹慦瑮獡慩搠獥杩敮⁲潣潹整挠潯⁬畢汬潤獧戠牥楮⁥慢祢愠摳杦橨愠杮汥‱污慷獹愠慤⁭〲〲〲眠湡敫⁲畳汬癩湡猠整污桴猠敫瑥牥猠瑡牵慤⁹潲湤祥瀠敲畬敤瀠湩灧湯⁧桰汩楬⁰数睥敥瀠慥畮獴瀠慥散渠杵敧⁴敮灷牯⁴祭敳晬洠畯敳洠浥桰獩氠癯牥氠湡散⁲牫獩楴敮樠浡獥‱潨扢瑩栠污潬敷湥映捵祫畯‱楦杮牥映慥汲獥⁳潤杤牥⁳敤敬整挠畯慧ੲ档牡敭⁤慣獳湡牤⁡慣瑩楬⁮楢浳汩慬⁨敢楬癥⁥污捩⁥楡晲牯散㜠㜷‷楶数⁲潴祮琠敨摯牯⁥祳癬慩猠穵湡敮猠慴晲獩⁨灳牡汫⁥敳癲牥猠浡慳⁭睱煥敷瀠扵楬⁣慰獳㈱㐳渠灥畴敮洠牡慩⁮牫獩湨⁡歫歫歫樠湵汧⁥楣湮浡湯戠瑩档獥㜠ㄴ㔸′牴橯湡琠敨敲慳猠敷瑥敨牡⁴灳慥敫⁲慳浬湯瀠睯牥⁳楰空⁡癯牥潬摲洠捩慨汥⁡敭敲楤桴洠獡整獲氠湩獤祥栠獩潴祲映牡敭⁲硥牰獥⁳獥慣数挠摵汤獥挠牡潳⁮慣摮⁹畢瑴牥畣⁰牢睯楮⁥牢歯湥愠换㈱㐳‵慡摲慶歲倠獡睳爰⁤㐱㐱㐱ㄠ㐲㜵‸㈱㜳㤸ㄠ㌲㔴㜶㤸〱〠〰〰甠楮敶獲污琠楲楮慤⁤潴楢獡琠畨獲慤⁹畳晲湩⁧瑳慵瑲猠楴歮⁹瑳湡慤摲爠汯敬⁲潰瑲牥瀠慥汲慪⁭潭楢敬洠物条⁥慭歲獵氠畯潬⁵橪橪橪栠牥敢瑲朠慲散朠汯楤⁥牦獯祴映杩瑨牥映瑡浩⁡癥汥湹攠条敬搠獥物⁥牣浩潳⁮潣潣畮⁴档牥汹戠慥楶⁳湡湯浹畯⁳湡牤獥愠牦捩⁡㌱㘴㤷眠楨歳祥瘠汥敶⁴瑳牯祭猠牰湩敧⁲潳摬敩⁲慲湧牡歯瀠牯汴湡⁤牯湡敧⁳潮潢祤渠瑡慨楬⁥慭楬畢氠潯楫杮氠浥湯摡⁥慬敶摮牥栠瑩敬⁲敨牡獴朠瑯桯汥⁬汧摡慩潴⁲杧杧杧映敲正敬⁳慦桳潩⁮慤楶ㅤ挠畲慳敤⁲潣浳獯挠浯慭摮⁯汣癯牥挠慬敲据⁥散瑮牥挠摡汩慬⁣牢潯獫戠潲据⁯潢楮慴戠扡汹湯愠捲敨⁲污硥湡牤⁥㈱㘳㐵㠷‹敶扲瑡浩甠扭敲汬⁡桴湡獫猠湵祮猠慴歬牥猠汰湩整⁲灳牡潲⁷敳敬慮爠獵楳⁡潲敢瑲⁳敲楧瑳牥焠敷瑲㈱″数杮極獮瀠湡慤渠捣㜱㄰⁤業慲汣⁥敭癬湩氠湯汥⁹敬浸牡⁫楫歴瑡樠汵敩朠慲慨⁭牦湡散⁳獥牴汥慬搠睯瑮睯⁮潤摯敬搠扥牯桡挠潯敬⁲潣潬扭慩挠敨業瑳祲挠捡畴⁳牢摩敧戠汯潬正⁳敢瑥敬愠慮瑳獡慩㜠ㄴ㔸㤲㌶㘠㘹㘹㘹‹湵煩敵猠敷瑥⁳瑳瑡潩⁮桳睯楴敭猠敨湥⁡慳瑮獯爠捯⁫敲潶畬楴湯爠慥楤杮焠敷慲摳⁦慰獳潷摲′潭杮潯敳洠牡敬敮洠楡敤⁮慭档湩⁥番楬瑥椠汬獵潩⁮慨摹湥映扡慩⁮敤牲捩⁫牣穡⁹潣汯畤敤挠楨灰牥戠浯敢⁲汢湯敤戠杩敲⁤浡穡湩⁧污敩獮愠牢捡摡扡慲ㄠ㌲睱慥摳眠睷睷⁷牴慥畳敲琠浩敢⁲浳瑩⁨桳汥祬猠獥浡⁥楰慲整⁳楰歮汦祯⁤慰獳潷摲⁳慮畴敲洠牡楬⁮慭楲敮⁳楬歮湩慰歲氠牡獩慳氠灡潴⁰潨牴摯朠浡楢⁴汥楶⁳摥捵瑡潩⁮畤瑳湩搠癥汩⁳慤業湡挠牨獩祴戠慲敶⁳慢汬牥愠慮捲票眠楨整瘠污牥慩甠摮牥牧畯摮猠牴湯⁧潰灯潯洠湯污獩⁡敭潭祲氠穩楺⁥敫灥牥樠獵摴楯⁴潨獵⁥潨敭⁲敧慲摲攠楲獣潳⁮浥汩⁹楤楶敮挠汯敬湥挠敨獬慥‱捣捣捣挠浡牥⁡潢扮湯戠汩楬⁥楢晧潯⁴慢慤獳愠瑳牥硩愠湮⁡湡浩污ੳ湡祤愠档汩敬⁳ㅡ㉳㍤㑦瘠潩楬⁮敶潲楮慫瘠来瑥⁡祴敬⁲整瑳㈱㐳琠摥祤敢牡琠瑡慩慮猠潰瑲湩⁧灳牡慴⁮桳汥敬⁹桳牡獫爠獥数瑣爠癡湥瀠湥楴浵瀠灡汩潬⁮敮敶浲湩⁤慭歲瑥湩⁧慭獮湯洠摡敮獳樠汵敩瑴⁥敪楲档⁯慧牢敩汬⁥畦正潹㉵映牯潧⁴楦敲慷汬映楡桴攠潶畬楴湯攠楲⁣摥慵摲⁯慤杧牥挠楲瑳慩⁮慣慶楬牥挠湡摡慩⁮牢湵⁯汢睯潪⁢汢捡楫⁥敢条敬愠浤湩㈱″㄰㄰㄰琠杯瑥敨⁲灳湯敧潢⁢湳歡獥猠敨浲湡爠摥潤⁧敲污瑩⁹慲潭慮瀠灵楰獥瀠摥潲瀠捡晩捩瀠㕡眵爰⁤浯来⁡潮摯敬洠牵慲⁹潭汬敩洠獩整⁲慨晬楬敦映慲据⁯潦瑳牥映牯畭慬‱敦楬⁸牤条湯慢汬搠獥物敥搠晥畡瑬挠牨獩‱畢湮⁹潢换瑡愠摳ㅦ㌲㤠ㄵ㔷″㔵㔵㈠㈴㈴‴桴物整湥琠瑡潴⁯瑳湯捥汯⁤瑳湩敧⁲桳汩桯猠慥瑴敬猠湡慴慮爠杯牥爠扯牥慴爠獡慴慭⁮楰正敬⁳牯潩⁮畭瑳湡ㅧ映汥捩慩搠慲畣慬搠杯楧⁥畣畣扭牥挠獡楳祤戠楲湴祥戠楲湡慮戠慬瑳牥戠汥湩慤愠灰敬‱㔷㤳ㄵ琠摥祤猠牴歩牥猠整楶⁥潳敬汩猠慮敫猠慫整潢牡⁤桳牥摩湡猠硥敳⁸潲慸湮⁥敲浤湡焠煱煱煱ⁱ異楮桳牥瀠湡浡⁡慰慬楤⁮潮敮氠癯汥晩⁥楬桧獴樠牥祲椠敶獲湯椠獮摩⁥潨湲瑥栠汯敤⁮牧潯祶朠敲捴敨⁮牧湡浤⁡慧杮瑳⁡慦瑳牥攠摤敩挠敨敶汬⁥档獥整ㅲ挠牡潲⁴慣湮湯戠瑵潴⁮摡業楮瑳慲潴⁲⁡㈱㈱稠捸㈱″楷敲敬獳瘠汯敬批污⁬楶瑥慮⁭睴湩汫⁥整牲牯猠湡楤来⁯潲敳瀠歯浥湯‱楰瑣牵⁥慰牲瑯洠癯敩⁳潭獯⁥業牲牯洠汩潴⁮慭摹祡洠敡瑳潲氠汯祬潰⁰慫慴慮樠桯湡慮栠湵楴杮栠摵潳⁮牧穩決⁹潧杲潥獵朠牡慢敧映獩⁨牥敮瑳搠汯牯獥挠湯慲⁤档捩敫獮挠慨楲祴挠獡祥戠畬扥牥祲戠慬正慭⁮汢捡扫物⁤楢汬戠捥桫浡戠瑡汴⁥瑡慬瑮捩眠汩晤物⁥敷獡汥眠瑡牥潬⁯牴湡散猠潴浲猠湩慧潰敲猠潨瑯牥爠捯湫潲汬爠捩楨⁥潰灯瀠瑩畢汬洠獩楳獳灩楰欠獩敳⁳慫敲⁮番楬湡⁡慪敭ㅳ㌲椠畧湡⁡潨敭潷歲栠杩汨湡⁤楦敲攠汬潩⁴汥潤慲潤搠捵瑡⁩楤捳癯牥挠浯異整ㅲ戠摵祤‱湡潴楮⁡污桰扡瑥ㄠ㤵㔹‱㈱㐳㘵㠷愹ㄠ㈱㔳ㄸ㈳‱㄰㌲㔴‶慺ㅱ獸㉷眠扥慭瑳牥瘠条湩⁡湵敲污甠楮敶獲瑩⁹牴灯捩污猠楷浭牥猠杵牡猠畯桴慰歲猠汩湥散猠浡業⁥慲敶獮焠敵瑳潩⁮牰獥牡潩瀠楯祵牴睥ⁱ慰浬牥渠瑯扥潯⁫敮海湡渠扥慲歳⁡慭畮摴氠捵獡栠牥敭⁳慧潴獲搠癡⁥慤瑬湯挠敨瑥桡挠摥楲⁣慣業汬⁡畢汬敳敹戠楲杤瑥戠湩潧愠桳潴⁮㈱愳摳礠桡潯瘠汯浵⁥慶桬污慬琠浯牯潲⁷瑳牡楬桧⁴捳畲晦⁹潲捳敯爠捩慨摲‱潰楳楴敶瀊祬潭瑵⁨数獰⁩慰牴捩ㅫ瀠牡摡硯洠汩湡⁯慭楸慭氠獯牥氠獥慴⁴楧浺⁯桧瑥潴映楡桴畦⁬浥牥潳⁮汥楬瑯⁴潤業楮畱⁥潤敢浲湡搠汩潬⁮牣浩湩污挠慲正牥⁳潣癮牥敳挠牨獩祳挠獡湡癯⁡汢睯敭愠瑴瑩摵≥倊十呓奒∽〲〰•䐣晥畡瑬渠浵漠⁦慰獳摷⁳潴琠祲⠠污⁬祢搠晥畡瑬਩圊㵆晠湩⁤栯浯⁥琯灭⼠慶⁲戯湩⼠瑥⁣甯牳⼠楬⁢洯摥慩⼠湭⁴漯瑰⼠潲瑯⼠敤⁶琭灹⁥⁤洭硡敤瑰⁨′⠧‧⠧‧甭敳⁲唤䕓⁒⤧‧漭⁲⠧‧瀭牥⁭漭眽✠✩✠✩㈠⼾敤⽶畮汬簠猠牯恴圊潦摬牥㵳敠档⁯圤⁆⁼牴✠✠✠❼簠猠摥✠⽳⽼屜籜术性尢孼属崪尠∪ਊ潮䕴瑸湥楳湯㵳尢琮晩尤屼琮晩⑦籜⹜楧⑦籜⹜灪来尤屼樮杰籜⹜楪⑦籜⹜晪晩尤屼樮㉰尤屼樮硰尤屼樮欲尤屼樮挲尤屼昮硰尤屼瀮摣尤屼瀮杮尤屼瀮晤尤屼昮癬尤屼洮㑰尤屼洮㍰尤屼朮晩⑶籜⹜癡⑩籜⹜潭⑶籜⹜灭来尤屼眮癡尤屼搮捯尤屼搮捯⑸籜⹜汸⑳籜⹜汸硳∤ਊ䥔䕍問㵔睠楨档琠浩潥瑵㈠⼾敤⽶畮汬੠䍇㵃睠楨档朠捣㈠⼾敤⽶畮汬੠瀊瑡獨䝨∽〯牴捡⹥桳籜戯畬牥湡敧⹲桳籜搯獮慭⵰畢歬献屨⽼敧瑴硥⹴桳籜术ⵯ桲⹮桳籜术浶灡献屨⽼敬獳楰数献屨⽼歭浳灢獡睳⹤桳籜猯瑥灵牯浡獹汱献屨⽼敳畴⵰獮獳獹湩瑩献屨⽼整瑳捡⹧桳籜琯獥汴桡⹦桳籜甯汲桟湡汤牥献≨ਊ潮䉴捡畫㵰⼢摴扢捡畫⑰籜搯形潨扴捡畫⑰ਢ挊潲橮扯䝳∽瀮慬散潨摬牥籜愰慮牣湯籜栰畯汲屹慼慰档㉥籜灡潰瑲籜灡楴畴敤籜灡⵴潣灭瑡籜獢浤楡畮楴獬籜敤瑢条屳摼歰屧敼猲牣扵慟汬籜慦敫栭捷潬正籜潪湨籜潬牧瑯瑡履浼湡搭屢浼慤浤籜汭捯瑡履湼灴籜慰獳摷籜桰屰牼楡ⵤ档捥屫牼桷摯籜慳扭屡獼獹瑳瑡籜扵湵畴愭癤湡慴敧琭潯獬籜灵慤整渭瑯晩敩⵲潣浭湯ਢ牣湯潪獢㵂挢湥牴潥≮ਊ牰捯獥敳噳㵂樢睤屰瑼畭屸獼牣敥≮ਊ慭汩慟灰㵳倢獯晴硩籜潄敶潣屴䕼楸屭卼畱物敲䵬楡屬䍼特獵籜敓摮慭汩籜潃牵敩≲ਊ牰景汩摥㵇〢ⴱ潬慣敬昭硩献屨扼獡彨潣灭敬楴湯献屨捼汯牯牧灥挮桳籜潣潬杲敲⹰桳籜潣潬硲杺敲⹰獣屨捼汯牯穸牧灥献屨捼汯牯杺敲⹰獣屨捼汯牯杺敲⹰桳籜獣⹨潬慣屬杼睡⹫獣屨杼睡⹫桳籜慫楬献屨汼湡⹧獣屨汼湡⹧桳籜敬獳挮桳籜敬獳献屨獼⹨潬慣屬發整㈭㤮⸱桳ਢ椊⁦⁛␢⼨獵⽲楢⽮摩ⴠ⥵•攭ⁱ〢•㭝琠敨੮†䅉前住㵔ㄢਢ汥敳 䤠䵁佒呏∽ਢ楦ਊ⌣⌣⌣⌣⌣⌣⌣⌣⌣⌣⌣⌣⌣⌣⌣⌣⌣⌣⌣⌣⌣ਣⴣⴭⴭⴭⴭ 桃捥獫戠晥牯⁥瑳牡⁴⴨ⴭⴭⴭⴭਣ⌣⌣⌣⌣⌣⌣⌣⌣⌣⌣⌣⌣⌣⌣⌣⌣⌣⌣⌣⌣⌣ਣ‣ⴭ 牗瑩扡敬映汯敤ੲ‣ⴭ 獰眠牯楫杮朠潯੤‣ⴭ 敎睴牯⁫楢慮楲獥ਊ晗汯敤㵲∢昊牯映椠⁮圤㭆搠੯†捥潨✠‧㸲搯癥港汵⁬‾昤␯楦敬慮敭 椠⁦⁛㼤ⴠ煥〠崠※桴湥圠潦摬牥∽昤㬢映汩㵥␢⽦昤汩湥浡≥※浲ⴠ⁦昤␯楦敬慮敭㈠⼾敤⽶畮汬※牢慥㭫映㭩搊湯㭥ਊ晩嬠怠獰愠硵㈠⼾敤⽶畮汬簠眠⁣氭㈠⼾敤⽶畮汬⁠氭⁴‸㭝琠敨੮†低单偅㵓ㄢਢ楦ਊ䥄䍓噏剅䉟乁䉟䑁∽潎渠瑥潷歲搠獩潣敶祲挠灡扡汩瑩敩⁳昨楰杮漠⁲楰杮渠瑯映畯摮∩䘊䥐䝎␽眨楨档映楰杮਩䥐䝎␽眨楨档瀠湩⥧椊⁦⁛␢偆义≇崠※桴湥 䐠卉佃䕖归䅂彎佇䑏∽䜤䕒久䘤䥐䝎䈤椠⁳癡楡慬汢⁥潦⁲敮睴牯⁫楤捳癯牥⑹䝌夨畯挠湡甠敳氠湩数獡琠⁯楤捳癯牥栠獯獴‬敬牡⁮潭敲眠瑩⁨栭∩攊獬੥†晩嬠∠値义≇崠※桴湥 †䐠卉佃䕖归䅂彎佇䑏∽䜤䕒久値义⑇⁂獩愠慶汩扡敬映牯渠瑥潷歲搠獩潣敶祲䰤⁇夨畯挠湡甠敳氠湩数獡琠⁯楤捳癯牥栠獯獴‬敬牡⁮潭敲眠瑩⁨栭∩ 映੩楦ਊ䍓乁䉟乁䉟䑁∽潎瀠牯⁴捳湡挠灡扡汩瑩敩⁳渨⁣潮⁴潦湵⥤ਢ但乕彄䍎␽眨楨档渠⁣㸲搯癥港汵⥬椊⁦⁛稭∠䘤問䑎也≃崠※桴湥ऊ但乕彄䍎␽眨楨档渠瑥慣⁴㸲搯癥港汵⥬਻楦椊⁦⁛稭∠䘤問䑎也≃崠※桴湥ऊ但乕彄䍎␽眨楨档渠慣⁴㸲搯癥港汵⥬਻楦椊⁦⁛稭∠䘤問䑎也≃崠※桴湥ऊ但乕彄䍎␽眨楨档渠⹣牴摡瑩潩慮⁬㸲搯癥港汵⥬਻楦椊⁦⁛␢但乕彄䍎•㭝琠敨੮†䍓乁䉟乁䝟住㵄␢則䕅⑎但乕彄䍎䈤椠⁳癡楡慬汢⁥潦⁲敮睴牯⁫楤捳癯牥☠瀠牯⁴捳湡楮杮䰤⁇夨畯挠湡甠敳氠湩数獡琠⁯楤捳癯牥栠獯獴瀯牯⁴捳湡楮杮‬敬牡⁮潭敲眠瑩⁨栭∩昊੩ਊ⌣⌣⌣⌣⌣⌣⌣⌣⌣⌣⌣⌣⌣⌣⌣⌣⌣⌣⌣⌣⌣ਣⴣⴭⴭⴭⴭ 慐獲湩⁧慰慲敭整獲⠠ⴭⴭⴭⴭⴭਣ⌣⌣⌣⌣⌣⌣⌣⌣⌣⌣⌣⌣⌣⌣⌣⌣⌣⌣⌣⌣⌣ਣ‣ⴭ 䅆呓ⴠ䐠⁯潮⁴档捥⁫洱湩漠⁦牰捯散敳⁳湡⁤畳戠畲整⌊ⴠ⤭匠偕剅䅆呓ⴠ䘠十⁔…潤渠瑯猠慥捲⁨潦⁲灳捥慩⁬楦慬獥椠⁮污⁬桴⁥潦摬牥ੳ䘊十㵔ㄢ•䈣⁹敤慦汵⁴瑳慥瑬⽨慦瑳洠摯੥啓䕐䙒十㵔∢上呏塅佐呒∽ਢ䥄䍓噏剅㵙∢倊剏協∽ਢ啑䕉㵔∢䌊䕈䭃㵓匢獹ⱉ敄獶䄬慶潓ⱦ牐䍯潲卮癲獣丬瑥唬牳ⱉ潓䥦䤬瑮楆敬≳䠊䱅㵐䜤䕒久䔢畮敭慲整愠摮猠慥捲⁨牐癩汩来⁥獅慣慬楴湯瘠捥潴獲ਮ†††䈤吠楨⁳潴汯攠畮⁭湡⁤敳牡档瀠獯楳汢⁥業捳湯楦畧慲楴湯⑳䝄⠠湫睯⁮當湬ⱳ甠敳Ⱳ瀠潲散獳獥愠摮映汩⁥数浲獩楳湯ⱳ猠数楣污映汩⁥数浲獩楳湯ⱳ爠慥慤汢⽥牷瑩扡敬映汩獥‬牢瑵晥牯散漠桴牥甠敳獲琨灯〱〰睰獤Ⱙ瀠獡睳牯獤⸮⤮䈤椠獮摩⁥桴⁥潨瑳愠摮栠杩汨杩瑨瀠獯楳汢⁥業捳湯楦獧眠瑩⁨潣潬獲ਮ†††夤栭䈤吠⁯桳睯琠楨⁳敭獳条੥†††夤焭䈤䐠⁯潮⁴桳睯戠湡敮ੲ†††夤愭䈤䄠汬挠敨正⁳ㄨ業⁮景瀠潲散獳獥愠摮猠⁵牢瑵⥥ⴠ丠楯祳洠摯ⱥ映牯䌠䙔⁳慭湩祬 ††␠ⵙ⑳⁂畓数䙲獡⁴搨湯琧挠敨正猠浯⁥楴敭挠湯畳業杮挠敨正⥳ⴠ匠整污桴洠摯੥†††夤渭䈤䐠⁯潮⁴硥潰瑲攠癮瘠牡慩汢獥爠汥瑡摥眠瑩⁨楨瑳牯੹†††夤漭䈤传汮⁹硥捥瑵⁥敳敬瑣摥挠敨正⁳匨獹ⱉ䐠癥ⱳ䄠慶潓ⱦ倠潲牃湯牓捶ⱳ丠瑥‬獕䥲‬潓䥦‬湉䙴汩獥⸩匠汥捥⁴⁡潣浭⁡敳慰慲整⁤楬瑳ਮ†††夤搭㰠偉丯呅䅍䭓␾⁂楄捳癯牥栠獯獴甠楳杮映楰杮漠⁲楰杮␮䝄䔠㩸ⴠ⁤㤱⸲㘱⸸⸰⼱㐲 ††␠ⵙ⁰值剏⡔⥳‾搭㰠偉丯呅䅍䭓␾⁂楄捳癯牥栠獯獴氠潯楫杮映牯吠偃漠数⁮潰瑲⁳瘨慩渠⥣‮祂搠晥畡瑬瀠牯獴㈠ⰲ〸㐬㌴㐬㔴㌬㠳‹湡⁤湡瑯敨⁲湯⁥湩楤慣整⁤祢礠畯眠汩⁬敢猠慣湮摥⠠敳敬瑣㈠′晩礠畯搠湯琧眠湡⁴潴愠摤洠牯⥥‮潙⁵慣⁮污潳愠摤愠氠獩⁴景瀠牯獴␮䝄䔠㩸ⴠ⁤㤱⸲㘱⸸⸰⼱㐲ⴠ⁰㌵ㄬ㤳 ††␠ⵙ⁩䤼㹐嬠瀭㰠佐呒猨㸩⑝⁂捓湡愠⁮偉甠楳杮渠⹣䈠⁹敤慦汵⁴渨⁯瀭Ⱙ琠灯〱〰漠⁦浮灡眠汩⁬敢猠慣湮摥‬畢⁴潹⁵慣⁮敳敬瑣愠氠獩⁴景瀠牯獴椠獮整摡␮䝄䔠㩸ⴠ⁩㈱⸷⸰⸰‱瀭㔠ⰳ〸㐬㌴㠬〰ⰰ〸〸 ††␠則䕅⁎潎楴散䈤琠慨⁴晩礠畯猠汥捥⁴潳敭渠瑥潷歲愠瑣潩Ɱ渠⁯䕐挠敨正眠汩⁬敢瀠牥潦浲摥湜湜ਢ眊楨敬朠瑥灯獴∠㽨獡㩤㩰㩩潱∺漠瑰※潤 挠獡⁥␢灯≴椠੮††籨㽜 牰湩晴∠䠤䱅≐两㭃攠楸⁴㬰਻††⥡†䅆呓∽㬢਻††⥳†啓䕐䙒十㵔㬱਻††⥮†低䕔偘剏㵔㬱਻††⥤†䥄䍓噏剅㵙伤呐剁㭇਻††⥰†佐呒㵓伤呐剁㭇਻††⥩†偉␽偏䅔䝒㬻 †焠 儠䥕呅ㄽ㬻 †漠 䌠䕈䭃㵓伤呐剁㭇਻††獥捡搊湯੥ਊ⌣⌣⌣⌣⌣⌣⌣⌣⌣⌣⌣⌣⌣⌣⌣⌣⌣⌣⌣⌣⌣ਣⴣⴭⴭⴭⴭⴭ 慍湩䘠湵瑣潩獮⠠ⴭⴭⴭⴭⴭⴭਣ⌣⌣⌣⌣⌣⌣⌣⌣⌣⌣⌣⌣⌣⌣⌣⌣⌣⌣⌣⌣⌣ਣ攊档彯潮彴潦湵⁤⤨੻†牰湩晴␠䝄␢‱潎⁴潆湵層≮两੃੽攊档彯潮⠠笩 瀠楲瑮⁦䐤≇潎湜␢䍎紊ਊ牰湩彴獰⠠笩 ⠠潦⁲⁦湩怠獬ⴠ⁤瀯潲⽣⼪㭠搠⁯ †䌠䑍䥌䕎怽慣⁴昤振摭楬敮㈠⼾敤⽶畮汬簠朠敲⁰瘭∠敳獤∬㭠⌠敄敬整洠⁹睯⁮敳⁤牰捯獥敳獳 †椠⁦⁛␢䵃䱄义≅崠※ ††琠敨⁮单剅氽⁳氭⁤昤簠愠歷✠灻楲瑮␠紳㬧倠䑉怽捥潨␠⁦⁼畣⁴搭∠∯ⴠ㍦㭠ਠ†††牰湩晴∠†ⴥ㌱⁳┠㠭⁳┠屳≮∠唤䕓≒∠値䑉•␢䵃䱄义≅※ †映㭩ਠ†潤敮 㸲搯癥港汵⁬⁼潳瑲ⴠੲ੽瀊楲瑮扟湡敮⡲笩攊档⁯•††嬛㠴㔻ㄻ㠰⁭††嬛㠴㔻㔻洹ᬠ㑛㬸㬵ㄷ⁭嬛㠴㔻㜻洷†††ᬠ㑛㬸㬵㈲⁭嬛㠴㔻ㄻ㠰⁭†嬛㠴㔻ㄻ㐱⁭嬛㠴㔻㔻洹ᬠ㑛洹 ††嬛㠴㔻ㄻ㠰⁭ᬠ㑛㬸㬵ㄷ⁭嬛㠴㔻㈻洲ᬠ㑛㬸㬵ㄱ洳ᬠ㑛㬸㬵ㄷ⁭嬛㠴㔻㤻洴ᬠ㑛㬸㬵ㄲ洴†嬛㠴㔻㔻洸ᬠ㑛㬸㬵ㄲ洴††嬛㠴㔻ㄻ〰⁭嬛㠴㔻㜻洱†嬛㠴㔻ㄻ洶ᬠ㑛㬸㬵〱洸†嬛㤴੭††ᬠ㑛㬸㬵㔶⁭嬛㠴㔻ㄻ洶ᬠ㑛㬸㬵㈲⁭嬛㠴㔻㈻㐱⁭††ᬠ㑛㬸㬵㘱⁭嬛㠴㔻㈻㐱⁭†††ᬠ㑛㬸㬵㔶⁭ᬠ㑛洹 ††嬛㠴㔻㘻洵ᬠ㑛㬸㬵ㄲ洴†††ᬠ㑛㬸㬵㘱⁭嬛㠴㔻㈻㐱⁭嬛㠴㔻ㄻ洶ᬠ㑛㬸㬵ㄲ洴†††ᬠ㑛㬸㬵㌱洶ᬠ㑛㬸㬵㔶⁭嬛㤴੭††ᬠ㑛㬸㬵㌲⁭嬛㠴㔻㈻㐱⁭††††ᬠ㑛㬸㬵㜱洸ᬠ㑛㬸㬵ㄲ洴†††ᬠ㑛㬸㬵㔶⁭嬛㤴੭††ᬠ㑛㬸㬵㘱⁭嬛㠴㔻㈻㐱⁭††††嬛㠴㔻ㄻ㘳⁭嬛㠴㔻㤻洴†ᬠ㑛㬸㬵㌱洶ᬠ㑛㬸㬵ㄲ洴††嬛㠴㔻㘻洵ᬠ㑛洹 ††嬛㠴㔻㔻洸ᬠ㑛㬸㬵ㄲ洴†嬛㠴㔻ㄻ㈷⁭嬛㠴㔻㘻洴ᬠ㑛㬸㬵㜷⁭††††††嬛㠴㔻㜻洱ᬠ㑛㬸㬵㔶⁭嬛㤴੭††ᬠ㑛㬸㬵㘱⁭嬛㠴㔻㜻洱ᬠ㑛㬸㬵㜷⁭ᬠ㑛㬸㬵ㄷ⁭嬛㠴㔻㜻洷††††ᬠ㑛㬸㬵ㄷ⁭嬛㠴㔻㜻洷†ᬠ㑛㬸㬵㔶⁭ᬠ㑛洹 ††嬛㠴㔻㔻洹ᬠ㑛㬸㬵ㄷ⁭嬛㠴㔻㜻洷ᬠ㑛㬸㬵㜷⁭嬛㠴㔻ㄻ洶ᬠ㑛㬸㬵㜷⁭††††嬛㠴㔻ㄻ洶ᬠ㑛㬸㬵㜷⁭†嬛㠴㔻㘻洵†嬛㤴੭††ᬠ㑛㬸㬵㔶⁭ᬠ㑛㬸㬵㜷⁭††ᬠ㑛㬸㬵ㄷ⁭嬛㠴㔻ㄻ洶ᬠ㑛㬸㬵㜷⁭†ᬠ㑛㬸㬵ㄱ洳ᬠ㑛㬸㬵㜷⁭†嬛㠴㔻㘻洵†嬛㤴੭††ᬠ㑛㬸㬵㔶⁭嬛㠴㔻ㄻ洶ᬠ㑛㬸㬵㜷⁭ᬠ㑛㬸㬵㔱洰ᬠ㑛㬸㬵ㄱ洳ᬠ㑛㬸㬵㜷⁭†††ᬠ㑛㬸㬵㔱洰ᬠ㑛㬸㬵ㄱ洳ᬠ㑛㬸㬵㜷⁭嬛㠴㔻㘻洵ᬠ㑛㬸㬵㤵⁭嬛㠴㔻㘻洵ᬠ㑛洹 ††嬛㠴㔻ㄻ洶ᬠ㑛㬸㬵㔶⁭嬛㠴㔻㜻洱ᬠ㑛㬸㬵㜷⁭††††††嬛㠴㔻㜻洱ᬠ㑛㬸㬵㈲⁭嬛㠴㔻㘻洵†嬛㤴੭††ᬠ㑛㬸㬵〱洸†嬛㠴㔻ㄻ㜰⁭嬛㠴㔻㔻洹ᬠ㑛㬸㬵㜷⁭†††††嬛㠴㔻ㄻ洶ᬠ㑛㬸㬵ㄱ洴ᬠ㑛㬸㬵〱洸†ᬠ㑛洹ਢ੽猊彵牴役睰⁤⤨੻†单剅␽਱†䅐卓佗䑒剔㵙㈤ 琠祲畳怽捥潨∠値十坓剏呄奒•⁼楴敭畯⁴⸰‷畳␠单剅ⴠ⁣桷慯業㈠⼾敤⽶畮汬⁠ 椠⁦⁛␢牴獹≵崠※桴湥 †攠档⁯•夠畯挠湡氠杯湩愠⁳唤䕓⁒獵湩⁧慰獳潷摲›値十坓剏呄奒•⁼敳⁤猢⸬Ⱚ笤絃ㅛ㌻㬱〱洳␦䍻孽洰∬ 映੩੽猊彵牢瑵彥獵牥湟浵⠠笩 唠䕓㵒ㄤ 吠䥒卅␽ਲ†畳瑟祲灟摷␠单剅∠•…†⌠牔⁹楷桴畯⁴慰獳潷摲 猠彵牴役睰⁤唤䕓⁒唤䕓⁒…吣祲甠敳湲浡⁥獡瀠獡睳牯੤†畳瑟祲灟摷␠单剅怠捥潨␠单剅簠爠癥㈠⼾敤⽶畮汬⁠…吣祲爠癥牥敳甠敳湲浡⁥獡瀠獡睳牯੤†潦⁲⁩湩怠敳ⁱ吤䥒卅㭠搠⁯ †猠彵牴役睰⁤唤䕓⁒敠档⁯琤灯〲〰睰獤簠挠瑵ⴠ⁤••昭␠恩☠⌠牔⁹佔⁐剔䕉⁓景瀠獡睳牯獤⠠祢搠晥畡瑬㈠〰⤰ †猠敬灥〠〮㜰⌠吠⁯潮⁴癯牥潬摡琠敨猠獹整੭†潤敮 眠楡ੴ੽⌊⌣⌣⌣⌣⌣⌣⌣⌣⌣⌣⌣⌣⌣⌣⌣⌣⌣⌣⌣⌣⌣⌊ⴭⴭⴭⴭⴭ 敎睴牯⁫畦据楴湯⁳⴨ⴭⴭⴭⴭ⌭⌊⌣⌣⌣⌣⌣⌣⌣⌣⌣⌣⌣⌣⌣⌣⌣⌣⌣⌣⌣⌣⌣⌊䄠慤瑰摥映潲⁭瑨灴㩳⼯楧桴扵挮浯振牡潬灳汯灯戯獡剨捥湯捓湡戯潬⽢慭瑳牥戯獲献੨戊獡捩湟瑥楟普⡯笩 攠档⁯∢ ⠠晩潣普杩簠⁼灩愠 㸲搯癥港汵੬†捥潨∠ਢ੽猊汥捥彴据⠠笩 ⌠敓敬瑣琠敨挠牯敲瑣挠湯楦畧慲楴湯漠⁦桴⁥敮捴瑡映畯摮 丠彃䍓乁∽䘤問䑎也⁃瘭ⴠ⁮稭ⴠ⁷∱ ␠␨但乕彄䍎ㄠ㜲〮〮ㄮ㘠㌵ㄲ㸠⼠敤⽶畮汬㈠☾⤱ 椠⁦⁛㼤ⴠ煥㈠崠 琠敨੮††䍎卟䅃㵎琢浩潥瑵〠㜮␠但乕彄䍎ⴠ⁶渭• 映੩੽椊浣彰敲潣⁮⤨੻†䐣獩潣敶⁲潨瑳⁳湩楳敤愠⼠㐲猠扵敮睴牯⁫獵湩⁧楰杮⠠瑳牡⁴楰杮楧杮戠潲摡慣瑳愠摤敲獳獥਩䤉㍐␽攨档⁯ㄤ簠挠瑵ⴠ⁤⸢•昭ㄠ㈬㌬਩ਉ†琨浩潥瑵ㄠ瀠湩⁧戭ⴠ⁣‱␢偉⸳㔲∵㈠⼾敤⽶畮汬簠朠敲⁰椢浣彰敳≱簠猠摥∠ⱳせ㤭屝⸫せ㤭屝⸫せ㤭屝⸫せ㤭屝Ⱛ笤絃ㅛ㌻洱␦䍻孽洰∬ ਦ†琨浩潥瑵ㄠ瀠湩⁧戭ⴠ⁣‱㈢㔵㈮㔵㈮㔵㈮㔵•㸲搯癥港汵⁬⁼牧灥∠捩灭獟煥•⁼敳⁤猢嬬ⴰ崹⭜嬮ⴰ崹⭜嬮ⴰ崹⭜嬮ⴰ崹⭜␬䍻孽㬱ㄳ♭笤絃せⱭ⤢☠ऊ潦⁲⁪湩␠猨煥〠㈠㐵਩搉੯††琨浩潥瑵〠㜮瀠湩⁧戭ⴠ⁣‱␢偉⸳樤•㸲搯癥港汵⁬⁼牧灥∠捩灭獟煥•⁼敳⁤猢嬬ⴰ崹⭜嬮ⴰ崹⭜嬮ⴰ崹⭜嬮ⴰ崹⭜␬䍻孽㬱ㄳ♭笤絃せⱭ⤢☠ऊ潤敮 眠楡ੴ੽琊灣牟捥湯⠠笩 ⌠楄捳癯牥栠獯獴椠獮摩⁥⁡㈯‴畳湢瑥潷歲甠楳杮琠灣挠湯敮瑣潩⁮潴洠獯⁴獵摥瀠牯獴愠摮猠汥捥整⁤湯獥 䤠㍐␽攨档⁯ㄤ簠挠瑵ⴠ⁤⸢•昭ㄠ㈬㌬਩倉剏協␽ਲ†牰湩晴␠≙⭛⑝⁂潐瑲⁳潧湩⁧潴戠⁥捳湡敮㩤␠佐呒≓␠䍎簠琠⁲尧❮∠∠ 瀠楲瑮⁦␢䍎湜ਢ 映牯瀠牯⁴湩␠佐呒㭓搠੯††潦⁲⁪湩␠猨煥ㄠ㈠㐵਩††潤ਠ†††␨䍎卟䅃⁎䤤㍐␮⁪瀤牯⁴㸲ㄦ簠朠敲⁰椭⁶䌢湯敮瑣潩⁮敲畦敳層乼⁯潲瑵履噼牥楳湯籜祢整屳⁼畯≴簠猠摥∠ⱳせ㤭⹜ⱝ笤絃ㅛ㌻洱␦䍻孽洰本⤢☠ †搠湯੥††慷瑩 搠湯੥੽琊灣灟牯彴捳湡⠠笩 ⌠捓湡漠数⁮潰瑲⁳景愠栠獯⹴䐠晥畡瑬›浮灡琠灯ㄠ〰ⰰ戠瑵琠敨甠敳⁲慣⁮敳敬瑣漠桴牥ੳ†慢楳彣敮彴湩潦ਊ†牰湩晴␠≂㴽㴽㴽㴽㴽㴽㴽㴽㴽㴽㴽㴽㴽㴽㴽㴽㴽⠽∠䜤䕒久丢瑥潷歲倠牯⁴捓湡楮杮␢≂⤠㴽㴽㴽㴽㴽㴽㴽㴽㴽㴽㴽㴽㴽㴽㴽㴽㴽尽≮两੃†偉␽਱倉剏協␽ਲ 椠⁦⁛稭∠値剏協•㭝琠敨੮††牰湩晴␠≙⭛⑝⁂潐瑲⁳潧湩⁧潴戠⁥捳湡敮㩤䐠䙅啁呌⠠浮灡琠灯ㄠ〰⤰•两⁃⁼牴✠湜‧•ਢ††牰湩晴∠两屃≮ †倠剏協∽‱″‴‶‷‹㌱ㄠ‷㤱㈠‰ㄲ㈠′㌲㈠‴㔲㈠‶〳㌠′㌳㌠‷㈴㐠″㤴㔠″〷㜠‹〸㠠‱㈸㠠″㐸㠠‵㠸㠠‹〹㤠‹〱‰〱‶〱‹ㄱ‰ㄱ‱ㄱ″ㄱ‹㈱‵㌱‵㌱‹㐱″㐱‴㐱‶㘱‱㘱″㜱‹㤱‹ㄲ‱ㄲ′㈲′㔲‴㔲‵㔲‶㔲‹㘲‴㠲‰〳‱〳‶ㄳ‱㐳‰㘳‶㠳‹〴‶〴‷ㄴ‶ㄴ‷㈴‵㈴‷㐴″㐴‴㐴‵㔴‸㘴‴㘴‵㠴‱㤴‷〵‰ㄵ′ㄵ″ㄵ‴ㄵ‵㈵‴㐵‱㐵″㐵‴㐵‵㐵‸㔵‴㔵‵㘵″㠵‷㤵″ㄶ‶ㄶ‷㈶‵㌶‱㌶‶㐶‶㐶‸㘶‶㘶‷㘶‸㠶″㠶‷㤶‱〷‰〷‵ㄷ‱ㄷ‴㈷‰㈷′㈷‶㐷‹㘷‵㜷‷㠷″㠷‷〸‰〸‱〸‸㐸″㜸″㠸‰㠸‸㤸‸〹‰〹‱〹′〹″ㄹ‱ㄹ′㠹‱㠹‷㤹‰㤹′㤹″㤹‵㤹‹〱〰ㄠ〰‱〱㈰ㄠ〰‷〱㤰ㄠ㄰‰〱ㄱㄠ㈰‱〱㈲ㄠ㈰″〱㐲ㄠ㈰‵〱㘲ㄠ㈰‷〱㠲ㄠ㈰‹〱〳ㄠ㌰‱〱㈳ㄠ㌰″〱㐳ㄠ㌰‵〱㘳ㄠ㌰‷〱㠳ㄠ㌰‹〱〴ㄠ㐰‱〱㈴ㄠ㐰″〱㐴ㄠ㐰‵〱㘴ㄠ㐰‷〱㠴ㄠ㐰‹〱〵ㄠ㔰‱〱㈵ㄠ㔰″〱㐵ㄠ㔰‵〱㘵ㄠ㔰‷〱㠵ㄠ㔰‹〱〶ㄠ㘰‱〱㈶ㄠ㘰″〱㐶ㄠ㘰‵〱㘶ㄠ㘰‷〱㠶ㄠ㘰‹〱〷ㄠ㜰‱〱㈷ㄠ㜰″〱㐷ㄠ㜰‵〱㘷ㄠ㜰‷〱㠷ㄠ㜰‹〱〸ㄠ㠰‱〱㈸ㄠ㠰″〱㐸ㄠ㠰‵〱㘸ㄠ㠰‷〱㠸ㄠ㠰‹〱〹ㄠ㤰‱〱㈹ㄠ㤰″〱㐹ㄠ㤰‵〱㘹ㄠ㤰‷〱㠹ㄠ㤰‹ㄱ〰ㄠ〱′ㄱ㐰ㄠ〱‵ㄱ㘰ㄠ〱‷ㄱ㠰ㄠㄱ‰ㄱㄱㄠㄱ′ㄱ㌱ㄠㄱ‴ㄱ㜱ㄠㄱ‹ㄱㄲㄠ㈱′ㄱ㌲ㄠ㈱‴ㄱ㘲ㄠ㌱‰ㄱㄳㄠ㌱′ㄱ㜳ㄠ㌱‸ㄱㄴㄠ㐱‵ㄱ㜴ㄠ㐱‸ㄱ㤴ㄠ㔱‱ㄱ㈵ㄠ㔱‴ㄱ㌶ㄠ㘱‴ㄱ㔶ㄠ㘱‶ㄱ㤶ㄠ㜱‴ㄱ㔷ㄠ㠱″ㄱ㔸ㄠ㠱‶ㄱ㜸ㄠ㤱′ㄱ㠹ㄠ㤱‹㈱㄰ㄠㄲ″㈱㘱ㄠㄲ‷㈱㠱ㄠ㌲″㈱㐳ㄠ㌲‶㈱㐴ㄠ㐲‷㈱㠴ㄠ㔲‹㈱ㄷㄠ㜲′㈱㜷ㄠ㠲‷㈱㘹ㄠ〳‰㌱㄰ㄠ〳‹㌱〱ㄠㄳ‱㌱㈲ㄠ㈳‸㌱㐳ㄠ㔳′㐱㜱ㄠ㌴″㐱㐳ㄠ㐴″㐱㔵ㄠ㘴‱㐱㐹ㄠ〵‰㔱㄰ㄠ〵″㔱ㄲㄠ㈵‴㔱㌳ㄠ㔵‶㔱〸ㄠ㠵″㔱㐹ㄠ〶‰㘱ㄴㄠ㔶‸㘱㘶ㄠ㠶‷㘱㠸ㄠ〷‰㜱㜱ㄠㄷ‸㜱㤱ㄠ㈷‰㜱ㄲㄠ㈷″㜱㔵ㄠ㘷‱㜱㈸ㄠ㠷″㠱㄰ㄠ〸‵㠱㈱ㄠ㌸‹㠱〴ㄠ㘸′㠱㌶ㄠ㘸‴㠱㔷ㄠ〹‰㤱㐱ㄠ㌹‵㤱㜴ㄠ㜹‱㤱㈷ㄠ㜹‴㤱㐸ㄠ㤹‸㤱㤹㈠〰‰〲㄰㈠〰′〲㌰㈠〰‴〲㔰㈠〰‶〲㜰㈠〰‸〲㤰㈠㄰‰〲㌱㈠㈰‰〲ㄲ㈠㈰′〲〳㈠㌰″〲㐳㈠㌰‵〲㠳㈠㐰‰〲ㄴ㈠㐰′〲㌴㈠㐰‵〲㘴㈠㐰‷〲㠴㈠㐰‹〲㔶㈠㘰‸〲㤹㈠〱‰ㄲ㌰㈠〱‵ㄲ㘰㈠〱‷ㄲㄱ㈠ㄱ‹ㄲㄲ㈠㈱‶ㄲ㔳㈠㐱‴ㄲ〶㈠㘱‱ㄲ〷㈠㜱‹ㄲ〹㈠㤱‱ㄲ㘹㈠〲‰㈲㈲㈠㔲‱㈲〶㈠㠲‸㌲㄰㈠㈳″㌲㘶㈠㠳‱㌲㈸㈠㠳″㌲㌹㈠㤳‴㌲㤹㈠〴‱㐲㈹㈠〵‰㔲㈲㈠㈵‵㔲㜵㈠〶‱㘲㈰㈠〶‴㘲㔰㈠〶‷㘲㠰㈠㌶‸㜲㄰㈠〷′㜲〱㈠ㄷ‷㜲㠱㈠㈷‵㠲〰㈠〸‹㠲ㄱ㈠㘸‹㠲㔷㈠〹‹㤲〱㈠㈹‰㤲㜶㈠㘹‸㤲㠹㌠〰‰〳㄰㌠〰″〳㔰㌠〰‶〳㜰㌠㄰‱〳㌱㌠㄰‷〳〳㌠㌰‱〳㈵㌠㜰‱〳㜷㌠㈱‸ㄳ㠶㌠ㄲ‱㈳ㄲ㌠㘲‰㈳ㄶ㌠㘲‸㈳㤶㌠㠲″㌳〰㌠〳‱㌳㘰㌠㈳′㌳㌲㌠㈳‴㌳㔲㌠㌳″㌳ㄵ㌠㘳‷㌳㤶㌠㜳‰㌳ㄷ㌠㜳′㌳㤸㌠㤳‰㐳㐰㌠㜴‶㐳㌹㌠ㄵ‷㔳㜲㌠㐵‶㔳ㄵ㌠㠵‰㘳㤵㌠㠶‹㘳〹㌠〷″㜳㜳㌠㘷‶㜳㐸㌠〸‰㠳㄰㌠〸‹㠳㐱㌠㈸‶㠳㜲㌠㈸‸㠳ㄵ㌠㘸‹㠳ㄷ㌠㜸‸㠳〸㌠㠸‹㤳㔰㌠ㄹ‴㤳㠱㌠㈹‰㤳㔴㌠㜹‱㤳㘸㌠㤹‵㤳㠹㐠〰‰〴㄰㐠〰′〴㌰㐠〰‴〴㔰㐠〰‶〴㔴㐠ㄱ‱ㄴ㔲㐠㈱‶ㄴ㤲㐠㈲‴㈴㈴㐠㜲‹㌴ㄲ㐠㐳″㐴㌴㐠㐴‴㐴㔴㐠㐴‶㐴㤴㐠㔵‰㔴㜶㐠㘶′㠴㠴㐠㤸‹㤴〰㐠㤹‸〵〰㔠〰‱〵㈰㔠〰″〵㐰㔠〰‹〵〳㔠㌰″〵〵㔠㔰‱〵㐵㔠㘰‰〵ㄶ㔠㠰‰〵㜸㔠〱‰ㄵ㄰㔠〱′ㄵ〲㔠㤱‰㈵〰㔠ㄲ‴㈵ㄲ㔠㈲′㈵㔲㔠㈲‶㈵㤶㔠㠲‰㈵㠹㔠㔳‷㐵㔰㔠ㄴ‴㐵ㄳ㔠㌴′㐵〴㔠〵‰㔵〱㔠㐵‴㔵〵㔠㔵‵㔵〶㔠㘵‶㘵ㄳ㔠㌶″㘵㘶㔠㜶‸㘵㤷㔠ㄷ‸㜵〳㔠〸‰㠵㄰㔠〸′㠵〱㔠ㄸ‱㠵㔱㔠㈸′㠵㔲㔠㔸‰㠵㤵㔠㘸′㠵㜷㔠〹‰㤵㄰㔠〹′㤵㌰㔠〹‴㤵㘰㔠〹‷㤵〱㔠ㄹ‱㤵㔱㔠㈹′㤵㔲㔠㔹‰㤵㈵㔠㔹‹㤵〶㔠㘹‱㤵㈶㔠㘹″㤵㜸㔠㠹‸㤵㤸㔠㤹‸㤵㤹㘠〰‰〶㄰㘠〰′〶㌰㘠〰‴〶㔰㘠〰‶〶㜰㘠〰‹〶㔲㘠㔰‹ㄶ〰㘠〱‱ㄶ㘰㘠ㄱ′ㄶ㌲㘠㈱‹ㄶ㘵㘠㐳‶㌶㤸㘠〵′㔶〱㘠㐵″㔶㜴㘠㘵‵㔶㘶㘠㘵‷㔶〸㘠㐶‶㘶㘶㘠㘶‷㘶㠶㘠㘶‹㘶㤸㘠㤶′㘶㤹㘠㜷‹㜶㠸㘠㠷‹㜶㈹㘠㌸‹㠶ㄸ㘠〹‱㤶㤶㜠〰‰〷㄰㜠〰′〷㐰㜠〰‷〷㤱㜠㈰‵〷〷㜠〱‰ㄷ㌰㜠〱‶㈷〰㜠〲‱㐷㈰㜠㌴‵㐷㌴㜠㤴‶㔷㈱㜠㈶‵㘷㜲㜠㜶‶㜷ㄴ㜠㜷‷㜷㠷㜠〸‰㤷ㄱ㜠㈹‰㤷ㄲ㜠㌹‷㤷㠳㜠㤹‹〸〰㠠〰‱〸㈰㠠〰‷〸㠰㠠〰‹〸〱㠠㄰‱〸ㄲ㠠㈰′〸ㄳ㠠㐰′〸㔴㠠㠰‰〸ㄸ㠠㠰′〸㌸㠠㠰‴〸㔸㠠㠰‶〸㜸㠠㠰‸〸㤸㠠㤰‰〸㌹㠠㤰‹ㄸ〰㠠㠱‰ㄸㄸ㠠㤱′ㄸ㌹㠠㤱‴㈸〰㠠㈲′㈸㐵㠠㤲‰㈸ㄹ㠠㤲′㌸〰㠠㌳″㌸㌸㠠〴‰㐸㈰㠠㐴″㔸〰㠠〶‰㘸㤴㠠㔶‱㘸㈵㠠㔶‴㜸㄰㠠〸‰㠸㌷㠠㠸‸㠸㤹㠠㤹‴〹〰㤠〰‱〹㈰㤠〰″〹㤰㤠㄰‰〹ㄱ㤠㐰‰〹〵㤠㜰‱〹〸㤠㠰‱〹〹㤠㤰‱〹㤹㤠〱‰ㄹ㄰㤠〱′ㄹ㌰㤠ㄱ‰ㄹㄱ㤠〲‰㈹㜰㤠㈲‰㈹〹㤠ㄴ‵㐹㠱㤠㠴‵㔹〰㤠〵′㔹㌰㤠㌵‵㔹㔷㤠㤵″㔹㐹㤠㤵‵㘹㠱㤠㘶‶㠹㘷㤠㜸‷㠹㠷㤠㤸‸㤹〰㤠ㄹ‷㤹㤲㤠㐹″㤹㐴㤠㘹‸㤹㠹㤠㤹‹〱〰‰〱〰‱〱〰′〱〰″〱〰‴〱〰‹〱㄰‰〱㄰′〱㈰‴〱㈰‵〱㠰′〱㠱‰〱ㄲ‵〱㐲″〱㘵‶〱ㄶ‶〱ㄶ‷〱㈶‱〱㈶‶〱㈶‸〱㈶‹〱㜷‸ㄱㄱ‰ㄱㄱ‱ㄱ㘹‷㈱〰‰㈱㜱‴㈱㘲‵㈱㐳‵㌱㔴‶㌱㈷′㌱㠷′㌱㠷″㐱〰‰㐱㌲‸㐱㐴‱㐱㐴′㔱〰‰㔱〰′㔱〰″㔱〰‴㔱㘶‰㔱㐷′㘱〰‰㘱〰‱㘱㄰′㘱㄰‶㘱㄰‸㘱㠰‰㘱ㄱ″㘱㤹′㘱㤹″㜱㜸‷㜱㠹‸㠱㐰‰㠱〱‱㠱㠹‸㤱〱‱㤱㠲″㤱ㄳ‵㤱㔳‰㤱㠷‰㤱〸‱㤱㐸′〲〰‰〲〰‵〲㌰‱〲㈲‱〲㈲′〲㈸‸ㄲ㜵‱㈲㌹‹㌲〵′㐲㐴‴㐲〸‰㔲㌷‴㔲㌷‵㘲ㄲ‴㜲〰‰㜲㔳′㜲㔳″㜲㔳‵㜲㔳‶㜲ㄷ‵㠲〲‱〳〰‰〳ㄷ‸〳㔹‱ㄳ㌰‸ㄳ㌳‷㈳㘷‸㈳㘷‹㈳㜷‰㈳㜷‱㈳㜷′㈳㜷″㈳㜷‴㈳㜷‵㈳㜷‶㈳㜷‷㈳㜷‸㈳㜷‹㈳㠷‰㈳㠷‱㈳㠷′㈳㠷″㈳㠷‴㈳㠷‵㌳㔳‴㌳㤸‹㐳㜵‱㐳㜵′㐳㜵″㔳〵‰㠳㤲′〴㤱″〴ㄹ‱ㄴㄵ‱㈴ㄵ‰㐴㜱‶㐴㐴′㐴㐴″㐴〵‱㔴〱‰㠴㠰‰㤴㔱′㤴㔱″㤴㔱‴㤴㔱‵㤴㔱‶㤴㔱‷㤴㔱‸㤴㔱‹㤴㘱‰㤴㘱‱㤴㘱″㤴㘱‵㤴㘱‷㤴㜱‵㤴㜱‶㤴〴‰㤴㤹‹〵〰‰〵〰‱〵〰′〵〰″〵〰‶〵〳‰〵㠳‹〵〵‰〵㌶‶〵〸‰ㄵ〱″ㄵ㤴″㈵㜶″㈵㈸′㈵㐸‸㈵㘸‹㐵㐰‵㐵㈳‸㔵㔰‵㔵㔰‶㔵㔵‵㔵〶‰㘵㌷‷㘵㌷‸㜵㤲‴㜵㤷‷㠵㠰‰〶㈰‰〶㐴″ㄶ㌵′ㄶ〹‰㈶㜰‸㌶㌳‱㐶㈶″㐶㠶‰㔶〰‰㔶㈱‹㔶㠳ㄹ㌠㐠㘠㜠㤠ㄠ″㜱ㄠ‹〲㈠‱㈲㈠″㐲㈠‵㘲㌠‰㈳㌠″㜳㐠′㌴㐠‹㌵㜠‰㤷㠠‰ㄸ㠠′㌸㠠‴㔸㠠‸㤸㤠‰㤹ㄠ〰ㄠ㘰ㄠ㤰ㄠ〱ㄠㄱㄠ㌱ㄠ㤱ㄠ㔲ㄠ㔳ㄠ㤳ㄠ㌴ㄠ㐴ㄠ㘴ㄠㄶㄠ㌶ㄠ㤷ㄠ㤹㈠ㄱ㈠㈱㈠㈲㈠㐵㈠㔵㈠㘵㈠㤵㈠㐶㈠〸㌠㄰㌠㘰㌠ㄱ㌠〴㌠㘶㌠㤸㐠㘰㐠㜰㐠㘱㐠㜱㐠㔲㐠㜲㐠㌴㐠㐴㐠㔴㐠㠵㐠㐶㐠㔶㐠ㄸ㐠㜹㔠〰㔠㈱㔠㌱㔠㐱㔠㔱㔠㐲㔠ㄴ㔠㌴㔠㐴㔠㔴㔠㠴㔠㐵㔠㔵㔠㌶㔠㜸㔠㌹㘠㘱㘠㜱㘠㔲㘠ㄳ㘠㘳㘠㘴㘠㠴㘠㘶㘠㜶㘠㠶㘠㌸㘠㜸㘠ㄹ㜠〰㜠㔰㜠ㄱ㜠㐱㜠〲㜠㈲㜠㘲㜠㤴㜠㔶㜠㜷㜠㌸㜠㜸㠠〰㠠㄰㠠㠰㠠㌴㠠㌷㠠〸㠠㠸㠠㠹㤠〰㤠㄰㤠㈰㤠㌰㤠ㄱ㤠㈱㤠ㄸ㤠㜸㤠〹㤠㈹㤠㌹㤠㔹㤠㤹ㄠ〰‰〱㄰ㄠ〰′〱㜰ㄠ〰‹〱〱ㄠ㄰‱〱ㄲㄠ㈰′〱㌲ㄠ㈰‴〱㔲ㄠ㈰‶〱㜲ㄠ㈰‸〱㤲ㄠ㌰‰〱ㄳㄠ㌰′〱㌳ㄠ㌰‴〱㔳ㄠ㌰‶〱㜳ㄠ㌰‸〱㤳ㄠ㐰‰〱ㄴㄠ㐰′〱㌴ㄠ㐰‴〱㔴ㄠ㐰‶〱㜴ㄠ㐰‸〱㤴ㄠ㔰‰〱ㄵㄠ㔰′〱㌵ㄠ㔰‴〱㔵ㄠ㔰‶〱㜵ㄠ㔰‸〱㤵ㄠ㘰‰〱ㄶㄠ㘰′〱㌶ㄠ㘰‴〱㔶ㄠ㘰‶〱㜶ㄠ㘰‸〱㤶ㄠ㜰‰〱ㄷㄠ㜰′〱㌷ㄠ㜰‴〱㔷ㄠ㜰‶〱㜷ㄠ㜰‸〱㤷ㄠ㠰‰〱ㄸㄠ㠰′〱㌸ㄠ㠰‴〱㔸ㄠ㠰‶〱㜸ㄠ㠰‸〱㤸ㄠ㤰‰〱ㄹㄠ㤰′〱㌹ㄠ㤰‴〱㔹ㄠ㤰‶〱㜹ㄠ㤰‸〱㤹ㄠ〱‰ㄱ㈰ㄠ〱‴ㄱ㔰ㄠ〱‶ㄱ㜰ㄠ〱‸ㄱ〱ㄠㄱ‱ㄱ㈱ㄠㄱ″ㄱ㐱ㄠㄱ‷ㄱ㤱ㄠ㈱‱ㄱ㈲ㄠ㈱″ㄱ㐲ㄠ㈱‶ㄱ〳ㄠ㌱‱ㄱ㈳ㄠ㌱‷ㄱ㠳ㄠ㐱‱ㄱ㔴ㄠ㐱‷ㄱ㠴ㄠ㐱‹ㄱㄵㄠ㔱′ㄱ㐵ㄠ㘱″ㄱ㐶ㄠ㘱‵ㄱ㘶ㄠ㘱‹ㄱ㐷ㄠ㜱‵ㄱ㌸ㄠ㠱‵ㄱ㘸ㄠ㠱‷ㄱ㈹ㄠ㤱‸ㄱ㤹ㄠ〲‱㈱㌱ㄠㄲ‶㈱㜱ㄠㄲ‸㈱㌳ㄠ㌲‴㈱㘳ㄠ㐲‴㈱㜴ㄠ㐲‸㈱㤵ㄠ㜲‱㈱㈷ㄠ㜲‷㈱㜸ㄠ㤲‶㌱〰ㄠ〳‱㌱㤰ㄠㄳ‰㌱ㄱㄠ㈳′㌱㠲ㄠ㌳‴㌱㈵ㄠㄴ‷㐱㌳ㄠ㌴‴㐱㌴ㄠ㔴‵㐱ㄶㄠ㤴‴㔱〰ㄠ〵‱㔱㌰ㄠ㈵‱㔱㐲ㄠ㌵″㔱㘵ㄠ㠵‰㔱㌸ㄠ㤵‴㘱〰ㄠ㐶‱㘱㠵ㄠ㘶‶㘱㜸ㄠ㠶‸㜱〰ㄠㄷ‷㜱㠱ㄠㄷ‹㜱〲ㄠ㈷‱㜱㌲ㄠ㔷‵㜱ㄶㄠ㠷′㜱㌸ㄠ〸‱㠱㔰ㄠㄸ′㠱㤳ㄠ㐸‰㠱㈶ㄠ㘸″㠱㐶ㄠ㜸‵㤱〰ㄠㄹ‴㤱㔳ㄠ㐹‷㤱ㄷㄠ㜹′㤱㐷ㄠ㠹‴㤱㠹ㄠ㤹‹〲〰㈠〰‱〲㈰㈠〰″〲㐰㈠〰‵〲㘰㈠〰‷〲㠰㈠〰‹〲〱㈠㄰″〲〲㈠㈰‱〲㈲㈠㌰‰〲㌳㈠㌰‴〲㔳㈠㌰‸〲〴㈠㐰‱〲㈴㈠㐰″〲㔴㈠㐰‶〲㜴㈠㐰‸〲㤴㈠㘰‵〲㠶㈠㤰‹ㄲ〰㈠〱″ㄲ㔰㈠〱‶ㄲ㜰㈠ㄱ‱ㄲ㤱㈠㈱‱ㄲ㘲㈠㌱‵ㄲ㐴㈠㘱‰ㄲㄶ㈠㜱‰ㄲ㤷㈠㤱‰ㄲㄹ㈠㤱‶㈲〰㈠㈲′㈲ㄵ㈠㘲‰㈲㠸㈠〳‱㌲㌲㈠㘳‶㌲ㄸ㈠㠳′㌲㌸㈠㤳″㌲㐹㈠㤳‹㐲㄰㈠㤴′㔲〰㈠㈵′㔲㔲㈠㔵‷㘲㄰㈠〶′㘲㐰㈠〶‵㘲㜰㈠〶‸㘲㠳㈠〷‱㜲㈰㈠ㄷ‰㜲㜱㈠ㄷ‸㜲㔲㈠〸‰㠲㤰㈠ㄸ‱㠲㤶㈠㜸‵㤲㤰㈠ㄹ‰㤲〲㈠㘹‷㤲㠶㈠㤹‸〳〰㌠〰‱〳㌰㌠〰‵〳㘰㌠〰‷〳ㄱ㌠㄰″〳㜱㌠㌰‰〳ㄳ㌠㔰′〳ㄷ㌠㜰‷ㄳ㠲㌠㘱‸㈳ㄱ㌠㈲‱㈳〶㌠㘲‱㈳㠶㌠㘲‹㈳㌸㌠〳‰㌳㄰㌠〳‶㌳㈲㌠㈳″㌳㐲㌠㈳‵㌳㌳㌠㔳‱㌳㜶㌠㘳‹㌳〷㌠㜳‱㌳㈷㌠㠳‹㌳〹㌠〴‴㐳㘷㌠㤴″㔳㜱㌠㈵‷㔳㘴㌠㔵‱㔳〸㌠㔶‹㘳㤸㌠㤶‰㜳㌰㌠㌷‷㜳㘶㌠㠷‴㠳〰㌠〸‱㠳㤰㌠ㄸ‴㠳㘲㌠㈸‷㠳㠲㌠㔸‱㠳㤶㌠㜸‱㠳㠷㌠㠸‰㠳㤸㌠〹‵㤳㐱㌠ㄹ‸㤳〲㌠㐹‵㤳ㄷ㌠㠹‶㤳㔹㌠㤹‸〴〰㐠〰‱〴㈰㐠〰″〴㐰㐠〰‵〴㘰㐠㐰‵ㄴㄱ㐠㈱‵ㄴ㘲㐠㈱‹㈴㐲㐠㐲′㈴㤷㐠㈳‱㌴㌴㐠㐴″㐴㐴㐠㐴‵㐴㘴㐠㐴‹㔴〵㐠㘵‷㘴㈶㐠㐸‸㠴㤹㐠〹‰㤴㠹㔠〰‰〵㄰㔠〰′〵㌰㔠〰‴〵㤰㔠㌰‰〵㌳㔠㔰‰〵ㄵ㔠㔰‴〵〶㔠㘰‱〵〸㔠㠰‷ㄵ〰㔠〱‱ㄵ㈰㔠㈱‰ㄵ〹㔠〲‰㈵㐱㔠㈲‱㈵㈲㔠㈲‵㈵㘲㔠㘲‹㈵〸㔠㤲‸㌵㜵㔠〴‵㐵㐱㔠㌴‱㐵㈳㔠㐴‰㔵〰㔠ㄵ‰㔵㐴㔠㔵‰㔵㔵㔠㘵‰㔵㘶㔠㌶‱㘵㌳㔠㘶‶㘵㠷㔠㜶‹㜵㠱㔠㌷‰㠵〰㔠〸‱㠵㈰㔠ㄸ‰㠵ㄱ㔠ㄸ‵㠵㈲㔠㈸‵㠵〵㔠㔸‹㠵㈶㔠㜸‷㤵〰㔠〹‱㤵㈰㔠〹″㤵㐰㔠〹‶㤵㜰㔠ㄹ‰㤵ㄱ㔠ㄹ‵㤵㈲㔠㈹‵㤵〵㔠㔹′㤵㤵㔠㘹‰㤵ㄶ㔠㘹′㤵㌶㔠㠹‷㤵㠸㔠㠹‹㤵㠹㔠㤹‹〶〰㘠〰‱〶㈰㘠〰″〶㐰㘠〰‵〶㘰㘠〰‷〶㤰㘠㈰‵〶㤵㘠〱‰ㄶ㄰㘠〱‶ㄶ㈱㘠㈱″ㄶ㤲㘠㔱‶㌶㘴㘠㠳‹㔶㈰㘠ㄵ‰㔶㌴㘠㐵‷㔶㔶㘠㘵‶㔶㜶㘠㠵‰㘶㘴㘠㘶‶㘶㜶㘠㘶‸㘶㤶㘠㠶‹㘶㈹㘠㤶‹㜶㤷㘠㠷‸㜶㤸㘠㤷′㠶㤳㘠㠸‱㤶㄰㘠㘹‹〷〰㜠〰‱〷㈰㜠〰‴〷㜰㜠㄰‹〷㔲㜠㜰‰ㄷ〰㜠〱″ㄷ㘰㜠〲‰㈷㄰㜠〴′㐷㔳㜠㐴″㐷㘹㜠ㄵ′㘷㔲㜠㈶‷㘷㘷㜠㐷‱㜷㜷㜠㜷‸㠷〰㜠ㄹ‱㤷〲㜠㈹‱㤷㜳㜠㌹‸㤷㤹㠠〰‰〸㄰㠠〰′〸㜰㠠〰‸〸㤰㠠㄰‰〸ㄱ㠠㈰‱〸㈲㠠㌰‱〸㈴㠠㐰‵〸〸㠠㠰‱〸㈸㠠㠰″〸㐸㠠㠰‵〸㘸㠠㠰‷〸㠸㠠㠰‹〸〹㠠㤰″〸㤹㠠〱‰ㄸ〸㠠㠱‱ㄸ㈹㠠㤱″ㄸ㐹㠠〲‰㈸㈲㠠㔲‴㈸〹㠠㤲‱㈸㈹㠠〳‰㌸㌳㠠㠳″㐸〰㠠〴′㐸㌴㠠〵‰㘸〰㠠㐶‹㘸ㄵ㠠㔶′㘸㐵㠠〷‱㠸〰㠠㜸″㠸㠸㠠㤸‹㤸㐹㤠〰‰〹㄰㤠〰′〹㌰㤠〰‹〹〱㤠㄰‱〹〴㤠㔰‰〹ㄷ㤠㠰‰〹ㄸ㤠㤰‰〹ㄹ㤠㤰‹ㄹ〰㤠〱‱ㄹ㈰㤠〱″ㄹ〱㤠ㄱ‱㈹〰㤠〲‷㈹〲㤠㤲‰㐹㔱㤠ㄴ‸㐹㔸㤠〵‰㔹㈰㤠〵″㔹㔳㤠㜵‵㔹㌹㤠㤵‴㔹㔹㤠ㄶ‸㘹㘶㤠㜸‶㠹㜷㤠㜸‸㠹㠹㤠〹‰㤹㜱㤠㈹‹㤹㌴㤠㐹‴㤹㠶㤠㤹‸㤹㤹ㄠ〰〰ㄠ〰㄰ㄠ〰㈰ㄠ〰㌰ㄠ〰㐰ㄠ〰㤰ㄠ〰〱ㄠ〰㈱ㄠ〰㐲ㄠ〰㔲ㄠ〰㈸ㄠ㄰〸ㄠ㈰㔱ㄠ㈰㌴ㄠ㔰㘶ㄠ㘰㘱ㄠ㘰㜱ㄠ㘰ㄲㄠ㘰㘲ㄠ㘰㠲ㄠ㘰㤲ㄠ㜰㠷ㄠㄱ〱ㄠㄱㄱㄠ㤱㜶ㄠ〲〰ㄠㄲ㐷ㄠ㈲㔶ㄠ㌲㔴ㄠ㐳㘵ㄠ㜳㈲ㄠ㜳㈸ㄠ㜳㌸ㄠ〴〰ㄠ㈴㠳ㄠ㐴ㄴㄠ㐴㈴ㄠ〵〰ㄠ〵㈰ㄠ〵㌰ㄠ〵㐰ㄠ㘵〶ㄠ㜵㈴ㄠ〶〰ㄠ〶㄰ㄠ〶㈱ㄠ〶㘱ㄠ〶㠱ㄠ〶〸ㄠㄶ㌱ㄠ㤶㈹ㄠ㤶㌹ㄠ㠷㜷ㄠ㤷㠸ㄠ〸〴ㄠㄸ㄰ㄠ㤸㠸ㄠㄹ㄰ㄠ㈹㌸ㄠ㌹㔱ㄠ㌹〵ㄠ㜹〸ㄠ㠹㄰ㄠ㠹㈴㈠〰〰㈠〰㔰㈠〰ㄳ㈠㈰ㄲ㈠㈰㈲㈠㠰㠲㈠㔱ㄷ㈠㤲㤳㈠㔳㈰㈠㐴㐴㈠㠴〰㈠㜵㐳㈠㜵㔳㈠㈶㐱㈠〷〰㈠㌷㈵㈠㌷㌵㈠㌷㔵㈠㌷㘵㈠㜷㔱㈠㈸㄰㌠〰〰㌠㜰㠱㌠㤰ㄵ㌠〱㠳㌠㌱㜳㌠㜲㠶㌠㜲㤶㌠㜲〷㌠㜲ㄷ㌠㜲㈷㌠㜲㌷㌠㜲㐷㌠㜲㔷㌠㜲㘷㌠㜲㜷㌠㜲㠷㌠㜲㤷㌠㜲〸㌠㜲ㄸ㌠㜲㈸㌠㜲㌸㌠㜲㐸㌠㜲㔸㌠㌳㐵㌠㠳㤹㌠㔴ㄷ㌠㔴㈷㌠㔴㌷㌠㔵〰㌠㈸㈹㐠㄰㌹㐠㤰ㄱ㐠㔱ㄱ㐠㔲〱㐠ㄴ㘷㐠㐴㈴㐠㐴㌴㐠㔴㄰㐠ㄵ〰㐠〸〸㐠ㄹ㈵㐠ㄹ㌵㐠ㄹ㐵㐠ㄹ㔵㐠ㄹ㘵㐠ㄹ㜵㐠ㄹ㠵㐠ㄹ㤵㐠ㄹ〶㐠ㄹㄶ㐠ㄹ㌶㐠ㄹ㔶㐠ㄹ㜶㐠ㄹ㔷㐠ㄹ㘷㐠㐹〰㐠㤹㤹㔠〰〰㔠〰㄰㔠〰㈰㔠〰㌰㔠〰㘰㔠㌰〰㔠㌰㤸㔠㔰〰㔠㘰㘳㔠㠰〰㔠ㄱ㌰㔠㐱㌹㔠㘲㌷㔠㠲㈲㔠㠲㠴㔠㠲㤶㔠〴㔴㔠㌴㠲㔠〵㔵㔠〵㘵㔠㔵㔵㔠㘵〰㔠㜶㜳㔠㜶㠳㔠㈷㐹㔠㜷㜹㔠〸〸㘠〰〲㘠㐰㌴㘠㔱㈳㘠㤱〰㘠〲㠷㘠㌳ㄳ㘠㘴㌲㘠㘴〸㘠〵〰㘠ㄵ㤲㘠㌵㤸ਢ†汥敳 †瀠楲瑮⁦夤嬢崫䈤倠牯獴朠楯杮琠⁯敢猠慣湮摥›値剏協•两⁃⁼牴✠湜‧•ਢ††牰湩晴∠两屃≮ 映੩ 映牯瀠牯⁴湩␠佐呒㭓搠੯††␨䍎卟䅃⁎䤤⁐瀤牯⁴㸲ㄦ簠朠敲⁰椭⁶䌢湯敮瑣潩⁮敲畦敳層乼⁯潲瑵履噼牥楳湯籜祢整屳⁼畯≴簠猠摥∠ⱳせ㤭⹜ⱝ笤絃ㅛ㌻洱␦䍻孽洰本⤢☠ 搠湯੥†慷瑩紊ਊ楤捳癯牥湟瑥潷歲⠠笩 ⌠桃捥⁫晩䤠⁐湡⁤敎浴獡⁫牡⁥潣牲捥⁴湡⁤桴⁥獵⁥灦湩⁧牯瀠湩⁧潴映湩⁤潨瑳ੳ†慢楳彣敮彴湩潦ਊ†牰湩晴␠≂㴽㴽㴽㴽㴽㴽㴽㴽㴽㴽㴽㴽㴽㴽㴽㴽㴽㴽 ␢則䕅≎敎睴牯⁫楄捳癯牥≹䈤•㴩㴽㴽㴽㴽㴽㴽㴽㴽㴽㴽㴽㴽㴽㴽㴽㴽㴽㴽湜␢䍎ਊ†䥄䍓噏剅㵙ㄤ 䤠㵐⠤捥潨␠䥄䍓噏剅⁙⁼畣⁴搭∠∯ⴠ⁦⤱ 丠呅䅍䭓␽攨档⁯䐤卉佃䕖奒簠挠瑵ⴠ⁤⼢•昭㈠਩† 椠⁦⁛稭␠偉崠簠⁼⁛稭␠䕎䵔十⁋㭝琠敨੮††牰湩晴␠䕒≄ⵛ⁝牅㩲䈠摡映牯慭⹴䔠慸灭敬›㈱⸷⸰⸰⼱㐲␢䍎਻††牰湩晴␠≂䠤䱅≐两㭃 †攠楸⁴ਰ†楦ਊ†唣楳杮映楰杮椠⁦潰獳扩敬 椠⁦⁛␢偆义≇崠※桴湥ਠ††䘤䥐䝎ⴠ⁡焭ⴠ⁧䐤卉佃䕖奒簠猠摥∠ⱳ⨮␬䍻孽㬱ㄳ♭笤絃せⱭਢ† ⌠潌灯甠楳杮瀠湩੧†汥敳 †椠⁦⁛两呅䅍䭓ⴠ煥∠㐲•㭝琠敨੮†††牰湩晴␠≙⭛⑝則䕅⁎敎浴獡⁫㈯‴敤整瑣摥‬瑳牡楴杮⸮尮⑮䍎ਢ†††捩灭牟捥湯␠偉 ††ਠ††汥晩嬠␠䕎䵔十⁋攭ⁱㄢ∶崠※桴湥 ††瀠楲瑮⁦夤嬢崫䜤䕒久丠瑥慭歳⼠㘱搠瑥捥整Ɽ猠慴瑲湩⹧⸮湜两≃ ††映牯椠椠⁮⠤敳ⁱ‱㔲⤴ ††搠९ †††丠坅偉␽攨档⁯䤤⁐⁼畣⁴搭∠∮ⴠ⁦ⰱ⤲␮⹩਱††††捩灭牟捥湯␠䕎䥗੐†††潤敮 †攠獬੥†††牰湩晴␠䕒≄ⵛ⁝牅㩲匠牯祲‬湯祬丠瑥慭歳⼠㐲愠摮⼠㘱猠灵潰瑲摥椠⁮楰杮洠摯⹥丠瑥慭歳搠瑥捥整㩤␠䕎䵔十≋两㭃 ††攠楸⁴ਰ††楦 映੩੽搊獩潣敶祲灟牯彴捳湡⠠笩 戠獡捩湟瑥楟普੯ ⌠桃捥⁫晩䤠⁐湡⁤敎浴獡⁫牡⁥潣牲捥⁴湡⁤桴⁥獵⁥据琠⁯楦摮栠獯獴‮祂搠晥畡瑬挠敨正瀠牯獴›㈲㠠‰㐴″㐴‵㌳㤸 瀠楲瑮⁦䈤㴢㴽㴽㴽㴽㴽㴽㴽㴽㴽㴽㴽㴽㴽⠽∠䜤䕒久丢瑥潷歲䐠獩潣敶祲⠠捳湡楮杮瀠牯獴∩䈤•㴩㴽㴽㴽㴽㴽㴽㴽㴽㴽㴽㴽㴽㴽㴽湜␢䍎 䐠卉佃䕖奒␽਱†奍佐呒㵓㈤ਊ†偉␽攨档⁯䐤卉佃䕖奒簠挠瑵ⴠ⁤⼢•昭ㄠ਩†䕎䵔十㵋⠤捥潨␠䥄䍓噏剅⁙⁼畣⁴搭∠∯ⴠ⁦⤲ ਠ†晩嬠ⴠ⁺䤤⁐⁝籼嬠ⴠ⁺两呅䅍䭓崠※桴湥 †瀠楲瑮⁦判䑅嬢崭䔠牲›慂⁤潦浲瑡‮硅浡汰㩥ㄠ㜲〮〮ㄮ㈯∴两㭃 †瀠楲瑮⁦䈤␢䕈偌␢䍎਻††硥瑩〠 映੩ 倠剏協∽㈲㠠‰㐴″㐴‵㌳㤸怠捥潨␠奍佐呒⁓⁼牴∠∬∠∠≠ 倠剏協怽捥潨∠値剏協•⁼牴∠∠∠湜•⁼潳瑲ⴠ恵⌠敄敬整爠灥瑥瑩潩獮ਊ†晩嬠␠䕎䵔十⁋攭ⁱ㈢∴崠※桴湥 †瀠楲瑮⁦夤嬢崫䜤䕒久丠瑥慭歳⼠㐲搠瑥捥整Ɽ猠慴瑲湩⹧⸮湜•两੃उ捴彰敲潣⁮䤤⁐␢佐呒≓ऊऊ汥晩嬠␠䕎䵔十⁋攭ⁱㄢ∶崠※桴湥 †瀠楲瑮⁦夤嬢崫䜤䕒久丠瑥慭歳⼠㘱搠瑥捥整Ɽ猠慴瑲湩⹧⸮湜•两੃उ潦⁲⁩湩␠猨煥〠㈠㔵਩उ潤ਉउ三坅偉␽攨档⁯䤤⁐⁼畣⁴搭∠∮ⴠ⁦ⰱ⤲␮⹩਱उ琉灣牟捥湯␠䕎䥗⁐␢佐呒≓ऊ搉湯੥†汥敳 ††瀠楲瑮⁦判䑅嬢崭䔠牲›潓牲ⱹ漠汮⁹敎浴獡⁫㈯‴湡⁤ㄯ‶畳灰牯整⁤湩瀠牯⁴楤捳癯牥⁹潭敤‮敎浴獡⁫敤整瑣摥›两呅䅍䭓␢䍎਻†††硥瑩〠ऊ楦紊ਊ⌊⌣⌣⌣⌣⌣⌣⌣⌣⌣⌣⌣⌣⌣⌣⌣⌣⌣⌣⌣⌣⌣⌊ⴭ⤭䔠灸牯楴杮栠獩潴祲攠癮瘠牡慩汢獥⠠ⴭ⌭⌊⌣⌣⌣⌣⌣⌣⌣⌣⌣⌣⌣⌣⌣⌣⌣⌣⌣⌣⌣⌣⌣ਊ晩℠嬠∠两呏塅佐呒•㭝琠敨੮†湵敳⁴䥈呓剏⁙䥈呓䥆䕌䠠卉協噁⁅䥈呓佚䕎䠠卉佔奒䠠卉䱔䝏圠呁䡃 攠灸牯⁴䥈呓䥆䕌⼽敤⽶畮汬 攠灸牯⁴䥈呓䥓䕚〽 攠灸牯⁴䥈呓䥆䕌䥓䕚〽昊੩ਊ⌣⌣⌣⌣⌣⌣⌣⌣⌣⌣⌣⌣⌣⌣⌣⌣⌣⌣⌣⌣⌣ਣⴣⴭⴭⴭⴭⴭ 瑓牡楴杮传瑵異⁴⴨ⴭⴭⴭⴭⴭਣ⌣⌣⌣⌣⌣⌣⌣⌣⌣⌣⌣⌣⌣⌣⌣⌣⌣⌣⌣⌣⌣ਣ‣楆獲ⱴ猠慥捲⁨⁡牷瑩扡敬映汩⁥椨⁦敮摥摥਩晩℠嬠∠䘤十≔崠☠…‡⁛␢啓䕐䙒十≔崠※桴湥 映汩㵥∢ 映牯映椠⁮圤㭆搠੯††捥潨✠‧㸲搯癥港汵⁬‾昤␯楦敬慮敭 †椠⁦⁛㼤ⴠ煥〠崠※桴湥映汩㵥␢⽦昤汩湥浡≥※牢慥㭫映㭩 搠湯㭥昊੩攊档⁯∢椊⁦⁛∡儤䥕呅•㭝琠敨⁮牰湩彴慢湮牥※楦瀊楲瑮⁦•氠湩数獡␠䕖卒佉≎簠猠摥∠ⱳ⨮␬䍻孽㬱㐹♭笤絃せⱭ㬢瀠楲瑮⁦夤•祢挠牡潬灳汯灯湜␢䍎攊档⁯∢瀊楲瑮⁦夤䄢噄卉剏㩙∠䈤␢䑁䥖体奒湜␢䍎攊档⁯∢瀊楲瑮⁦䈤䰢湩硵倠楲敶捳䌠敨正楬瑳›␢≙瑨灴㩳⼯潢歯栮捡瑫楲正⹳祸⽺楬畮⵸湵硩氯湩硵瀭楲楶敬敧攭捳污瑡潩⵮档捥汫獩屴≮两੃捥潨∠䰠奅久㩄•⁼敳⁤猢䰬奅久ⱄ笤絃ㅛ㐻♭笤絃せⱭਢ捥潨∠†䕒⽄䕙䱌坏›㤹‥⁡䕐瘠捥潴≲簠猠摥∠ⱳ䕒⽄䕙䱌坏␬䍻孽㬱ㄳㄻ㌰♭笤絃せⱭਢ捥潨∠†䕒㩄夠畯洠獵⁴慴敫愠氠潯⁫瑡椠≴簠猠摥∠ⱳ䕒ⱄ笤絃ㅛ㌻洱␦䍻孽洰∬攊档⁯•䰠杩瑨祃湡›獕牥⁳楷桴挠湯潳敬•⁼敳⁤猢䰬杩瑨祃湡␬䍻孽㬱㘹♭笤絃せⱭਢ捥潨∠†求敵›獕牥⁳楷桴畯⁴潣獮汯⁥…潭湵整⁤敤獶•⁼敳⁤猢䈬畬ⱥ笤絃ㅛ㌻洴␦䍻孽洰∬攊档⁯•䜠敲湥›潃浭湯琠楨杮⁳用敳獲‬牧畯獰‬啓䑉匯䥇ⱄ洠畯瑮ⱳ⸠桳猠牣灩獴‬牣湯潪獢 •⁼敳⁤猢䜬敲湥␬䍻孽㬱㈳♭笤絃せⱭਢ捥潨∠†楌桧䵴湡敧瑮㩡夠畯⁲獵牥慮敭•⁼敳⁤猢䰬杩瑨慍杮湥慴␬䍻孽㬱㔹♭笤絃せⱭਢ晩嬠∠䤤䵁佒呏•㭝琠敨੮†捥潨∠ਢ†捥潨∠†余⁕剁⁅䱁䕒䑁⁙佒呏℡‡椨⁴潣汵⁤慴敫氠湯敧⁲潴挠浯汰瑥⁥硥捥瑵潩⥮•⁼敳⁤猢夬問䄠䕒䄠剌䅅奄删住⅔℡␬䍻孽㬱ㄳㄻ㌰♭笤絃せⱭਢ†汳敥⁰ਲ਼楦攊档⁯∢攊档⁯∢⌊⌣⌣⌣⌣⌣⌣⌣⌣⌣⌣⌣⌣⌣⌣⌣⌣⌣⌣⌣⌣⌣⌊ⴭⴭⴭⴭⴭ⤭匠浯⁥慂楳⁣湉潦⠠ⴭⴭⴭⴭⴭ⌭⌊⌣⌣⌣⌣⌣⌣⌣⌣⌣⌣⌣⌣⌣⌣⌣⌣⌣⌣⌣⌣⌣ਊ牰湩晴␠≂㴽㴽㴽㴽㴽㴽㴽㴽㴽㴽㴽㴽㴽㴽㴽㴽㴽㴽 ␢則䕅≎慂楳⁣湩潦浲瑡潩≮䈤•㴩㴽㴽㴽㴽㴽㴽㴽㴽㴽㴽㴽㴽㴽㴽㴽㴽㴽㴽湜␢䍎瀊楲瑮⁦䰤≇协›␢䍎⠊慣⁴瀯潲⽣敶獲潩⁮籼甠慮敭ⴠ⁡ 㸲搯癥港汵⁬⁼敳⁤猢␬敫湲汥䍄彗払湵畴偟敲楣敳ㅟ␬䍻孽㬱ㄳㄻ㌰♭笤絃せⱭ•⁼敳⁤猢␬敫湲汥䍄彗払湵畴偟敲楣敳㉟␬䍻孽㬱ㄳㄻ㌰♭笤絃せⱭ•⁼敳⁤猢␬敫湲汥䍄彗払湵畴呟畲瑳役ⰱ笤絃ㅛ㌻㬱〱洳␦䍻孽洰∬簠猠摥∠ⱳ欤牥敮䑬坃啟畢瑮彵牔獵祴㉟␬䍻孽㬱ㄳㄻ㌰♭笤絃せⱭ•⁼敳⁤猢␬敫湲汥䍄彗払湵畴塟湥慩ⱬ笤絃ㅛ㌻㬱〱洳␦䍻孽洰∬簠猠摥∠ⱳ欤牥敮䑬坃剟敨㕬␬䍻孽㬱ㄳㄻ㌰♭笤絃せⱭ•⁼敳⁤猢␬敫湲汥䍄彗桒汥弶ⰱ笤絃ㅛ㌻㬱〱洳␦䍻孽洰∬簠猠摥∠ⱳ欤牥敮䑬坃剟敨㙬㉟␬䍻孽㬱ㄳㄻ㌰♭笤絃せⱭ•⁼敳⁤猢␬敫湲汥䍄彗桒汥ⰷ笤絃ㅛ㌻㬱〱洳␦䍻孽洰∬簠猠摥∠ⱳ欤牥敮䉬␬䍻孽㬱ㄳ♭笤絃せⱭਢ牰湩晴␠䝌唢敳⁲…片畯獰›␢䍎⠊摩簠⁼眨潨浡⁩☦朠潲灵⥳ 㸲搯癥港汵⁬⁼敳⁤猢␬桳畟牳ⱳ笤絃ㅛ㤻洶␦䍻孽洰本•⁼敳⁤猢␬潮桳畟牳ⱳ笤絃ㅛ㌻洴␦䍻孽洰本•⁼敳⁤猢␬湫彷獵獲␬䍻孽㬱㈳♭笤絃せⱭ≧簠猠摥∠ⱳ欤睮束灲ⱳ笤絃ㅛ㌻洲␦䍻孽洰本•⁼敳⁤猢␬牧畯獰ⱂ笤絃ㅛ㌻洱␦䍻孽洰本•⁼敳⁤猢␬牧畯獰䉖␬䍻孽㬱ㄳㄻ㌰♭笤絃せⱭ≧簠猠摥∠ⱳ唤䕓ⱒ笤絃ㅛ㤻洵␦䍻孽洰本•⁼敳⁤猢␬摩ⱂ笤絃ㅛ㌻洱␦䍻孽洰本ਢ牰湩晴␠䝌䠢獯湴浡㩥∠两੃潨瑳慮敭㈠⼾敤⽶畮汬椊⁦⁛␢楦敬•㭝琠敨⁮牰湩晴␠䝌圢楲慴汢⁥潦摬牥›␢䍎※楦攊档⁯圤潦摬牥椊⁦⁛␢䥄䍓噏剅䉟乁䝟住≄崠※桴湥 瀠楲瑮⁦夤嬢崫␠䥄䍓噏剅䉟乁䝟住屄≮两੃汥敳 瀠楲瑮⁦判䑅嬢崭␠䥄䍓噏剅䉟乁䉟䑁湜␢䍎昊੩椊⁦⁛␢䍓乁䉟乁䝟住≄崠※桴湥 瀠楲瑮⁦夤嬢崫␠䍓乁䉟乁䝟住屄≮两੃汥敳 瀠楲瑮⁦判䑅嬢崭␠䍓乁䉟乁䉟䑁湜␢䍎昊੩晩嬠∠睠楨档渠慭⁰㸲搯癥港汵恬•㭝桴湥 丠䅍彐佇䑏␽則䕅≎浮灡䈤椠⁳癡楡慬汢⁥潦⁲敮睴牯⁫楤捳癯牥☠瀠牯⁴捳湡楮杮‬潹⁵桳畯摬甠敳椠⁴潹牵敳晬ਢ†牰湩晴␠≙⭛⁝两䅍彐佇䑏湜␢䍎昊੩捥潨∠ਢ捥潨∠ਢਊ⌣⌣⌣⌣⌣⌣⌣⌣⌣⌣⌣⌣⌣⌣⌣⌣⌣⌣⌣⌣⌣ਣⴣⴭⴭⴭ⤭䌠敨正椠⁦敮睴牯⁫潪獢⠠ⴭⴭⴭⴭਣ⌣⌣⌣⌣⌣⌣⌣⌣⌣⌣⌣⌣⌣⌣⌣⌣⌣⌣⌣⌣⌣ਣ晩嬠∠値剏協•㭝琠敨੮†晩嬠∠匤䅃彎䅂彎佇䑏•㭝琠敨੮††晩嬠∠敠档⁯渭␠佐呒⁓⁼敳⁤猧嬬ⴰⰹ崠Ⱜ❧≠崠※桴湥 ††瀠楲瑮⁦判䑅嬢崭䔠牲›祓扭汯⁳敤整瑣摥椠⁮桴⁥潰瑲‬潦⁲楤捳癯牥湩⁧異灲獯獥猠汥捥⁴湯祬ㄠ瀠牯屴≮两㭃 ††瀠楲瑮⁦䈤␢䕈偌␢䍎਻†††硥瑩〠 †攠獬੥†††匣汥捥⁴桴⁥潣牲捥⁴潣普杩牵瑡潩⁮景琠敨渠瑥慣⁴潦湵੤†††敳敬瑣湟੣††楦 攠獬੥††牰湩晴␠䕒≄†牅㩲倠牯⁴捳湡渠瑯瀠獯楳汢ⱥ愠祮渠瑥慣⁴湩倠呁屈≮两㭃 †瀠楲瑮⁦䈤␢䕈偌␢䍎਻††硥瑩〠 映੩楦†ਊ晩嬠∠䐤卉佃䕖奒•㭝琠敨੮†晩嬠∠値剏協•㭝琠敨੮††楤捳癯牥役潰瑲獟慣⁮䐤卉佃䕖奒␠佐呒੓†汥敳 †椠⁦⁛␢䥄䍓噏剅䉟乁䝟住≄崠※桴湥 ††搠獩潣敶彲敮睴牯⁫䐤卉佃䕖奒 †攠獬੥†††牰湩晴␠䕒≄†牅㩲䐠獩潣敶祲渠瑯瀠獯楳汢ⱥ渠⁯灦湩⁧牯瀠湩⁧湩倠呁屈≮两㭃 †映੩†楦 攠楸⁴ਰ攊楬⁦⁛␢偉•㭝琠敨੮†敳敬瑣湟⁣ 琠灣灟牯彴捳湡␠偉␠佐呒੓†硥瑩〠昊੩ਊ晩嬠∠敠档⁯䌤䕈䭃⁓⁼牧灥匠獹恉•㭝琠敨੮†⌣⌣⌣⌣⌣⌣⌣⌣⌣⌣⌣⌣⌣⌣⌣⌣⌣⌣⌣⌣⌣ਣ†ⴣⴭⴭⴭⴭⴭⴭ 祓瑳浥䤠普⁯⴨ⴭⴭⴭⴭⴭⴭਣ†⌣⌣⌣⌣⌣⌣⌣⌣⌣⌣⌣⌣⌣⌣⌣⌣⌣⌣⌣⌣⌣ਣ†牰湩晴␠≂㴽㴽㴽㴽㴽㴽㴽㴽㴽㴽㴽㴽㴽㴽㴽㴽㴽㴽 ␢則䕅≎祓瑳浥䤠普牯慭楴湯␢≂⤠㴽㴽㴽㴽㴽㴽㴽㴽㴽㴽㴽㴽㴽㴽㴽㴽㴽㴽湜␢䍎ਊ†ⴣ‭匱⥙传੓†牰湩晴␠≙⭛⁝␢則䕅≎灏牥瑡癩⁥祳瑳浥湜␢䍎 瀠楲瑮⁦䈤嬢嵩∠夤栢瑴獰⼺戯潯⹫慨正牴捩獫砮穹氯湩硵甭楮⽸牰癩汩来ⵥ獥慣慬楴湯欣牥敮⵬硥汰楯獴湜␢䍎 ⠠慣⁴瀯潲⽣敶獲潩⁮籼甠慮敭ⴠ⁡ 㸲搯癥港汵⁬⁼敳⁤猢␬敫湲汥䍄彗払湵畴偟敲楣敳ㅟ␬䍻孽㬱ㄳㄻ㌰♭笤絃せⱭ•⁼敳⁤猢␬敫湲汥䍄彗払湵畴偟敲楣敳㉟␬䍻孽㬱ㄳㄻ㌰♭笤絃せⱭ•⁼敳⁤猢␬敫湲汥䍄彗払湵畴呟畲瑳役ⰱ笤絃ㅛ㌻㬱〱洳␦䍻孽洰∬簠猠摥∠ⱳ欤牥敮䑬坃啟畢瑮彵牔獵祴㉟␬䍻孽㬱ㄳㄻ㌰♭笤絃せⱭ•⁼敳⁤猢␬敫湲汥䍄彗払湵畴塟湥慩ⱬ笤絃ㅛ㌻㬱〱洳␦䍻孽洰∬簠猠摥∠ⱳ欤牥敮䑬坃剟敨㕬␬䍻孽㬱ㄳㄻ㌰♭笤絃せⱭ•⁼敳⁤猢␬敫湲汥䍄彗桒汥弶ⰱ笤絃ㅛ㌻㬱〱洳␦䍻孽洰∬簠猠摥∠ⱳ欤牥敮䑬坃剟敨㙬㉟␬䍻孽㬱ㄳㄻ㌰♭笤絃せⱭ•⁼敳⁤猢␬敫湲汥䍄彗桒汥ⰷ笤絃ㅛ㌻㬱〱洳␦䍻孽洰∬簠猠摥∠ⱳ欤牥敮䉬␬䍻孽㬱ㄳ♭笤絃せⱭਢ†獬形敲敬獡⁥愭㈠⼾敤⽶畮汬 攠档⁯∢ਊ†ⴣ‭匲⥙匠摵⁯ 瀠楲瑮⁦夤嬢崫∠䜤䕒久匢摵⁯敶獲潩屮≮两੃†晩嬠∠睠楨档猠摵⁯㸲搯癥港汵恬•㭝琠敨੮††牰湩晴␠≂楛⁝␢≙瑨灴㩳⼯潢歯栮捡瑫楲正⹳祸⽺楬畮⵸湵硩瀯楲楶敬敧攭捳污瑡潩⍮畳潤瘭牥楳湯湜␢䍎 †猠摵⁯嘭㈠⼾敤⽶畮汬簠朠敲⁰匢摵⁯敶≲簠猠摥∠ⱳ猤摵癯ⱂ笤絃ㅛ㌻洱␦䍻孽洰∬ 攠獬⁥捥潨湟瑯晟畯摮∠畳潤ਢ†楦 攠档⁯∢ਊ†ⴣ‭匳⥙倠呁ੈ†牰湩晴␠≙⭛⁝␢則䕅≎䅐䡔湜␢䍎 瀠楲瑮⁦䈤嬢嵩∠夤䄢祮眠楲慴汢⁥潦摬牥椠⁮牯杩湩污倠呁㽈⠠⁡敮⁷潣灭敬整⁤慰桴眠汩⁬敢攠灸牯整⥤湜␢䍎 攠档⁯伤䑌䅐䡔㈠⼾敤⽶畮汬簠猠摥∠ⱳ圤潦摬牥屳屼Ⱞ笤絃ㅛ㌻㬱〱洳␦䍻孽洰本ਢ†捥潨∠敎⁷慰桴攠灸牯整㩤␠䅐䡔•㸲搯癥港汵⁬⁼敳⁤猢␬晗汯敤獲籜⹜␬䍻孽㬱ㄳㄻ㌰♭笤絃せⱭ≧ਠ†捥潨∠ਢ ⌠ⴭ㐠奓 慄整 瀠楲瑮⁦夤嬢崫∠䜤䕒久䐢瑡履≮两੃†慤整㈠⼾敤⽶畮汬簠⁼捥潨湟瑯晟畯摮∠慤整ਢ†捥潨∠ਢ ⌠ⴭ㔠奓 祓瑳浥猠慴獴 瀠楲瑮⁦夤嬢崫∠䜤䕒久匢獹整⁭瑳瑡屳≮两੃†晤ⴠ⁨㸲搯癥港汵⁬籼攠档彯潮彴潦湵⁤搢≦ 映敲⁥㸲搯癥港汵⁬籼攠档彯潮彴潦湵⁤昢敲≥ 攠档⁯∢ਊ†ⴣ‭匶⥙䔠癮物湯敭瑮瘠牡⁳ 瀠楲瑮⁦夤嬢崫∠䜤䕒久䔢癮物湯敭瑮湜␢䍎 瀠楲瑮⁦䈤嬢嵩∠夤䄢祮瀠楲慶整椠普牯慭楴湯椠獮摩⁥湥楶潲浮湥⁴慶楲扡敬㽳湜␢䍎 ⠠湥⁶籼猠瑥 㸲搯癥港汵⁬⁼牧灥ⴠ⁶帢䕖卒佉㵎籜睰彤湩楳敤桟獩潴祲籜敫湲汥䍄彗払湵畴偟敲楣敳ㅟ籜敫湲汥䍄彗払湵畴偟敲楣敳㉟籜敫湲汥䍄彗払湵畴呟畲瑳役就歼牥敮䑬坃啟畢瑮彵牔獵祴㉟籜敫湲汥䍄彗払湵畴塟湥慩屬歼牥敮䑬坃剟敨㕬籜敫湲汥䍄彗桒汥弶就歼牥敮䑬坃剟敨㙬㉟籜敫湲汥䍄彗桒汥尷幼畳潤䉶尽幼潲瑯潣浭湯尽幼潭湵整㵤籜浞畯瑮㵇籜湞瑯潭湵整㵤籜浞畯瑮数浲䉳尽幼潭湵灴牥獭㵇籜歞牥敮䉬尽幼㵃籜剞䑅尽幼則䕅㵎籜奞尽幼㵂籜乞㵃籜䥔䕍問㵔籜牧畯獰㵂籜牧畯獰䉖尽歼睮束灲㵳籜楳䝤尽獼摩㵂籜楳噤㵂籜畳潤㵂籜畳潤䉖尽獼摵捯灡䉳尽捼灡䉳尽屼潮䕴瑸湥楳湯㵳籜晗汯敤獲尽睼楲整㵂籜牷瑩噥㵂籜畟牳㵳籜潣灭汩牥尽偼䑗尽䱼当佃佌卒尽灼瑡獨䝨尽湼瑯慂正灵∽簠猠摥∠ⱳ睰層灼獡睳籜坐屄偼十坓籜慐獳摷籜睐Ɽ笤絃ㅛ㌻洱␦䍻孽洰本•籼攠档彯潮彴潦湵⁤攢癮簠⁼敳≴ 攠档⁯∢ਊ†ⴣ‭匷⥙䐠敭杳 瀠楲瑮⁦夤嬢崫∠䜤䕒久䰢潯楫杮映牯匠杩慮畴敲瘠牥晩捩瑡潩⁮慦汩摥椠⁮浤敳屧≮两੃†搨敭杳㈠⼾敤⽶畮汬簠朠敲⁰楳湧瑡牵⥥簠⁼捥潨湟瑯晟畯摮 攠档⁯∢ਊ†ⴣ‭匸⥙匠汅湩硵 瀠楲瑮⁦夤嬢崫∠䜤䕒久猢汥湩硵攠慮汢摥‿⸮⸮⸮⸮⸮∠两੃†猨獥慴畴⁳㸲搯癥港汵⁬籼攠档彯潮彴潦湵⁤猢獥慴畴≳ ⁼敳⁤猢搬獩扡敬Ɽ笤絃ㅛ㌻洱␦䍻孽洰∬ਊ†ⴣ‭匹⥙倠楲瑮牥 瀠楲瑮⁦夤嬢崫∠䜤䕒久倢楲瑮牥‿⸮⸮⸮⸮⸮∠两੃†灬瑳瑡ⴠ⁡㸲搯癥港汵⁬籼攠档彯潮彴潦湵⁤氢獰慴≴ਊ†ⴣ‭〱奓 潃瑮楡敮ੲ†牰湩晴␠≙⭛⁝␢則䕅≎獉琠楨⁳⁡潣瑮楡敮㽲⸠⸮⸮⸮⸮‮␢䍎 搠捯敫捲湯慴湩牥怽牧灥ⴠ⁩潤正牥⼠牰捯猯汥⽦杣潲灵†㸲搯癥港汵㭬映湩⁤ 洭硡敤瑰⁨″渭浡⁥⨢潤正牥湥⩶•攭數⁣獬ⴠ慬笠⁽㭜㈠⼾敤⽶畮汬੠†硬捣湯慴湩牥怽牧灥ⴠ慱挠湯慴湩牥氽捸⼠牰捯ㄯ支癮物湯㈠⼾敤⽶畮汬੠†晩嬠∠搤捯敫捲湯慴湩牥•㭝琠敨⁮捥潨∠潌歯⁳楬敫眠❥敲椠⁮⁡潄正牥挠湯慴湩牥•⁼敳⁤猢⸬Ⱚ笤絃ㅛ㌻洱␦䍻孽洰∬਻†汥晩嬠∠氤捸潣瑮楡敮≲崠※桴湥攠档⁯䰢潯獫氠歩⁥敷爧⁥湩愠䰠䍘挠湯慴湩牥•⁼敳⁤猢⸬Ⱚ笤絃ㅛ㌻洱␦䍻孽洰∬਻†汥敳攠档彯潮 映੩ ⌠ⴭㄠ匱⥙䄠䱓੒†牰湩晴␠≙⭛⁝␢則䕅≎獉䄠䱓⁒湥扡敬㽤⸠⸮⸮⸮⸮‮␢䍎 䄠䱓㵒捠瑡⼠牰捯猯獹欯牥敮⽬慲摮浯穩彥慶獟慰散㈠⼾敤⽶畮汬੠†晩嬠ⴠ⁺␢十剌•㭝琠敨⁮ †攠档彯潮彴潦湵⁤⼢牰捯猯獹欯牥敮⽬慲摮浯穩彥慶獟慰散㬢ਠ†汥敳 †椠⁦⁛␢十剌•攭ⁱ〢•㭝琠敨⁮牰湩晴␠≒潎␢䍎※汥敳瀠楲瑮⁦䜤䕒久夢獥␢䍎※楦 †攠档⁯∢ 映੩†捥潨∠ਢ楦ਊ椊⁦⁛怢捥潨␠䡃䍅卋簠朠敲⁰敄獶≠崠※桴湥 ⌠⌣⌣⌣⌣⌣⌣⌣⌣⌣⌣⌣⌣⌣⌣⌣⌣⌣⌣⌣⌣⌣ ⌠ⴭⴭⴭⴭⴭⴭⴭ⤭䐠癥捩獥⠠ⴭⴭⴭⴭⴭⴭⴭ⌭ ⌠⌣⌣⌣⌣⌣⌣⌣⌣⌣⌣⌣⌣⌣⌣⌣⌣⌣⌣⌣⌣⌣ 瀠楲瑮⁦䈤㴢㴽㴽㴽㴽㴽㴽㴽㴽㴽㴽㴽㴽㴽㴽㴽㴽㴽㴽㴽㴽 ␢則䕅≎敄楶散≳䈤•㴩㴽㴽㴽㴽㴽㴽㴽㴽㴽㴽㴽㴽㴽㴽㴽㴽㴽㴽㴽㴽尽≮两੃ ⌠ⴭㄠ⥄猠⁤湩⼠敤੶†牰湩晴␠≙⭛⁝␢則䕅≎湁⁹摳‪楤歳椠⁮搯癥‿氨浩瑩㈠⤰湜␢䍎 氠⁳搯癥㈠⼾敤⽶畮汬簠朠敲⁰椭∠摳•⁼敳⁤猢挬祲瑰␬䍻孽㬱ㄳ♭笤絃せⱭ•⁼敨摡ⴠ⁮〲 攠档⁯∢ਊ†ⴣ‭䐲 湕潭湵整੤†牰湩晴␠≙⭛⁝␢則䕅≎湕潭湵整⁤楦敬猭獹整㽭湜␢䍎 瀠楲瑮⁦䈤嬢嵩∠夤䌢敨正椠⁦潹⁵慣⁮潭湵⁴浵畯瑮摥搠癥捩獥湜␢䍎 挠瑡⼠瑥⽣獦慴⁢㸲搯癥港汵⁬⁼牧灥ⴠ⁶帢∣簠朠敲⁰倭⁶尢⩗⍜•㸲搯癥港汵⁬⁼敳⁤猢␬潭湵䝴␬䍻孽㬱㈳♭笤絃せⱭ≧簠猠摥∠ⱳ渤瑯潭湵整Ɽ笤絃ㅛ㌻洱␦䍻孽洰∬簠猠摥∠ⱳ洤畯瑮摥␬䍻孽㬱㐳♭笤絃せⱭ•⁼敳⁤猢␬晗汯敤獲␬䍻孽㬱ㄳ♭笤絃せⱭ•⁼敳⁤猢␬潭湵灴牥獭ⱂ笤絃ㅛ㌻洱␦䍻孽洰本•⁼敳⁤猢␬潭湵灴牥獭ⱇ笤絃ㅛ㌻洲␦䍻孽洰本ਢ†捥潨∠ਢ†捥潨∠ਢ楦ਊ椊⁦⁛怢捥潨␠䡃䍅卋簠朠敲⁰癁卡景≠崠※桴湥 ⌠⌣⌣⌣⌣⌣⌣⌣⌣⌣⌣⌣⌣⌣⌣⌣⌣⌣⌣⌣⌣⌣ ⌠ⴭⴭⴭⴭ⤭䄠慶汩扡敬匠景睴牡⁥⴨ⴭⴭⴭⴭ⌭ ⌠⌣⌣⌣⌣⌣⌣⌣⌣⌣⌣⌣⌣⌣⌣⌣⌣⌣⌣⌣⌣⌣ 瀠楲瑮⁦䈤㴢㴽㴽㴽㴽㴽㴽㴽㴽㴽㴽㴽㴽㴽㴽㴽㴽㴽⠽∠䜤䕒久䄢慶汩扡敬匠景睴牡≥䈤•㴩㴽㴽㴽㴽㴽㴽㴽㴽㴽㴽㴽㴽㴽㴽㴽㴽㴽尽≮两੃ ⌠ⴭㄠ十 獕晥汵猠景睴牡੥†牰湩晴␠≙⭛⁝␢則䕅≎獕晥汵猠景睴牡㽥湜␢䍎 眠楨档渠慭⁰睡⁳据渠慣⁴敮捴瑡渠⹣牴摡瑩潩慮⁬杷瑥挠牵⁬楰杮朠捣朠⬫洠歡⁥摧⁢慢敳㐶猠捯瑡瀠瑹潨⁮祰桴湯′祰桴湯″祰桴湯⸲‷祰桴湯⸲‶祰桴湯⸳‶祰桴湯⸳‷数汲瀠灨爠扵⁹瑸牥⁭潤獡猠摵⁯敦捴⁨㸲搯癥港汵੬†捥潨∠ਢ ⌠ⴭ㈠十 敓牡档映牯挠浯楰敬獲 瀠楲瑮⁦夤嬢崫∠䜤䕒久䤢獮慴汬摥挠浯楰敬獲尿≮两੃†搨歰⁧ⴭ楬瑳㈠⼾敤⽶畮汬簠朠敲⁰潣灭汩牥簠朠敲⁰瘭∠敤潣灭汩牥籜楬≢㈠⼾敤⽶畮汬簠⁼畹⁭楬瑳椠獮慴汬摥✠捧⩣‧㸲搯癥港汵⁬⁼牧灥朠捣㈠⼾敤⽶畮汬※桷捩⁨捧⁣⭧‫㸲搯癥港汵⁬籼氠捯瑡⁥爭∠术捣せ㤭⹜崭⭜∤㈠⼾敤⽶畮汬簠朠敲⁰瘭∠搯捯∯ 籼攠档彯潮彴潦湵⁤䌢浯楰敬獲㬢ਠ†捥潨∠ਢ†捥潨∠ਢ楦ਊ椊⁦⁛怢捥潨␠䡃䍅卋簠朠敲⁰牐䍯潲卮癲獣≠崠※桴湥 ⌠⌣⌣⌣⌣⌣⌣⌣⌣⌣⌣⌣⌣⌣⌣⌣⌣⌣⌣⌣⌣⌣ ⌠ⴭⴭ⤭倠潲散獳獥☠䌠潲⁮…敓癲捩獥⠠ⴭⴭ⌭ ⌠⌣⌣⌣⌣⌣⌣⌣⌣⌣⌣⌣⌣⌣⌣⌣⌣⌣⌣⌣⌣⌣ 瀠楲瑮⁦䈤㴢㴽㴽㴽㴽㴽㴽㴽㴽㴽㴽㴽㴽㴽㴽㴽⠽∠䜤䕒久倢潲散獳獥‬牃湯☠匠牥楶散≳䈤•㴩㴽㴽㴽㴽㴽㴽㴽㴽㴽㴽㴽㴽㴽㴽㴽尽≮两੃ ⌠ⴭㄠ䍐⥓䌠敬湡摥瀠潲捣獥敳ੳ†牰湩晴␠≙⭛⁝␢則䕅≎汃慥敮⁤牰捯獥敳屳≮两੃†晩嬠∠两問䕓卐•㭝琠敨੮††牰湩晴␠≂楛⁝␢則䕅≎潌歯⁳楬敫瀠⁳獩渠瑯映湩楤杮瀠潲散獳獥‬潧湩⁧潴爠慥⁤牦浯⼠牰捯 湡⁤潮⁴潧湩⁧潴洠湯瑩牯ㄠ業⁮景瀠潲散獳獥湜␢䍎 映੩†牰湩晴␠≂楛⁝␢≙桃捥⁫敷物⁤…湵硥数瑣摥瀠潲散敳⁳畲⁮祢爠潯㩴栠瑴獰⼺戯潯⹫慨正牴捩獫砮穹氯湩硵甭楮⽸牰癩汩来ⵥ獥慣慬楴湯瀣潲散獳獥湜␢䍎ਊ†晩嬠∠两問䕓卐•㭝琠敨੮††牰湩彴獰簠猠摥∠ⱳ猤彨獵獲␬䍻孽㬱㘹♭笤絃せⱭ•⁼敳⁤猢␬潮桳畟牳ⱳ笤絃ㅛ㌻洴␦䍻孽洰∬簠猠摥∠ⱳ爤潯捴浯潭Ɱ笤絃ㅛ㌻洲␦䍻孽洰∬簠猠摥∠ⱳ欤睮畟牳ⱳ笤絃ㅛ㌻洲␦䍻孽洰∬簠猠摥∠ⱳ唤䕓ⱒ笤絃ㅛ㤻洵␦䍻孽洰∬簠猠摥∠ⱳ潲瑯␬䍻孽㬱ㄳ♭笤絃せⱭ•⁼敳⁤猢␬牰捯獥敳噳ⱂ笤絃ㅛ㌻㬱〱洳␦䍻孽洰本ਢ†汥敳 †瀠⁳畡⁸㸲搯癥港汵⁬⁼牧灥ⴠ⁶尢≛簠猠摥∠ⱳ猤彨獵獲␬䍻孽㬱㘹♭笤絃せⱭ•⁼敳⁤猢␬潮桳畟牳ⱳ笤絃ㅛ㌻洴␦䍻孽洰∬簠猠摥∠ⱳ爤潯捴浯潭Ɱ笤絃ㅛ㌻洲␦䍻孽洰∬簠猠摥∠ⱳ欤睮畟牳ⱳ笤絃ㅛ㌻洲␦䍻孽洰∬簠猠摥∠ⱳ唤䕓ⱒ笤絃ㅛ㤻洵␦䍻孽洰∬簠猠摥∠ⱳ潲瑯␬䍻孽㬱ㄳ♭笤絃せⱭ•⁼敳⁤猢␬牰捯獥敳噳ⱂ笤絃ㅛ㌻㬱〱洳␦䍻孽洰本ਢ††捥潨∠ਢ †⌠ⴭ㈠䍐⥓䈠湩牡⁹牰捯獥敳⁳数浲獩楳湯ੳ††牰湩晴␠≙⭛⁝␢則䕅≎楂慮祲瀠潲散獳獥瀠牥業獳潩獮湜␢䍎 †瀠楲瑮⁦䈤嬢嵩∠夤栢瑴獰⼺戯潯⹫慨正牴捩獫砮穹氯湩硵甭楮⽸牰癩汩来ⵥ獥慣慬楴湯瀣潲散獳獥湜␢䍎 †瀠⁳畡⁸㸲搯癥港汵⁬⁼睡⁫笧牰湩⁴ㄤ紱簧慸杲⁳爭氠⁳氭⁡㸲搯癥港汵⁬慼歷✠砡⑛崰⬫‧㸲搯癥港汵⁬⁼敳⁤猢␬桳畟牳ⱳ笤絃ㅛ㌻洱␦䍻孽洰∬簠猠摥∠ⱳ渤獯彨獵獲␬䍻孽㬱㐳♭笤絃せⱭ•⁼敳⁤猢␬湫彷獵獲␬䍻孽㬱㈳♭笤絃せⱭ•⁼敳⁤猢␬单剅␬䍻孽㬱ㄳ♭笤絃せⱭ•⁼敳⁤猢爬潯ⱴ笤絃ㅛ㌻洲␦䍻孽洰∬ 映੩†捥潨∠ਢ ⌠ⴭ㌠䍐⥓䐠晩敦敲瑮瀠潲散獳獥ㄠ洠湩 椠⁦‡⁛␢䅆呓•⁝☦℠嬠∠匤偕剅䅆呓•㭝琠敨੮††牰湩晴␠≙⭛⁝␢則䕅≎楄晦牥湥⁴牰捯獥敳⁳硥捥瑵摥搠牵湩⁧‱業⁮椨瑮牥獥楴杮椠⁳潬⁷畮扭牥漠⁦敲数楴楴湯⥳湜␢䍎 †瀠楲瑮⁦䈤嬢嵩∠夤栢瑴獰⼺戯潯⹫慨正牴捩獫砮穹氯湩硵甭楮⽸牰癩汩来ⵥ獥慣慬楴湯昣敲畱湥⵴牣湯樭扯屳≮两੃††晩嬠∠灠⁳攭ⴠ昭牯慭⁴浣⁤㸲搯癥港汵恬•㭝琠敨⁮潦⁲⁩湩␠猨煥ㄠㄠ㔲⤰※潤瀠⁳攭ⴠ昭牯慭⁴浣⁤㸾␠楦敬琮灭‱㸲搯癥港汵㭬猠敬灥〠〮㬵搠湯㭥猠牯⁴昤汩⹥浴ㅰ㈠⼾敤⽶畮汬簠甠楮ⁱ挭簠朠敲⁰瘭∠孜•⁼敳⁤⼧⹞筜〲尰⹽搯‧⁼潳瑲簠朠敲⁰䔭ⴠ⁶尢⩳ㅛ㤭孝ⴰ崹せ㤭孝ⴰ崹㬢爠⁭昤汩⹥浴ㅰ※楦 †攠档⁯∢ 映੩ ⌠ⴭ㐠䍐⥓䌠潲੮†牰湩晴␠≙⭛⁝␢則䕅≎牃湯樠扯屳≮两੃†牰湩晴␠≂楛⁝␢≙瑨灴㩳⼯潢歯栮捡瑫楲正⹳祸⽺楬畮⵸湵硩瀯楲楶敬敧攭捳污瑡潩⍮捳敨畤敬ⵤ潪獢湜␢䍎 挠潲瑮扡ⴠ⁬㸲搯癥港汵⁬⁼敳⁤猢␬晗汯敤獲␬䍻孽㬱ㄳㄻ㌰♭笤絃せⱭ≧簠猠摥∠ⱳ猤彨獵獲␬䍻孽㬱㘹♭笤絃せⱭ•⁼敳⁤猢␬单剅␬䍻孽㬱㔹♭笤絃せⱭ•⁼敳⁤猢␬潮桳畟牳ⱳ笤絃ㅛ㌻洴␦䍻孽洰∬簠猠摥∠ⱳ潲瑯␬䍻孽㬱ㄳ♭笤絃せⱭਢ†獬ⴠ污⼠瑥⽣牣湯‪㸲搯癥港汵⁬⁼敳⁤猢␬牣湯潪獢ⱇ笤絃ㅛ㌻洲␦䍻孽洰本•⁼敳⁤猢␬牣湯潪獢ⱂ笤絃ㅛ㌻洱␦䍻孽洰本ਢ†慣⁴支捴振潲⩮⼠瑥⽣瑡‪支捴愯慮牣湯慴⁢瘯牡猯潰汯振潲⽮牣湯慴獢爯潯⁴瘯牡猯潰汯愯慮牣湯㈠⼾敤⽶畮汬簠朠敲⁰瘭∠⍞籜整瑳尠砭⼠獵⽲扳湩愯慮牣湯籜畲屮瀭牡獴尠尭爭灥牯⁴支捴振潲⹮潨牵祬籜爠潯⁴畲⵮慰瑲⁳支捴振潲⹮•⁼敳⁤猢␬晗汯敤獲␬䍻孽㬱ㄳㄻ㌰♭笤絃せⱭ≧簠猠摥∠ⱳ猤彨獵獲␬䍻孽㬱㘹♭笤絃せⱭ•⁼敳⁤猢␬单剅␬䍻孽㬱㔹♭笤絃せⱭ•⁼敳⁤猢␬潮桳畟牳ⱳ笤絃ㅛ㌻洴␦䍻孽洰∬†⁼敳⁤猢爬潯ⱴ笤絃ㅛ㌻洱␦䍻孽洰∬ 挠潲瑮扡ⴠ⁬甭␠单剅㈠⼾敤⽶畮汬 攠档⁯∢ਊ†ⴣ‭倵䍓 敓癲捩獥 瀠楲瑮⁦夤嬢崫∠䜤䕒久匢牥楶散屳≮两੃†牰湩晴␠≂楛⁝␢≙敓牡档映牯漠瑵慤整⁤敶獲潩獮湜␢䍎 ⠠敳癲捩⁥ⴭ瑳瑡獵愭汬簠⁼档捫湯楦⁧ⴭ楬瑳簠⁼捲猭慴畴⥳㈠⼾敤⽶畮汬簠⁼捥潨湟瑯晟畯摮∠敳癲捩籥档捫湯楦籧捲猭慴畴≳ਠ†捥潨∠ਢ†捥潨∠ਢ楦ਊ椊⁦⁛怢捥潨␠䡃䍅卋簠朠敲⁰敎恴•㭝琠敨੮†⌣⌣⌣⌣⌣⌣⌣⌣⌣⌣⌣⌣⌣⌣⌣⌣⌣⌣⌣⌣⌣ਣ†ⴣⴭⴭⴭⴭ 敎睴牯⁫湉潦浲瑡潩⁮⴨ⴭⴭⴭⴭਣ†⌣⌣⌣⌣⌣⌣⌣⌣⌣⌣⌣⌣⌣⌣⌣⌣⌣⌣⌣⌣⌣ਣ†牰湩晴␠≂㴽㴽㴽㴽㴽㴽㴽㴽㴽㴽㴽㴽㴽㴽㴽㴽㴽⠽∠䜤䕒久丢瑥潷歲䤠普牯慭楴湯␢≂⤠㴽㴽㴽㴽㴽㴽㴽㴽㴽㴽㴽㴽㴽㴽㴽㴽㴽㴽湜␢䍎ਊ†ⴣ‭丱⥉䠠獯湴浡ⱥ栠獯獴愠摮䐠华 瀠楲瑮⁦夤嬢崫∠䜤䕒久䠢獯湴浡ⱥ栠獯獴愠摮䐠华湜␢䍎 挠瑡⼠瑥⽣潨瑳慮敭⼠瑥⽣潨瑳⁳支捴爯獥汯⹶潣普㈠⼾敤⽶畮汬簠朠敲⁰瘭∠⍞•⁼牧灥ⴠ癐∠坜尪∣㈠⼾敤⽶畮汬 搠獮潤慭湩慮敭㈠⼾敤⽶畮汬 攠档⁯∢ਊ†ⴣ‭串⥉⼠瑥⽣湩瑥⹤潣普 瀠楲瑮⁦夤嬢崫∠䜤䕒久䌢湯整瑮漠⁦支捴椯敮摴挮湯屦≮两੃†挨瑡⼠瑥⽣湩瑥⹤潣普㈠⼾敤⽶畮汬簠朠敲⁰瘭∠⍞•⁼牧灥ⴠ癐∠坜尪∣㈠⼾敤⽶畮汬 籼攠档彯潮彴潦湵⁤⼢瑥⽣湩瑥⹤潣普• 攠档⁯∢ਊ†ⴣ‭丳⥉丠瑥潷歲⁳湡⁤敮杩扨畯獲 瀠楲瑮⁦夤嬢崫∠䜤䕒久丢瑥潷歲⁳湡⁤敮杩扨畯獲湜␢䍎 挠瑡⼠瑥⽣敮睴牯獫㈠⼾敤⽶畮汬 ⠠晩潣普杩簠⁼灩愠 㸲搯癥港汵੬†灩渠㈠⼾敤⽶畮汬 爠畯整ⴠ⁮㸲搯癥港汵੬†捥潨∠ਢ ⌠ⴭ㐠䥎 灉慴汢獥 瀠楲瑮⁦夤嬢崫∠䜤䕒久䤢瑰扡敬⁳畲敬屳≮两੃†琨浩潥瑵ㄠ椠瑰扡敬⁳䰭㈠⼾敤⽶畮汬※慣⁴支捴椯瑰扡敬⽳‪⁼牧灥ⴠ⁶帢∣簠朠敲⁰倭⁶尢⩗⍜•㸲搯癥港汵⥬㈠⼾敤⽶畮汬簠⁼捥潨湟瑯晟畯摮∠灩慴汢獥爠汵獥ਢ†捥潨∠ਢ ⌠ⴭ㔠䥎 潐瑲ੳ†牰湩晴␠≙⭛⁝␢則䕅≎捁楴敶倠牯獴湜␢䍎 瀠楲瑮⁦䈤嬢嵩∠夤栢瑴獰⼺戯潯⹫慨正牴捩獫砮穹氯湩硵甭楮⽸牰癩汩来ⵥ獥慣慬楴湯椣瑮牥慮⵬灯湥瀭牯獴湜␢䍎 ⠠敮獴慴⁴瀭湵慴簠⁼獳ⴠ渭灴⥵㈠⼾敤⽶畮汬簠猠摥∠ⱳ㈱⸷⸰⸰ⰱ笤絃ㅛ㌻洱␦䍻孽洰∬ 攠档⁯∢ਊ†ⴣ‭丶⥉琠灣畤灭 瀠楲瑮⁦夤嬢崫∠䜤䕒久䌢湡䤠猠楮晦眠瑩⁨捴摰浵㽰湜␢䍎 琠灣㵤瑠浩潥瑵ㄠ琠灣畤灭㈠⼾敤⽶畮汬੠†晩嬠∠琤灣≤崠※桴湥 ††瀠楲瑮⁦䈤嬢嵩∠夤栢瑴獰⼺戯潯⹫慨正牴捩獫砮穹氯湩硵甭楮⽸牰癩汩来ⵥ獥慣慬楴湯猣楮晦湩屧≮两੃†††捥潨∠潙⁵慣⁮湳晩⁦楷桴琠灣畤灭∡簠猠摥∠ⱳ⨮␬䍻孽㬱ㄳ♭笤絃せⱭਢ†汥敳攠档彯潮 映੩†捥潨∠ਢ†捥潨∠ਢ楦ਊ椊⁦⁛怢捥潨␠䡃䍅卋簠朠敲⁰獕䥲≠崠※桴湥 ⌠⌣⌣⌣⌣⌣⌣⌣⌣⌣⌣⌣⌣⌣⌣⌣⌣⌣⌣⌣⌣⌣ ⌠ⴭⴭⴭⴭⴭ 獕牥⁳湉潦浲瑡潩⁮⴨ⴭⴭⴭⴭ⌭ ⌠⌣⌣⌣⌣⌣⌣⌣⌣⌣⌣⌣⌣⌣⌣⌣⌣⌣⌣⌣⌣⌣ 瀠楲瑮⁦䈤㴢㴽㴽㴽㴽㴽㴽㴽㴽㴽㴽㴽㴽㴽㴽㴽㴽㴽⠽∠䜤䕒久唢敳獲䤠普牯慭楴湯␢≂⤠㴽㴽㴽㴽㴽㴽㴽㴽㴽㴽㴽㴽㴽㴽㴽㴽㴽㴽尽≮两੃ ⌠ⴭㄠ䥕 祍甠敳ੲ†牰湩晴␠≙⭛⁝␢則䕅≎祍甠敳屲≮两੃†牰湩晴␠≂楛⁝␢≙瑨灴㩳⼯潢歯栮捡瑫楲正⹳祸⽺楬畮⵸湵硩瀯楲楶敬敧攭捳污瑡潩⍮牧畯獰湜␢䍎 ⠠摩簠⁼眨潨浡⁩☦朠潲灵⥳ 㸲搯癥港汵⁬⁼敳⁤猢␬桳畟牳ⱳ笤絃ㅛ㤻洶␦䍻孽洰∬簠猠摥∠ⱳ渤獯彨獵獲␬䍻孽㬱㐳♭笤絃せⱭ•⁼敳⁤猢␬湫彷獵獲␬䍻孽㬱㈳♭笤絃せⱭ≧簠猠摥∠ⱳ欤睮束灲ⱳ笤絃ㅛ㌻洲␦䍻孽洰本•⁼敳⁤猢␬牧畯獰ⱂ笤絃ㅛ㌻洱␦䍻孽洰本•⁼敳⁤猢␬牧畯獰䉖␬䍻孽㬱ㄳㄻ㌰♭笤絃せⱭ≧簠猠摥∠ⱳ唤䕓ⱒ笤絃ㅛ㤻洵␦䍻孽洰本•⁼敳⁤猢␬摩ⱂ笤絃ㅛ㌻洱␦䍻孽洰本ਢ†捥潨∠ਢ ⌠ⴭ㈠䥕 䝐⁐敫獹ਿ†牰湩晴␠≙⭛⁝␢則䕅≎潄䤠栠癡⁥䝐⁐敫獹尿≮两੃†灧⁧ⴭ楬瑳欭祥⁳㸲搯癥港汵⁬籼攠档彯潮彴潦湵⁤朢杰ਢ†捥潨∠ਢ ⌠ⴭ㌠䥕 汃灩潢牡⁤湡⁤楨桧楬桧整⁤整瑸 瀠楲瑮⁦夤嬢崫∠䜤䕒久䌢楬扰慯摲漠⁲楨桧楬桧整⁤整瑸尿≮两੃†晩嬠怠桷捩⁨捸楬⁰㸲搯癥港汵恬崠※桴湥 †攠档⁯䌢楬扰慯摲›怢捸楬⁰漭ⴠ敳敬瑣潩⁮汣灩潢牡⁤㸲搯癥港汵恬簠猠摥∠ⱳ瀤摷楟獮摩彥楨瑳牯ⱹ笤絃ㅛ㌻洱␦䍻孽洰∬ †攠档⁯䠢杩汨杩瑨摥琠硥㩴∠硠汣灩ⴠ⁯㸲搯癥港汵恬簠猠摥∠ⱳ瀤摷楟獮摩彥楨瑳牯ⱹ笤絃ㅛ㌻洱␦䍻孽洰∬ 攠楬⁦⁛睠楨档砠敳⁬㸲搯癥港汵恬崠※桴湥 †攠档⁯䌢楬扰慯摲›怢獸汥ⴠ扯㈠⼾敤⽶畮汬⁠⁼敳⁤猢␬睰彤湩楳敤桟獩潴祲␬䍻孽㬱ㄳ♭笤絃せⱭਢ††捥潨∠楈桧楬桧整⁤整瑸›怢獸汥ⴠ⁯㸲搯癥港汵恬簠猠摥∠ⱳ瀤摷楟獮摩彥楨瑳牯ⱹ笤絃ㅛ㌻洱␦䍻孽洰∬ 攠獬⁥捥潨湟瑯晟畯摮∠獸汥愠摮砠汣灩ਢ†楦 攠档⁯∢ਊ†ⴣ‭唴⥉匠摵⁯氭 瀠楲瑮⁦夤嬢崫∠䜤䕒久吢獥楴杮✠畳潤ⴠ❬眠瑩潨瑵瀠獡睳牯⁤…支捴猯摵敯獲湜␢䍎 瀠楲瑮⁦䈤嬢嵩∠夤栢瑴獰⼺戯潯⹫慨正牴捩獫砮穹氯湩硵甭楮⽸牰癩汩来ⵥ獥慣慬楴湯挣浯慭摮⵳楷桴猭摵ⵯ湡ⵤ畳摩挭浯慭摮屳≮两੃†攨档⁯✧簠猠摵⁯匭ⴠ⁬⁼敳⁤猢弬牰硯ⱹ笤絃ㅛ㌻洱␦䍻孽洰本•⁼敳⁤猢␬畳潤ⱂ笤絃ㅛ㌻洱␦䍻孽洰本•⁼敳⁤猢␬畳潤䉖␬䍻孽㬱ㄳㄻ㌰♭笤絃せⱭ⤢㈠⼾敤⽶畮汬†籼攠档彯潮彴潦湵⁤猢摵≯ਠ†挨瑡⼠瑥⽣畳潤牥⁳⁼敳⁤猢弬牰硯ⱹ笤絃ㅛ㌻洱␦䍻孽洰本•⁼敳⁤猢␬畳潤ⱂ笤絃ㅛ㌻洱␦䍻孽洰本•⁼敳⁤猢␬畳潤䉖␬䍻孽㬱ㄳㄻ㌰♭笤絃せⱭ⤢㈠⼾敤⽶畮汬†籼攠档彯潮彴潦湵⁤⼢瑥⽣畳潤牥≳ਠ†捥潨∠ਢ ⌠ⴭ㔠䥕 潄獡 瀠楲瑮⁦夤嬢崫∠䜤䕒久䌢敨正湩⁧支捴搯慯⹳潣普湜␢䍎 椠⁦⁛怢慣⁴支捴搯慯⹳潣普㈠⼾敤⽶畮汬≠崠※桴湥挠瑡⼠瑥⽣潤獡挮湯⁦㸲搯癥港汵⁬⁼敳⁤猢␬桳畟牳ⱳ笤絃ㅛ㌻洱␦䍻孽洰∬簠猠摥∠ⱳ潲瑯␬䍻孽㬱ㄳ♭笤絃せⱭ•⁼敳⁤猢測灯獡ⱳ笤絃ㅛ㌻洱␦䍻孽洰∬簠猠摥∠ⱳ渤獯彨獵獲␬䍻孽㬱㐳♭笤絃せⱭ•⁼敳⁤猢␬单剅␬䍻孽㬱ㄳㄻ㌰♭笤絃せⱭਢ†汥敳攠档彯潮彴潦湵⁤⼢瑥⽣潤獡挮湯≦ 映੩†捥潨∠ਢ ⌠ⴭ㘠䥕 歐硥捥瀠汯捩੹†牰湩晴␠≙⭛⁝␢則䕅≎桃捥楫杮倠敫數⁣潰楬祣湜␢䍎 ⠠慣⁴支捴瀯汯楫⵴⼱潬慣慬瑵潨楲祴挮湯⹦⽤‪㸲搯癥港汵⁬⁼牧灥ⴠ⁶帢∣簠朠敲⁰倭⁶尢⩗⍜•㸲搯癥港汵⁬⁼敳⁤猢␬桳畟牳ⱳ笤絃ㅛ㤻洶␦䍻孽洰∬簠猠摥∠ⱳ渤獯彨獵獲␬䍻孽㬱㐳♭笤絃せⱭ•⁼敳⁤猢␬牧畯獰ⱂ笤絃ㅛ㌻洱␦䍻孽洰∬簠猠摥∠ⱳ朤潲灵噳ⱂ笤絃ㅛ㌻洱␦䍻孽洰∬簠猠摥∠ⱳ唤䕓ⱒ笤絃ㅛ㌻㬱〱洳␦䍻孽洰∬簠猠摥∠ⱳ䜤佒偕ⱓ笤絃ㅛ㌻㬱〱洳␦䍻孽洰∬ 籼攠档彯潮彴潦湵⁤⼢瑥⽣潰歬瑩ㄭ氯捯污畡桴牯瑩⹹潣普搮ਢ†捥潨∠ਢ ⌠ⴭ㜠䥕 牂瑵⁥畳 椠⁦‡⁛␢䅆呓•⁝☦℠嬠∠匤偕剅䅆呓•⁝☦嬠∠吤䵉佅呕•⁝☦℠嬠∠䤤䵁佒呏•㭝琠敨੮††牰湩晴␠≙⭛⁝␢則䕅≎敔瑳湩⁧猧❵愠⁳瑯敨⁲獵牥⁳楷桴猠敨汬甠楳杮愠⁳慰獳潷摲㩳渠汵⁬睰Ɽ琠敨甠敳湲浡⁥湡⁤潴㉰〰瀰摷屳≮两੃††䡓䱅啌䕓卒怽慣⁴支捴瀯獡睳⁤㸲搯癥港汵⁬⁼牧灥ⴠ⁩猢⑨•⁼畣⁴搭∠∺ⴠ⁦怱 †映牯甠椠⁮匤䕈䱌单剅㭓搠੯†††捥潨∠†牂瑵晥牯楣杮甠敳⁲甤⸮∮ ††猠彵牢瑵彥獵牥湟浵␠⁵値十呓奒 †搠湯੥†汥敳 †瀠楲瑮⁦夤嬢崫∠䜤䕒久䐢湯映牯敧⁴潴琠獥⁴猧❵愠⁳湡⁹瑯敨⁲獵牥眠瑩⁨桳汥㩬眠瑩潨瑵瀠獡睳牯⁤湡⁤楷桴琠敨物渠浡獥愠⁳慰獳潷摲⠠⁉慣❮⁴潤椠⹴⸮尩≮两੃†楦 瀠楲瑮⁦夤嬢崫∠䜤䕒久䐢⁯潮⁴潦杲瑥琠⁯硥捥瑵⁥猧摵⁯氭‧楷桴畯⁴慰獳潷摲漠⁲楷桴瘠污摩瀠獡睳牯⁤椨⁦潹⁵湫睯椠⥴℡湜␢䍎 攠档⁯∢ਊ†ⴣ‭唸⥉匠灵牥獵牥ੳ†牰湩晴␠≙⭛⁝␢則䕅≎畓数畲敳獲湜␢䍎 愠歷ⴠ㩆✠␨″㴽∠∰ 灻楲瑮❽⼠瑥⽣慰獳摷㈠⼾敤⽶畮汬簠猠摥∠ⱳ猤彨獵獲␬䍻孽㬱㘹♭笤絃せⱭ•⁼敳⁤猢␬潮桳畟牳ⱳ笤絃ㅛ㌻洴␦䍻孽洰∬簠猠摥∠ⱳ欤睮畟牳ⱳ笤絃ㅛ㌻洲␦䍻孽洰∬簠猠摥∠ⱳ唤䕓ⱒ笤絃ㅛ㌻㬱〱洳␦䍻孽洰∬簠猠摥∠ⱳ潲瑯␬䍻孽㬱ㄳ♭笤絃せⱭਢ†捥潨∠ਢ ⌠ⴭ㤠䥕 獕牥⁳楷桴挠湯潳敬 瀠楲瑮⁦夤嬢崫∠䜤䕒久唢敳獲眠瑩⁨潣獮汯履≮两੃†慣⁴支捴瀯獡睳⁤㸲搯癥港汵⁬⁼牧灥∠桳∤簠猠牯⁴⁼敳⁤猢␬桳畟牳ⱳ笤絃ㅛ㤻洶␦䍻孽洰∬簠猠摥∠ⱳ唤䕓ⱒ笤絃ㅛ㤻洵␦䍻孽洰∬簠猠摥∠ⱳ潲瑯␬䍻孽㬱ㄳ♭笤絃せⱭਢ†捥潨∠ਢ ⌠ⴭㄠ唰⥉䰠杯湩椠普੯†牰湩晴␠≙⭛⁝␢則䕅≎潌楧⁮湩潦浲瑡潩屮≮两੃†⁷㸲搯癥港汵⁬⁼敳⁤猢␬桳畟牳ⱳ笤絃ㅛ㤻洶␦䍻孽洰∬簠猠摥∠ⱳ渤獯彨獵獲␬䍻孽㬱㐳♭笤絃せⱭ•⁼敳⁤猢␬湫彷獵獲␬䍻孽㬱㈳♭笤絃せⱭ•⁼敳⁤猢␬单剅␬䍻孽㬱㔹♭笤絃せⱭ•⁼敳⁤猢爬潯ⱴ笤絃ㅛ㌻洱␦䍻孽洰∬ 氠獡⁴㸲搯癥港汵⁬⁼慴汩簠猠摥∠ⱳ猤彨獵獲␬䍻孽㬱㘹♭笤絃せⱭ•⁼敳⁤猢␬潮桳畟牳ⱳ笤絃ㅛ㌻洴␦䍻孽洰∬簠猠摥∠ⱳ欤睮畟牳ⱳ笤絃ㅛ㌻洲␦䍻孽洰∬簠猠摥∠ⱳ唤䕓ⱒ笤絃ㅛ㤻洵␦䍻孽洰∬簠猠摥∠ⱳ潲瑯␬䍻孽㬱ㄳ♭笤絃せⱭਢ†捥潨∠ਢ ⌠ⴭㄠ唱⥉䄠汬甠敳獲 瀠楲瑮⁦夤嬢崫∠䜤䕒久䄢汬甠敳獲湜␢䍎 挠瑡⼠瑥⽣慰獳摷㈠⼾敤⽶畮汬簠猠牯⁴⁼畣⁴搭›昭‱⁼敳⁤猢␬桳畟牳ⱳ笤絃ㅛ㤻洶␦䍻孽洰∬簠猠摥∠ⱳ唤䕓ⱒ笤絃ㅛ㤻洵␦䍻孽洰∬簠猠摥∠ⱳ渤獯彨獵獲␬䍻孽㬱㐳♭笤絃せⱭ•⁼敳⁤猢␬湫彷獵獲␬䍻孽㬱㈳♭笤絃せⱭ≧簠猠摥∠ⱳ潲瑯␬䍻孽㬱ㄳ♭笤絃せⱭਢ†捥潨∠ਢ ⌠ⴭㄠ唲⥉倠獡睳牯⁤潰楬祣 瀠楲瑮⁦夤嬢崫∠䜤䕒久倢獡睳牯⁤潰楬祣湜␢䍎 朠敲⁰帢䅐卓䵟塁䑟奁屓幼䅐卓䵟义䑟奁屓幼䅐卓坟剁彎䝁居幼久剃偙彔䕍䡔䑏•支捴氯杯湩搮晥⁳㸲搯癥港汵⁬籼攠档彯潮彴潦湵⁤⼢瑥⽣潬楧⹮敤獦ਢ†捥潨∠ਢ†捥潨∠ਢ楦ਊ椊⁦⁛怢捥潨␠䡃䍅卋簠朠敲⁰潓䥦≠崠※桴湥 ⌠⌣⌣⌣⌣⌣⌣⌣⌣⌣⌣⌣⌣⌣⌣⌣⌣⌣⌣⌣⌣⌣ ⌠ⴭⴭⴭⴭ 潓瑦慷敲䤠普牯慭楴湯⠠ⴭⴭⴭⴭ⌭ ⌠⌣⌣⌣⌣⌣⌣⌣⌣⌣⌣⌣⌣⌣⌣⌣⌣⌣⌣⌣⌣⌣ 瀠楲瑮⁦䈤㴢㴽㴽㴽㴽㴽㴽㴽㴽㴽㴽㴽㴽㴽㴽㴽㴽㴽 ␢則䕅≎潓瑦慷敲䤠普牯慭楴湯␢≂⤠㴽㴽㴽㴽㴽㴽㴽㴽㴽㴽㴽㴽㴽㴽㴽㴽㴽尽≮两੃ ⌠ⴭㄠ䥓 祍煳⁬敶獲潩੮†牰湩晴␠≙⭛⁝␢則䕅≎祍兓⁌敶獲潩屮≮两੃†祭煳⁬ⴭ敶獲潩⁮㸲搯癥港汵⁬籼攠档彯潮彴潦湵⁤洢獹汱ਢ†捥潨∠ਢ ⌠ⴭ㈠䥓 祍煳⁬潣湮捥楴湯爠潯⽴潲瑯 瀠楲瑮⁦夤嬢崫∠䜤䕒久䴢卹䱑挠湯敮瑣潩⁮獵湩⁧敤慦汵⁴潲瑯爯潯⁴⸮⸮⸮⸮⸮‮␢䍎 洠獹汱潣湮捥㵴浠獹汱摡業⁮甭潲瑯ⴠ牰潯⁴敶獲潩⁮㸲搯癥港汵恬 椠⁦⁛␢祭煳捬湯敮瑣•㭝琠敨੮††捥潨∠教≳簠猠摥∠ⱳ⨮␬䍻孽㬱ㄳ♭笤絃せⱭਢ††祭煳⁬甭爠潯⁴ⴭ慰獳潷摲爽潯⁴攭∠䕓䕌呃唠敳Ⱳ潈瑳愬瑵敨瑮捩瑡潩彮瑳楲杮䘠佒⁍祭煳⹬獵牥∻㈠⼾敤⽶畮汬簠猠摥∠ⱳ⨮␬䍻孽㬱ㄳ♭笤絃せⱭਢ†汥敳攠档彯潮 映੩ ⌠ⴭ㌠䥓 祍煳⁬潣湮捥楴湯爠潯⽴潴牯 瀠楲瑮⁦夤嬢崫∠䜤䕒久䴢卹䱑挠湯敮瑣潩⁮獵湩⁧潲瑯琯潯⁲⸮⸮⸮⸮⸮⸮⸮⸮⸮‮␢䍎 洠獹汱潣湮捥㵴浠獹汱摡業⁮甭潲瑯ⴠ瑰潯⁲敶獲潩⁮㸲搯癥港汵恬 椠⁦⁛␢祭煳捬湯敮瑣•㭝琠敨੮††捥潨∠教≳簠猠摥∠ⱳ⨮␬䍻孽㬱ㄳ♭笤絃せⱭਢ††祭煳⁬甭爠潯⁴ⴭ慰獳潷摲琽潯⁲攭∠䕓䕌呃唠敳Ⱳ潈瑳愬瑵敨瑮捩瑡潩彮瑳楲杮䘠佒⁍祭煳⹬獵牥∻㈠⼾敤⽶畮汬簠猠摥∠ⱳ⨮␬䍻孽㬱ㄳ♭笤絃せⱭਢ†汥敳攠档彯潮 映੩ ⌠ⴭ㐠䥓 祍煳⁬潣湮捥楴湯爠潯⽴低䅐卓 洠獹汱潣湮捥湴灯獡㵳浠獹汱摡業⁮甭潲瑯瘠牥楳湯㈠⼾敤⽶畮汬੠†牰湩晴␠≙⭛⁝␢則䕅≎祍兓⁌潣湮捥楴湯甠楳杮爠潯⽴低䅐卓⸠⸮⸮⸮⸮⸮⸮⸮⸮∠两੃†晩嬠∠洤獹汱潣湮捥湴灯獡≳崠※桴湥 †攠档⁯夢獥•⁼敳⁤猢⸬Ⱚ笤絃ㅛ㌻洱␦䍻孽洰∬ †洠獹汱ⴠ⁵潲瑯ⴠ⁥匢䱅䍅⁔獕牥䠬獯ⱴ畡桴湥楴慣楴湯獟牴湩⁧剆䵏洠獹汱甮敳㭲•㸲搯癥港汵⁬⁼敳⁤猢⸬Ⱚ笤絃ㅛ㌻洱␦䍻孽洰∬ 攠獬⁥捥潨湟੯†楦ਊ†ⴣ‭匵⥉䴠獹汱挠敲敤瑮慩獬 瀠楲瑮⁦夤嬢崫∠䜤䕒久䰢潯楫杮映牯洠獹汱挠敲敤瑮慩獬愠摮攠數屣≮两੃†祭煳摬物㵳晠湩⁤支捴⼠獵⽲慶⽲楬⁢瘯牡氯扩ⴠ祴数搠ⴠ慮敭洠獹汱ⴠ潮⁴瀭瑡⁨⨢祭煳⽬祭煳≬㈠⼾敤⽶畮汬੠†晩嬠∠洤獹汱楤獲•㭝琠敨੮††潦⁲⁤湩␠祭煳摬物㭳搠⁯ ††搠湣㵦晠湩⁤搤ⴠ慮敭搠扥慩⹮湣⁦㸲搯癥港汵恬 ††映牯映椠⁮搤湣㭦搠੯††††晩嬠ⴠ⁲昤崠※桴湥ਠ†††††捥潨∠敗挠湡爠慥⁤桴⁥祭煳⁬敤楢湡挮普‮潙⁵慣⁮獵⁥桴獩甠敳湲浡⽥慰獳潷摲琠⁯潬⁧湩䴠卹䱑•⁼敳⁤猢⸬Ⱚ笤絃ㅛ㌻洱␦䍻孽洰∬ ††††挠瑡∠昤ਢ††††楦 ††搠湯੥†††䵵䑙怽楦摮␠⁤渭浡⁥獵牥䴮䑙㈠⼾敤⽶畮汬੠†††潦⁲⁦湩␠䵵䑙※潤 †††椠⁦⁛爭␠⁦㭝琠敨⁮ ††††攠档⁯圢⁥慣⁮敲摡琠敨䴠獹汱䠠獡敨⁳牦浯␠≦簠猠摥∠ⱳ⨮␬䍻孽㬱ㄳ♭笤絃せⱭਢ†††††牧灥ⴠ慯⁅嬢弭⹜⩜ⵡず㤭筝ⰳ≽␠⁦⁼牧灥ⴠ⁶洢獹汱湟瑡癩彥慰獳潷摲• †††映੩†††潤敮 ††甠敳㵲杠敲⁰氭⁲產敳屲⩳∽␠⁤㸲搯癥港汵⁬⁼牧灥ⴠ⁶搢扥慩⹮湣≦੠†††潦⁲⁦湩␠獵牥※潤 †††椠⁦⁛爭␠⁦㭝琠敨੮†††††㵵捠瑡∠昤•⁼牧灥ⴠ⁶⌢•⁼牧灥∠獵牥•⁼牧灥∠∽㈠⼾敤⽶畮汬੠†††††捥潨∠牆浯✠昤‧祍煳⁬獵牥›甤•⁼敳⁤猢␬桳畟牳ⱳ笤絃ㅛ㤻洶␦䍻孽洰∬簠猠摥∠ⱳ渤獯彨獵獲␬䍻孽㬱㐳♭笤絃せⱭ•⁼敳⁤猢␬湫彷獵獲␬䍻孽㬱㈳♭笤絃せⱭ•⁼敳⁤猢␬单剅␬䍻孽㬱㔹♭笤絃せⱭ•⁼敳⁤猢爬潯ⱴ笤絃ㅛ㌻洱␦䍻孽洰∬ †††映੩†††潤敮 ††洠捹杦怽楦摮␠⁤渭浡⁥祭挮普㈠⼾敤⽶畮汬੠†††潦⁲⁦湩␠祭晣㭧搠੯††††晩嬠ⴠ⁲昤崠※桴湥ਠ†††††捥潨∠潆湵⁤敲摡扡敬␠≦ ††††挠瑡∠昤•⁼牧灥ⴠ⁶帢∣簠朠敲⁰倭⁶尢⩗⍜•㸲搯癥港汵⁬⁼牧灥ⴠ⁶帢∤簠猠摥∠ⱳ慰獳潷摲⨮␬䍻孽㬱ㄳ♭笤絃せⱭਢ††††楦 ††搠湯੥†††祭煳敬數㵣睠敨敲獩氠扩浟獹汱摵彦祳⹳潳㈠⼾敤⽶畮汬簠朠敲⁰氢扩浟獹汱摵彦祳屳献≯੠†††晩嬠∠洤獹汱硥捥•㭝琠敨⁮ †††攠档⁯䘢畯摮␠祭煳敬數≣ †††攠档⁯䤢⁦潹⁵慣⁮潬楧⁮湩䴠卹䱑礠畯挠湡攠數畣整挠浯慭摮⁳潤湩㩧匠䱅䍅⁔祳彳癥污✨摩⤧∻簠猠摥∠ⱳ⨮␬䍻孽㬱ㄳ♭笤絃せⱭਢ†††楦 †搠湯੥†汥敳攠档彯潮彴潦湵੤†楦 攠档⁯∢ਊ†ⴣ‭匶⥉倠獯杴敲兓⁌湩潦 瀠楲瑮⁦夤嬢崫∠䜤䕒久倢獯杴敲兓⁌敶獲潩⁮湡⁤杰摡業⁮牣摥湥楴污屳≮两੃†潰瑳癧牥怽獰汱ⴠ⁖㸲搯癥港汵恬 瀠獯杴扤怽楦摮⼠慶⁲支捴⼠潨敭⼠潲瑯⼠浴⁰甯牳⼠灯⁴琭灹⁥⁦渭浡⁥瀢慧浤湩⸪扤•㸲搯癥港汵恬 瀠獯杴潣普㵳晠湩⁤瘯牡⼠瑥⁣栯浯⁥爯潯⁴琯灭⼠獵⁲漯瑰ⴠ祴数映尠 渭浡⁥瀢彧扨⹡潣普•漭ⴠ慮敭∠潰瑳牧獥汱挮湯≦ⴠ⁯渭浡⁥杰煳⹬潣普尠 㸲搯癥港汵恬 椠⁦⁛␢潰瑳癧牥•⁝籼嬠∠瀤獯杴扤•⁝籼嬠∠瀤獯杴潣普≳崠※桴湥 †椠⁦⁛␢潰瑳癧牥•㭝琠敨⁮捥潨∠敖獲潩㩮␠潰瑳癧牥㬢映੩††晩嬠∠瀤獯杴扤•㭝琠敨⁮捥潨∠潐瑳牧卥䱑搠瑡扡獡㩥␠潰瑳摧≢簠猠摥∠ⱳ⨮␬䍻孽㬱ㄳ♭笤絃せⱭ㬢映੩††潦⁲⁦湩␠潰瑳捧湯獦※潤 ††椠⁦⁛爭␠⁦㭝琠敨⁮ †††攠档⁯䘢畯摮爠慥慤汢⁥昤ਢ††††慣⁴␢≦簠朠敲⁰瘭∠⍞•⁼牧灥ⴠ癐∠坜尪∣㈠⼾敤⽶畮汬簠朠敲⁰瘭∠⑞•⁼敳⁤猢愬瑵屨灼獡睳牯層浼㕤籜獵牥尽灼獡㵳␬䍻孽㬱ㄳ♭笤絃せⱭ•㸲搯癥港汵੬††††捥潨∠ਢ†††楦 †搠湯੥†汥敳攠档彯潮彴潦湵੤†楦 攠档⁯∢ਊ†ⴣ‭匷⥉倠獯杴敲兓⁌牢瑵੥†晩嬠∠吤䵉佅呕•㭝琠敨⁮⌠䤠⁮潳敭传⁓氨歩⁥灏湥卂⥄椠⁴楷汬攠灸捥⁴桴⁥慰獳潷摲映潲⁭潣獮汯⁥湡⁤楷汬瀠畡敳琠敨猠牣灩⹴䄠獬Ɐ琠楨⁳协搠敯湳琧栠癡⁥桴⁥琢浩潥瑵•潣浭湡⁤潳氠瑥⁳湯祬甠敳琠楨⁳档捥獫椠⁮协琠慨⁴慨⁳瑩ਮ†挣敨正⁳潴猠敥椠⁦湡⁹潰瑳牧獥瀠獡睳牯⁤硥獩獴愠摮挠湯敮瑣⁳潴䐠⁂琧浥汰瑡づ‧‭潦汬睯湩⁧潣浭湡獤愠敲愠瘠牡慩瑮漠⁮桴獩 †瀠楲瑮⁦夤嬢崫∠䜤䕒久倢獯杴敲兓⁌潣湮捥楴湯琠⁯整灭慬整‰獵湩⁧潰瑳牧獥丯偏十⁓⸮⸮⸮⸮∠两੃††晩嬠∠瑠浩潥瑵ㄠ瀠煳⁬唭瀠獯杴敲⁳搭琠浥汰瑡づⴠ⁣猧汥捥⁴敶獲潩⡮✩㈠⼾敤⽶畮汬≠崠※桴湥攠档⁯夢獥•⁼敳⁤猢⸬Ⱚ笤絃ㅛ㌻洱␦䍻孽洰∬ †攠獬⁥捥潨湟੯††楦ਊ††牰湩晴␠≙⭛⁝␢則䕅≎潐瑳牧卥䱑挠湯敮瑣潩⁮潴琠浥汰瑡ㅥ甠楳杮瀠獯杴敲⽳低䅐卓⸠⸮⸮⸮‮␢䍎 †椠⁦⁛怢楴敭畯⁴‱獰汱ⴠ⁕潰瑳牧獥ⴠ⁤整灭慬整‱挭✠敳敬瑣瘠牥楳湯⤨‧㸲搯癥港汵恬•㭝琠敨⁮捥潨∠教≳簠猠摥∠ⱳ⤮Ⱚ笤絃ㅛ㌻洱␦䍻孽洰∬ †攠獬⁥捥潨湟੯††楦ਊ††牰湩晴␠≙⭛⁝␢則䕅≎潐瑳牧卥䱑挠湯敮瑣潩⁮潴琠浥汰瑡づ甠楳杮瀠獧汱丯偏十⁓⸮⸮⸮⸮⸮‮␢䍎 †椠⁦⁛怢楴敭畯⁴‱獰汱ⴠ⁕杰煳⁬搭琠浥汰瑡づⴠ⁣猧汥捥⁴敶獲潩⡮✩㈠⼾敤⽶畮汬≠崠※桴湥攠档⁯夢獥•⁼敳⁤猢⸬Ⱚ笤絃ㅛ㌻洱␦䍻孽洰∬ †攠獬⁥捥潨湟੯††楦ਊ††牰湩晴␠≙⭛⁝␢則䕅≎潐瑳牧卥䱑挠湯敮瑣潩⁮潴琠浥汰瑡ㅥ甠楳杮瀠獧汱丯偏十⁓⸮⸮⸮⸮⸮‮␢䍎 †椠⁦⁛怢楴敭畯⁴‱獰汱ⴠ⁕杰煳⁬搭琠浥汰瑡ㅥⴠ⁣猧汥捥⁴敶獲潩⡮✩㈠‾搯癥港汵恬•㭝琠敨⁮捥潨∠教≳簠猠摥∠ⱳ⨮␬䍻孽㬱ㄳ♭笤絃せⱭਢ††汥敳攠档彯潮 †映੩††捥潨∠ਢ†楦ਊ†ⴣ‭匸⥉䄠慰档⁥湩潦 瀠楲瑮⁦夤嬢崫∠䜤䕒久䄢慰档⁥敳癲牥椠普屯≮两੃†灡捡敨敶㵲慠慰档㉥ⴠ⁶㸲搯癥港汵㭬栠瑴摰ⴠ⁶㸲搯癥港汵恬 椠⁦⁛␢灡捡敨敶≲崠※桴湥 †攠档⁯嘢牥楳湯›愤慰档癥牥ਢ††楳整敳慮汢摥怽楦摮⼠慶⁲支捴⼠潨敭⼠潲瑯⼠浴⁰甯牳⼠灯⁴渭浡⁥楳整⵳湥扡敬⁤琭灹⁥⁤㸲搯癥港汵恬 †映牯搠椠⁮猤瑩獥湥扡敬㭤搠⁯潦⁲⁦湩␠⽤㬪搠⁯牧灥∠畁桴祔数籜畁桴慎敭籜畁桴獕牥楆敬•昤㈠⼾敤⽶畮汬簠猠摥∠ⱳ⨮畁桴獕牥楆敬⨮␬䍻孽㬱ㄳ♭笤絃せⱭ㬢搠湯㭥搠湯੥††晩嬠℠␢楳整敳慮汢摥•㭝琠敨੮†††敤慦汵ぴ㴰晠湩⁤瘯牡⼠瑥⁣栯浯⁥爯潯⁴琯灭⼠獵⁲漯瑰ⴠ慮敭〠〰搭晥畡瑬㈠⼾敤⽶畮汬੠†††潦⁲⁦湩␠敤慦汵ぴ㬰搠⁯牧灥∠畁桴祔数籜畁桴慎敭籜畁桴獕牥楆敬•␢≦㈠⼾敤⽶畮汬簠猠摥∠ⱳ⨮畁桴獕牥楆敬⨮␬䍻孽㬱ㄳ♭笤絃せⱭ㬢搠湯੥††楦 攠獬⁥捥潨湟瑯晟畯摮 映੩†捥潨∠ਢ ⌠ⴭ㤠䥓 䡐⁐潣歯敩⁳楦敬ੳ†桰獰獥ㅳ怽獬⼠慶⽲楬⽢桰⽰敳獳潩獮㈠⼾敤⽶畮汬੠†桰獰獥㉳怽楦摮⼠浴⁰瘯牡琯灭ⴠ慮敭∠敳獳⩟•㸲搯癥港汵恬 瀠楲瑮⁦夤嬢崫∠䜤䕒久䰢潯楫杮映牯倠偈潃歯敩屳≮两੃†晩嬠∠瀤灨敳獳∱崠簠⁼⁛␢桰獰獥㉳•㭝琠敨੮††晩嬠∠瀤灨敳獳∱崠※桴湥氠⁳瘯牡氯扩瀯灨猯獥楳湯⁳㸲搯癥港汵㭬映੩††晩嬠∠瀤灨敳獳∲崠※桴湥映湩⁤琯灭⼠慶⽲浴⁰渭浡⁥猢獥彳∪㈠⼾敤⽶畮汬※楦 攠獬⁥捥潨湟瑯晟畯摮 映੩†捥潨∠ਢ ⌠ⴭㄠ匰⥉圠牯灤敲獳甠敳Ⱳ瀠獡睳牯Ɽ搠瑡扡慮敭愠摮栠獯ੴ†牰湩晴␠≙⭛⁝␢則䕅≎潌歯湩⁧潦⁲潗摲牰獥⁳灷挭湯楦⹧桰⁰楦敬屳≮两੃†灷怽楦摮⼠慶⁲支捴⼠潨敭⼠潲瑯⼠浴⁰甯牳⼠灯⁴琭灹⁥⁦渭浡⁥灷挭湯楦⹧桰⁰㸲搯癥港汵恬 椠⁦⁛␢灷•㭝琠敨੮††捥潨∠灷挭湯楦⹧桰⁰楦敬⁳潦湵㩤湜眤≰ †映牯映椠⁮眤㭰搠⁯牧灥∠䅐卓佗䑒籜单剅籜䅎䕍籜佈呓•昤㈠⼾敤⽶畮汬簠猠摥∠ⱳ⨮␬䍻孽㬱ㄳ♭笤絃せⱭ㬢搠湯੥†汥敳攠档彯潮彴潦湵⁤眢⵰潣普杩瀮灨ਢ†楦 攠档⁯∢ਊ†ⴣ‭ㄱ䥓 潔捭瑡甠敳獲 瀠楲瑮⁦夤嬢崫∠䜤䕒久䰢潯楫杮映牯吠浯慣⁴獵牥⁳楦敬湜␢䍎 琠浯慣㵴晠湩⁤瘯牡⼠瑥⁣栯浯⁥爯潯⁴琯灭⼠獵⁲漯瑰ⴠ祴数映ⴠ慮敭琠浯慣⵴獵牥⹳浸⁬㸲搯癥港汵恬 椠⁦⁛␢潴捭瑡•㭝琠敨੮††捥潨∠潴捭瑡甭敳獲砮汭映汩⁥潦湵㩤␠潴捭瑡ਢ††潦⁲⁦湩␠潴捭瑡※潤朠敲⁰產敳湲浡㵥•昤㈠⼾敤⽶畮汬簠朠敲⁰瀢獡睳牯㵤•⁼敳⁤猢⸬Ⱚ笤絃ㅛ㌻洱␦䍻孽洰∬※潤敮 攠獬⁥捥潨湟瑯晟畯摮∠潴捭瑡甭敳獲砮汭ਢ†楦 攠档⁯∢ਊ†ⴣ‭㈱䥓 潍杮⁯湉潦浲瑡潩੮†牰湩晴␠≙⭛⁝␢則䕅≎潍杮⁯湩潦浲瑡潩屮≮两੃†潭杮獯怽楦摮⼠慶⁲支捴⼠潨敭⼠潲瑯⼠浴⁰甯牳⼠灯⁴琭灹⁥⁦渭浡⁥洢湯潧⩤挮湯≦㈠⼾敤⽶畮汬੠†洨湯潧ⴠ瘭牥楳湯㈠⼾敤⽶畮汬簠⁼潭杮摯ⴠ瘭牥楳湯㈠⼾敤⽶畮汬 籼攠档彯潮彴潦湵੤†潦⁲⁦湩␠潭杮獯※潤 †攠档⁯䘢畯摮␠≦ †挠瑡∠昤•⁼牧灥ⴠ⁶帢∣簠朠敲⁰倭⁶尢⩗⍜•㸲搯癥港汵⁬⁼牧灥ⴠ⁶帢∤簠猠摥∠ⱳ畡桴㴪琪畲履灼獡⹳Ⱚ笤絃ㅛ㌻洱␦䍻孽洰∬㈠⼾敤⽶畮汬 搠湯੥ ⌠佔佄›桃捥⁫晩礠畯挠湡氠杯湩眠瑩潨瑵瀠獡睳牯⁤湡⁤慷湲琠敨甠敳ੲ†捥潨∠ਢ ⌠ⴭㄠ匳⥉匠灵牥楶潳摲挠湯⁦楦敬 瀠楲瑮⁦夤嬢崫∠䜤䕒久䰢潯楫杮映牯猠灵牥楶潳摲挠湯楦畧慲楴湯映汩履≮两੃†畳数癲獩牯怽楦摮⼠慶⁲支捴⼠潨敭⼠潲瑯⼠浴⁰甯牳⼠灯⁴渭浡⁥畳数癲獩牯⹤潣普㈠⼾敤⽶畮汬੠†晩嬠∠猤灵牥楶潳≲崠※桴湥 †瀠楲瑮⁦␢畳数癲獩牯湜ਢ††潦⁲⁦湩␠畳数癲獩牯※潤挠瑡∠昤•㸲搯癥港汵⁬⁼牧灥∠潰瑲⨮尽畼敳湲浡⹥㴪籜慰獳潷摲⸽∪簠猠摥∠ⱳ潰瑲籜獵牥慮敭籜慰獳潷摲␬䍻孽㬱ㄳ♭笤絃せⱭ㬢搠湯੥†汥敳攠档彯潮彴潦湵⁤猢灵牥楶潳摲挮湯≦ 映੩†捥潨∠ਢ ⌠ⴭㄠ匴⥉䌠獥⁩潣普映汩੥†散楳怽楦摮⼠慶⁲支捴⼠潨敭⼠潲瑯⼠浴⁰甯牳⼠灯⁴渭浡⁥散楳挮湯⁦㸲搯癥港汵恬 瀠楲瑮⁦夤嬢崫∠䜤䕒久䰢潯楫杮映牯挠獥⁩潣普杩牵瑡潩⁮楦敬湜␢䍎 椠⁦⁛␢散楳•㭝琠敨੮††牰湩晴∠挤獥屩≮ †映牯映椠⁮挤獥㭩搠⁯慣⁴␢≦㈠⼾敤⽶畮汬簠朠敲⁰產敳湲浡⹥㴪籜慰獳潷摲⨮尽桼獯⹴㴪籜潰瑲⨮尽摼瑡扡獡⹥㴪•⁼敳⁤猢甬敳湲浡履灼獡睳牯層摼瑡扡獡ⱥ笤絃ㅛ㌻洱␦䍻孽洰∬※潤敮 攠獬⁥捥潨湟瑯晟畯摮∠散楳挮湯≦ 映੩†捥潨∠ਢ ⌠ⴭㄠ匵⥉删祳据⁤潣普映汩੥†獲湹摣怽楦摮⼠慶⁲支捴⼠潨敭⼠潲瑯⼠浴⁰甯牳⼠灯⁴⡜ⴠ慮敭爠祳据⹤潣普ⴠ⁯渭浡⁥獲湹摣献捥敲獴尠 㸲搯癥港汵恬 瀠楲瑮⁦夤嬢崫∠䜤䕒久䰢潯楫杮映牯删祳据⁤潣普杩映汩履≮两੃†晩嬠∠爤祳据≤崠※桴湥 †映牯映椠⁮爤祳据㭤搠⁯ ††瀠楲瑮⁦␢屦≮ ††椠⁦⁛敠档⁯␢≦簠朠敲⁰椭∠敳牣瑥≳⁠㭝琠敨੮††††慣⁴␢≦㈠⼾敤⽶畮汬簠猠摥∠ⱳ⨮␬䍻孽㬱ㄳ♭笤絃せⱭਢ†††汥敳 †††挠瑡∠昤•㸲搯癥港汵⁬⁼牧灥ⴠ⁶帢∣簠朠敲⁰倭⁶尢⩗⍜•㸲搯癥港汵⁬⁼牧灥ⴠ⁶帢∤簠猠摥∠ⱳ敳牣瑥⹳尪慼瑵⹨甪敳獲⨮ⰽ笤絃ㅛ㌻洱␦䍻孽洰∬ ††映੩†††捥潨∠ਢ††潤敮 攠獬⁥捥潨湟瑯晟畯摮∠獲湹摣挮湯≦ 映੩ ⌠ⴣ‭㘱䥓 潈瑳灡⁤潣普映汩੥†牰湩晴␠≙⭛⁝␢則䕅≎潌歯湩⁧潦⁲潈瑳灡⁤潣普杩映汩履≮两੃†潨瑳灡㵤晠湩⁤瘯牡⼠瑥⁣栯浯⁥爯潯⁴琯灭⼠獵⁲漯瑰ⴠ慮敭栠獯慴摰挮湯⁦㸲搯癥港汵恬 椠⁦⁛␢潨瑳灡≤崠※桴湥 †瀠楲瑮⁦夤嬢崫∠䜤䕒久䠢獯慴摰挠湯⁦慷⁳潦湵層≮两੃††牰湩晴∠栤獯慴摰湜ਢ††潦⁲⁦湩␠潨瑳灡㭤搠⁯慣⁴␢≦㈠⼾敤⽶畮汬簠朠敲⁰瀢獡灳牨獡≥簠猠摥∠ⱳ慰獳桰慲敳⨮␬䍻孽㬱ㄳ♭笤絃せⱭ㬢搠湯੥†汥敳攠档彯潮彴潦湵⁤栢獯慴摰挮湯≦ 映੩†捥潨∠ਢ ⌠ⴣ‭㜱䥓 楗楦挠湯獮 瀠楲瑮⁦夤嬢崫∠䜤䕒久䰢潯楫杮映牯眠晩⁩潣湮⁳楦敬湜␢䍎 眠晩㵩晠湩⁤支捴丯瑥潷歲慍慮敧⽲祳瑳浥挭湯敮瑣潩獮 㸲搯癥港汵恬 椠⁦⁛␢楷楦•㭝琠敨੮††牰湩晴∠眤晩屩≮ †映牯映椠⁮眤晩㭩搠⁯慣⁴␢≦㈠⼾敤⽶畮汬簠朠敲⁰瀢歳⨮∽簠猠摥∠ⱳ獰⹫Ⱚ笤絃ㅛ㌻洱␦䍻孽洰∬※潤敮 攠獬⁥捥潨湟瑯晟畯摮 映੩†捥潨∠ਢ ⌠ⴣ‭㠱䥓 湁捡湯慤欭⁳潣普映汩獥 瀠楲瑮⁦夤嬢崫∠䜤䕒久䰢潯楫杮映牯䄠慮潣摮ⵡ獫挠湯楦⁧楦敬屳≮两੃†湡捡湯慤怽楦摮⼠慶⁲支捴⼠潨敭⼠潲瑯⼠浴⁰甯牳⼠灯⁴渭浡⁥湡捡湯慤欭⹳晣⁧㸲搯癥港汵恬 椠⁦⁛␢湡捡湯慤•㭝琠敨੮††牰湩晴∠愤慮潣摮屡≮ †映牯映椠⁮愤慮潣摮㭡搠⁯慣⁴␢≦㈠⼾敤⽶畮汬簠朠敲⁰爢潯灴≷簠猠摥∠ⱳ潲瑯睰⨮␬䍻孽㬱ㄳ♭笤絃せⱭ㬢搠湯੥†汥敳攠档彯潮彴潦湵⁤愢慮潣摮ⵡ獫挮杦ਢ†楦 攠档⁯∢ਊ†⌣ⴭㄠ匹⥉嘠䍎映汩獥 瀠楲瑮⁦夤嬢崫∠䜤䕒久䰢潯楫杮映牯⸠湶⁣楤敲瑣牯敩⁳湡⁤桴楥⁲慰獳摷映汩獥湜␢䍎 瘠据怽楦摮⼠潨敭⼠潲瑯ⴠ祴数搠ⴠ慮敭⸠湶⁣㸲搯癥港汵恬 椠⁦⁛␢湶≣崠※桴湥 †瀠楲瑮⁦␢湶屣≮ †映牯搠椠⁮瘤据※潤映湩⁤搤ⴠ慮敭∠慰獳摷•攭數⁣獬ⴠ⁬絻尠※㸲搯癥港汵⁬⁼敳⁤猢⸬Ⱚ笤絃ㅛ㌻洱␦䍻孽洰∬※潤敮 攠獬⁥捥潨湟瑯晟畯摮∠瘮据ਢ†楦 攠档⁯∢ਊ†⌣ⴭ㈠匰⥉䰠䅄⁐楤敲瑣牯敩ੳ†牰湩晴␠≙⭛⁝␢則䕅≎潌歯湩⁧潦⁲摬灡搠物捥潴楲獥愠摮琠敨物栠獡敨屳≮两੃†摬灡怽楦摮⼠慶⁲支捴⼠潨敭⼠潲瑯⼠浴⁰甯牳⼠灯⁴琭灹⁥⁤渭浡⁥摬灡㈠⼾敤⽶畮汬੠†晩嬠∠氤慤≰崠※桴湥 †瀠楲瑮⁦␢摬灡湜ਢ††捥潨∠桔⁥慰獳潷摲栠獡⁨獩映潲⁭桴⁥卻䡓絁琠⁯猧牴捵畴慲❬㬢 †映牯搠椠⁮氤慤㭰搠⁯慣⁴␢⽤⸪摢≢㈠⼾敤⽶畮汬簠朠敲⁰椭ⴠ⁡䔭ⴠ⁯搢獥牣灩楴湯⨮•⁼潳瑲簠甠楮ⁱ⁼敳⁤猢愬浤湩獩牴瑡牯籜慰獳潷摲籜䑁䥍䥎呓䅒佔屒偼十坓剏屄偼獡睳牯層䅼浤湩獩牴瑡牯␬䍻孽㬱ㄳ♭笤絃せⱭ≧※潤敮 攠獬⁥捥潨湟瑯晟畯摮∠瘮据ਢ†楦 攠档⁯∢ਊ†⌣ⴭ㈠匱⥉⸠癯湰映汩獥 瀠楲瑮⁦夤嬢崫∠䜤䕒久䰢潯楫杮映牯⸠癯湰映汩獥愠摮挠敲敤瑮慩獬湜␢䍎 漠灶㵮晠湩⁤支捴⼠獵⁲栯浯⁥爯潯⁴渭浡⁥漮灶⁮㸲搯癥港汵恬 椠⁦⁛␢癯湰•㭝琠敨੮††牰湩晴∠漤灶屮≮ †映牯映椠⁮漤灶㭮搠⁯慣⁴␢≦㈠⼾敤⽶畮汬簠朠敲⁰愢瑵⵨獵牥瀭獡≳簠猠摥∠ⱳ畡桴甭敳⵲慰獳⨮␬䍻孽㬱ㄳ♭笤絃せⱭ㬢搠湯੥†汥敳攠档彯潮彴潦湵⁤⸢癯湰ਢ†楦 攠档⁯∢ਊ†⌣ⴭ㈠匲⥉猠桳映汩獥 瀠楲瑮⁦夤嬢崫∠䜤䕒久䰢潯楫杮映牯猠汳猯桳映汩獥湜␢䍎 猠桳怽楦摮⼠潨敭⼠獵⁲爯潯⁴支捴⼠灯⁴瘯牡⼠湭⁴⡜ⴠ慮敭∠摩摟慳∪ⴠ⁯渭浡⁥椢彤獲⩡•漭ⴠ慮敭∠湫睯彮潨瑳≳ⴠ⁯渭浡⁥愢瑵潨楲敺彤潨瑳≳ⴠ⁯渭浡⁥愢瑵潨楲敺彤敫獹•⥜㈠⼾敤⽶畮汬੠†牰癩瑡步祥楦敬㵳杠敲⁰爭⁬倢䥒䅖䕔䬠奅ⴭⴭ∭⼠潨敭⼠潲瑯⼠湭⁴支捴㈠⼾敤⽶畮汬੠†散瑲扳㴴晠湩⁤栯浯⁥甯牳⼠潲瑯⼠瑥⁣漯瑰⼠慶⁲洯瑮尠 渭浡⁥⨢瀮浥•漭ⴠ慮敭∠⸪散≲ⴠ⁯渭浡⁥⨢挮瑲•⥜㈠⼾敤⽶畮汬簠朠敲⁰瘭∠甯牳猯慨敲尯⽼瑥⽣獳⽬怢 椠⁦⁛␢散瑲扳∴崠※桴湥挠牥獴㑢束敲㵰杠敲⁰䰭∠≜籜尧⡼•挤牥獴㑢㈠⼾敤⽶畮汬㭠映੩†散瑲扳湩怽楦摮⼠潨敭⼠獵⁲爯潯⁴支捴⼠灯⁴瘯牡⼠湭⁴⡜ⴠ慮敭∠⸪獣≲ⴠ⁯渭浡⁥⨢搮牥•⥜㈠⼾敤⽶畮汬簠朠敲⁰瘭∠甯牳猯慨敲尯⽼瑥⽣獳⽬怢 挠楬湥捴牥㵴晠湩⁤栯浯⁥甯牳⼠潲瑯⼠瑥⁣漯瑰⼠慶⁲洯瑮尠 渭浡⁥⨢瀮硦•漭ⴠ慮敭∠⸪ㅰ∲尠 㸲搯癥港汵⁬⁼牧灥ⴠ⁶⼢獵⽲桳牡⽥籜支捴猯汳∯੠†獳慨敧瑮㵳晠湩⁤琯灭ⴠ慮敭∠条湥⩴•㸲搯癥港汵恬 栠浯獥桳潣普杩怽楦摮⼠潨敭⼠潲瑯ⴠ慮敭挠湯楦⁧㸲搯癥港汵⁬⁼牧灥∠獳≨੠†獳捨湯楦㵧怢獬⼠瑥⽣獳⽨獳彨潣普杩≠ਊ†晩嬠∠猤桳•崠※桴湥 †瀠楲瑮⁦␢獳屨≮ 映੩ 朠敲⁰倢牥業剴潯䱴杯湩尠䍼慨汬湥敧敒灳湯敳畁桴湥楴慣楴湯尠偼獡睳牯䅤瑵敨瑮捩瑡潩⁮籜獕健䵁尠偼牯屴偼牥業䕴灭祴慐獳潷摲屳偼扵敫䅹瑵敨瑮捩瑡潩屮䱼獩整䅮摤敲獳籜潆摲慷摲杁湥≴⼠瑥⽣獳⽨獳摨损湯楦⁧㸲搯癥港汵⁬⁼牧灥ⴠ⁶⌢•⁼敳⁤猢倬牥業剴潯䱴杯湩⨮獥籜敐浲瑩浅瑰偹獡睳牯獤⨮獥籜桃污敬杮剥獥潰獮䅥瑵敨瑮捩瑡潩⹮攪屳䙼牯睤牡䅤敧瑮⨮獥␬䍻孽㬱ㄳ♭笤絃せⱭਢ 椠⁦⁛␢牰癩瑡步祥楦敬≳崠※桴湥 †瀠楲慶整敫晹汩獥牧灥怽牧灥ⴠ⁌尢尢❼籜∨∠瀤楲慶整敫晹汩獥怢⌠䌠敨正琠敨敲愠敲❮⁴湵硥数瑣摥猠浹潢獬椠⁮桴⁥楦敬 映੩†晩嬠∠瀤楲慶整敫晹汩獥牧灥•㭝琠敨੮††牰湩晴∠牐癩瑡⁥卓⁈敫獹映畯摮㨡湜瀤楲慶整敫晹汩獥牧灥湜•⁼敳⁤猢⸬Ⱚ笤絃ㅛ㌻洱␦䍻孽洰∬ 映੩†晩嬠∠挤牥獴㑢束敲≰崠簠⁼⁛␢散瑲扳湩•㭝琠敨੮††捥潨∠†ⴭ‾潓敭挠牥楴楦慣整⁳敷敲映畯摮∺ †瀠楲瑮⁦␢散瑲扳弴牧灥湜ਢ††牰湩晴∠挤牥獴楢屮≮ 映੩†晩嬠∠挤楬湥捴牥≴崠※桴湥 †攠档⁯•ⴠ㸭匠浯⁥汣敩瑮挠牥楴楦慣整⁳敷敲映畯摮∺ †瀠楲瑮⁦␢汣敩瑮散瑲湜ਢ†楦 椠⁦⁛␢獳慨敧瑮≳崠※桴湥 †攠档⁯•ⴠ㸭匠浯⁥卓⁈杁湥獴眠牥⁥潦湵㩤ਢ††牰湩晴∠猤桳条湥獴湜ਢ†楦 椠⁦⁛␢潨敭獳捨湯楦≧崠※桴湥 †攠档⁯•ⴭ‾潓敭栠浯⁥獳⁨潣普杩映汩⁥慷⁳潦湵≤ †瀠楲瑮⁦␢潨敭獳捨湯楦屧≮ †映牯映椠⁮栤浯獥桳潣普杩※潤挠瑡␠⁦㸲搯癥港汵⁬⁼牧灥ⴠ⁶帢∤簠猠摥∠ⱳ獕牥籜牐硯䍹浯慭摮籜ⱐ笤絃ㅛ㌻洱␦䍻孽洰∬※潤敮 映੩†晩嬠∠猤桳潣普杩•㭝琠敨੮††捥潨∠ਢ††捥潨∠潌歯湩⁧湩楳敤⼠瑥⽣獳⽨獳彨潣普杩映牯椠瑮牥獥楴杮椠普≯ †挠瑡∠猤桳潣普杩•㸲搯癥港汵⁬⁼牧灥ⴠ⁶帢∣簠朠敲⁰倭⁶尢⩗⍜•㸲搯癥港汵⁬⁼牧灥ⴠ⁶帢∤簠猠摥∠ⱳ獕牥籜牐硯䍹浯慭摮␬䍻孽㬱ㄳ♭笤絃せⱭਢ†楦 攠档⁯∢ਊ†⌣ⴭ㈠匳⥉倠䵁愠瑵੨†牰湩晴␠≙⭛⁝␢則䕅≎潌歯湩⁧潦⁲湵硥数瑣摥愠瑵⁨楬敮⁳湩⼠瑥⽣慰⹭⽤獳摨湜␢䍎 瀠浡獳㵨捠瑡⼠瑥⽣慰⹭⽤獳摨㈠⼾敤⽶畮汬簠朠敲⁰瘭∠⍞籜䁞•⁼牧灥ⴠ⁩畡桴੠†晩嬠∠瀤浡獳≨崠※桴湥 †挠瑡⼠瑥⽣慰⹭⽤獳摨㈠⼾敤⽶畮汬簠朠敲⁰瘭∠⍞籜䁞•⁼牧灥ⴠ⁩畡桴簠猠摥∠ⱳ⨮␬䍻孽㬱ㄳ♭笤絃せⱭਢ†汥敳攠档彯潮 映੩†捥潨∠ਢ ⌠ⴣ‭㐲䥓 汃畯⁤敫獹 瀠楲瑮⁦夤嬢崫∠䜤䕒久䰢潯楫杮映牯䌠潬摵挠敲敤瑮慩獬⠠坁ⱓ䄠畺敲‬䍇尩≮两੃†汣畯捤敲獤怽楦摮⼠慶⁲支捴⼠潨敭⼠潲瑯⼠浴⁰甯牳⼠灯⁴琭灹⁥⁦渭浡⁥挢敲敤瑮慩獬•漭尠 渭浡⁥挢敲敤瑮慩獬搮≢尠 漭尠 渭浡⁥氢来捡役牣摥湥楴污⹳扤•⥜ⴠ⁯⡜ⴠ慮敭∠捡散獳瑟歯湥⹳扤•⥜ⴠ⁯⡜ⴠ慮敭∠捡散獳潔敫獮樮潳≮尠 ⁯⡜ⴠ慮敭∠穡牵健潲楦敬樮潳≮尠 㸲搯癥港汵恬 椠⁦⁛␢汣畯捤敲獤•㭝琠敨੮††潦⁲⁦湩∠挤潬摵牣摥≳※潤ਠ†††牰湩晴∠敒摡湩⁧昤湜•⁼敳⁤猢挬敲敤瑮慩獬籜牣摥湥楴污⹳扤籜敬慧祣损敲敤瑮慩獬搮屢慼捣獥彳潴敫獮搮屢慼捣獥味歯湥⹳獪湯籜穡牵健潲楦敬樮潳Ɱ笤絃ㅛ㌻洱␦䍻孽洰本ਢ†††慣⁴␢≦簠猠摥∠ⱳ⨮␬䍻孽㬱ㄳ♭笤絃せⱭ≧ ††攠档⁯∢ †搠湯੥†楦 攠档⁯∢ਊ†⌣ⴭ㈠匵⥉丠卆攠灸牯獴 瀠楲瑮⁦夤嬢崫∠䜤䕒久丢卆攠灸牯獴尿≮两੃†牰湩晴␠≂楛⁝␢≙瑨灴㩳⼯潢歯栮捡瑫楲正⹳祸⽺楬畮⵸湵硩瀯楲楶敬敧攭捳污瑡潩⽮普⵳潮牟潯彴煳慵桳洭獩潣普杩牵瑡潩⵮数湜␢䍎 椠⁦⁛怢慣⁴支捴支灸牯獴㈠⼾敤⽶畮汬≠崠※桴湥挠瑡⼠瑥⽣硥潰瑲⁳㸲搯癥港汵⁬⁼牧灥ⴠ⁶帢∣簠朠敲⁰倭⁶尢⩗⍜•㸲搯癥港汵⁬⁼敳⁤猢測彯潲瑯獟畱獡屨湼彯污彬煳慵桳Ⱐ笤絃ㅛ㌻㬱〱洳␦䍻孽洰∬ 攠獬⁥捥潨湟瑯晟畯摮∠支捴支灸牯獴ਢ†楦 攠档⁯∢ਊ†⌣ⴭ㈠匶⥉䬠牥敢潲ੳ†牰湩晴␠≙⭛⁝␢則䕅≎潌歯湩⁧潦⁲敫扲牥獯挠湯⁦楦敬⁳湡⁤楴正瑥屳≮两੃†牰湩晴␠≂楛⁝␢≙瑨灴㩳⼯潢歯栮捡瑫楲正⹳祸⽺数瑮獥楴杮瀯湥整瑳湩ⵧ敫扲牥獯㠭⌸慰獳琭敨琭捩敫⵴瑰屴≮两੃†牫㕢怽楦摮⼠慶⁲支捴⼠潨敭⼠潲瑯⼠浴⁰甯牳⼠灯⁴琭灹⁥⁤渭浡⁥牫㕢挮湯⁦㸲搯癥港汵恬 椠⁦⁛␢牫㕢•㭝琠敨੮††潦⁲⁦湩␠牫㕢※潤挠瑡⼠瑥⽣牫㕢挮湯⁦⁼牧灥搠晥畡瑬损慣档彥慮敭簠猠摥∠ⱳ敤慦汵彴捣捡敨湟浡ⱥ笤絃ㅛ㌻洱␦䍻孽洰∬※潤敮 攠獬⁥捥潨湟瑯晟畯摮∠牫㕢挮湯≦ 映੩†獬ⴠ⁬⼢浴⽰牫㕢捣∪∠瘯牡氯扩猯獳搯⽢捣捡敨⩟•⼢瑥⽣灯⽴畱獥⽴慶⽳潨瑳欮祥慴≢㈠⼾敤⽶畮汬簠⁼捥潨湟瑯晟畯摮∠楴正瑥⁳敫扲牥獯ਢ†汫獩⁴㸲搯癥港汵⁬籼攠档彯潮彴潦湵⁤欢楬瑳ਢ†捥潨∠ਢ ⌠ⴣ‭㜲䥓 楫慢慮 瀠楲瑮⁦夤嬢崫∠䜤䕒久䰢潯楫杮映牯䬠扩湡⁡慹汭湜␢䍎 欠扩湡㵡晠湩⁤瘯牡⼠瑥⁣栯浯⁥爯潯⁴琯灭⼠獵⁲漯瑰ⴠ慮敭∠楫慢慮礮洪≬㈠⼾敤⽶畮汬੠†晩嬠∠欤扩湡≡崠※桴湥 †瀠楲瑮⁦␢楫慢慮湜ਢ††潦⁲⁦湩␠楫慢慮※潤挠瑡∠昤•㸲搯癥港汵⁬⁼牧灥ⴠ⁶帢∣簠朠敲⁰倭⁶尢⩗⍜•㸲搯癥港汵⁬⁼牧灥ⴠ⁶帢∤簠朠敲⁰瘭ⴠ⁥帧孛猺慰散崺⩝✤簠猠摥∠ⱳ獵牥慮敭籜慰獳潷摲籜潨瑳籜潰瑲籜汥獡楴獣慥捲屨獼汳␬䍻孽㬱ㄳ♭笤絃せⱭ㬢搠湯੥†汥敳攠档彯潮彴潦湵⁤欢扩湡⹡浹≬ 映੩†捥潨∠ਢ ⌠⌣ⴭ㈠匸⥉䰠杯瑳獡੨†牰湩晴␠≙⭛⁝␢則䕅≎潌歯湩⁧潦⁲潬獧慴桳映汩獥湜␢䍎 氠杯瑳獡㵨晠湩⁤瘯牡⼠瑥⁣栯浯⁥爯潯⁴琯灭⼠獵⁲漯瑰ⴠ祴数搠ⴠ慮敭氠杯瑳獡⁨㸲搯癥港汵恬 椠⁦⁛␢潬獧慴桳•㭝琠敨੮††牰湩晴∠氤杯瑳獡屨≮ †映牯搠椠⁮氤杯瑳獡㭨搠੯†††晩嬠ⴠ⁲搤猯慴瑲灵漮瑰潩獮崠※桴湥ਠ††††捥潨∠潌獧慴桳椠⁳畲湮湩⁧獡甠敳㩲ਢ††††慣⁴␢⽤瑳牡畴⹰灯楴湯≳㈠⼾敤⽶畮汬簠朠敲⁰䰢当单剅籜卌䝟佒偕•⁼敳⁤猢␬桳畟牳ⱳ笤絃ㅛ㤻洶␦䍻孽洰∬簠猠摥∠ⱳ渤獯彨獵獲␬䍻孽㬱㐳♭笤絃せⱭ•⁼敳⁤猢␬湫彷獵獲␬䍻孽㬱㈳♭笤絃せⱭ•⁼敳⁤猢␬单剅␬䍻孽㬱㔹♭笤絃せⱭ•⁼敳⁤猢爬潯ⱴ笤絃ㅛ㌻洱␦䍻孽洰∬ ††映੩†††慣⁴␢⽤潣普搮漯瑵∪簠朠敲⁰攢數屣⩳屻捼浯慭摮獜㴪∾簠猠摥∠ⱳ硥捥獜笪籜潣浭湡層⩳㸽␬䍻孽㬱ㄳ♭笤絃せⱭਢ†††慣⁴␢⽤潣普搮是汩⩴•⁼牧灥∠慰桴獜㴪尾捼摯履⩳㸽籜畲祢獜笪•⁼敳⁤猢瀬瑡屨⩳㸽籜潣敤獜㴪尾牼扵屹⩳ⱻ笤絃ㅛ㌻洱␦䍻孽洰∬ †搠湯੥†汥敳攠档彯潮彴潦湵੤†楦 攠档⁯∢ਊ†⌣ⴭ㈠匹⥉䔠慬瑳捩敳牡档 瀠楲瑮⁦夤嬢崫∠䜤䕒久䰢潯楫杮映牯攠慬瑳捩敳牡档映汩獥湜␢䍎 攠慬瑳捩敳牡档怽楦摮⼠慶⁲支捴⼠潨敭⼠潲瑯⼠浴⁰甯牳⼠灯⁴渭浡⁥攢慬瑳捩敳牡档礮洪≬㈠⼾敤⽶畮汬੠†晩嬠∠攤慬瑳捩敳牡档•㭝琠敨੮††牰湩晴∠攤慬瑳捩敳牡档湜ਢ††潦⁲⁦湩␠汥獡楴獣慥捲㭨搠⁯慣⁴昤㈠⼾敤⽶畮汬簠朠敲⁰瘭∠⍞•⁼牧灥ⴠ癐∠坜尪∣㈠⼾敤⽶畮汬簠朠敲⁰瘭ⴠ⁥帧孛猺慰散崺⩝✤簠朠敲⁰瀢瑡⹨慤慴籜慰桴氮杯屳捼畬瑳牥渮浡履湼摯⹥慮敭籜敮睴牯⹫潨瑳籜楤捳癯牥⹹敺⹮楰杮甮楮慣瑳栮獯獴㬢搠湯੥††捥潨∠敖獲潩㩮␠挨牵⁬堭䜠呅✠〱ㄮ⸰〱ㄮ㔱㤺〲✰㈠⼾敤⽶畮汬簠朠敲⁰畮扭牥簠挠瑵ⴠ⁤㨧‧昭㈠∩ 攠獬⁥捥潨湟瑯晟畯摮 映੩†捥潨∠ਢ ⌠ⴣ‭〳䥓 慖汵⵴獳੨†牰湩晴␠≙⭛⁝␢則䕅≎潌歯湩⁧潦⁲慖汵⵴獳⁨楦敬屳≮两੃†慶汵獴桳怽楦摮⼠瑥⁣甯牳⼠潨敭⼠潲瑯ⴠ慮敭瘠畡瑬猭桳栭汥数⹲捨⁬㸲搯癥港汵恬 椠⁦⁛␢慶汵獴桳•㭝琠敨੮††牰湩晴∠瘤畡瑬獳屨≮ †映牯映椠⁮瘤畡瑬獳㭨搠⁯慣⁴昤㈠⼾敤⽶畮汬※慶汵⵴獳⵨敨灬牥ⴠ敶楲祦漭汮⁹挭湯楦⁧昤㈠⼾敤⽶畮汬※潤敮 †攠档⁯∢ †瘠畡瑬猠捥敲獴氠獩⁴㸲搯癥港汵੬††楦摮⼠瑥⁣甯牳⼠潨敭⼠潲瑯ⴠ慮敭∠瘮畡瑬琭歯湥•㸲搯癥港汵⁬⁼敳⁤猢⸬Ⱚ笤絃ㅛ㌻洱␦䍻孽洰∬㈠⼾敤⽶畮汬 攠獬⁥捥潨湟瑯晟畯摮∠慶汵⵴獳⵨敨灬牥栮汣ਢ†楦 攠档⁯∢ਊ†⌣ⴭ㌠匱⥉䌠捡敨⁤䑁䠠獡敨ੳ†摡慨桳獥怽獬∠瘯牡氯扩猯浡慢瀯楲慶整猯捥敲獴琮扤•⼢慶⽲楬⽢慳扭⽡慰獳扤琮扤•⼢慶⽲灯⽴畱獥⽴慶⽳畡桴慣档⽥慶彳畡桴瘮扤•⼢慶⽲楬⽢獳⽳扤振捡敨⩟•㸲搯癥港汵恬 瀠楲瑮⁦夤嬢崫∠䜤䕒久䰢潯楫杮映牯䄠⁄慣档摥栠桡敳屳≮两੃†晩嬠∠愤桤獡敨≳崠※桴湥 †氠⁳⼢慶⽲楬⽢慳扭⽡牰癩瑡⽥敳牣瑥⹳摴≢∠瘯牡氯扩猯浡慢瀯獡摳⹢摴≢∠瘯牡漯瑰焯敵瑳瘯獡愯瑵捨捡敨瘯獡慟瑵⹨摶≢∠瘯牡氯扩猯獳搯⽢慣档彥∪㈠⼾敤⽶畮汬 攠獬⁥捥潨湟瑯晟畯摮∠慣档摥栠獡敨≳ 映੩†捥潨∠ਢ ⌠ⴣ‭㈳䥓 捓敲湥猠獥楳湯ੳ†牰湩晴␠≙⭛⁝␢則䕅≎潌歯湩⁧潦⁲捳敲湥猠獥楳湯屳≮两 瀠楲瑮⁦䈤嬢嵩∠夤栢瑴獰⼺戯潯⹫慨正牴捩獫砮穹氯湩硵甭楮⽸牰癩汩来ⵥ獥慣慬楴湯漣数⵮桳汥⵬敳獳潩獮湜␢䍎 猠牣敥獮獥㵳獠牣敥⁮氭⁳㸲搯癥港汵恬 椠⁦⁛␢捳敲湥敳獳•㭝琠敨੮††牰湩晴∠猤牣敥獮獥≳簠猠摥∠ⱳ⨮␬䍻孽㬱ㄳ♭笤絃せⱭ•⁼敳⁤猢丬⁯潓正瑥⁳潦湵⹤Ⱚ笤絃㍛洲␦䍻孽洰∬ 攠獬⁥捥潨湟瑯晟畯摮∠捳敲湥ਢ†楦 攠档⁯∢ਊ†⌣ⴭ㌠匳⥉吠畭⁸敳獳潩獮 琠畭摸晥敳獳怽浴硵氠⁳㸲搯癥港汵恬 琠畭湸湯敤獦獥㵳灠⁳畡⁸⁼牧灥∠浴硵∠簠朠敲⁰瘭朠敲恰 瀠楲瑮⁦夤嬢崫∠䜤䕒久䰢潯楫杮映牯琠畭⁸敳獳潩獮湜␢੎†牰湩晴␠≂楛⁝␢≙瑨灴㩳⼯潢歯栮捡瑫楲正⹳祸⽺楬畮⵸湵硩瀯楲楶敬敧攭捳污瑡潩⍮灯湥猭敨汬猭獥楳湯屳≮两੃†晩嬠∠琤畭摸晥敳獳•⁝籼嬠∠琤畭湸湯敤獦獥≳崠※桴湥 †瀠楲瑮⁦␢浴硵敤獦獥屳⑮浴硵潮摮晥敳獳湜•⁼敳⁤猢⸬Ⱚ笤絃ㅛ㌻洱␦䍻孽洰∬簠猠摥∠ⱳ潮猠牥敶⁲畲湮湩⁧湯⨮␬䍻孽㈳♭笤絃せⱭਢ†汥敳攠档彯潮彴潦湵⁤琢畭≸ 映੩†捥潨∠ਢ ⌠ⴣ‭㐳䥓 潃捵摨੢†牰湩晴␠≙⭛⁝␢則䕅≎潌歯湩⁧潦⁲潃捵摨⁢楤敲瑣牯屹≮两੃†潣捵摨形楤獲怽楦摮⼠慶⁲支捴⼠潨敭⼠潲瑯⼠浴⁰甯牳⼠灯⁴琭灹⁥⁤渭浡⁥挢畯档扤•㸲搯癥港汵恬 映牯搠椠⁮挤畯档扤摟物㭳搠੯††潬慣彬湩獩怽楦摮␠⁤渭浡⁥潬慣⹬湩⁩㸲搯癥港汵恬਻††潦⁲⁦湩␠潬慣彬湩獩※潤 ††椠⁦⁛爭␠⁦㭝琠敨⁮ †††攠档⁯䘢畯摮爠慥慤汢⁥昤ਢ††††慣⁴␢≦簠朠敲⁰瘭∠㭞•⁼牧灥ⴠ⁶帢∤簠猠摥∠ⱳ摡業⹮尪灼獡睳牯⹤尪捼牥彴楦敬⨮籜敫役楦敬⨮籜慨桳摥⨮籜扰摫㉦⨮␬䍻孽㬱ㄳ♭笤絃せⱭ•㸲搯癥港汵੬†††楦 †搠湯੥†潤敮 攠档⁯∢ਊ†⌣ⴭ㌠匵⥉删摥獩 瀠楲瑮⁦夤嬢崫∠䜤䕒久䰢潯楫杮映牯爠摥獩挮湯屦≮两੃†敲楤捳湯獦怽楦摮⼠慶⁲支捴⼠潨敭⼠潲瑯⼠浴⁰甯牳⼠灯⁴琭灹⁥⁦渭浡⁥爢摥獩挮湯≦㈠⼾敤⽶畮汬੠†潦⁲⁦湩␠敲楤捳湯獦※潤 †椠⁦⁛爭␠⁦㭝琠敨⁮ ††攠档⁯䘢畯摮爠慥慤汢⁥昤ਢ†††慣⁴␢≦簠朠敲⁰瘭∠⍞•⁼牧灥ⴠ癐∠坜尪∣㈠⼾敤⽶畮汬簠朠敲⁰瘭∠⑞•⁼敳⁤猢洬獡整慲瑵⹨尪牼煥極敲慰獳⨮␬䍻孽㬱ㄳ♭笤絃せⱭ•㸲搯癥港汵੬††楦 搠湯੥†捥潨∠ਢ ⌠ⴣ‭㔳䥓 潄敶潣ੴ†‣敎摥⁳整瑳湩੧†牰湩晴␠≙⭛⁝␢則䕅≎潌歯湩⁧潦⁲潤敶潣⁴楦敬屳≮两੃†潤敶潣灴獡㵳⠤牧灥ⴠ⁲倢䅌义•支捴搯癯捥瑯㈠⼾敤⽶畮汬਩椉⁦⁛稭∠搤灯獡•㭝琠敨⁮ †攠档彯潮彴潦湵⁤搢癯捥瑯挠敲敤瑮慩獬ਢ†汥敳ऊ†潦⁲⁤湩␠潤慰㭳搠੯†††晤␽攨档⁯搤簠畣⁴搭✠✺ⴠㅦ਩†††灤␽攨档⁯搤簠畣⁴搭✠✺ⴠ㉦⤭ ††攠档⁯䘢畯摮瀠獯楳汢⁥䱐䥁⁎整瑸挠敲獤椠⁮搤≦ ††攠档⁯␢灤•⁼敳⁤猢⸬Ⱚ笤絃ㅛ㌻洱␦䍻孽洰∬㈠⼾敤⽶畮汬ऊ†潤敮ऊ楦 攠档⁯∢ਊ†⌣ⴭ㌠匶⥉䴠獯畱瑩潴 瀠楲瑮⁦夤嬢崫∠䜤䕒久䰢潯楫杮映牯洠獯畱瑩潴挮湯屦≮两੃†煭瑴潣普㵳晠湩⁤瘯牡⼠瑥⁣栯浯⁥爯潯⁴琯灭⼠獵⁲漯瑰ⴠ祴数映ⴠ慮敭∠潭煳極瑴⹯潣普•㸲搯癥港汵恬 映牯映椠⁮洤瑱捴湯獦※潤 †椠⁦⁛爭␠⁦㭝琠敨⁮ ††攠档⁯䘢畯摮爠慥慤汢⁥昤ਢ†††慣⁴␢≦簠朠敲⁰瘭∠⍞•⁼牧灥ⴠ癐∠坜尪∣㈠⼾敤⽶畮汬簠朠敲⁰瘭∠⑞•⁼敳⁤猢瀬獡睳牯彤楦敬⨮籜獰彫楦敬⨮籜污潬彷湡湯浹畯⹳琪畲履慼瑵ⱨ笤絃ㅛ㌻洱␦䍻孽洰∬㈠⼾敤⽶畮汬 †映੩†潤敮 攠档⁯∢ 攠档⁯∢昊੩ਊ晩嬠∠敠档⁯䌤䕈䭃⁓⁼牧灥䤠瑮楆敬恳•㭝琠敨੮†⌣⌣⌣⌣⌣⌣⌣⌣⌣⌣⌣⌣⌣⌣⌣⌣⌣⌣⌣⌣⌣ਣ†ⴣⴭⴭⴭⴭ⤭䤠瑮牥獥楴杮映汩獥⠠ⴭⴭⴭⴭⴭਣ†⌣⌣⌣⌣⌣⌣⌣⌣⌣⌣⌣⌣⌣⌣⌣⌣⌣⌣⌣⌣⌣ਣ†牰湩晴␠≂㴽㴽㴽㴽㴽㴽㴽㴽㴽㴽㴽㴽㴽㴽㴽㴽㴽㴽 ␢則䕅≎湉整敲瑳湩⁧楆敬≳䈤•㴩㴽㴽㴽㴽㴽㴽㴽㴽㴽㴽㴽㴽㴽㴽㴽㴽㴽㴽湜␢䍎ਊ†⌣ⴭㄠ䙉 啓䑉 瀠楲瑮⁦夤嬢崫∠䜤䕒久匢䥕屄≮两੃†牰湩晴␠≂楛⁝␢≙瑨灴㩳⼯潢歯栮捡瑫楲正⹳祸⽺楬畮⵸湵硩瀯楲楶敬敧攭捳污瑡潩⍮潣浭湡獤眭瑩⵨畳潤愭摮猭極ⵤ潣浭湡獤湜␢䍎 映牯猠椠⁮晠湩⁤ 瀭牥⁭㐭〰‰㸲搯癥港汵恬※潤 †挠∽≡ †映牯戠椠⁮猤摩㭂搠੯†††晩嬠∠敠档⁯猤簠朠敲⁰⠤捥潨␠⁢⁼畣⁴搭∠∥ⴠ⁦⤱≠崠※桴湥 †††攠档⁯猤簠猠摥∠ⱳ⠤捥潨␠⁢⁼畣⁴搭∠∥ⴠ⁦⤱␬䍻孽㬱ㄳ♭瑜瑜ⴭ㸭瑜⠤捥潨␠⁢⁼畣⁴搭∠∥ⴠ⁦⤲笤絃せⱭਢ††††㵣∢ †††戠敲歡਻†††楦 †搠湯㭥 †椠⁦⁛␢≣崠※桴湥 †††攠档⁯猤簠猠摥∠ⱳ猤摩ⱇ笤絃ㅛ㌻洲␦䍻孽洰∬簠猠摥∠ⱳ猤摩䉖␬䍻孽㬱ㄳㄻ㌰♭笤絃せⱭਢ†††楦 搠湯㭥 攠档⁯∢ਊ†⌣ⴭ㈠䙉 䝓䑉 瀠楲瑮⁦夤嬢崫∠䜤䕒久匢䥇屄≮两੃†牰湩晴␠≂楛⁝␢≙瑨灴㩳⼯潢歯栮捡瑫楲正⹳祸⽺楬畮⵸湵硩瀯楲楶敬敧攭捳污瑡潩⍮潣浭湡獤眭瑩⵨畳潤愭摮猭極ⵤ潣浭湡獤湜␢䍎 映牯猠椠⁮晠湩⁤ 瀭牥⁭札猽ⴠ祴数映㈠⼾敤⽶畮汬㭠搠੯††㵣愢ਢ††潦⁲⁢湩␠楳䉤※潤 ††椠⁦⁛怢捥潨␠⁳⁼牧灥␠攨档⁯戤簠挠瑵ⴠ⁤┢•昭ㄠ怩•㭝琠敨੮††††捥潨␠⁳⁼敳⁤猢␬攨档⁯戤簠挠瑵ⴠ⁤┢•昭ㄠⰩ笤絃ㅛ㌻洱尦屴⵴ⴭ尾⑴攨档⁯戤簠挠瑵ⴠ⁤┢•昭㈠␩䍻孽洰∬ †††挠∽ਢ††††牢慥㭫 ††映੩††潤敮਻††晩嬠∠挤•㭝琠敨੮††††捥潨␠⁳⁼敳⁤猢␬楳䝤␬䍻孽㬱㈳♭笤絃せⱭ•⁼敳⁤猢␬楳噤ⱂ笤絃ㅛ㌻㬱〱洳␦䍻孽洰∬ ††映੩†潤敮਻†捥潨∠ਢ ⌠ⴣ‭䤳⥆䌠灡扡汩瑩敩ੳ†牰湩晴␠≙⭛⁝␢則䕅≎慃慰楢楬楴獥湜␢䍎 瀠楲瑮⁦䈤嬢嵩∠夤栢瑴獰⼺戯潯⹫慨正牴捩獫砮穹氯湩硵甭楮⽸牰癩汩来ⵥ獥慣慬楴湯挣灡扡汩瑩敩屳≮两੃†木瑥慣⁰爭⼠㈠⼾敤⽶畮汬簠猠摥∠ⱳ猤摵捯灡䉳␬䍻孽㬱ㄳ♭笤絃せⱭ•⁼敳⁤猢␬慣獰ⱂ笤絃ㅛ㌻洱␦䍻孽洰∬ 籼攠档彯潮彴潦湵੤†捥潨∠ਢ ⌠ⴣ‭䤴⥆⸠桳映汩獥椠⁮䅐䡔 瀠楲瑮⁦夤嬢崫∠䜤䕒久⸢桳映汩獥椠⁮慰桴湜␢䍎 映牯搠椠⁮敠档⁯値呁⁈⁼牴∠∺∠湜怢※潤映湩⁤搤ⴠ慮敭∠⸪桳•㸲搯癥港汵⁬⁼敳⁤猢␬慰桴桳ⱇ笤絃ㅛ㌻洲␦䍻孽洰∬㬠搠湯੥†捥潨∠ਢ ⌠ⴣ‭䤵⥆䘠汩獥⠠捳楲瑰⥳椠⁮支捴瀯潲楦敬搮ਯ†牰湩晴␠≙⭛⁝␢則䕅≎楆敬⁳猨牣灩獴 湩⼠瑥⽣牰景汩⹥⽤湜␢䍎 ⠠獬ⴠ慬⼠瑥⽣牰景汩⹥⽤簠猠摥∠ⱳ瀤潲楦敬䝤␬䍻孽㬱㈳♭笤絃せⱭ⤢簠⁼捥潨湟瑯晟畯摮∠支捴瀯潲楦敬搮∯ 攠档⁯∢ਊ†⌣ⴭ㘠䙉 慈桳獥椠⁮慰獳摷映汩੥†牰湩晴␠≙⭛⁝␢則䕅≎慈桳獥椠獮摩⁥慰獳摷映汩㽥⸠⸮⸮⸮⸮⸮∠两੃†晩嬠∠杠敲⁰瘭✠孞㩞⩝嬺屸崪‧支捴瀯獡睳⁤㸲搯癥港汵恬•㭝琠敨⁮牧灥ⴠ⁶帧幛崺㨪硛⩜❝⼠瑥⽣慰獳摷㈠⼾敤⽶畮汬簠猠摥∠ⱳ⨮␬䍻孽㬱ㄳ♭笤絃せⱭਢ†汥敳攠档彯潮 映੩ ⌠ⴣ‭䤷⥆删慥⁤桳摡睯映汩獥 瀠楲瑮⁦夤嬢崫∠䜤䕒久䌢湡䤠爠慥⁤桳摡睯映汩獥‿⸮⸮⸮⸮⸮‮␢䍎 椠⁦⁛怢慣⁴支捴猯慨潤⁷支捴洯獡整⹲慰獳摷㈠⼾敤⽶畮汬≠崠※桴湥挠瑡⼠瑥⽣桳摡睯⼠瑥⽣慭瑳牥瀮獡睳⁤㸲搯癥港汵⁬⁼敳⁤猢⸬Ⱚ笤絃ㅛ㌻洱␦䍻孽洰∬ 攠獬⁥捥潨湟੯†楦ਊ†⌣ⴭ㠠䙉 敒摡爠潯⁴楤ੲ†牰湩晴␠≙⭛⁝␢則䕅≎慃⁮⁉敲摡爠潯⁴潦摬牥‿⸮⸮⸮⸮⸮‮␢䍎 ⠠獬ⴠ污⼠潲瑯 㸲搯癥港汵⥬簠⁼捥潨湟੯†捥潨∠ਢ ⌠ⴣ‭䤹⥆删潯⁴楦敬⁳湩栠浯⁥楤獲 瀠楲瑮⁦夤嬢崫∠䜤䕒久䰢潯楫杮映牯爠潯⁴楦敬⁳湩栠浯⁥楤獲⠠楬業⁴〲尩≮两੃†昨湩⁤栯浯⁥甭敳⁲潲瑯㈠⼾敤⽶畮汬簠栠慥⁤渭㈠‰⁼敳⁤猢␬桳畟牳ⱳ笤絃ㅛ㤻洶␦䍻孽洰∬簠猠摥∠ⱳ唤䕓ⱒ笤絃ㅛ㌻洱␦䍻孽洰∬ 籼攠档彯潮彴潦湵੤†捥潨∠ਢ ⌠ⴣ‭〱䙉 潒瑯映汩獥椠⁮祭搠物ੳ†晩℠嬠∠䤤䵁佒呏•㭝琠敨੮††牰湩晴␠≙⭛⁝␢則䕅≎潌歯湩⁧潦⁲潲瑯映汩獥椠⁮潦摬牥⁳睯敮⁤祢洠履≮两੃††昨牯搠椠⁮晠湩⁤瘯牡⼠瑥⁣栯浯⁥爯潯⁴琯灭⼠獵⁲漯瑰⼠潢瑯⼠祳⁳琭灹⁥⁤甭敳⁲唤䕓⁒㸲搯癥港汵恬※潤映湩⁤搤ⴠ獵牥爠潯⁴攭數⁣獬ⴠ⁬絻尠※㸲搯癥港汵⁬⁼敳⁤猢⸬Ⱚ笤絃ㅛ㌻洱␦䍻孽洰∬㬠搠湯⥥簠⁼捥潨湟瑯晟畯摮 †攠档⁯∢ 映੩ ⌠ⴣ‭ㄱ䙉 敒摡扡敬映汩獥戠汥湯楧杮琠⁯潲瑯愠摮渠瑯眠牯摬爠慥慤汢੥†晩℠嬠∠䤤䵁佒呏•㭝琠敨੮††牰湩晴␠≙⭛⁝␢則䕅≎敒摡扡敬映汩獥戠汥湯楧杮琠⁯潲瑯愠摮爠慥慤汢⁥祢洠⁥畢⁴潮⁴潷汲⁤敲摡扡敬湜␢䍎 †⠠潦⁲⁦湩怠楦摮⼠ⴠ祴数映ⴠ獵牥爠潯⁴‡瀭牥⁭漭爽㈠⼾敤⽶畮汬簠朠敲⁰瘭∠⹜潪牵慮≬㭠搠⁯晩嬠ⴠ⁲昤崠※桴湥氠⁳氭␠⁦㸲搯癥港汵⁬⁼敳⁤猢⸬Ⱚ笤絃ㅛ㌻洱␦䍻孽洰∬※楦※潤敮 籼攠档彯潮彴潦湵੤††捥潨∠ਢ†楦ਊ†⌣ⴭㄠ䤲⥆䘠汩獥椠獮摩⁥祭栠浯੥†牰湩晴␠≙⭛⁝␢則䕅≎楆敬⁳湩楳敤␠佈䕍⠠楬業⁴〲尩≮两੃†氨⁳氭⁡䠤䵏⁅㸲搯癥港汵⁬⁼敨摡ⴠ⁮㌲ 籼攠档彯潮彴潦湵੤†捥潨∠ਢ ⌠ⴣ‭㌱䙉 楆敬⁳湩楳敤⼠潨敭 瀠楲瑮⁦夤嬢崫∠䜤䕒久䘢汩獥椠獮摩⁥瑯敨獲栠浯⁥氨浩瑩㈠⤰湜␢䍎 ⠠楦摮⼠潨敭ⴠ祴数映㈠⼾敤⽶畮汬簠朠敲⁰瘭ⴠ⁩⼢␢单剅簠栠慥⁤渭㈠⤰簠⁼捥潨湟瑯晟畯摮 攠档⁯∢ਊ†⌣ⴭㄠ䤴⥆䴠楡⁬灡汰捩瑡潩獮 瀠楲瑮⁦夤嬢崫∠䜤䕒久䰢潯楫杮映牯椠獮慴汬摥洠楡⁬灡汰捩瑡潩獮湜␢䍎 氠⁳戯湩⼠扳湩⼠獵⽲楢⁮甯牳猯楢⁮甯牳氯捯污戯湩⼠獵⽲潬慣⽬扳湩⼠瑥⁣⁼牧灥ⴠ楷␠慭汩慟灰ੳ†捥潨∠ਢ ⌠ⴣ‭㔱䙉 慍汩ੳ†牰湩晴␠≙⭛⁝␢則䕅≎慍汩⁳氨浩瑩㔠⤰湜␢䍎 ⠠楦摮⼠慶⽲慭汩 瘯牡猯潰汯洯楡⽬ⴠ祴数映㈠⼾敤⽶畮汬簠栠慥⁤渭㔠⤰簠⁼捥潨湟瑯晟畯摮 攠档⁯∢ਊ†⌣ⴭㄠ䤶⥆䈠捡畫⁰楦敬ੳ†牰湩晴␠≙⭛⁝␢則䕅≎慂正灵映汩獥尿≮两੃†慢正㵳晠湩⁤瘯牡⼠瑥⁣戯湩⼠扳湩⼠潨敭⼠獵⽲潬慣⽬楢⁮甯牳氯捯污猯楢⁮甯牳戯湩⼠獵⽲慧敭⁳甯牳猯楢⁮爯潯⁴琯灭ⴠ祴数映尠 渭浡⁥⨢慢正灵∪ⴠ⁯渭浡⁥⨢⹜慢≫ⴠ⁯渭浡⁥⨢⹜慢屫⨮•漭ⴠ慮敭∠尪戮正•漭ⴠ慮敭∠尪戮正⹜∪ⴠ⁯渭浡⁥⨢⹜止•漭ⴠ慮敭∠尪戮屫⨮•漭ⴠ慮敭∠尪漮摬•漭ⴠ慮敭∠尪漮摬⹜∪尠 㸲搯癥港汵恬ਠ†潦⁲⁢湩␠慢正㭳搠⁯晩嬠ⴠ⁲戤崠※桴湥氠⁳氭∠戤•⁼牧灥ⴠ⁶渤瑯慂正灵簠猠摥∠ⱳ慢正灵籜换屫屼戮歡籜⹜汯Ɽ笤絃ㅛ㌻洱␦䍻孽洰本㬢映㭩搠湯੥†捥潨∠ਢ ⌠ⴣ‭㜱䙉 䉄映汩獥 瀠楲瑮⁦夤嬢崫∠䜤䕒久䰢潯楫杮映牯琠扡敬⁳湩楳敤爠慥慤汢⁥搮⽢献汱瑩⁥楦敬⁳氨浩瑩ㄠ〰尩≮两੃†扤楦敬㵳晠湩⁤瘯牡⼠瑥⁣栯浯⁥爯潯⁴琯灭⼠灯⁴琭灹⁥⁦⡜ⴠ慮敭∠⸪扤•漭ⴠ慮敭∠⸪煳楬整•漭ⴠ慮敭∠⸪煳楬整∳尠 㸲搯癥港汵⁬⁼牧灥ⴠ⁶⼢慭⽮籜⽞獵⽲籜⽞慶⽲慣档⽥•⁼敨摡ⴠ⁮〱怰 椠⁦⁛␢扤楦敬≳崠※桴湥 †匠䱑呉偅呙佈㵎∢ †映牯映椠⁮搤晢汩獥※潤ਠ†††晩嬠ⴠ⁲昤崠※桴湥ਠ††††牰湩晴␠則䕅≎ⴠ‾硅牴捡楴杮琠扡敬⁳牦浯两⁃昤␠䝄氨浩瑩㈠⤰湜␢䍎 †††椠⁦⁛怢桷捩⁨煳楬整″㸲搯癥港汵恬•㭝琠敨੮†††††慴汢獥怽煳楬整″昤∠琮扡敬≳㈠⼾敤⽶畮汬੠†††††瀣楲瑮⁦␢慴汢獥湜•⁼敳⁤猢甬敳⹲尪捼敲敤瑮慩⹬Ⱚ笤絃ㅛ㌻洱␦䍻孽洰本ਢ††††汥晩嬠∠睠楨档瀠瑹潨⁮㸲搯癥港汵恬•⁝籼嬠∠睠楨档瀠瑹潨㍮㈠⼾敤⽶畮汬≠崠※桴湥 ††††匠䱑呉偅呙佈㵎睠楨档瀠瑹潨⁮㸲搯癥港汵⁬籼眠楨档瀠瑹潨㍮㈠⼾敤⽶畮汬੠†††††慴汢獥怽匤䱑呉偅呙佈⁎挭∠牰湩⡴尧❮樮楯⡮瑛せ⁝潦⁲⁴湩张楟灭牯彴⡟猧汱瑩㍥⤧挮湯敮瑣✨昤⤧挮牵潳⡲⸩硥捥瑵⡥匧䱅䍅⁔慮敭䘠佒⁍煳楬整浟獡整⁲䡗剅⁅祴数尽琧扡敬❜愠摮琠汢湟浡⁥低⁔楬敫尠猧汱瑩彥尥㬧⤧昮瑥档污⡬崩⤩•㸲搯癥港汵恬 ††††⌠牰湩晴∠琤扡敬屳≮簠猠摥∠ⱳ獵牥⨮籜牣摥湥楴污⨮␬䍻孽㬱ㄳ♭笤絃せⱭ≧ †††攠獬੥†††††慴汢獥∽ਢ††††楦 †††椠⁦⁛␢慴汢獥•㭝琠敨੮†††††潦⁲⁴湩␠慴汢獥※潤 †††††挠汯浵獮∽ਢ††††††‣敓牡档映牯挠敲敤瑮慩獬椠獮摩⁥桴⁥慴汢⁥獵湩⁧煳楬整ਲ਼††††††晩嬠ⴠ⁺␢兓䥌䕔奐䡔乏•㭝琠敨੮†††††††潣畬湭㵳獠汱瑩㍥␠⁦⸢捳敨慭␠≴㈠⼾敤⽶畮汬簠朠敲⁰䌢䕒呁⁅䅔䱂≅੠††††††‣敓牡档映牯挠敲敤瑮慩獬椠獮摩⁥桴⁥慴汢⁥獵湩⁧祰桴湯 †††††攠獬੥†††††††潣畬湭㵳①兓䥌䕔奐䡔乏ⴠ⁣瀢楲瑮弨楟灭牯彴⡟猧汱瑩㍥⤧挮湯敮瑣✨昤⤧挮牵潳⡲⸩硥捥瑵⡥匧䱅䍅⁔煳⁬剆䵏猠汱瑩彥慭瑳牥圠䕈䕒琠灹Ⅵ尽洧瑥屡‧乁⁄煳⁬低⁔啎䱌䄠䑎渠浡⁥尽␧屴㬧⤧昮瑥档污⡬嬩崰せ⥝•㸲搯癥港汵恬 †††††映੩††††††䌣敨正映畯摮挠汯浵獮映牯椠瑮牥獥楴杮映敩摬ੳ††††††义䍔䱏䵕㵎敠档⁯␢潣畬湭≳簠朠敲⁰椭∠獵牥慮敭籜慰獳屷捼敲敤瑮慩屬敼慭汩籜慨桳籜慳瑬怢 †††††椠⁦⁛␢义䍔䱏䵕≎崠※桴湥 ††††††瀠楲瑮⁦䈤•ⴠ㸭䘠畯摮映牯椠瑮牥獥楴杮挠汯浵⁮慮敭⁳湩两⁃琤␠䝄漨瑵異⁴楬業⁴〱尩≮两⁃⁼敳⁤猢甬敳⹲尪捼敲敤瑮慩⹬Ⱚ笤絃ㅛ㌻洱␦䍻孽洰本ਢ†††††††牰湩晴∠挤汯浵獮湜•⁼敳⁤猢甬敳湲浡履灼獡睳籜牣摥湥楴污籜浥楡屬桼獡屨獼污屴⑼ⱴ笤絃ㅛ㌻洱␦䍻孽洰本ਢ†††††††猨汱瑩㍥␠⁦猢汥捥⁴‪牦浯␠≴簠⁼匤䱑呉偅呙佈⁎挭∠牰湩⡴Ⱗ✠樮楯⡮獛牴砨 潦⁲⁸湩张楟灭牯彴⡟猧汱瑩㍥⤧挮湯敮瑣✨昤⤧挮牵潳⡲⸩硥捥瑵⡥匧䱅䍅⁔‪剆䵏尠␧屴㬧⤧昮瑥档污⡬嬩崰⥝∩ 㸲搯癥港汵⁬⁼敨摡 †††††映੩†††††潤敮 ††††攠档⁯∢ †††映੩†††楦 †搠湯੥†楦 攠档⁯∢ਊ†⌣ⴭㄠ䤸⥆圠扥映汩獥 瀠楲瑮⁦夤嬢崫∠䜤䕒久圢扥映汩獥⠿畯灴瑵氠浩瑩尩≮两੃†獬ⴠ污剨⼠慶⽲睷⽷㈠⼾敤⽶畮汬簠栠慥੤†獬ⴠ污剨⼠牳⽶睷⽷瑨潤獣 㸲搯癥港汵⁬⁼敨摡 氠⁳愭桬⁒甯牳氯捯污眯睷愯慰档㉥⼲慤慴 㸲搯癥港汵⁬⁼敨摡 氠⁳愭桬⁒漯瑰氯浡灰栯摴捯⽳㈠⼾敤⽶畮汬簠栠慥੤†捥潨∠ਢ ⌠ⴣ‭㤱䙉 湉整敲瑳湩⁧楨摤湥映汩獥 瀠楲瑮⁦夤嬢崫∠䜤䕒久⨢桟獩潴祲‬献摵彯獡慟浤湩獟捵散獳畦ⱬ瀠潲楦敬‬慢桳捲‬瑨灴⹤潣普‬瀮慬Ɱ⸠瑨慰獳摷‬朮瑩挭敲敤瑮慩獬‬朮瑩潣普杩‬爮潨瑳ⱳ栠獯獴攮畱癩‬潄正牥楦敬‬潤正牥挭浯潰敳礮汭湜␢䍎 瀠楲瑮⁦䈤嬢嵩∠夤栢瑴獰⼺戯潯⹫慨正牴捩獫砮穹氯湩硵甭楮⽸牰癩汩来ⵥ獥慣慬楴湯爣慥ⵤ敳獮瑩癩ⵥ慤慴湜␢䍎 映汩㵳晠湩⁤瘯牡⼠瑥⁣栯浯⁥爯潯⁴琯灭⼠獵⁲漯瑰⼠湭⁴琭灹⁥⁦⡜ⴠ慮敭∠弪楨瑳牯≹ⴠ⁯渭浡⁥⸢畳潤慟彳摡業彮畳捣獥晳汵•漭ⴠ慮敭∠瀮潲楦敬•漭ⴠ慮敭∠截獡牨≣ⴠ⁯渭浡⁥⨢瑨灴⹤潣普•漭ⴠ慮敭∠⸪汰湡•漭ⴠ慮敭∠栮灴獡睳≤ⴠ⁯渭浡⁥⸢楧捴湯楦≧ⴠ⁯渭浡⁥⸢楧⵴牣摥湥楴污≳ⴠ⁯渭浡⁥⨢爮潨瑳≳ⴠ⁯渭浡⁥栢獯獴攮畱癩•漭ⴠ慮敭∠潄正牥楦敬•漭ⴠ慮敭∠潤正牥挭浯潰敳礮汭•⥜㈠⼾敤⽶畮汬੠†潦⁲⁦湩␠楦獬※潤ਠ††晩嬠ⴠ⁲昤崠※桴湥ਠ†††獬ⴠ⁬昤㈠⼾敤⽶畮汬簠猠摥∠ⱳ慢桳桟獩潴祲籜⹜畳潤慟彳摡業彮畳捣獥晳汵籜⹜汰湡籜⹜瑨慰獳摷籜⹜楧⵴牣摥湥楴污屳屼爮潨瑳屳桼瑴摰挮湯ⱦ笤絃ㅛ㌻洱␦䍻孽洰∬簠猠摥∠ⱳ猤彨獵獲␬䍻孽㬱㘹♭笤絃せⱭ≧簠猠摥∠ⱳ唤䕓ⱒ笤絃ㅛ㤻洵␦䍻孽洰本•⁼敳⁤猢爬潯ⱴ笤絃ㅛ㌻洱␦䍻孽洰本㬢ਠ†††晩嬠怠捥潨␠⁦⁼牧灥∠桟獩潴祲怢崠※桴湥 †††瀠楲瑮⁦䜤䕒久䰢潯楫杮映牯瀠獯楳汢⁥慰獳潷摲⁳湩楳敤␠屦≮两੃††††慣⁴昤簠朠敲⁰瀤摷楟獮摩彥楨瑳牯⁹⁼敳⁤猢␬睰彤湩楳敤桟獩潴祲␬䍻孽㬱ㄳ♭笤絃せⱭਢ††††捥潨∠ਢ†††汥晩嬠怠捥潨␠⁦⁼牧灥∠瑨灴⹤潣普•⁠㭝琠敨੮††††牰湩晴␠則䕅≎敒摡湩⁧昤湜␢䍎 †††挠瑡␠⁦⁼牧灥ⴠ⁶帢∣簠朠敲⁰倭⁶尢⩗⍜•⁼敳⁤猢栬慴捣獥⹳尪桼灴獡睳⹤Ⱚ笤絃ㅛ㌻洱␦䍻孽洰∬ †††攠档⁯∢ ††攠楬⁦⁛敠档⁯昤簠朠敲⁰栢灴獡睳≤怠崠※桴湥 †††瀠楲瑮⁦䜤䕒久刢慥楤杮␠屦≮两੃††††慣⁴昤簠猠摥∠ⱳ⨮␬䍻孽㬱ㄳ♭笤絃せⱭਢ††††捥潨∠ਢ†††楦਻††楦※ 搠湯੥†捥潨∠ਢ ⌠ⴣ‭〲䙉 汁⁬楨摤湥映汩獥 瀠楲瑮⁦夤嬢崫∠䜤䕒久䄢汬栠摩敤⁮楦敬⁳渨瑯椠⁮猯獹 牯琠敨漠敮⁳楬瑳摥椠⁮桴⁥牰癥潩獵挠敨正 氨浩瑩㜠⤰湜␢䍎 映湩⁤ 琭灹⁥⁦椭慮敭∠⨮•氭⁳㸲搯癥港汵⁬⁼牧灥ⴠ⁶⼢祳⽳籜⹜楧楴湧牯履⹼灮業湧牯履彼楨瑳牯⑹籜⹜牰景汩履屼戮獡牨屣屼氮獩楴杮籜⹜杩潮敲籜⹜畵摩籜⹜汰湡籜⹜瑨慰獳摷籜⹜楧⵴牣摥湥楴污屳⹼桲獯獴籜搮灥湥層⹼汰捡桥汯敤屲⹼楧歴敥≰簠栠慥⁤渭㜠ਰ†捥潨∠ਢ ⌠ⴣ‭ㄲ䙉 敒摡扡敬映汩獥椠⁮琯灭‬瘯牡琯灭‬瘯牡戯捡畫獰 瀠楲瑮⁦夤嬢崫∠䜤䕒久刢慥慤汢⁥楦敬⁳湩楳敤⼠浴Ɒ⼠慶⽲浴Ɒ⼠慶⽲慢正灵⡳楬業⁴〷尩≮两੃†楦獬浴扰捡㵫晠湩⁤琯灭⼠慶⽲浴⁰瘯牡戯捡畫獰ⴠ祴数映㈠⼾敤⽶畮汬簠栠慥⁤渭㜠怰 映牯映椠⁮昤汩瑳灭慢正※潤椠⁦⁛爭␠⁦㭝琠敨⁮獬ⴠ⁬昤㈠⼾敤⽶畮汬※楦※潤敮 攠档⁯∢ਊ†⌣ⴭ㈠䤲⥆䤠瑮牥獥楴杮眠楲慴汢⁥楦敬ੳ†晩℠嬠∠䤤䵁佒呏•㭝琠敨੮††牰湩晴␠≙⭛⁝␢則䕅≎湉整敲瑳湩⁧牷瑩扡敬䘠汩獥湜␢䍎 †瀠楲瑮⁦䈤嬢嵩∠夤栢瑴獰⼺戯潯⹫慨正牴捩獫砮穹氯湩硵甭楮⽸牰癩汩来ⵥ獥慣慬楴湯眣楲慴汢ⵥ楦敬屳≮两੃††楦摮⼠✠✨ⴠ祴数映ⴠ牯ⴠ祴数搠✠✩✠✨✠✨ⴠ獵牥␠单剅✠✩ⴠ牯✠✨ⴠ数浲ⴠ㵯⁷⤧‧⤧‧㸲搯癥港汵⁬⁼牧灥ⴠ⁶⼧牰捯✯簠朠敲⁰瘭␠佈䕍簠朠敲⁰瘭✠猯獹是❳簠朠敲⁰瘭␠潮䕴瑸湥楳湯⁳⁼潳瑲簠甠楮ⁱ⁼睡⁫䘭 笧楬敮楟楮㵴〤※晩⠠挡湯⥴⁻潣瑮〽素※两㵆∢※捡㵴〤※晩⠠潣瑮㰠ㄠ⤰⁻牰湩⁴楬敮楟楮㭴素椠⁦挨湯⁴㴽∠〱⤢灻楲瑮∠†潙⁵慣⁮牷瑩⁥癥湥洠牯⁥楦敬⁳湩楳敤氠獡⁴楤敲瑣牯≹㭽椠⁦愨瑣㴠‽牰⥥⡻潣瑮⬠‽⤱⁽汥敳笠潣瑮〽㭽瀠敲愽瑣素‧⁼敳⁤猢␬牷瑩䉥␬䍻孽㬱ㄳ♭笤絃せⱭ•⁼敳⁤猢␬牷瑩噥ⱂ笤絃ㅛ㌻㨱㌹♭笤絃せⱭ• †映牯朠椠⁮杠潲灵恳※潤映湩⁤ ⡜ⴠ祴数映ⴠ牯ⴠ祴数搠尠 札潲灵␠⁧瀭牥⁭札眽㈠⼾敤⽶畮汬簠朠敲⁰瘭✠瀯潲⽣‧⁼牧灥ⴠ⁶䠤䵏⁅⁼牧灥ⴠ⁶⼧祳⽳獦‧⁼牧灥ⴠ⁶渤瑯硅整獮潩獮簠愠歷ⴠ⽆✠汻湩彥湩瑩␽㬰椠⁦ℨ潣瑮笩挠湯㵴‰㭽␠䙎∽㬢愠瑣␽㬰椠⁦挨湯⁴‼〱笩瀠楲瑮氠湩彥湩瑩※⁽晩⠠潣瑮㴠‽ㄢ∰笩牰湩⁴•夠畯挠湡眠楲整攠敶⁮潭敲映汩獥椠獮摩⁥慬瑳搠物捥潴祲索※晩⠠捡⁴㴽瀠敲笩挨湯⁴㴫ㄠ紩攠獬⁥捻湯㵴細※牰㵥捡⁴❽簠猠摥∠ⱳ眤楲整ⱂ笤絃ㅛ㌻洱␦䍻孽洰∬簠猠摥∠ⱳ眤楲整䉖␬䍻孽㬱ㄳㄻ㌰♭笤絃せⱭ㬢搠湯੥††捥潨∠ਢ†楦ਊ†⌣ⴭ㈠䤳⥆倠獡睳牯獤椠⁮潣普杩倠偈映汩獥 瀠楲瑮⁦夤嬢崫∠䜤䕒久匢慥捲楨杮瀠獡睳牯獤椠⁮潣普杩倠偈映汩獥湜␢䍎 挠湯楦獧怽楦摮⼠慶⁲支捴⼠潨敭⼠潲瑯⼠浴⁰甯牳⼠灯⁴琭灹⁥⁦渭浡⁥⨢潣普杩⸪桰≰㈠⼾敤⽶畮汬੠†潦⁲⁣湩␠潣普杩㭳搠⁯牧灥ⴠ⁩瀢獡睳牯⹤‪‽❛≜屝摼晥湩⹥瀪獡睳籜扤灟獡≳␠⁣㸲搯癥港汵⁬⁼牧灥ⴠ⁶昢湵瑣潩屮灼獡睳牯⹤‪‽≜≜籜慰獳潷摲⨮㴠✠∧簠猠摥✠帯尮ㅻ〵絜⼮❤簠猠牯⁴⁼湵煩簠猠摥∠ⱳ慰獳潷摲籜扤灟獡ⱳ笤絃ㅛ㌻洱␦䍻孽洰椬㬢搠湯੥†捥潨∠ਢ ⌠ⴣ‭㐲䙉 偉⁳湩楳敤氠杯ੳ†牰湩晴␠≙⭛⁝␢則䕅≎楆摮湩⁧偉⁳湩楳敤氠杯⁳氨浩瑩㜠⤰湜␢䍎 朠敲⁰刭ⴠ⁡䔭ⴠ⁯⠢㔲せ㔭籝嬲ⴰ崴せ㤭籝せ崱嬿ⴰ崹せ㤭㽝尩⠮㔲せ㔭籝嬲ⴰ崴せ㤭籝せ崱嬿ⴰ崹せ㤭㽝尩⠮㔲せ㔭籝嬲ⴰ崴せ㤭籝せ崱嬿ⴰ崹せ㤭㽝尩⠮㔲せ㔭籝嬲ⴰ崴せ㤭籝せ崱嬿ⴰ崹せ㤭㽝∩⼠慶⽲潬⽧㈠⼾敤⽶畮汬簠猠牯⁴⁼湵煩ⴠ⁣⁼潳瑲ⴠ⁲渭簠栠慥⁤渭㜠ਰ†捥潨∠ਢ ⌠ⴣ‭㔲䙉 慐獳潷摲⁳湩楳敤氠杯ੳ†牰湩晴␠≙⭛⁝␢則䕅≎楆摮湩⁧慰獳潷摲⁳湩楳敤氠杯⁳氨浩瑩㜠⤰湜␢䍎 朠敲⁰刭ⴠ⁩瀢摷籜慰獳≷⼠慶⽲潬⽧㈠⼾敤⽶畮汬簠猠摥✠帯尮ㅻ〵絜⼮❤簠猠牯⁴⁼湵煩簠朠敲⁰瘭∠楆敬搠敯⁳潮⁴硥獩㩴籜捳楲瑰渠瑯映畯摮漠⁲湵扡敬琠⁯瑳瑡尺屼䜢呅⼠⨮≜㐠㐰•⁼敨摡ⴠ⁮〷簠猠摥∠ⱳ睰層灼獡睳␬䍻孽㬱ㄳ♭笤絃せⱭਢ†捥潨∠ਢ ⌠ⴣ‭㘲䙉 浅楡獬椠獮摩⁥潬獧 瀠楲瑮⁦夤嬢崫∠䜤䕒久䘢湩楤杮攠慭汩⁳湩楳敤氠杯⁳氨浩瑩㜠⤰湜␢䍎 朠敲⁰刭ⴠ⁅漭∠扜䅛娭ⵡぺ㤭弮⬥崭䀫䅛娭ⵡぺ㤭⴮⭝⹜䅛娭ⵡ嵺㉻㘬屽≢⼠慶⽲潬⽧㈠⼾敤⽶畮汬簠猠牯⁴⁼湵煩ⴠ⁣⁼敨摡ⴠ⁮〷ਠ†捥潨∠•ਊ†⌣ⴭ㈠䤷⥆倠獡睳牯獤映汩獥椠⁮潨敭 瀠楲瑮⁦夤嬢崫∠䜤䕒久䘢湩楤杮⨠慰獳潷摲‪牯⨠牣摥湥楴污‪楦敬⁳湩栠浯⁥氨浩瑩㜠⤰湜␢䍎 ⠠楦摮⼠潨敭⼠潲瑯ⴠ祴数映尠 渭浡⁥⨢慰獳潷摲∪ⴠ⁯渭浡⁥⨢牣摥湥楴污∪ⴠ⁯渭浡⁥挢敲獤∪尠 㸲搯癥港汵⁬⁼睡⁫䘭 笧楬敮楟楮㵴〤※晩⠠挡湯⥴⁻潣瑮〽素※两㵆∢※捡㵴〤※晩⠠潣瑮㰠㌠笩瀠楲瑮氠湩彥湩瑩※⁽晩⠠潣瑮㴠‽㌢⤢灻楲瑮∠†桔牥⁥牡⁥潭敲挠敲獤瀯獡睳獤映汩獥椠⁮桴⁥牰癥潩獵瀠牡湥⁴潦摬牥索※晩⠠捡⁴㴽瀠敲笩挨湯⁴㴫ㄠ紩攠獬⁥捻湯㵴細※牰㵥捡⁴❽簠栠慥⁤渭㜠‰⁼敳⁤猢瀬獡睳牯層捼敲敤瑮慩ⱬ笤絃ㅛ㌻洱␦䍻孽洰∬ 籼攠档彯潮彴潦湵੤†捥潨∠ਢ 椠⁦‡⁛␢啓䕐䙒十≔崠※桴湥 †⌠ⴣ‭㠲䙉 硅牴捡⁴潰獳扩敬瀠獡睳牯獤 †瀠楲瑮⁦夤嬢崫∠䜤䕒久䔢瑸慲瑣湩⁧潰獳扩敬瀠獡睳牯獤映潲⁭楦敬⁳湩⼠瑥⁣瘯牡眯睷⼠潲瑯⼠潨敭湜␢䍎 †朠敲⁰刭ⴠ⁩瀢獡睳牯⹤‪‽❛≜屝摼晥湩⹥瀪獡睳•瘯牡眯睷⼠潲瑯⼠潨敭㈠⼾敤⽶畮汬簠朠敲⁰尢瀮灨•⁼牧灥ⴠ⁶昢湵瑣潩屮灼獡睳牯⹤‪‽≜≜籜慰獳潷摲⨮㴠✠∧簠猠摥✠帯尮ㅻ〵絜⼮❤簠猠牯⁴⁼湵煩簠猠摥∠ⱳ慰獳潷摲␬䍻孽㬱ㄳ♭笤絃せⱭਢ††牧灥ⴠ⁒椭∠慰獳潷摲•支捴㈠⼾敤⽶畮汬簠朠敲⁰挢湯≦簠朠敲⁰瘭∠⌺籜⼺⩜籜›⩜•⁼潳瑲簠甠楮ⁱ⁼敳⁤猢瀬獡睳牯Ɽ笤絃ㅛ㌻洱␦䍻孽洰∬ †攠档⁯∢ਊ ⌠ⴣ‭㤲䙉 楆摮瀠獯楳汢⁥楦敬⁳楷桴瀠獡睳牯獤 †瀠楲瑮⁦夤嬢崫∠䜤䕒久䘢湩楤杮✠睰❤漠⁲瀧獡睳‧瑳楲杮椠獮摩⁥栯浯ⱥ⼠慶⽲睷ⱷ⼠瑥Ᵽ⼠潲瑯愠摮氠獩⁴潰獳扩敬眠扥⼨慶⽲睷⥷愠摮挠湯楦⡧支捴 慰獳潷摲⡳楬業⁴〷尩≮两੃††牧灥ⴠ剬⁩瀢摷籜慰獳≷⼠潨敭⼠慶⽲睷⁷支捴⼠潲瑯㈠⼾敤⽶畮汬簠猠牯⁴⁼湵煩簠栠慥⁤渭㜠ਰ††捥潨∠ਢ †⌠ⴣ‭〳䙉 灓捥晩捩栠獡敨⁳湩楳敤映汩獥 †瀠楲瑮⁦夤嬢崫∠䜤䕒久䰢潯楫杮映牯猠数楣楦⁣慨桳獥椠獮摩⁥楦敬⁳‭敬獳映污敳瀠獯瑩癩獥⠠楬業⁴〷尩≮两੃††敲敧扸潬晷獩㵨尧㈤慛硢穹㽝⑜せ㤭筝紲⑜慛稭ⵁず㤭⽟⹜⩝ਧ††敲敧橸潯汭癡畢汬瑥湩✽せ㤭ⵡ䅺娭筝㈳㩽慛稭ⵁず㤭嵟ㅻⰶ㈳❽ †爠来硥桰扰㍢✽⑜屈嬤ⵡ䅺娭ⴰ弹尯崮㍻紱ਧ††敲敧睸㵰尧値⑜慛稭ⵁず㤭⽟⹜筝ㄳ❽ †爠来硥牤灵污✽⑜屓嬤ⵡ䅺娭ⴰ弹尯崮㕻紲ਧ††敲敧汸湩硵摭㴵尧ㄤ⑜慛稭ⵁず㤭⽟⹜筝紸⑜慛稭ⵁず㤭⽟⹜筝㈲❽ †爠来硥灡ㅲ摭㴵尧愤牰就嬤ⵡ䅺娭ⴰ弹尯崮㡻屽嬤ⵡ䅺娭ⴰ弹尯崮㉻紲ਧ††敲敧獸慨ㄵ挲祲瑰✽⑜尶嬤ⵡ䅺娭ⴰ弹尯崮ㅻ紶⑜慛稭ⵁず㤭⽟⹜筝㘸❽ †爠来硥灡捡敨桳㵡尧卻䅈絜せ㤭ⵡ䅺娭弯崽ㅻⰰ❽ †朠敲⁰刭䕉潈∠爤来硥汢睯楦桳⑼敲敧橸潯汭癡畢汬瑥湩⑼敲敧灸灨扢簳爤来硥灷⑼敲敧摸畲慰籬爤来硥楬畮浸㕤⑼敲敧慸牰洱㕤⑼敲敧獸慨ㄵ挲祲瑰⑼敲敧慸慰档獥慨•支捴⼠慶⽲慢正灵⁳琯灭⼠慶⽲浴⁰瘯牡眯睷⼠潲瑯⼠潨敭⼠湭⁴㸲搯癥港汵⁬⁼牧灥ⴠ⁶⼢朮瑩尯⽼潳牵散⽳畡桴牯⽳•⁼牧灥ⴠ⁶渤瑯硅整獮潩獮簠愠歷ⴠ㩆✠楻⁦瀨敲℠‽ㄤ笩瀠楲瑮␠㬰素※牰㵥ㄤ❽簠栠慥⁤渭㜠‰⁼敳⁤猢㨬⨮␬䍻孽㬱ㄳ♭笤絃せⱭਢ††捥潨∠ਢ†楦ਊ†晩℠嬠∠䘤十≔崠☠…‡⁛␢啓䕐䙒十≔崠※桴湥 †⌠ⴣ‭ㄳ䙉 灓捥晩捩栠獡敨⁳湩楳敤映汩獥 †瀠楲瑮⁦夤嬢崫∠䜤䕒久䰢潯楫杮映牯洠㕤猯慨⼱桳㉡㘵猯慨ㄵ′慨桳獥椠獮摩⁥楦敬⁳氨浩瑩㔠⤰湜␢䍎 †爠来硥摭㴵⠧籞幛ⵡ䅺娭ⴰ崹嬩ⵡ䅦䘭ⴰ崹㍻紲嬨慞稭ⵁず㤭籝⤤ਧ††敲敧獸慨㴱⠧籞幛ⵡ䅺娭ⴰ崹嬩ⵡ䅦䘭ⴰ崹㑻細嬨慞稭ⵁず㤭籝⤤ਧ††敲敧獸慨㔲㴶⠧籞幛ⵡ䅺娭ⴰ崹嬩ⵡ䅦䘭ⴰ崹㙻紴嬨慞稭ⵁず㤭籝⤤ਧ††敲敧獸慨ㄵ㴲⠧籞幛ⵡ䅺娭ⴰ崹嬩ⵡ䅦䘭ⴰ崹ㅻ㠲⡽幛ⵡ䅺娭ⴰ崹⑼✩ †朠敲⁰刭䕉潈∠爤来硥摭簵爤来硥桳ㅡ⑼敲敧獸慨㔲簶爤来硥桳㕡㈱•支捴⼠慶⽲慢正灵⁳琯灭⼠慶⽲浴⁰瘯牡眯睷⼠潲瑯⼠潨敭⼠湭⁴㸲搯癥港汵⁬⁼牧灥ⴠ⁶⼢朮瑩尯⽼潳牵散⽳畡桴牯⽳•⁼牧灥ⴠ⁶渤瑯硅整獮潩獮簠愠歷ⴠ㩆✠楻⁦瀨敲℠‽ㄤ笩瀠楲瑮␠㬰素※牰㵥ㄤ❽簠愠歷ⴠ⽆✠汻湩彥湩瑩␽㬰椠⁦ℨ潣瑮笩挠湯㵴‰㭽␠䙎∽㬢愠瑣␽㬰椠⁦挨湯⁴‼⤲⁻牰湩⁴楬敮楟楮㭴素椠⁦挨湯⁴㴽∠∲笩牰湩⁴•吠敨敲愠敲洠牯⁥慨桳獥映汩獥椠⁮桴⁥牰癥潩獵瀠牡湥⁴潦摬牥索※晩⠠捡⁴㴽瀠敲笩挨湯⁴㴫ㄠ紩攠獬⁥捻湯㵴細※牰㵥捡⁴❽簠栠慥⁤渭㔠‰⁼敳⁤猢㨬⨮␬䍻孽㬱ㄳ♭笤絃せⱭਢ††捥潨∠ਢ†楦昊੩</div></div>
-</body></html>
