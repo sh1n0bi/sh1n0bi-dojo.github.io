@@ -19,6 +19,14 @@ There is also a [playlist](https://www.youtube.com/playlist?list=PLidcsTyj9JXK-f
 <h3>Ippsec's Youtube vids(OSCP-prep)</h3>
 There's no better Youtube resource to learn from than [Ippsec's vids](https://www.youtube.com/watch?v=XJmBpOd__N8&list=PLB7OMUC1I72U_eLxaqkehqIvZIyW3rzhp). If you think there is...'FITE ME!!!'
 
+
+<h3>Oxdf hacks stuff</h3>
+This dude does the best writeups. His site is an amazing collection of [HTB walthroughs](https://0xdf.gitlab.io/) and lots of other interesting materials.
+When I first started, not that long ago, I first gravitated to his writeups for a few reasons, they were in dark theme (so easier on the eyes at night) but 
+also because they were concise, comprehensive and interesting.
+Its definately something I had in mind (the dark theme) when starting this blog.
+
+
 <h3>Red Teaming Experiments</h3>
 A pretty comprehensive and very useful command cheat-sheet from [ired.team](https://ired.team/offensive-security-experiments/offensive-security-cheetsheets)
 
