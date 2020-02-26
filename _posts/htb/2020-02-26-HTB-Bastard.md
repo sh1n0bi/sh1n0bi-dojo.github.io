@@ -6,7 +6,7 @@ categories: HTB-Walkthrough
 
 ![bastard](/assets/img/bastard/bastard.png)
 
-Bastard is another HTB machine from the 'retired' list, and it is'nt as bad as it sounds.
+Bastard is another HTB machine from the 'retired' list, and it isn't as bad as it sounds.
 
 Nmap first...
 `nmap -sV -Pn 10.10.10.9 |tee -a bast.txt`
