@@ -160,7 +160,7 @@ I execute it from the target making sure I start a netcat listener first.
 ```
 
 type dimitris\desktop\user.txt
-ba22fde1932d06eb76a163d312f921a2
+baxxxxxxxxxxxxxxxxxxxxxxxxxxxxa2
 
 ```
 
@@ -169,7 +169,7 @@ ba22fde1932d06eb76a163d312f921a2
 
 c:\Users\Administrator\Desktop>type root.txt.txt
 type root.txt.txt
-4bf12b963da1b30cc93496f617f7ba7c
+4bxxxxxxxxxxxxxxxxxxxxxxxxxxxx7c
 
 ```
 
