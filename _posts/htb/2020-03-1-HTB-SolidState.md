@@ -37,7 +37,10 @@ Nmap done: 1 IP address (1 host up) scanned in 30.20 seconds
 After googling 'exploit james 2.3.2' I hit upon a method...and possible [exploit](https://www.exploit-db.com/exploits/35513)
 
 
-First use telnet to access James Remote Admin
+<h4>Telnet James Remote Admin</h4>
+
+First use telnet to access James Remote Admin, with default credentials root/root.
+
 
 ![james-admin](/assets/img/solidstate/solidstate-james-admin1.png)
 
