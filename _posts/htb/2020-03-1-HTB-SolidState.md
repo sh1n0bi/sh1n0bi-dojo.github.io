@@ -34,7 +34,7 @@ Nmap done: 1 IP address (1 host up) scanned in 30.20 seconds
 
 ```
 
-After googling 'exploit james 2.3.2' I hit upon a method...
+After googling 'exploit james 2.3.2' I hit upon a method...and possible [exploit](https://www.exploit-db.com/exploits/35513)
 
 
 First use telnet to access James Remote Admin
@@ -93,7 +93,7 @@ BASH_CMDS[cat]=/bin/cat
 
 ```
 
-The shell is restricted but we can get around this with james.py exploit
+The shell is restricted but we can get around this with the james.py exploit
 which will give us better shell.
 
 
