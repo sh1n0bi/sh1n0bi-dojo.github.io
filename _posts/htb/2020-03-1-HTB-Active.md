@@ -89,7 +89,7 @@ We have the domain name confirmed as `active.htb` and so update the /etc/hosts f
 
 Smbclient is a good tool for manually enumerating the server, lets have a look at the Replication share...
 
-`smbclient //10.10.10.100/Replication
+`smbclient //10.10.10.100/Replication`
 
 ![smbclient1](/assets/img/active/active-smbclient1.png)
 
