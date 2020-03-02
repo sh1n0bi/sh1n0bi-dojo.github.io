@@ -109,8 +109,13 @@ Groups.xml gives us some credentials
 </Groups>
 
 ```
+
+```
+
 userName="active.htb\SVC_TGS"
 cpassword="edBSHOwhZLTjt/QS9FeIcJ83mjWA98gw9guKOhJOdcqh+ZGMeXOsQbCpZ3xUjTLfCuNH8pG5aSVYdYw/NglVmQ"
+
+```
 
 It looks like the account is not disabled, so we can try to use it, if we can decrypt it.
 
