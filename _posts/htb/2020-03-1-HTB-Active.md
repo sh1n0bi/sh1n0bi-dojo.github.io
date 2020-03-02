@@ -9,6 +9,8 @@ categories: HTB-Active
 
 Active is a box from TJNull's OSCP list, its one of the HTB 'retired' list judged
  a bit more challenging than the OSCP but good practice.
+It's a good introduction to Active Directories, and making use of the Impacket toolbox.
+
 As always, nmap first...
 
 
