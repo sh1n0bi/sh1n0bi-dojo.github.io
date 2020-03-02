@@ -7,8 +7,8 @@ categories: HTB-Active
 ![active](/assets/img/active/active1.png)
 
 
-Active is a box from TJNull's OSCP list, its one of the HTB 'retired' list judged a bit more challenging than the OSCP
-but good practice.
+Active is a box from TJNull's OSCP list, its one of the HTB 'retired' list judged
+ a bit more challenging than the OSCP but good practice.
 As always, nmap first...
 
 
@@ -141,10 +141,11 @@ Now I need to gain access and escalate privileges.
 
 Fortunately Impacket has a set of tools that can help.
 
-```
+
 
 <h3>Impacket Tools</h3>
 
+```
 
 python GetUserSPNs.py -request -dc-ip 10.10.10.100 active.htb/SVC_TGS:GPPstillStandingStrong2k18
 
