@@ -98,8 +98,8 @@ BASH_CMDS[cat]=/bin/cat
 
 ```
 
-The shell is restricted but we can get around this with the james.py exploit
-which will give us better shell.
+This works, but is incredibly laborious, we can get around this problem with the james.py 
+exploit, which gives us a better shell.
 
 
 ```
