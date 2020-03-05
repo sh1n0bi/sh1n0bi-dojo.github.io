@@ -172,6 +172,9 @@ root@Valentine:/home/hype#
 
 Quick roots are always amazing, demonstrating a catastrophic error, misconfiguration and whatnot.
 
+'Leave 'em wanting more!' is a good ethos.
+
+Thanks for the fun box.
 
 :)
 
