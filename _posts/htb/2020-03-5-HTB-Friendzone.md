@@ -336,6 +336,8 @@ Looking at `reporter.py` it seems harmless enough!
 ```
 
 I can not write to the file, so can't edit it by replacing its contents or appending something. 
+
+
 The script calls the `os` library, taking a look at that reveals something interesting.
 
 ![ospy](/assets/img/friendzone/friendzone-ospy.png)
