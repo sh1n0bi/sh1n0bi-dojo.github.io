@@ -370,12 +370,12 @@ To do this I use `vi`
 
 `vi os.py`
 
-To goto end of file and edit; press escape then GA (in capitals)
+To goto end of file and edit; press `esc` then `GA` (in capitals)
 This takes you to end of file and enters input mode...
 
 `Ctrl + v` pastes the clipboard.
 
-Press esc then :wq to save and exit.
+Press `esc` then `:wq` to save and exit.
 
 set listener .....and wait...
 
