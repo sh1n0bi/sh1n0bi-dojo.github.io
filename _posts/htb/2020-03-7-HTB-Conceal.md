@@ -798,7 +798,7 @@ Nmap found `ftp` running, so we can possibly upload a file there, then execute i
 
 Pull the trigger by browsing to `conceal.htb/upload/e.htb`
 
-The exploit fails to get a shell, so another tack is needed.
+The exploit fails to get a shell, so another course of action is required.
 
 
 
@@ -860,12 +860,17 @@ PS C:\users\destitute\desktop> type proof.txt
 SeImpersonatePrivilege        Impersonate a client after authentication Enabled
 ```
 
+Use the `systeminfo` command to identify the target's system.
+
+![sysinfo](/assets/img/conceal/conceal-sysinfo.png)
+
 
 
 <h3>Privilege Escalation</h3>
 
 
-The above user privs suggest that we can make an easy privesc with [JuicyPotato](https://github.com/ohpe/juicy-potato).
+The above user privs suggest that we can make an easy privesc with [JuicyPotato](https://github.com/ohpe/juicy-potato); the Windows 10 Enterprise Edition is
+vulnerable to the exploit.
 
 
 First create a writable working directory on the target.
