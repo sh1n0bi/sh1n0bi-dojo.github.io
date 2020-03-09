@@ -804,6 +804,9 @@ The exploit fails to get a shell, so another tack is needed.
 
 <hr width="250" size="6">
 
+
+<h3>FTP Upload Webshell</h3>
+
 Upload cmd.asp webshell found in /usr/share/webshells/asp/
 
 copy powershell reverse-shell to pwd (present working directory) in kali, with the following
@@ -862,7 +865,7 @@ SeImpersonatePrivilege        Impersonate a client after authentication Enabled
 <h3>Privilege Escalation</h3>
 
 
-The above user privs suggest that we can make an easy privesc with [JuicyPotato](https://github.com/ohpe/juicy-potato)
+The above user privs suggest that we can make an easy privesc with [JuicyPotato](https://github.com/ohpe/juicy-potato).
 
 
 First create a writable working directory on the target.
