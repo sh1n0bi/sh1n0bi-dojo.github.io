@@ -212,7 +212,7 @@ uid=0(root) gid=0(root) groups=0(root)
 
 ```
 
-#############################################
+##########################
 
 Exploiting suid files to escalate privileges is an important technique to practice and remember to look out for,
 it will often be the best (and sometimes only) way to get root. 

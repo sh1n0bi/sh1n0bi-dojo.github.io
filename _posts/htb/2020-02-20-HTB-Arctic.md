@@ -75,9 +75,16 @@ toc.css                             244   03/22/17 08:55 μμ
 
 ```
 
-Browsing to `http://10.10.10.11:8500/cfdocs/dochome.htm` we get lots of info about ColdFusion 8.
+Browsing to
+```
+http://10.10.10.11:8500/cfdocs/dochome.htm
+```
 
-`http://10.10.10.11:8500/CFIDE/administrator/`
+ we get lots of info about ColdFusion 8.
+
+```
+http://10.10.10.11:8500/CFIDE/administrator/
+```
 
 leads us to a login page for Adobe Coldfusion 8
 

