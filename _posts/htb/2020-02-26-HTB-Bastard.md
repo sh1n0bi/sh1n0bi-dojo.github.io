@@ -79,10 +79,6 @@ I copied the `Drupal services module RCE` and the `Drupalgeddon3 RCE PoC` (not m
 
 
 
-############################################
-
-
-![Incomming!](/assets/img/m.jpg)
 
 <hr width="250" size="6">
 
