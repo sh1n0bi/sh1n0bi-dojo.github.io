@@ -66,7 +66,9 @@ Sticking with admin username for now, I tried 'nibbles' as the password since it
 
 having a poke about, I find we can possibly upload an image file (containing a reverse-shell) to the server...
 
+```
 http://10.10.10.75/nibbleblog/content/private/plugins/my_image/
+```
 
 We can upload pentestmonkey's [php-reverse-shell](http://pentestmonkey.net/tools/web-shells/php-reverse-shell) which I've saved as evil.php
 Just modify the contents to reflect our IP and preferred port for the connection...
@@ -80,8 +82,9 @@ Once uploaded, we can execute the shell by browsing to the folder where the serv
 Sometimes a server will change the name of a file for storage...perhaps because its hardcoded in other php files for convenience.
 
 I try...
-`/content/private/plugins/my_image/image.php'
-
+```
+/content/private/plugins/my_image/image.php
+```
 
 and catch the shell on 6969.
 
@@ -107,7 +110,7 @@ Go to the /home/nibbler directory, and find user.txt
 ```
 
 $ cat user.txt
-##  b0xxxxxxxxxxxxxxxxxxxxxxxxxxxxd8
+b0xxxxxxxxxxxxxxxxxxxxxxxxxxxxd8
 
 ```
 
