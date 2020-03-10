@@ -421,7 +421,8 @@ Quickly copy the tarball to randomfile name (thus replacing it)
 
 ....wait approximately 30 secs for check folder to appear.
 
-Then browse folder check/var/www/html/uid to execute setuid and get root shell....
+Then do:
+` check/var/www/html/setuid` to execute setuid and get root shell....
 
 
 ```
@@ -451,6 +452,8 @@ cat /root/root.txt
 # 
 
 ```
+
+
 
 
 :)
