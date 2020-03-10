@@ -8,6 +8,7 @@ categories: HTB-Walkthrough
 
 
 TartarSauce is another OSCP-like box from the HTB 'retired' archive.
+
 nmap first!
 
 
