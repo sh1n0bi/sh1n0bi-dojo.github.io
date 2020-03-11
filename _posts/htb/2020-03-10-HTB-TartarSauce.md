@@ -104,7 +104,10 @@ None of these seem immediately helpful, so I research other possible exploits av
 I find one that refers to [Unauthenticated User Credentials Exposure](https://simpleinfosec.com/2018/05/27/monstra-cms-3-0-4-unauthenticated-user-credential-exposure/)
 and take a look.
 
-It mentions a publicly exposed file located at `http://sitename.com/storage/database/users.table.xml`
+It mentions a publicly exposed file located at 
+```
+http://sitename.com/storage/database/users.table.xml
+```
 
 
 Visiting the page `http://10.10.10.88/webservices/monstra-3.0.4/storage/database/users.table.xml` in the browser
