@@ -26,6 +26,13 @@ Here I am going to document a 'practice run', following the guide; I'm not going
 
 <hr width="250" size="6">
 
+
+For this practice I'll download the [Brainpan](https://www.vulnhub.com/entry/brainpan-1,51/) box from Vulnhub. To paraphrase 'Full Metal Jacket': 
+
+This is my walkthrough; there are many like it, but this one is mine!
+
+
+
 . . . To Be Continued . . .
 
 
