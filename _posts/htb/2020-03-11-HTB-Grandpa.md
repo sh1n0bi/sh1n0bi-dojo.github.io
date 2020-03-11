@@ -236,6 +236,9 @@ I had used the msfvenom command to produce the file `shellcode`, so the required
 ![meterpreter](/assets/img/grandpa/gp-meterpreter1.png)
 
 
+
+<h3>Privilege Escalation</h3>
+
 So we've got a meterpreter shell. The second [exploit](https://github.com/danigargu/explodingcan/blob/master/explodingcan.py) was straight-forward to impliment. 
 
 We need to background the session and look for a path to privilege-escalation.
