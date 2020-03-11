@@ -2,7 +2,7 @@
 layout: page
 title: item2
 description: Test page
-dropdown: dropdown1
+dropdown: References
 priority: 2
 ---
 # Lorem ipsum
