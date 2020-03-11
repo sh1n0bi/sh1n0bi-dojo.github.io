@@ -258,6 +258,8 @@ So we've got a meterpreter shell. The second [exploit](https://github.com/daniga
 
 We need to background the session and look for a path to privilege-escalation.
 
+`use post/multi/recon/local_exploit_suggester`
+
 ![post1](/assets/img/grandpa/gp-post1.png)
 
 
