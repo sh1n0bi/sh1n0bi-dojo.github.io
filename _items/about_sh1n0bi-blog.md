@@ -13,7 +13,7 @@ I intend to make it (and my walkthroughs) more comprehensive and thorough as I g
 
 
   Another intention is to add links and pages of relevent interest and utility to those on the same journey as me.
-The `Pentest-Armoury` in `dropdown1` is the first of such pages, containing general links to helpful sites; it might be an idea to have a `Techniques` page with quick tutorials or links to tutorials of currently relevant proceedures, like 'Active Directory' attacks, 'Kerberoasting' etc. for my own reference as much as for anyone elses.
+The `Pentest-Armoury` in the `References` dropdown is the first of such pages, containing general links to helpful sites; it might be an idea to have a `Techniques` page with quick tutorials or links to tutorials of currently relevant proceedures, like 'Active Directory' attacks, 'Kerberoasting' etc. for my own reference as much as for anyone elses.
 
 
 

