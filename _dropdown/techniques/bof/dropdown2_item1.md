@@ -653,17 +653,17 @@ Whilst looking for more practice, I stumbled upon [this site here](https://www.v
 
 It had a few links to vulnerable apps to try:
 
-[slmail] https://www.exploit-db.com/exploits/638/
+[slmail](https://www.exploit-db.com/exploits/638/)
 
-[freefloatFTP] https://www.exploit-db.com/exploits/17546/
+[freefloatFTP](https://www.exploit-db.com/exploits/17546/)
 
-[minishare] https://www.exploit-db.com/exploits/636/
+[minishare](https://www.exploit-db.com/exploits/636/)
 
-[savant] https://www.exploit-db.com/exploits/10434/
+[savant](https://www.exploit-db.com/exploits/10434/)
 
-[warFTPD (XP)] https://www.exploit-db.com/exploits/3570/
+[warFTPD (XP)](https://www.exploit-db.com/exploits/3570/)
 
-Have fun!
+<h3>Have fun!</h3>
 
 #############
 
