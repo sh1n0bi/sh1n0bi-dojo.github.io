@@ -443,6 +443,7 @@ msfvenom -p windows/exec -b '\x00\x0A' -f python -v shellcode_calc CMD=calc.exe 
 See the `dostackbufferoverflowgood` pdf for an explaination of the "lazy way" and the "right way".
 
 lazy = add 12 nops (+ \x90 * 12) `before` the shellcode. May need to increase this.
+
 right = use metasm_shell.rb (use locate metasm_shell.rb to find it.)
 
 ... from the pdf...
