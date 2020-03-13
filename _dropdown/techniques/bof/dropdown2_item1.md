@@ -400,7 +400,6 @@ With the program still in its crashed state use the following command:
 !mona jmp -r esp -cpb "\x00\x0A"
 ```
 
-![find-jmp](/assets/img/techniques/bof/bp-mona-find-jmp.png)
 
 
 ![find-jmp](/assets/img/techniques/bof/bp-mona-find-jmp2.png)
