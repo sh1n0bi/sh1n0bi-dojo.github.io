@@ -43,9 +43,9 @@ It looks like it's at address `192.168.56.123`.
 
 Now use nmap to scan the target.
 
-'''
+```
 nmap -sV -Pn --min-rate 10000 192.168.56.123
-'''
+```
 
 ![brainpan-nmap](/assets/img/techniques/bof/bof-brainpan1.png)
 
@@ -93,7 +93,9 @@ gobuster finds `/bin`
 
 ![exe](/assets/img/techniques/bof/bof-bp-exe.png)
 
-`wget http://192.168.56.123:10000/bin/brainpan.exe`
+```
+wget http://192.168.56.123:10000/bin/brainpan.exe
+```
 
 
 Time to fire up the win7 VM, get it running, and take a look with Immunity Debugger.
@@ -375,7 +377,7 @@ Get this binary file over to the Win7 machine to check with `mona`.
 !mona compare -a esp -f c:\badchar_test.bin
 ```
 
-![mona-compare](/assets/img/technique/bof/bp-badchar-mona.png)
+![mona-compare](/assets/img/techniques/bof/bp-badchar-mona.png)
 
 
 In this case, we only need to avoid `\x00` and `\x0A`
