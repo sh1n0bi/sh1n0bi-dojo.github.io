@@ -4,7 +4,7 @@ title: "HTB-Jarvis"
 categories: HTB-Walkthrough
 ---
 
-![jarvis1](/assets/img/jarvis/jarvis1.md)
+![jarvis1](/assets/img/jarvis/jarvis1.png)
 
 nmap first:
 
