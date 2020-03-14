@@ -274,7 +274,7 @@ I just grabbed the flag and ran!
 I had intended to revisit this box to work out why my 'keyboard mashing' privesc worked...but I didnt; so when the box was retired I had a look at some write-ups for the box; [0xdf's writeup](https://0xdf.gitlab.io/2019/11/16/htb-networked.html) investigates
 this last phenomenom, and finds that the script's regex sanitizes the first bit of text but executes what comes after the space.
 
-so it executed the `su` after the space....so I could have typed `foo su` for each entry and got the same result.
+so it executed the `su` after the space....so I could have typed `foo su` or 'foo /bin/sh' for just the first entry and got the same result.
 
 revisiting the box, I confirm this:
 
