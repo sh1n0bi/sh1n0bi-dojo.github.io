@@ -228,7 +228,7 @@ C:\Users\Administrator\Desktop\root.txt CHATTERBOX\Administrator:F
 
 ```
 
-We can change the permissions, to allow Alfred to read the flag.
+We can change the ownership, to allow Alfred to read the flag.
 
 
 ```
