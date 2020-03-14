@@ -7,6 +7,10 @@ categories: HTB-Walkthrough
 
 ![networked](/assets/img/networked/networked1.png)
 
+
+This box was 'Active' when I first compromised it, and in my rush to elevate my 'status' on HTB 
+I was left with the nagging thought that I didn't fully understand why my privesc to root worked. I made a mental note to come back and have another look.
+
 Nmap first:
 
 ```
