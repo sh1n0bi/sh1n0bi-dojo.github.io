@@ -159,7 +159,7 @@ User www-data may run the following commands on jarvis:
 
 check out the script...
 
-```
+```python
 
 #!/usr/bin/env python3
 from datetime import datetime

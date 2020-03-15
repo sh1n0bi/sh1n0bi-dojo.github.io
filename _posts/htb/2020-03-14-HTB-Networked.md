@@ -100,7 +100,7 @@ There's an interesting php file in guly's home directory:
 
 
 
-```
+```php
 
 cat check_attack.php
 
@@ -170,7 +170,7 @@ catch the shell on `nc -nlvp 9999`
 
 and get the user flag:
 
-```
+```shell
 
 ls -la
 total 28
@@ -200,7 +200,7 @@ sudo su fails, as expected but we can list sudo commands for `guly` with `sudo -
 
 lets have a look at the file:
 
-```
+```shell
 
 cat changename.sh
 
@@ -241,7 +241,7 @@ sudo /usr/local/sbin/changename.sh
 then enter `sudo su` for everything......
 get root shell.....
 
-```
+```shell
 
 [guly@networked ~]$ sudo /usr/local/sbin/changename.sh
 sudo /usr/local/sbin/changename.sh

