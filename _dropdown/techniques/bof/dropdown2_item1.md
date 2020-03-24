@@ -671,6 +671,12 @@ It had a few links to vulnerable apps to try:
  It starts off with very simple examples, and is well worth working through.
 
 
+<hr width="250" size="6">
+
+[Pwnthebox](https://www.pwnthebox.net/) is another goldmine on this and related subjects, [Its Buffer-Overflow Tutorial](https://www.pwnthebox.net/reverse/engineering/and/binary/exploitation/series/2018/10/02/buffer-overflow-vulnerability-01.html) was stumbled upon while following the above resource. For its wealth of content
+it is a valuable bookmark.
+
+
 <h3>Have fun!</h3>
 
 #############
