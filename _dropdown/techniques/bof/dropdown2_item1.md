@@ -663,6 +663,11 @@ It had a few links to vulnerable apps to try:
 
 [warFTPD (XP)](https://www.exploit-db.com/exploits/3570/)
 
+
+[This brilliant site](https://reboare.github.io/bof/linux-stack-bof-1.html) is a wonderful tutorial over 3 pages, about buffer-overflows on linux using [gdb-peda](https://github.com/longld/peda).
+ It starts off with very simple examples, and is well worth working through.
+
+
 <h3>Have fun!</h3>
 
 #############
