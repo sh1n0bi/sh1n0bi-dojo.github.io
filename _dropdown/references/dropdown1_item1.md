@@ -33,8 +33,11 @@ A pretty comprehensive and very useful command cheat-sheet from [ired.team](http
 <h3>Basic Linux Privilege Escalation</h3>
 g0tmi1k's [guide](https://blog.g0tmi1k.com/2011/08/basic-linux-privilege-escalation/) is THE go-to guide for linux privesc.
 
-<h3>Windows Privilege Escalation Fundimentals</h3>
+<h3>Windows Privilege Escalation</h3>
 FuzzySecurity's whole [site](https://www.fuzzysecurity.com/tutorials/16.html) is an Aladdin's Cave! 
+
+[Absolomb's Security Blog](https://www.absolomb.com/2018-01-26-Windows-Privilege-Escalation-Guide/) is an excellent guide for this, and is a particular favourite.
+
 
 <h3>Reverse-shell Cheat-sheet</h3>
 pentestmonkey's [cheatsheets](http://pentestmonkey.net/cheat-sheet/shells/reverse-shell-cheat-sheet) are definately another invaluable resource.
