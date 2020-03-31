@@ -56,7 +56,7 @@ Service Info: OS: Windows; CPE: cpe:/o:microsoft:windows
 
 ```
 
-<hr width="400" size="10">
+<hr width="300" size="10">
 
 
 
@@ -83,7 +83,7 @@ santi
 ```
 
 
-<hr width="400" size="10">
+<hr width="300" size="10">
 
 
 
@@ -157,7 +157,7 @@ Session completed
 
 
 
-<hr width="400" size="10">
+<hr width="300" size="10">
 
 
 
@@ -254,7 +254,7 @@ Kerberos support for Dynamic Access Control on this device has been disabled.
 
 ```
 
-<hr width="400" size="10">
+<hr width="300" size="10">
 
 
 The user flag is in this user's Desktop folder:
@@ -267,7 +267,7 @@ e5xxxxxxxxxxxxxxxxxxxxxxxxxxxxed
 
 
 
-<hr width="400" size="10">
+<hr width="300" size="10">
 
 
 
@@ -290,7 +290,7 @@ There are benefits to using evil-winrm over winrm.rb, not least the 'upload' fun
 
 [Follow this guide](https://stealingthe.network/quick-guide-to-installing-bloodhound-in-kali-rolling/) to set-up Bloodhound for processing recovered data.
 
-<hr width="400" size="10">
+<hr width="300" size="10">
 
 
 I make my working directory to ensure I've got all the permissions I need, and to contain all my materials in one place,
@@ -360,13 +360,13 @@ del *.zip
 ```
 
 
-<hr width="400" size="10">
+<hr width="300" size="10">
 
 
 After examining the results, and adjusting svc-alfresco's group memberships I hit a stumbling block.
 
 
-<hr width="400" size="10">
+<hr width="300" size="10">
 
 
 <h3>Add User</h3>
@@ -409,7 +409,7 @@ The command completed successfully.
 ```
 
 
-<hr width="400" size="10">
+<hr width="300" size="10">
 
 
 ```
@@ -453,7 +453,7 @@ SeIncreaseWorkingSetPrivilege Increase a process working set Enabled
 ```
 
 
-<hr width="400" size="10">
+<hr width="300" size="10">
 
 
 I repeat the bloodhound procedure and look at my new graph, I click the query "Find Shortest Paths to Domain Admins".
@@ -471,7 +471,7 @@ Hovering the cursor over the `edge` (arrow) between `Exchange Windows Permission
 Right-clicking that tab will give us instructions on executing the WriteDacls privilege escalation.
 
 
-<hr width="400" size="10">
+<hr width="300" size="10">
 
 
 <h3>PowerView</h3>
@@ -484,7 +484,7 @@ Another covers [escalating privileges with acls in active directory ](https://bl
 
 
 
-<hr width="400" size="10">
+<hr width="300" size="10">
 
 
 
@@ -511,7 +511,7 @@ upload /root/HTB/active/forest/PowerView.ps1 .\PowerView.ps1
 ```
 
 
-<hr width="400" size="10">
+<hr width="300" size="10">
 
 
 
@@ -544,7 +544,7 @@ $pass = ConvertTo-SecureString -AsPlainText $Password -Force;$Cred = New-Object 
 
 
 
-<hr width="400" size="10">
+<hr width="300" size="10">
 
 
 
@@ -625,7 +625,7 @@ C:\Windows\system32>
 ```
 
 
-
+<hr width="300" size="10">
 
 :)
 
