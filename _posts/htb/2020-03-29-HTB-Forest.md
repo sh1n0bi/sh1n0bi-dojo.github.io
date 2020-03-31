@@ -526,8 +526,9 @@ $pass = ConvertTo-SecureString -AsPlainText $Password -Force
 ```
 
 3. set the variable $Cred for use in final command
+```
 $Cred = New-Object System.Management.Automation.PSCredential -ArgumentList $Username,$pass
-
+```
 
 4. Uses the PowerView function Add-DomainObjectAcl to award sh1n0bi DCSync rights.
 ```
