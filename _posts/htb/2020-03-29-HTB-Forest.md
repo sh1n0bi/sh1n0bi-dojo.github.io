@@ -297,19 +297,25 @@ There are benefits to using evil-winrm over winrm.rb, not least the 'upload' fun
 
 <hr width="300" size="10">
 
-Actually the above is now redundant if you are using an up-to-date version of Kali.
+Actually, the above is now redundant if you are using an up-to-date version of Kali.
 you can just `apt install bloodhound`
 
 start neo4j with:
+
 `neo4j console`
 
 then start bloodhound with:
+
 `bloodhound`
 
 
 
 Also executing the `injestor` is simpler now, the .ps1 file and commands that I had used when I first
 completed this box no longer work; the `SharpHound.exe` injestor works perfectly and requires no arguments.
+
+
+
+
 
 <hr width="300" size="10">
 
