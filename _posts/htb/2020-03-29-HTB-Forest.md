@@ -283,6 +283,11 @@ There are benefits to using evil-winrm over winrm.rb, not least the 'upload' fun
 
 
 
+
+
+
+
+
 <h3>Active Directory Recon with Bloodhound</h3>
 
 
@@ -291,6 +296,23 @@ There are benefits to using evil-winrm over winrm.rb, not least the 'upload' fun
 [Follow this guide](https://stealingthe.network/quick-guide-to-installing-bloodhound-in-kali-rolling/) to set-up Bloodhound for processing recovered data.
 
 <hr width="300" size="10">
+
+Actually the above is now redundant if you are using an up-to-date version of Kali.
+you can just `apt install bloodhound`
+
+start neo4j with:
+`neo4j console`
+
+then start bloodhound with:
+`bloodhound`
+
+
+
+Also executing the `injestor` is simpler now, the .ps1 file and commands that I had used when I first
+completed this box no longer work; the `SharpHound.exe` injestor works perfectly and requires no arguments.
+
+<hr width="300" size="10">
+
 
 
 I make my working directory to ensure I've got all the permissions I need, and to contain all my materials in one place,
