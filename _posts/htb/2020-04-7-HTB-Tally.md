@@ -213,11 +213,15 @@ Viewing the downloaded `ftp-details.docx`, we find ftp password but no username.
 
 clicking the 'site pages' link starts taking us to 
 
-`http://10.10.10.59/SitePages/Forms/AllPages.aspx`
+```
+http://10.10.10.59/SitePages/Forms/AllPages.aspx
+```
 
 but then redirects to:
 
-`http://10.10.10.59/_layouts/15/start.aspx#/SitePages/Forms/AllPages.aspx`
+```
+http://10.10.10.59/_layouts/15/start.aspx#/SitePages/Forms/AllPages.aspx
+```
 
 Which is empty...amending the url takes us to the desired page.
 
