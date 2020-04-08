@@ -201,7 +201,9 @@ gobuster dir -u http://10.10.10.59/ -w /root/wordlists/SecLists/Discovery/Web-Co
 
 
 Working through the list of Gobuster results, we can view an interesting page:
-`http://10.10.10.59/docs/_layouts/viewlsts.aspx`
+```
+http://10.10.10.59/docs/_layouts/viewlsts.aspx
+```
 
 ![viewlists](/assets/img/tally/tally-viewlists.png)
 
