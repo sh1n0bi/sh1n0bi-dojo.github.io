@@ -183,14 +183,6 @@ Ftp doesn't allow anonymous login so we move on the the web server.
 
 
 
-<h3>Searchsploit</h3>
-
-We can check for public exploits for `sharepoint` with searchsploit:
-
-![searchsploit](/assets/img/tally/tally-searchsploit.png)
-
-
-
 <hr width="300" size="10">
 
 
