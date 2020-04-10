@@ -503,7 +503,7 @@ uid=1000(ldapuser1) gid=1000(ldapuser1) groups=1000(ldapuser1) context=unconfine
 ```
 
 
-We can check the [capabilities](http://man7.org/linux/man-pages/man7/capabilities.7.html) of the program files here with the `getcap` command.
+We can check the [capabilities](http://man7.org/linux/man-pages/man7/capabilities.7.html) of the program files here with the [getcap](http://www.man7.org/linux/man-pages/man8/getcap.8.html) command.
 
 ```
 getcap . 2>/dev/null
@@ -512,12 +512,12 @@ getcap . 2>/dev/null
 The results are surprising.
 
 ```
-[ldapuser1@lightweight ~]$ getcap -r . 2>/dev/null
+[ldapuser1@lightweight ~]$ getcap . 2>/dev/null
 ./tcpdump = cap_net_admin,cap_net_raw+ep
 ./openssl =ep
 ```
 
-openssl has ep cap set, so it can do anything!
+[openssl](https://linux.die.net/man/1/openssl) has ep cap set, so it can do anything!
 
 
 
