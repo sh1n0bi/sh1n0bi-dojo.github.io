@@ -33,79 +33,7 @@ Service Info: OS: Unix
 Using `searchsploit` for 'vsftpd 2.3.4' we get a metasploit exploit for the well known backdoor vulnerability.
 
 
-Nmap can test for this too:
-
-```
-nmap 10.10.10.131 --script=vuln
-```
-
-```
-Nmap scan report for lacasadepapel.htb (10.10.10.131)
-Host is up (0.21s latency).
-Not shown: 996 closed ports
-PORT    STATE SERVICE
-21/tcp  open  ftp
-|_clamav-exec: ERROR: Script execution failed (use -d to debug)
-|_sslv2-drown: 
-22/tcp  open  ssh
-|_clamav-exec: ERROR: Script execution failed (use -d to debug)
-80/tcp  open  http
-|_clamav-exec: ERROR: Script execution failed (use -d to debug)
-|_http-aspnet-debug: ERROR: Script execution failed (use -d to debug)
-|_http-csrf: Couldn't find any CSRF vulnerabilities.
-|_http-dombased-xss: Couldn't find any DOM based XSS.
-| http-fileupload-exploiter: 
-|   
-|_    Couldn't find a file-type field.
-| http-slowloris-check: 
-|   VULNERABLE:
-|   Slowloris DOS attack
-|     State: LIKELY VULNERABLE
-|     IDs:  CVE:CVE-2007-6750
-|       Slowloris tries to keep many connections to the target web server open and hold
-|       them open as long as possible.  It accomplishes this by opening connections to
-|       the target web server and sending a partial request. By doing so, it starves
-|       the http server's resources causing Denial Of Service.
-|       
-|     Disclosure date: 2009-09-17
-|     References:
-|       http://ha.ckers.org/slowloris/
-|_      https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2007-6750
-|_http-stored-xss: Couldn't find any stored XSS vulnerabilities.
-443/tcp open  https
-|_clamav-exec: ERROR: Script execution failed (use -d to debug)
-|_http-aspnet-debug: ERROR: Script execution failed (use -d to debug)
-|_http-csrf: Couldn't find any CSRF vulnerabilities.
-|_http-dombased-xss: Couldn't find any DOM based XSS.
-| http-method-tamper: 
-|   VULNERABLE:
-|   Authentication bypass by HTTP verb tampering
-|     State: VULNERABLE (Exploitable)
-|       This web server contains password protected resources vulnerable to authentication bypass
-|       vulnerabilities via HTTP verb tampering. This is often found in web servers that only limit access to the
-|        common HTTP methods and in misconfigured .htaccess files.
-|              
-|     Extra information:
-|       
-|   URIs suspected to be vulnerable to HTTP verb tampering:
-|     / [POST]
-|   
-|     References:
-|       http://capec.mitre.org/data/definitions/274.html
-|       http://www.imperva.com/resources/glossary/http_verb_tampering.html
-|       http://www.mkit.com.ar/labs/htexploit/
-|_      https://www.owasp.org/index.php/Testing_for_HTTP_Methods_and_XST_%28OWASP-CM-008%29
-|_http-stored-xss: Couldn't find any stored XSS vulnerabilities.
-|_sslv2-drown: 
-```
-It looks like 'clamav' has blocked our probing!?
-
-
-
-<hr width="300" size="10">
-
-
-Looking further into the exploit I find a [Wiki page](https://en.wikipedia.org/wiki/Vsftpd).
+Searching about the vulnerability, I find a [Wiki page](https://en.wikipedia.org/wiki/Vsftpd).
 Quote:
 ```
 In July 2011, it was discovered that vsftpd version 2.3.4 downloadable from the master site had been compromised.[2][3] Users logging into a compromised vsftpd-2.3.4 server may issue a ":)" smileyface as the username and gain a command shell on port 6200.
@@ -172,7 +100,7 @@ Password:
 
 ```
 
-The ftp connection seems to hang...so I open another terminal tab and try to connect to port 6200
+The ftp connection hangs; I open another terminal tab and try to connect to port 6200
 
 ```
 nc -nv 10.10.10.131 6200
@@ -250,12 +178,10 @@ This is an ssl Certificate Authority key...Lets add lacasadepapel.htb to the /et
 
 <h3>Web</h3>
 
-Browsing to https://10.10.10.131 we get a cerificate error notification:
+Browsing to https://10.10.10.131 we get a cerificate error notification, we'll need to generate
+our own signed certificate.
 
-![https-cert-error](/assets/img/lacasadepapel/lacasa-https-cert-error.png)
 
-
-We've got the ca.key, we can use this to validate our own generated certification.
 
 <hr width="300" size="10">
 
@@ -264,7 +190,7 @@ We've got the ca.key, we can use this to validate our own generated certificatio
 
 We have the 'ca.key' from the target.
 
-We can use nmap again, to get the ssl-cert from the target
+We can use nmap again, to get the server's certificate from the target.
 
 ```
 nmap --script=ssl-cert 10.10.10.131 -p 443 -v
