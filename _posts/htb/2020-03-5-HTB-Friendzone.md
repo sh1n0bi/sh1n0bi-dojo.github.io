@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "HTB-Friendzone"
+title: "Friendzone"
 categories: HTB-Walkthrough
 ---
 

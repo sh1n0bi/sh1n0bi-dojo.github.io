@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "HTB-Grandpa"
+title: "Grandpa"
 categories: HTB-Walkthrough
 ---
 

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "HTB-Bounty"
+title: "Bounty"
 date: 2020-02-16 14:55:00 +0000
 categories: HTB-Walkthrough
 ---

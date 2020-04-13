@@ -1,6 +1,6 @@
 ---
 layout: post
-title: HTB-Arctic
+title: Arctic
 categories: HTB-Walkthrough
 ---
 

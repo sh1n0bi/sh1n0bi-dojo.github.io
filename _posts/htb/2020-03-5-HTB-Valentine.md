@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "HTB-Valentine"
+title: "Valentine"
 categories: HTB-Walkthrough
 ---
 

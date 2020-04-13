@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "HTB-Bitlab"
+title: "Bitlab"
 categories: HTB-Walkthrough
 ---
 

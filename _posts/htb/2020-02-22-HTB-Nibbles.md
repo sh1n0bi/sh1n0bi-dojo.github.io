@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "HTB-Nibbles"
+title: "Nibbles"
 categories: HTB-Walkthrough
 ---
 

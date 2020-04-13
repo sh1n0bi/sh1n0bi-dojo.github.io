@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "HTB-Chatterbox"
+title: "Chatterbox"
 categories: HTB-Walkthrough
 ---
 

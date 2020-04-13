@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "HTB-Jarvis"
+title: "Jarvis"
 categories: HTB-Walkthrough
 ---
 

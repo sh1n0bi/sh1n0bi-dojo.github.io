@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "HTB-Bashed"
+title: "Bashed"
 categories: HTB-Walkthrough
 ---
 

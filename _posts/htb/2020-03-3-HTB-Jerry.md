@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "HTB-Jerry"
+title: "Jerry"
 categories: HTB-Walkthrough
 ---
 

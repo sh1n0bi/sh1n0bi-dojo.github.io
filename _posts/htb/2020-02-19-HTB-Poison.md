@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "HTB-Poison"
+title: "Poison"
 categories: HTB-Walkthrough
 ---
 

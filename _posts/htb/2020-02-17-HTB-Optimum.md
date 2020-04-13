@@ -1,7 +1,6 @@
 ---
 layout: post
-title:  "HTB-Optimum"
-date:   2020-02-17 00:01:57 +0000
+title:  "Optimum"
 categories: HTB-Walkthrough
 ---
 

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "HTB-Bankrobber"
+title: "Bankrobber"
 categories: HTB-Walkthrough
 ---
 

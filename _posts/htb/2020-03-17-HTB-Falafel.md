@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "HTB-Falafel"
+title: "Falafel"
 categories: HTB-Walkthrough
 ---
 

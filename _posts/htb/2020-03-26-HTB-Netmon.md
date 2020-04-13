@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "HTB-Netmon"
+title: "Netmon"
 categories: HTB-Walkthrough
 ---
 

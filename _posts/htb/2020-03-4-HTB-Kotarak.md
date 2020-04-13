@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "HTB-Kotarak"
+title: "Kotarak"
 categories: HTB-Walkthrough
 ---
 

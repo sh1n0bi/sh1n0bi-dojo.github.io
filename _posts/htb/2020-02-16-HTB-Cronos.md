@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "HTB-Cronos"
+title: "Cronos"
 date: 2020-02-16 18:22:00 +0000
 categories: HTB-Walkthrough
 ---

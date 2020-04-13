@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "HTB-Active"
+title: "Active"
 categories: HTB-Active
 ---
 

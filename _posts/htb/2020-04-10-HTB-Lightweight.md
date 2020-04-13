@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "HTB-Lightweight"
+title: "Lightweight"
 categories: HTB-Walkthrough
 ---
 

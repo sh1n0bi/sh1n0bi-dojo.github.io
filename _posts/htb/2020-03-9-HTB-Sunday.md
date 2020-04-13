@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "HTB-Sunday"
+title: "Sunday"
 categories: HTB-Walkthrough
 ---
 

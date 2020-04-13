@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "HTB-Bastard"
+title: "Bastard"
 categories: HTB-Walkthrough
 ---
 

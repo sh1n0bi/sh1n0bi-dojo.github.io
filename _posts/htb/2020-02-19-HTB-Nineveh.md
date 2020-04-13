@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "HTB-Nineveh"
+title: "Nineveh"
 categories: HTB-Walkthrough
 ---
 

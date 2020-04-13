@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "HTB-Networked"
+title: "Networked"
 categories: HTB-Walkthrough
 ---
 

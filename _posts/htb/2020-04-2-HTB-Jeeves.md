@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "HTB-Jeeves"
+title: "Jeeves"
 categories: HTB-Walkthrough
 ---
 

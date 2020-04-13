@@ -1,6 +1,6 @@
 ---                                                                                           
 layout: post                                                                                  
-title:  "HTB-Legacy"                                                                            
+title:  "Legacy"                                                                            
 date:   2020-02-16 02:49:57 +0000                                                             
 categories: HTB-Walkthrough                                                                   
 ---                           

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "HTB-SolidState"
+title: "SolidState"
 categories: HTB-Walkthrough
 ---
 

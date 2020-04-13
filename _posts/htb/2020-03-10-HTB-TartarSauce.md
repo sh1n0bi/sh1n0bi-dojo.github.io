@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "HTB-TartarSauce"
+title: "TartarSauce"
 categories: HTB-Walkthrough
 ---
 

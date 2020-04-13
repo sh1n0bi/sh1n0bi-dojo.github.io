@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "HTB-Forest"
+title: "Forest"
 categories: HTB-Walkthrough
 ---
 

@@ -1,7 +1,6 @@
 ---
 layout: post
-title: "HTB-Shocker"
-date: 2020-02-16 22:02:00 +0000
+title: "Shocker"
 categories: HTB-Walkthrough
 ---
 

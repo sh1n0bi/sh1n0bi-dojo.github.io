@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "HTB-Swagshop"
+title: "Swagshop"
 categories: HTB-Walkthrough
 ---
 

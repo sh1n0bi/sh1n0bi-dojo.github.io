@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "HTB-Tally"
+title: "Tally"
 categories: HTB-Walkthrough
 ---
 
