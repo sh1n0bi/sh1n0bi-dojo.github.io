@@ -371,6 +371,13 @@ lacasadepapel [~]$
 
 ```
 
+<hr width="300" size="10">
+
+
+
+<h3>Privilege Escalation</h3>
+
+
 Looking at the .ini file, we can see that it is run as root with the 'sudo' command.
 
 With `pspy` we can see if this command is being periodically run.
