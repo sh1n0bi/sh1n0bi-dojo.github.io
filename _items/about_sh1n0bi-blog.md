@@ -16,6 +16,9 @@ I intend to make it (and my walkthroughs) more comprehensive and thorough as I g
 The `Pentest-Armoury` in the `References` dropdown is the first of such pages, containing general links to helpful sites; it might be an idea to have a `Techniques` page with quick tutorials or links to tutorials of currently relevant proceedures, like 'Active Directory' attacks, 'Kerberoasting' etc. for my own reference as much as for anyone elses.
 
 
+Ive also written a simple reverse-shell generator which comes in handy. [revshell-boom](https://github.com/sh1n0bi/boom-scripts).
+
+
 
   
 
