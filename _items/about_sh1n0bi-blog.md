@@ -6,6 +6,7 @@ description: Test page
 
 ![my HTB badge](/assets/img/sh1n.png)
 
+<script src="https://tryhackme.com/badge/6182"></script> 
 
 
   Hi, whilst awaiting a re-sit of my OSCP exam I decided to start a blog of Hack The Box walkthroughs. Im going to update this as often as possible, and try to improve my reporting skills. There's plenty more information to write on this page,
