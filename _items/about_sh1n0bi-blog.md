@@ -5,8 +5,7 @@ description: Test page
 ---
 
 ### My HTB badge 
-<script src="https://www.hackthebox.eu/badge/138002"></script>
-
+<img src="http://www.hackthebox.eu/badge/image/138002" alt="Hack The Box">
 ---
 
 ### My THM badge
