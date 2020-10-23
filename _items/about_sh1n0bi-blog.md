@@ -4,8 +4,10 @@ title: "About sh1n0bi's blog"
 description: Test page
 ---
 
-![my HTB badge](/assets/img/sh1n.png)
+### My HTB badge 
+<script src="https://www.hackthebox.eu/badge/138002"></script>
 
+### My THM badge
 <script src="https://tryhackme.com/badge/6182"></script> 
 
 
